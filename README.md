@@ -3,7 +3,9 @@
 Welcome to the Federal LCA Data Commons documentation repository.
 This repository contains supplemental resources for the Federal LCA Data Commons (www.lcacommons.gov)
 
-## Resources
+[**Click here to view the documentation website**]()
+
+### Resources
 [Frequently Asked Questions]()
 
 [Data Submission Guidelines]()
