@@ -1,5 +1,7 @@
 # Federal LCA Commons (FLCAC) - Data Curation  <img src="img/lca_logo.png" align="right" width="240" />
 
+🚧 **This site is under construction. New content will continue to be added** 🚧
+
 Welcome to the Federal LCA Commons documentation repository.
 This repository contains supplemental resources for the Federal LCA Commons (www.lcacommons.gov)
 
