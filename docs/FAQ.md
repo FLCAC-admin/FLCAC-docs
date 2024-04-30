@@ -1,4 +1,5 @@
 # Frequently Asked Questions
+## Data Submission
 <details>
  <summary><b>How do I submit data to the Federal LCA Commons (FLCAC)?</b></summary>
 
@@ -41,6 +42,7 @@ To align new or existing processes and flows with NAICS, import the [Commons Cor
 Work in progress
 </details>
 
+## Using and Accessing Data
 <details>
  <summary><b>How do I find impact assessment methods?</b></summary>
 
