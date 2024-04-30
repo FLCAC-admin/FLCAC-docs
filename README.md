@@ -6,7 +6,7 @@ This repository contains supplemental resources for the Federal LCA Commons (www
 [**Click here to view the documentation website**]()
 
 ### Resources
-[Frequently Asked Questions]()
+[Frequently Asked Questions](docs/FAQ.md)
 
 [Data Submission Guidelines]()
 
