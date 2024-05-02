@@ -26,7 +26,10 @@ For instructions on mapping your flows, see [here](https://github.com/USEPA/fede
 <details>
  <summary><b>How do I align my technosphere flows the FLCAC?</b></summary>
 
-Work in progress
+Technosphere flows (i.e., product or waste flows) that come from another database (e.g., ecoinvent, Agri-footprint, GaBi, etc.) must be mapped to technosphere flows that exist within the FLCAC repositories or new processes should be created that produce these flows. Cut-off flows may be created if neither of the previous options are possible. 
+
+To map technosphere flows, you may either create a new process within openLCA and manually add the desired technosphere flows to your life cycle inventory (LCI) or you may use [openLCA's flow mapping function](https://www.openlca.org/flow-mapping-feature/) which allows you to apply mappings to your whole database.
+
 </details>
 
 <details>
@@ -39,10 +42,36 @@ To align new or existing processes and flows with NAICS, import the [Commons Cor
 <details>
  <summary><b>I have specific questions about data submission to the FLCAC, who do I reach out to?</b></summary>
 
-Work in progress
+Please submit questions to the FLCAC data curators via the [Issues page](https://github.com/FLCAC-admin/FLCAC-Curation/issues) or email us at FederalLCACommons@erg.com.
 </details>
 
 ## Using and Accessing Data
+<details>
+ <summary><b>How do I see what data exists on the FLCAC?</b></summary>
+
+Data on the FLCAC can be accessed via the [FLCAC website](https://lcacommons.gov), select "Browse repositories" on the landing page, select the repository of interest, and browse the elements included in that repository by opening folders. 
+
+You can also search for processes across all repositories via the search function in the top right, filters are available to refine your search to specific repositories and elements of repositories. Data on the FLCAC can also be explored within openLCA by downloading the data from the FLCAC and importing them into an openLCA database. You can look through the elements in the navigation pane or the search function.
+</details>
+
+<details>
+ <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
+
+Work in progress
+</details>
+
+<details>
+ <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
+
+Download whole repositories or repository elements on the FLCAC as a JSON-LD file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later). Then, open openLCA and create a new empty database and import the JSON-ld file into your database. **Link future video here.
+</details>
+
+<details>
+ <summary><b>How do I use data from the FLCAC in other software?</b></summary>
+
+Work in progress
+</details>
+
 <details>
  <summary><b>How do I find impact assessment methods?</b></summary>
 
@@ -63,11 +92,6 @@ Work in progress
 Work in progress
 </details>
 
-<details>
- <summary><b>How do I see what data exists on the FLCAC?</b></summary>
-
-Work in progress
-</details>
 
 <details>
  <summary><b>What is the FLCAC collaboration server?</b></summary>
@@ -78,7 +102,7 @@ Work in progress
 <details>
  <summary><b>What is a cut-off flow?</b></summary>
 
-Work in progress
+A cut-off flow is a flow that is a placeholder or a dummy flow. These flows are used when no relevant flows in a database exists. It is not recommended to use these flows in your life cycle inventory if possible. In openLCA results, cut-off flows will appear in your inventory results, but will not contribute to impact category results.
 </details>
 
 <details>
@@ -93,20 +117,3 @@ Work in progress
 Work in progress
 </details>
 
-<details>
- <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
-
-Work in progress
-</details>
-
-<details>
- <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
-
-Work in progress
-</details>
-
-<details>
- <summary><b>How do I use data from the FLCAC in other software?</b></summary>
-
-Work in progress
-</details>
