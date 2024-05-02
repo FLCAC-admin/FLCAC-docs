@@ -94,6 +94,12 @@ Work in progress
 </details>
 
 <details>
+ <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
+
+Work in progress
+</details>
+
+<details>
  <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
 
 Work in progress
