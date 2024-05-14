@@ -10,7 +10,7 @@ Here is a brief overview of the data preparation process:
 - Map technosphere flows to those that exist in the FLCAC repositories, or create new processes that produce the desired flows. Cut-off flows can also be created if needed, but these are not recommended.
 - Import the data into openLCA, this can be done before or after the mapping process.
 - Align the processes and flows with the NAICS folder structure.
-- Complete the metadata for each process as described in the [USLCI metadata gudance tables](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md#metadata-guidance-tables).
+- Complete the metadata for each process as described in the [USLCI metadata guidance tables](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md#metadata-guidance-tables).
 - Export the processes intended for submission and submit them to the repository owner/manager.
   - If you are the repository owner/manager then you will integrate the new processes into the existing database and push it to the collaboration server.
 
