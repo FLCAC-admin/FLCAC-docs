@@ -22,3 +22,12 @@
 Documentation of the data exchange format underlying the openLCA software. This schema is the corollary to other common LCA data exchange formats such as Ecospold I/II, Simapro csv, and ILCD.
 
 </details>
+
+## Flow Mapping
+
+Flow mapping is the process of relating elementary or technosphere flows in one dataset to similar flows in another dataset. In the context of the FLCAC, typically users are mapping a third-party dataset (such as Ecoinvent or the National Emissions Inventory [NEI]) to the federal elementary flow list (FEDEFL) or an alternate source of background LCI data in the case of technosphere flows. 
+
+Flow mapping is a critical step for accurate and complete LCIA flow characterization when using multiple LCI repositories in a single project database. In order for LCIA methods available on the FLCAC to fully capture the elementary flows present in a project database or product system they must be mapped to the FEDEFL as this flow list is the basis of LCIA methods on the commons. 
+
+- [Guidance for Mapping a Dataset](https://github.com/USEPA/fedelemflowlist/wiki/Getting-Started-with-FEDEFL#mapping-a-dataset)
+- [Mapping within openLCA](https://github.com/USEPA/fedelemflowlist/wiki/FEDEFL-in-openLCA#mapping-a-dataset-within-openlca)
