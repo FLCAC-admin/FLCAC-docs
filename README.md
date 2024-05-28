@@ -14,6 +14,8 @@ This repository contains supplemental resources for the Federal LCA Commons (www
 
 [Standard Operating Procedures]()
 
+[List of Additional Resources](docs/OtherResources.md)
+
 
 ## Contact Information
 * Please contact us at FederalLCACommons@erg.com
