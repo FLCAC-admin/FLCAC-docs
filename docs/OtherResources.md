@@ -16,4 +16,9 @@
 
 </details>
 
+<details>
+ <summary><a href="https://greendelta.github.io/olca-schema/">openLCA schema</a></b></summary>
 
+Documentation of the data exchange format underlying the openLCA software. This schema is the corollary to other common LCA data exchange formats such as Ecospold I/II, Simapro csv, and ILCD.
+
+</details>
