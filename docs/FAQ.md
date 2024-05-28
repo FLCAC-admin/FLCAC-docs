@@ -46,30 +46,47 @@ Please submit questions to the FLCAC data curators via the [Issues page](https:/
 </details>
 
 ## Using and Accessing Data
+
+### Federal LCA Commons (FLCAC)
+<details>
+ <summary><b>What is the Federal LCA Commons?</b></summary>
+ 
+Official definition of the Federal LCA Commons (FLCAC) can be found on the [About Us](https://www.lcacommons.gov/about-us) page of the lcacommons.gov website.
+
+The FLCAC is a collaborative project across several agencies of the U.S. federal government intended to make life cycle inventory (LCI) data available across agencies and to the general public. The FLCAC also looks to establish community resources and best practices for using and conducting life cycle assessments (LCA). 
+
+- List of LCI and LCIA [repositories available on the FLCAC](https://www.lcacommons.gov/lca-collaboration/)
+- Homepage for [FLCAC resources](https://github.com/FLCAC-admin/FLCAC-Curation)
+
+</details>
+
+<details>
+ <summary><b>What is the FLCAC collaboration server?</b></summary>
+
+Work in progress
+</details>
+
+### Data Review and Data Quality
+<details>
+ <summary><b>What review process does data on the FLCAC undergo?</b></summary>
+
+Data posted to the FLCAC is subjected to the review process as described in process-level metadata. The FLCAC Data Curators do not perform an additional critical review of submitted data or check for ISO compliance. 
+
+Currently, metadata fields are not consistently filled out within USLCI or all federal LCA or LCIA repositories on the FLCAC. Data users will need to assess the available metadata to ensure that utilized LCI datasets meet the data quality standards associated with their project scope. 
+
+The FLCAC Data Curator is engaged in an ongoing task to assess data quality on the FLCAC and retroactively assign data quality scores that will help practitioners assess the sufficiency of a given dataset for their project.
+
+Moving forward the FLCAC Data Curator will also work to ensure that metadata is consistently filled out for all new data submissions. At this time, there is no plan to retroactively update process metadata (aside from data quality scores) for data previously submitted to the FLCAC.
+
+</details>
+
+### Finding Data
 <details>
  <summary><b>How do I see what data exists on the FLCAC?</b></summary>
 
 Data on the FLCAC can be accessed via the [FLCAC website](https://lcacommons.gov), select "Browse repositories" on the landing page, select the repository of interest, and browse the elements included in that repository by opening folders. 
 
 You can also search for processes across all repositories via the search function in the top right, filters are available to refine your search to specific repositories and elements of repositories. Data on the FLCAC can also be explored within openLCA by downloading the data from the FLCAC and importing them into an openLCA database. You can look through the elements in the navigation pane or the search function.
-</details>
-
-<details>
- <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
-
-Work in progress
-</details>
-
-<details>
- <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
-
-Download whole repositories or repository elements on the FLCAC as a JSON-LD file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later). Then, open openLCA and create a new empty database and import the JSON-ld file into your database. **Link future video here.
-</details>
-
-<details>
- <summary><b>How do I use data from the FLCAC in other software?</b></summary>
-
-Work in progress
 </details>
 
 <details>
@@ -80,29 +97,33 @@ Impact assessment methods aligned with the Federal Elementary Flow List (FEDEFL)
 - LCIA Methods repositories: Repositories are available for TRACI2.1 and ReCiPe which contain the methods and all relevant flow objects. These repositories are useful for reviewing all characterization factors for flows in the FEDEFL
 </details>
 
+### Life Cycle Impact Assessment (LCIA)
+<details>
+ <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
+
+Work in progress
+</details>
+
 <details>
  <summary><b>Why are the impact assessment methods that I imported into openLCA not showing up in my database?</b></summary>
 
 Work in progress
 </details>
 
+### LCA Software (OpenLCA is listed separately)
+
 <details>
- <summary><b>What review process does data on the FLCAC undergo?</b></summary>
+ <summary><b>How do I use data from the FLCAC in other software?</b></summary>
 
 Work in progress
 </details>
 
+### OpenLCA
 
 <details>
- <summary><b>What is the FLCAC collaboration server?</b></summary>
+ <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
 
-Work in progress
-</details>
-
-<details>
- <summary><b>What is a cut-off flow?</b></summary>
-
-A cut-off flow is a flow that is a placeholder or a dummy flow. These flows are used when no relevant flows in a database exists. It is not recommended to use these flows in your life cycle inventory if possible. In openLCA results, cut-off flows will appear in your inventory results, but will not contribute to impact category results.
+Download whole repositories or repository elements on the FLCAC as a JSON-LD file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later). Then, open openLCA and create a new empty database and import the JSON-ld file into your database. **Link future video here.
 </details>
 
 <details>
@@ -116,4 +137,18 @@ Work in progress
 
 Work in progress
 </details>
+
+
+
+### LCA Terminology
+
+<details>
+ <summary><b>What is a cut-off flow?</b></summary>
+
+A cut-off flow is a flow that is a placeholder or a dummy flow. These flows are used when no relevant flows in a database exists. It is not recommended to use these flows in your life cycle inventory if possible. In openLCA results, cut-off flows will appear in your inventory results, but will not contribute to impact category results.
+</details>
+
+
+
+
 
