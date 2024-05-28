@@ -14,6 +14,10 @@ This repository contains supplemental resources for the Federal LCA Commons (www
 
 [Standard Operating Procedures]()
 
+[GitHub Page for the Federal Elementary Flow List (FEDEFL)](https://github.com/USEPA/fedelemflowlist)
+
+[GitHub page for the USLCI](https://github.com/FLCAC-admin/uslci-content)
+
 [List of Additional Resources](docs/OtherResources.md)
 
 
