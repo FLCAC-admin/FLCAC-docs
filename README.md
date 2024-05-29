@@ -8,6 +8,8 @@ This repository contains supplemental resources for the Federal LCA Commons (www
 [**Click here to view the documentation website**]()
 
 ### Resources
+[Common Terms and Acronyms](docs/CommonTermAcronyms.md)
+
 [Frequently Asked Questions](docs/FAQ.md)
 
 [Data Submission Guidelines]()
