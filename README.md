@@ -12,7 +12,7 @@ This repository contains supplemental resources for the Federal LCA Commons (www
 
 [Frequently Asked Questions](docs/FAQ.md)
 
-[Data Submission Guidelines]()
+[Data Submission Guidelines (Currently using the USLCI guidelines)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md)
 
 [Standard Operating Procedures]()
 
