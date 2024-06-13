@@ -2,7 +2,8 @@
 
 ## Purpose
 
-This SOP documents procedures for making changes to the Federal Elementary Flow List (FEDEFL) data objects on the Federal LCA Commons (FLCAC).
+This SOP documents procedures for making changes to the Federal Elementary Flow List (FEDEFL) data objects on the Federal LCA Commons (FLCAC). 
+The FEDEFL needs to be updated when changes are made to flows, contexts, or metadata within.
 
 ## Procedure
 
