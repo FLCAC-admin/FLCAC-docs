@@ -22,11 +22,11 @@ An article describing the [LCIA Formatter was published in the Journal of Open S
 
 ## Accessing LCIA Methods
 LCIA methods aligned with the FEDEFL are available in two forms.
-Both forms are updated simultaneously, and so results will be the same no matter which version is used.
+Both are updated simultaneously, and results will be the same no matter which version is used.
 - [LCIA Methods without flows](https://www.lcacommons.gov/lcia-methods-without-flows):
 These JSON-LD files do not contain the flow objects, only the characterization factors.
 They can be downloaded and imported into any openLCA database.
-The "No flows" versions of methods must be imported _into_ a database that contains flows, otherwise the methods will not appear in the database.
+The "No flows" versions of methods must be imported _into_ a database that contains flows already which they can map to, otherwise the methods will not appear in the database.
 Updating a local database with new data which contains new elementary flows (e.g., importing a new process from a repository on the FLCAC) may result in new, uncharacterized flows in the database.
 In these cases, the "No flows" methods should be **re-imported** to ensure that all elementary flows are characterized.
 
