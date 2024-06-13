@@ -28,7 +28,7 @@ These JSON-LD files do not contain the flow objects, only the characterization f
 They can be downloaded and imported into any openLCA database.
 The "No flows" versions of methods must be imported _into_ a database that contains flows already which they can map to, otherwise the methods will not appear in the database.
 Updating a local database with new data which contains new elementary flows (e.g., importing a new process from a repository on the FLCAC) may result in new, uncharacterized flows in the database.
-In these cases, the "No flows" methods should be **re-imported** to ensure that all elementary flows are characterized.
+In these cases, the "No flows" methods should be **re-imported** to ensure that all elementary flows are characterized. Using the "No flows" version of an LCIA method allows the practitioner to limit the number of elementary flows in their project database, simplifying LCIA flow checks.
 
 - LCIA Methods repositories: [Repositories](https://www.lcacommons.gov/lca-collaboration/) are available for TRACI2.1 and ReCiPe which contain the methods and all relevant flow objects.
 These repositories are useful for reviewing all characterization factors for flows in the FEDEFL.
