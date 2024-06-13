@@ -17,3 +17,5 @@
 |Data Packages|
 |Dataset|
 |Process|
+|Endpoint Indicator|
+|Midpoint Indicator|
