@@ -157,7 +157,8 @@ Work in progress
 <details>
  <summary><b>What is a provider?</b></summary>
 
-Work in progress
+In openLCA, both elementary and technosphere flows exist independent of the processes inventories that use them. This means that multiple processes can produce, and therefore reference, a shared technosphere flow. Then, when the inputs of another process uses this technosphere flow, users can select which upstream (background) process dataset they want to assign as the 'provider' of that input. 
+
 </details>
 
 
