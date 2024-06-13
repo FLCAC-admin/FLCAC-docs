@@ -22,7 +22,7 @@ An article describing the [LCIA Formatter was published in the Journal of Open S
 
 ## Accessing LCIA Methods
 LCIA methods aligned with the FEDEFL are available in two forms.
-Both are updated simultaneously, and results will be the same no matter which version is used.
+Both are updated simultaneously, and results will be the same regardless of which version is used.
 - [LCIA Methods without flows](https://www.lcacommons.gov/lcia-methods-without-flows):
 These JSON-LD files do not contain the flow objects, only the characterization factors.
 They can be downloaded and imported into any openLCA database.
