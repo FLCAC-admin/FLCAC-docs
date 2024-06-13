@@ -6,7 +6,7 @@ The [LCIA Formatter](https://github.com/USEPA/LCIAformatter) is the primary tool
 > LCIA formatter, or lciafmt, is a Python tool for standardizing the format and flows of life cycle impact assessment (LCIA) data.
 > The tool acquires LCIA data transparently from its original source, cleans the data, shapes them into a standard format using the LCIAmethod format, and optionally applies flow mappings as defined in the FEDEFL.
 
-An article describing the [LCIA Formatter was published in the Jounral of Open Source Software (JOSS)](https://doi.org/10.21105/joss.03392)
+An article describing the [LCIA Formatter was published in the Journal of Open Source Software (JOSS)](https://doi.org/10.21105/joss.03392)
 
 ## Available Methods
 
@@ -22,13 +22,13 @@ An article describing the [LCIA Formatter was published in the Jounral of Open S
 
 ## Accessing LCIA Methods
 LCIA methods aligned with the FEDEFL are available in two forms.
-Both forms are updated simultaenously, and so results will be the same no matter which version is used.
+Both forms are updated simultaneously, and so results will be the same no matter which version is used.
 - [LCIA Methods without flows](https://www.lcacommons.gov/lcia-methods-without-flows):
 These JSON-LD files do not contain the flow objects, only the characterization factors.
 They can be downloaded and imported into any openLCA database.
 The "No flows" versions of methods must be imported _into_ a database that contains flows, otherwise the methods will not appear in the database.
 Updating a local database with new data which contains new elementary flows (e.g., importing a new process from a repository on the FLCAC) may result in new, uncharacterized flows in the database.
-In these cases, the "No flows" methods should be **re-imported** to enusre that all elementary flows are charcterized.
+In these cases, the "No flows" methods should be **re-imported** to ensure that all elementary flows are characterized.
 
 - LCIA Methods repositories: [Repositories](https://www.lcacommons.gov/lca-collaboration/) are available for TRACI2.1 and ReCiPe which contain the methods and all relevant flow objects.
 These repositories are useful for reviewing all characterization factors for flows in the FEDEFL.
