@@ -93,8 +93,20 @@ You can also search for processes across all repositories via the search functio
  <summary><b>How do I find impact assessment methods?</b></summary>
 
 Impact assessment methods aligned with the Federal Elementary Flow List (FEDEFL) and Federal LCA Commons data are available in two forms:
-- [LCIA Methods without flows](https://www.lcacommons.gov/lcia-methods-without-flows): These JSON-LD files do not contain the flow objects, only the characterization factors. They can be downloaded and imported into any openLCA database. The no flows versions of methods must be imported on top of a database that contains flows, otherwise the methods will not appear in the database.
-- LCIA Methods repositories: Repositories are available for TRACI2.1 and ReCiPe which contain the methods and all relevant flow objects. These repositories are useful for reviewing all characterization factors for flows in the FEDEFL
+- [LCIA Methods without flows](https://www.lcacommons.gov/lcia-methods-without-flows):
+These JSON-LD files do not contain the flow objects, only the characterization factors.
+They can be downloaded and imported into any openLCA database.
+The "No flows" versions of methods must be imported _into_ a database that contains flows, otherwise the methods will not appear in the database.
+Updating a local database with new data which contains new elementary flows (e.g., importing a new process from a repository on the FLCAC) may result in new, uncharacterized flows in the database.
+In these cases, the "No flows" methods should be **re-imported** to enusre that all elementary flows are charcterized.
+
+- LCIA Methods repositories: [Repositories](https://www.lcacommons.gov/lca-collaboration/) are available for TRACI2.1 and ReCiPe which contain the methods and all relevant flow objects.
+These repositories are useful for reviewing all characterization factors for flows in the FEDEFL.
+They can be downloaded and imported into a user's local database.
+However doing so will also import _all_ FEDEFL flows characterized by the method, often resulting in over 100,000 flow objects.
+
+See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional details.
+
 </details>
 
 ### Life Cycle Impact Assessment (LCIA)
@@ -102,10 +114,8 @@ Impact assessment methods aligned with the Federal Elementary Flow List (FEDEFL)
 <details>
 
  <summary><b>What LCIA methods are currently harmonized for use with LCI data on the FLCAC?</b></summary>
-The LCIA methods listed in the following table are currently available on the FLCAC and have been harmonized to align with the federal elementary flow list using the [LCIAformatter](https://github.com/USEPA/LCIAformatter)
-<br></br>
-TRACI version 2.2 is currently being harmonized for compatibility with FLCAC data. 
-<br></br>
+
+The LCIA methods listed in the following table are currently available on the FLCAC and have been harmonized to align with the federal elementary flow list using the [LCIAFormatter](https://github.com/USEPA/LCIAformatter).
 
 |LCIA Data|Provider|Link|
 |---|---|---|
@@ -117,8 +127,12 @@ TRACI version 2.2 is currently being harmonized for compatibility with FLCAC dat
 |IPCC GWP|Intergovernmental Panel on Climate Change (IPCC)| |
 |FEDEFL Inventory Methods|US Environmental Protection Agency|[FEDEFL Inventory Methods](https://github.com/USEPA/LCIAformatter/wiki/Inventory-Methods)|
 
-Additional LCIA methods such as CML, Ecopoint, eco-indicator, EDIP2003, EPS, IMAGE 3, LIME, LUCAS, MEEup, ILCD and NAMEA are not currently available in a harmonized format. Flow mapping would be required to use these impact assessment methods with FLCAC data. <br></br>
- 
+TRACI version 2.2 with updated Eutrophication Factors is currently being harmonized for compatibility with FLCAC data. 
+
+Additional LCIA methods such as CML, Ecopoint, eco-indicator, EDIP2003, EPS, IMAGE 3, LIME, LUCAS, MEEup, ILCD and NAMEA are not currently available in a harmonized format. Flow mapping would be required to use these impact assessment methods with FLCAC data.
+
+See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional details.
+
 </details>
 <details>
  <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
