@@ -3,6 +3,7 @@
 ## Purpose
 
 This SOP documents procedures for making updates or adding new LCIA methods to the Federal LCA Commons (FLCAC).
+This SOP is inteded for use by the Data Curators.
 
 ## Procedure
 
