@@ -21,7 +21,8 @@ This resource will direct you to helpful content across the FLCAC GitHub ecosyst
 - Have a terminology question? Check out the list of [common terms and acronyms](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/CommonTermAcronyms.md). 
 - The [Other Resources](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/OtherResources.md) page can also help direct you to useful resources. 
 - Please also scan the list of Issues and Discussions to see if others have posted on a similar topic. 
-- If these options fail to answer your question, please send your question to FederalLCACommons@erg.com. 
+- If these options fail to answer your question, please send your question to FederalLCACommons@erg.com.
+- For questions specific to the USLCI, you can send your questions to USLCI@erg.com.
 
 ## Using Issues and Discussions
 
