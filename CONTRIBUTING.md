@@ -1,6 +1,6 @@
 # Contributing to FLCAC GitHub Repositories
 
-## First Access the Appropriate GitHub Repository
+## Accessing the Appropriate GitHub Repository
 Federal LCA Commons (FLCAC) content on GitHub is spread across several repositories. 
 
 
