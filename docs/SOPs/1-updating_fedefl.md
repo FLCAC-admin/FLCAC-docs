@@ -17,15 +17,5 @@ Fedelemflowlist release notes will indicate any changes to the flow list (via ad
 Import the JSON-LD file into the repository and select "Overwrite all exisiting data sets".
 If any flows need to be removed (i.e., those identified in the change log), delete them manually.
 
-## Guidelines for Completing Dependent Updates
-
-### If the update resulted in material changes to the flow list:
-* Update FEDEFL Wiki links
-  * Link titled: 'Click here for the list of FEDEFL flows'
-  * If contexts change: 'Click here for All Contexts'
-* Update All Mapping file
-
-### If the update resulted in material changes to the mappings:
-* Update and post the All Mappings file.
-* Update FEDEFL Wiki links
-  * Link titled: 'Click here for All Current Mappings'
+4. If the update resulted in material changes to the flow list, update the [FEDEFL Wiki links](https://github.com/USEPA/fedelemflowlist/wiki/Getting-Started-with-FEDEFL#resources-for-mapping) for the list of FEDEFL flows (in Excel) and the All Mappings file (in Excel).
+These files are found on the [EPA Data Commons](https://dmap-data-commons-ord.s3.amazonaws.com/index.html?prefix=#fedelemflowlist/)
