@@ -139,14 +139,6 @@ Moving forward the FLCAC Data Curator will also work to ensure that metadata is 
 
 </details>
 
-### LCA Software (OpenLCA is listed separately)
-
-<details>
- <summary><b>How do I use data from the FLCAC in other software?</b></summary>
-
-Work in progress
-</details>
-
 ### OpenLCA
 
 <details>
@@ -179,7 +171,13 @@ Work in progress
 Work in progress
 </details>
 
+### Other LCA Softwares
 
+<details>
+ <summary><b>How do I use data from the FLCAC in other software?</b></summary>
+
+Work in progress
+</details>
 
 ### LCA Terminology
 
