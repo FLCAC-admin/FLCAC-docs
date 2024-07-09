@@ -15,14 +15,16 @@ The list of terms and acronyms is alphabetical according to 'Full Name'. Not all
 |ISO|International Organization for Standardization|An [independent, non-governmental body](https://www.iso.org/structure.html) with members from national standards boards that develops standard procedures for technical processes, such as life cycle assessment. 
 |LCA|Life Cycle Assessment| [United Nations description of environmental LCA](https://www.lifecycleinitiative.org/starting-life-cycle-thinking/life-cycle-approaches/environmental-lca/)
 |midpoint|midpoint indicator|
-|-|library| A type of data package limited to read-only access, intended to serve as a dependency of another data package. The library feature in openLCA 2.0 and later versions enables the use of databases together without the need to import them on top of one another. Processes and other elements that are part of a library database are not editable but can be utilized as part of processes or product systems in the main database.
+|lib|library| A type of data package limited to read-only access, intended to serve as a dependency of another data package. The library feature in openLCA 2.0 and later versions enables the use of databases together without the need to import them on top of one another. Processes and other elements that are part of a library database are not editable but can be utilized as part of processes or product systems in the main database.
 |-|process| A set of related activities that convert inputs into output(s). A network of processes, the 'product system', is used to define the life cycle of a product. Processes are characterized as 'unit processes' or system processes'. For more discussion of processes see [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
+|-||product flow| These are all the flows that are not elementary or waste flows, and represent the materials or energy exchanged between processes within the product system. [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/flows/index.html)
 |repo|repository|
 |resource|resource flow| 
 |-|system process|"An aggregated life cycle result saved as a process." -from [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
 |-|technosphere flow|Intermediate product or service flows that serve as inputs to subsequent processes or comprise the functional unit of a product system. 
 |-|unit process|"The  smallest (least aggregated) unit in a production system, for which input and output data are quantified." -from [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
 |UUID|Universally Unique Identifiers|Unrepeated alphanumeric code that points to specific database objects, typically within a JSON file. Within openLCA, UUIDs are assigned to processes, flows, product systems, projects, parameters, impact categories and LCIA methods. Link to UUID search in the [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/introduction/index.html?search=UUID)
+|-|waste flow| Waste flows are any substances or objects that the holder needs to dispose of, like by-products with no market value or those requiring more resources to recycle than their economic return. [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/flows/index.html)
 
 
 
