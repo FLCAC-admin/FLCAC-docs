@@ -31,6 +31,14 @@ Data on the FLCAC can be accessed via the [FLCAC website](https://lcacommons.gov
 You can also search for processes across all repositories via the search function in the top right, filters are available to refine your search to specific repositories and elements of repositories. Data on the FLCAC can also be explored within openLCA by downloading the data from the FLCAC and importing them into an openLCA database. You can look through the elements in the navigation pane or the search function.
 </details>
 
+
+<details>
+ <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
+
+Download whole repositories or repository elements on the FLCAC as a JSON-LD file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later).
+Then, open openLCA and create a new empty database and import the JSON-ld file into your database. **Link future video here.
+</details>
+
 <details>
  <summary><b>How do I find impact assessment methods?</b></summary>
 
@@ -81,7 +89,9 @@ See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional detail
 <details>
  <summary><b>How do I submit data to the Federal LCA Commons (FLCAC)?</b></summary>
 
-Submission processes vary for each repository, so it is recommended to reach out to the repository managers/owners to submit data or inquire about the specific data submission process. The USLCI submission process is currently recommended as the default FLCAC submission process. The submission handbook may be found [here](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) and a YouTube training video that covers this process is located [here](https://www.youtube.com/watch?v=jecyDLHu6OQ). The current FLCAC-Curation repository also includes various resources for preparing your data for the FLCAC. 
+Submission processes vary for each repository, so it is recommended to reach out to the repository managers/owners to submit data or inquire about the specific data submission process.
+The USLCI submission process is currently recommended as the default FLCAC submission process. The submission handbook may be found [here](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) and a YouTube training video that covers this process is located [here](https://www.youtube.com/watch?v=jecyDLHu6OQ).
+The current FLCAC-Curation repository also includes various resources for preparing your data for the FLCAC. 
 
 Here is a brief overview of the data preparation process: 
 - Map elementary flows to FEDEFL
@@ -140,12 +150,6 @@ Moving forward the FLCAC Data Curator will also work to ensure that metadata is 
 </details>
 
 ### OpenLCA
-
-<details>
- <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
-
-Download whole repositories or repository elements on the FLCAC as a JSON-LD file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later). Then, open openLCA and create a new empty database and import the JSON-ld file into your database. **Link future video here.
-</details>
 
 <details>
  <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
