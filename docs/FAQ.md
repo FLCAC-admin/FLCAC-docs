@@ -1,4 +1,82 @@
 # Frequently Asked Questions
+
+## Using and Accessing Data
+
+### Federal LCA Commons (FLCAC)
+<details>
+ <summary><b>What is the Federal LCA Commons?</b></summary>
+ 
+Official definition of the Federal LCA Commons (FLCAC) can be found on the [About Us](https://www.lcacommons.gov/about-us) page of the lcacommons.gov website.
+
+The FLCAC is a collaborative project across several agencies of the U.S. federal government intended to make life cycle inventory (LCI) data available across agencies and to the general public.
+The FLCAC also looks to establish community resources and best practices for using and conducting life cycle assessments (LCA). 
+
+- List of LCI and LCIA [repositories available on the FLCAC](https://www.lcacommons.gov/lca-collaboration/)
+- Homepage for [FLCAC resources](https://github.com/FLCAC-admin/FLCAC-Curation)
+
+</details>
+
+<details>
+ <summary><b>What is the FLCAC collaboration server?</b></summary>
+
+Work in progress
+</details>
+
+### Finding Data
+<details>
+ <summary><b>How do I see what data exists on the FLCAC?</b></summary>
+
+Data on the FLCAC can be accessed via the [FLCAC website](https://lcacommons.gov), select "Browse repositories" on the landing page, select the repository of interest, and browse the elements included in that repository by opening folders. 
+
+You can also search for processes across all repositories via the search function in the top right, filters are available to refine your search to specific repositories and elements of repositories. Data on the FLCAC can also be explored within openLCA by downloading the data from the FLCAC and importing them into an openLCA database. You can look through the elements in the navigation pane or the search function.
+</details>
+
+<details>
+ <summary><b>How do I find impact assessment methods?</b></summary>
+
+Impact assessment methods aligned with the Federal Elementary Flow List (FEDEFL) and Federal LCA Commons data are available in two forms:
+- [LCIA Methods without flows](https://www.lcacommons.gov/lcia-methods-without-flows):
+These JSON-LD files do not contain the flow objects, only the characterization factors.
+They can be downloaded and imported into any openLCA database.
+The "No flows" versions of methods must be imported _into_ a database that contains flows, otherwise the methods will not appear in the database.
+Updating a local database with new data which contains new elementary flows (e.g., importing a new process from a repository on the FLCAC) may result in new, uncharacterized flows in the database.
+In these cases, the "No flows" methods should be **re-imported** to enusre that all elementary flows are charcterized.
+
+- LCIA Methods repositories: [Repositories](https://www.lcacommons.gov/lca-collaboration/) are available for TRACI2.1 and ReCiPe which contain the methods and all relevant flow objects.
+These repositories are useful for reviewing all characterization factors for flows in the FEDEFL.
+They can be downloaded and imported into a user's local database.
+However doing so will also import _all_ FEDEFL flows characterized by the method, often resulting in over 100,000 flow objects.
+
+See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional details.
+
+</details>
+
+<details>
+
+ <summary><b>What LCIA methods are currently harmonized for use with LCI data on the FLCAC?</b></summary>
+
+The LCIA methods listed in the following table are currently available on the FLCAC and have been harmonized to align with the federal elementary flow list using the [LCIAFormatter](https://github.com/USEPA/LCIAformatter).
+
+|LCIA Data|Provider|Link|
+|---|---|---|
+|TRACI 2.1|US Environmental Protection Agency|[Tool for Reduction and Assessment of Chemicals and Other Environmental Impacts](https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci)|
+|ReCiPe 2016 Midpoint|National Institute for Public Health and the Environment (The Netherlands)|[LCIA: the ReCiPe Model](https://www.rivm.nl/en/life-cycle-assessment-lca/recipe)|
+|ReCiPe 2016 Endpoint|National Institute for Public Health and the Environment (The Netherlands)|[LCIA: the ReCiPe Model](https://www.rivm.nl/en/life-cycle-assessment-lca/recipe)|
+|ImpactWorld+ Midpoint*|International Reference Center for Life Cycle of Products, Services and Systems (CIRAIG)|[ImpactWorld+](http://www.impactworldplus.org/en/team.php)|
+|ImpactWorld+ Endpoint*|International Reference Center for Life Cycle of Products, Services and Systems (CIRAIG)|[ImpactWorld+](http://www.impactworldplus.org/en/team.php)|
+|IPCC GWP|Intergovernmental Panel on Climate Change (IPCC)| |
+|FEDEFL Inventory Methods|US Environmental Protection Agency|[FEDEFL Inventory Methods](https://github.com/USEPA/LCIAformatter/wiki/Inventory-Methods)|
+
+TRACI version 2.2 with updated Eutrophication Factors is currently being harmonized for compatibility with FLCAC data. 
+
+Additional LCIA methods such as CML, Ecopoint, eco-indicator, EDIP2003, EPS, IMAGE 3, LIME, LUCAS, MEEup, ILCD and NAMEA are not currently available in a harmonized format. Flow mapping would be required to use these impact assessment methods with FLCAC data.
+
+See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional details.
+
+</details>
+
+
+
 ## Data Submission
 <details>
  <summary><b>How do I submit data to the Federal LCA Commons (FLCAC)?</b></summary>
@@ -45,26 +123,7 @@ To align new or existing processes and flows with NAICS, import the [Commons Cor
 Please submit questions to the FLCAC data curators via the [Issues page](https://github.com/FLCAC-admin/FLCAC-Curation/issues) or email us at FederalLCACommons@erg.com.
 </details>
 
-## Using and Accessing Data
-
-### Federal LCA Commons (FLCAC)
-<details>
- <summary><b>What is the Federal LCA Commons?</b></summary>
- 
-Official definition of the Federal LCA Commons (FLCAC) can be found on the [About Us](https://www.lcacommons.gov/about-us) page of the lcacommons.gov website.
-
-The FLCAC is a collaborative project across several agencies of the U.S. federal government intended to make life cycle inventory (LCI) data available across agencies and to the general public. The FLCAC also looks to establish community resources and best practices for using and conducting life cycle assessments (LCA). 
-
-- List of LCI and LCIA [repositories available on the FLCAC](https://www.lcacommons.gov/lca-collaboration/)
-- Homepage for [FLCAC resources](https://github.com/FLCAC-admin/FLCAC-Curation)
-
-</details>
-
-<details>
- <summary><b>What is the FLCAC collaboration server?</b></summary>
-
-Work in progress
-</details>
+## Other Questions
 
 ### Data Review and Data Quality
 <details>
@@ -78,72 +137,6 @@ The FLCAC Data Curator is engaged in an ongoing task to assess data quality on t
 
 Moving forward the FLCAC Data Curator will also work to ensure that metadata is consistently filled out for all new data submissions. At this time, there is no plan to retroactively update process metadata (aside from data quality scores) for data previously submitted to the FLCAC.
 
-</details>
-
-### Finding Data
-<details>
- <summary><b>How do I see what data exists on the FLCAC?</b></summary>
-
-Data on the FLCAC can be accessed via the [FLCAC website](https://lcacommons.gov), select "Browse repositories" on the landing page, select the repository of interest, and browse the elements included in that repository by opening folders. 
-
-You can also search for processes across all repositories via the search function in the top right, filters are available to refine your search to specific repositories and elements of repositories. Data on the FLCAC can also be explored within openLCA by downloading the data from the FLCAC and importing them into an openLCA database. You can look through the elements in the navigation pane or the search function.
-</details>
-
-<details>
- <summary><b>How do I find impact assessment methods?</b></summary>
-
-Impact assessment methods aligned with the Federal Elementary Flow List (FEDEFL) and Federal LCA Commons data are available in two forms:
-- [LCIA Methods without flows](https://www.lcacommons.gov/lcia-methods-without-flows):
-These JSON-LD files do not contain the flow objects, only the characterization factors.
-They can be downloaded and imported into any openLCA database.
-The "No flows" versions of methods must be imported _into_ a database that contains flows, otherwise the methods will not appear in the database.
-Updating a local database with new data which contains new elementary flows (e.g., importing a new process from a repository on the FLCAC) may result in new, uncharacterized flows in the database.
-In these cases, the "No flows" methods should be **re-imported** to enusre that all elementary flows are charcterized.
-
-- LCIA Methods repositories: [Repositories](https://www.lcacommons.gov/lca-collaboration/) are available for TRACI2.1 and ReCiPe which contain the methods and all relevant flow objects.
-These repositories are useful for reviewing all characterization factors for flows in the FEDEFL.
-They can be downloaded and imported into a user's local database.
-However doing so will also import _all_ FEDEFL flows characterized by the method, often resulting in over 100,000 flow objects.
-
-See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional details.
-
-</details>
-
-### Life Cycle Impact Assessment (LCIA)
-
-<details>
-
- <summary><b>What LCIA methods are currently harmonized for use with LCI data on the FLCAC?</b></summary>
-
-The LCIA methods listed in the following table are currently available on the FLCAC and have been harmonized to align with the federal elementary flow list using the [LCIAFormatter](https://github.com/USEPA/LCIAformatter).
-
-|LCIA Data|Provider|Link|
-|---|---|---|
-|TRACI 2.1|US Environmental Protection Agency|[Tool for Reduction and Assessment of Chemicals and Other Environmental Impacts](https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci)|
-|ReCiPe 2016 Midpoint|National Institute for Public Health and the Environment (The Netherlands)|[LCIA: the ReCiPe Model](https://www.rivm.nl/en/life-cycle-assessment-lca/recipe)|
-|ReCiPe 2016 Endpoint|National Institute for Public Health and the Environment (The Netherlands)|[LCIA: the ReCiPe Model](https://www.rivm.nl/en/life-cycle-assessment-lca/recipe)|
-|ImpactWorld+ Midpoint*|International Reference Center for Life Cycle of Products, Services and Systems (CIRAIG)|[ImpactWorld+](http://www.impactworldplus.org/en/team.php)|
-|ImpactWorld+ Endpoint*|International Reference Center for Life Cycle of Products, Services and Systems (CIRAIG)|[ImpactWorld+](http://www.impactworldplus.org/en/team.php)|
-|IPCC GWP|Intergovernmental Panel on Climate Change (IPCC)| |
-|FEDEFL Inventory Methods|US Environmental Protection Agency|[FEDEFL Inventory Methods](https://github.com/USEPA/LCIAformatter/wiki/Inventory-Methods)|
-
-TRACI version 2.2 with updated Eutrophication Factors is currently being harmonized for compatibility with FLCAC data. 
-
-Additional LCIA methods such as CML, Ecopoint, eco-indicator, EDIP2003, EPS, IMAGE 3, LIME, LUCAS, MEEup, ILCD and NAMEA are not currently available in a harmonized format. Flow mapping would be required to use these impact assessment methods with FLCAC data.
-
-See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional details.
-
-</details>
-<details>
- <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
-
-Work in progress
-</details>
-
-<details>
- <summary><b>Why are the impact assessment methods that I imported into openLCA not showing up in my database?</b></summary>
-
-Work in progress
 </details>
 
 ### LCA Software (OpenLCA is listed separately)
@@ -160,6 +153,18 @@ Work in progress
  <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
 
 Download whole repositories or repository elements on the FLCAC as a JSON-LD file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later). Then, open openLCA and create a new empty database and import the JSON-ld file into your database. **Link future video here.
+</details>
+
+<details>
+ <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
+
+Work in progress
+</details>
+
+<details>
+ <summary><b>Why are the impact assessment methods that I imported into openLCA not showing up in my database?</b></summary>
+
+Work in progress
 </details>
 
 <details>
