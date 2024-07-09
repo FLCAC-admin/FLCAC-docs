@@ -15,6 +15,7 @@ The list of terms and acronyms is alphabetical according to 'Full Name'. Not all
 |ISO|International Organization for Standardization|An [independent, non-governmental body](https://www.iso.org/structure.html) with members from national standards boards that develops standard procedures for technical processes, such as life cycle assessment. 
 |LCA|Life Cycle Assessment| [United Nations description of environmental LCA](https://www.lifecycleinitiative.org/starting-life-cycle-thinking/life-cycle-approaches/environmental-lca/)
 |midpoint|midpoint indicator|
+|-|library| The library feature in openLCA 2.0 and later versions enables the use of databases together without the need to import them on top of one another. A library serves as a read only database that can easily be combined with other databases. Processes and other elements that are part of a library database are not editable but can be utilized as part of processes or product systems in the main database. 
 |-|process| A set of related activities that convert inputs into output(s). A network of processes, the 'product system', is used to define the life cycle of a product. Processes are characterized as 'unit processes' or system processes'. For more discussion of processes see [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
 |repo|repository|
 |resource|resource flow| 
