@@ -30,4 +30,4 @@ site:
   template: book-theme
   options:
     favicon: img/favicon.ico
-    logo: img/lca_logo.png
+    logo: img/lca_logo.svg

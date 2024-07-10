@@ -1,4 +1,18 @@
-# Federal LCA Commons (FLCAC) - Data Curation  <img src="img/lca_logo.png" align="right" width="240" />
+# Federal LCA Commons (FLCAC) Documentation 
+<img src="docs/img/lca_logo.png" align="right" width="240" />
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/img/lca_logo_invert.png">
+    <source media="(prefers-color-scheme: light)" srcset="docs/img/lca_logo.png">
+  </picture>
+
+<!-- [FLCAC Website] | [Getting started] | [Learn] | [Reference] -->
+</div>
+
+<!-- [FLCAC Website]: https://lcacommons.gov -->
+<!-- [Getting Started]: https:// -->
+<!-- [Learn]: https:// -->
+<!-- [Reference]: https:// -->
 
 🚧 **This site is under construction. New content will continue to be added** 🚧
 
