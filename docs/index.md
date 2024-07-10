@@ -5,28 +5,25 @@ description:
 
 🚧 **This site is under construction. New content will continue to be added** 🚧
 
-Welcome to the Federal LCA Commons documentation repository.
-This repository contains supplemental resources for the Federal LCA Commons (www.lcacommons.gov)
+Welcome to the FLCAC (www.lcacommons.gov) documentation site.
 
-[**Click here to view the documentation website**]()
-
-### Resources
+# Resources
 [Common Terms and Acronyms](CommonTermAcronyms.md)
 
 [Frequently Asked Questions](FAQ.md)
 
-[Data Submission Guidelines (Currently using the USLCI guidelines)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md)
+[USLCI Data Submission Guidelines](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md)
 
 [Standard Operating Procedures]()
 
-[GitHub Page for the Federal Elementary Flow List (FEDEFL)](https://github.com/USEPA/fedelemflowlist)
+[Federal Elementary Flow List (FEDEFL) repo](https://github.com/USEPA/fedelemflowlist)
 
-[GitHub page for the USLCI](https://github.com/FLCAC-admin/uslci-content)
+[USLCI GitHub repo](https://github.com/FLCAC-admin/uslci-content)
 
 [List of Additional Resources](OtherResources.md)
 
 
-## Contact Information
+# Contact Information
 * Please contact us at FederalLCACommons@erg.com
 
 
