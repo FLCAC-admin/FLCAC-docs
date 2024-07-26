@@ -175,7 +175,15 @@ Work in progress
 Work in progress
 </details>
 
-### Other LCA Softwares
+### OpenLCA
+
+<details>
+ <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
+
+Work in progress
+</details>
+
+### Other LCA Software
 
 <details>
  <summary><b>How do I use data from the FLCAC in other software?</b></summary>
