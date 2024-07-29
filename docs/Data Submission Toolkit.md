@@ -1,13 +1,22 @@
-# Data Submission Overview and Resources 
+# Data Submission Toolkit
+This document provides an overview of the data submission process and relevant resources. Please refer to the [Data Submission Handbook](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) for detailed information regarding the submission process. The [Frequently Asked Questions page](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/FAQ.md) includes more information about many of these topics.
+
+Table of Contents:
+- [Data Submission Steps](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/Data%20Submission%20Overview%20and%20Resources.md#data-submission-steps)
+- [Data Preparation Steps](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/Data%20Submission%20Overview%20and%20Resources.md#data-preparation-steps)
+- [Notes on Data Submissions and Maintenance of Data](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/Data%20Submission%20Overview%20and%20Resources.md#notes-on-data-submissions-and-maintenance-of-data)
+- [Data Provider Questionnaire](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/Data%20Submission%20Overview%20and%20Resources.md#data-provider-questionnaire)
+- [Technical Assistance Resources for Data Providers](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/Data%20Submission%20Overview%20and%20Resources.md#technical-assistance-resources-for-data-providers)
+
 ## Data Submission Steps
 1.	Become familiar with the [Federal LCA Commons platform](https://www.lcacommons.gov/)
 2.	Contact the FLCAC data curators to set up an initial meeting to discuss your datasets intended for submission to the FLCAC
-    - Prior to this meeting fill out the [data submission questionnaire] and submit it to the data curators at FederalLCACommons@erg.com 
-    - During this meeting we will discuss the steps needed to prepare your data for submission and assign roles 
+    - Prior to this meeting fill out the [data submission questionnaire](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/Data%20Submission%20Overview%20and%20Resources.md#data-provider-questionnaire) and submit it to the data curators at FederalLCACommons@erg.com 
+    - During this meeting we will discuss the specific steps needed to prepare your data for submission and assign roles 
 3.	Download the openLCA software and install it on your computer
-4.	Prepare your unit processes/product system as discussed in the initial curation meeting (overview of the data preparation steps are provided below)
+4.	Prepare your unit processes/product system as discussed in the initial curation meeting ([overview of the data preparation steps](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/Data%20Submission%20Overview%20and%20Resources.md#data-preparation-steps))
 5.	Export ONLY your prepared datasets as a zipped JSON-LD file & submit to the data curators or add the datasets to a repository directly through the collaboration server
-6.	Reconcile issues identified by the data curators during the Review Process & the results check
+6.	Reconcile issues identified by the data curators during the review process & check results
 7.	Approve the final version
 8.	FLCAC data curators will publish your datasets on the FLCAC
 
