@@ -19,7 +19,7 @@ The FLCAC also looks to establish community resources and best practices for usi
 <details>
  <summary><b>What is the FLCAC collaboration server?</b></summary>
 
-Work in progress
+The FLCAC collaboration server is a server application that allows repository owners to work together on openLCA databases and publish databases to the Federal LCA Commons. Local openLCA databases can be connected to the collaboration server and information can be transferred. More information on openLCA collaboration servers can be found [here](https://www.openlca.org/collaboration-server/).
 </details>
 
 ### Finding Data
@@ -29,14 +29,6 @@ Work in progress
 Data on the FLCAC can be accessed via the [FLCAC website](https://lcacommons.gov), select "Browse repositories" on the landing page, select the repository of interest, and browse the elements included in that repository by opening folders. 
 
 You can also search for processes across all repositories via the search function in the top right, filters are available to refine your search to specific repositories and elements of repositories. Data on the FLCAC can also be explored within openLCA by downloading the data from the FLCAC and importing them into an openLCA database. You can look through the elements in the navigation pane or the search function.
-</details>
-
-
-<details>
- <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
-
-Download whole repositories or repository elements on the FLCAC as a JSON-LD file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later).
-Then, open openLCA and create a new empty database and import the JSON-ld file into your database. **Link future video here.
 </details>
 
 <details>
@@ -83,7 +75,49 @@ See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional detail
 
 </details>
 
+### OpenLCA
 
+<details>
+ <summary><b>How do I use data from the FLCAC in openLCA?</b></summary>
+
+Download whole repositories or repository elements (e.g., processes and flows) on the FLCAC as a JSON-LD file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later). Do not unzip this file.
+
+Then, open openLCA, create a new empty database, right click on the database, select 'import', select 'file', and navigate to the downloaded JSON-LD file in your file explorer. [YouTube video on this topic](https://www.youtube.com/watch?v=YLao5jC5b_0&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=3)
+</details>
+
+<details>
+ <summary><b>How do I calculate LCIA results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
+
+To calculate LCIA assessment results, your repository needs two elements: a database made up of process LCIs and an LCIA assessment method. See the questions above for information on which impact assessment methods are available. Importing impact assessment methods is done the same way as importing repositories (right click on database, select 'import', select 'file', navigate to the relevant file). If using the no-flows methods then import the methods file after importing the process database. You can verify that LCIA methods were imported by opening the 'Indicators and parameters' and checking the 'Impact assessment methods' folder.
+
+Once your database has both processes and a method, open up the process that you would like to calculate results for, on the 'General information' tab select 'Create product system'. For most processes the default product system selections are okay. More information on these options can be found in the openLCA manual [here](https://greendelta.github.io/openLCA2-manual/prod_sys/Creating.html). Select 'Finish' and evaluate the 'Reference' section and the 'Model Graph' in your product system. Then, select 'Calculate', set the 'Allocation method' as 'As defined in process', choose your impact assessment method (if there are no options here then the LCIA methods were not imported), and use the default settings for the remaining fields. Select 'Finish' and navigate through the results tabs to view results.
+
+There are many variations of this process to run results so please reference the [openLCA manual](https://greendelta.github.io/openLCA2-manual/how-to-use.html) for more information, the steps above provide instructions for running a basic process.
+
+</details>
+
+<details>
+ <summary><b>Why are the impact assessment methods that I imported into openLCA not showing up in my database?</b></summary>
+
+Two problems could be occurring:
+1. Your methods did not import. To solve this issue please follow the instructions above under 'How do I calculate LCIA results for data on the FLCAC?'. If this does not solve the problem then ensure that problem 2 is not occurring and then contact the data curators at FederalLCACommons@erg.com.
+2. You are using the "No flows" version of a method and imported the method package before a process database with flows. The "No flows" versions of methods must be imported _into_ a database that contains flows, otherwise the methods will not appear in the database.
+</details>
+
+<details>
+ <summary><b>What is a library?</b></summary>
+
+The library feature in openLCA 2.0 and later versions enables the use of databases together without needing to import them on top of one another. A library serves as a read only database that can easily be combined with other databases. Processes and other elements that are part of a library database are not editable but can be utilized as part of processes or product systems in the main database. 
+
+Libraries are beneficial for the current set-up of the FLCAC as they allow for multiple distributed repositories to be self-contained, while still promoting interoperability between repositories. The connections provided by libraries benefit multiple repositories on the FLCAC. It’s important to note that libraries are currently an experimental feature in openLCA and will be updated based on user feedback and identified issues.
+
+</details>
+
+<details>
+ <summary><b>What is a provider?</b></summary>
+
+A provider in openLCA is the upstream process that produces a flow. Providers can be chosen in the 'Inputs/Outputs' tab in openLCA under the 'Provider' column for product and waste flows. Product and waste flows can have one or more provider, but elementary and cut-off flows do not have a provider because these flows have no upstream process producing them. It is important that data providers select the provider fields in their inventories to ensure that a flow is connected to the correct upstream process.
+</details>
 
 ## Data Submission
 <details>
@@ -149,46 +183,12 @@ Moving forward the FLCAC Data Curator will also work to ensure that metadata is 
 
 </details>
 
-### OpenLCA
-
-<details>
- <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
-
-Work in progress
-</details>
-
-<details>
- <summary><b>Why are the impact assessment methods that I imported into openLCA not showing up in my database?</b></summary>
-
-Work in progress
-</details>
-
-<details>
- <summary><b>What is a library?</b></summary>
-
-Work in progress
-</details>
-
-<details>
- <summary><b>What is a provider?</b></summary>
-
-Work in progress
-</details>
-
-### OpenLCA
-
-<details>
- <summary><b>How do I get impact assessment results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?</b></summary>
-
-Work in progress
-</details>
-
 ### Other LCA Software
 
 <details>
  <summary><b>How do I use data from the FLCAC in other software?</b></summary>
 
-Work in progress
+Multiple LCA platforms outside of openLCA support repositories that are provided on the FLCAC, although not all of this data is up to date. For this reason, when using FLCAC data on other platforms please check the version or release date and compare to what is currently hosted on the [FLCAC](https://www.lcacommons.gov/lca-collaboration/). Please contact the individual software companies for more information on the repositories supported.
 </details>
 
 ### LCA Terminology
