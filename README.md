@@ -20,7 +20,11 @@ This repository contains supplemental resources for the Federal LCA Commons (www
 
 [GitHub page for the USLCI](https://github.com/FLCAC-admin/uslci-content)
 
+[Data Submission Resources]
+
 [List of Additional Resources](docs/OtherResources.md)
+
+
 
 
 ## Contact Information
