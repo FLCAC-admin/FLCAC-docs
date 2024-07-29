@@ -1,4 +1,4 @@
-# Data Submission Overview 
+# Data Submission Overview and Resources 
 ## Data Submission Steps
 1.	Become familiar with the [Federal LCA Commons platform](https://www.lcacommons.gov/)
 2.	Contact the FLCAC data curators to set up an initial meeting to discuss your datasets intended for submission to the FLCAC
@@ -28,6 +28,23 @@
 -	The FLCAC data curators do not review the originating LCA from which LCI data are generated.
 -	Static LCIA results are not maintained over time. Background datasets in a product system may be updated over time (e.g., the electricity grid will be updated to represent the most recent year of data available, if an incoming chemical production process is updated and linked to your product system this will be updated).
 -	The FLCAC data curators will make corrections to your data if errors arise. The curators will reach out to original dataset owners to notify them of changes.
+
+## Data Provider Questionnaire
+Can be accessed [here](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/Data%20Provider%20Questionnaire.docx) in Microsoft Word format 
+| **Question**                                                                                                                                                                             | **Response** |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
+| **Describe the number and scope of the intended unit processes for submission.**                                                                                                     |              |
+| **Describe the underlying source of the data. (Please share links or pdfs as appropriate)**                                                                                          |              |
+| **What flow list is used for the elementary flows (e.g., ILCD, openLCA, SimaPro, etc)?**                                                                                             |              |
+| **What impact assessment categories and/or inventory categories is the data representative of (e.g., global warming potential, eutrophication potential, water consumption, etc.)?** |              |
+| **What format is the data currently in (e.g., SimaPro, excel, openLCA, etc.)?**                                                                                                      |              |
+| **Will this data be submitted to part of an existing repository or will a new repository be needed?**                                                                                |              |
+| **Are there any anticipated cross-repository dependencies (e.g., new processes will require data from the electricity baseline)?**                                                   |              |
+| **What is the anticipated timing of submission and timing of curation support?**                                                                                                     |              |
+| **Can we share publicly that you are working towards publishing this dataset on the FLCAC?**                                                                                         |              |
+| **Is this effort in collaboration with or in support of a governmental agency? If so, will that agency require a review process for data submitted to the FLCAC?**                   |              |
+| **Point of contact for submission** **(name and email).**                                                                                                                            |              |
+| **Please provide any other details about level of curation support needed.**                                                                                                         |              |
 
 ## Technical Assistance Resources for Data Providers
 ### openLCA
