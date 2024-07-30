@@ -18,6 +18,7 @@
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
+Visit the FLCAC Collaboration Server to [Access these Repositories](https://www.lcacommons.gov/lca-collaboration)
  ## Pavement LCA
 <details>
  <summary><a href="https://www.fhwa.dot.gov/pavement/lcatool/">LCA Pave Tool</a></b></summary>
@@ -37,10 +38,6 @@ This website links to many useful resources regarding pavement LCA, pavement EPD
 The NREL U.S. Life Cycle Inventory Database (USLCI) is a home for U.S. industry LCI data. The USLCI database provides individual gate-to-gate, cradle-to-gate, and cradle-to-grave accounting of the energy and material flows into and out of the environment that are associated with producing a material, component, or assembly in the U.S.
 
 For more information, please visit the [USLCI Homepage](https://www.nrel.gov/analysis/lci.html) or the [USLCI GitHub Site](https://github.com/FLCAC-admin/uslci-content)
-
-or
-
-Visit the FLCAC Collaboration Server to [Access the Database](https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/datasets)
 
 
 <details>
