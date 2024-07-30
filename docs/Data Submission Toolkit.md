@@ -22,9 +22,9 @@ Table of Contents:
 
 ## Data Preparation Steps
 -	Import your data into openLCA (import steps depend on original data source)
--	Download and import the latest version of USLCI into your database
+-	Download and import the latest version of the repository that you will be submitting data to into your database
 -	[Flow map elementary flows to FEDEFL flows](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/FAQ.md#data-submission)
--	[Flow map technosphere flows to USLCI flows](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/FAQ.md#data-submission)
+-	[Flow map technosphere flows to existing FLCAC flows](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/FAQ.md#data-submission)
 -	Download and import the [Federal LCA Commons Core database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) into your local database
 -	Move your processes and flows into the correct NAICS folders, you can search for the relevant folders on the [Census Bureau website here](https://www.census.gov/naics/)
 -	Delete the old, unused folders that were brought in with your original database
