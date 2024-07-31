@@ -24,6 +24,7 @@ The FLCAC collaboration server is a server application that allows repository ow
 
 <details>
  <summary><b>What is the difference between USLCI and the FLCAC?</b></summary>
+
 The Federal LCA Commons (FLCAC) is a collaborative project across several agencies of the U.S. federal government intended to make life cycle inventory (LCI) data available across agencies and to the general public. The FLCAC hosts multiple LCI repositories one of which is the U.S. Life Cycle Inventory database (USLCI). USLCI is an LCI portal for datasets submitted by consulting, academia, & industry associations, the database includes several hundred process LCIs ranging from fuels combustion, transport, metals, chemicals, plastics, and glass to paper. More information on USLCI can be found [here](https://github.com/FLCAC-admin/uslci-content) and USLCI specific FAQS are available [here](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/03-frequently-asked-questions.md).
  
 </details>

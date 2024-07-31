@@ -1,20 +1,22 @@
 # Data Submission Toolkit
-This document provides an overview of the data submission process and relevant resources. Please refer to the [Data Submission Handbook](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) for detailed information regarding the submission process. The [Frequently Asked Questions page](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/FAQ.md) includes more information about many of these topics.
+This document provides an overview of the data submission process and relevant resources.
+Please refer to the [Data Submission Handbook](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) for detailed information regarding the submission process.
+The [Frequently Asked Questions page](FAQ.md) includes more information about many of these topics.
 
 Table of Contents:
-- [Data Submission Steps](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/Data%20Submission%20Toolkit.md#data-submission-steps)
-- [Data Preparation Steps](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/Data%20Submission%20Toolkit.md#data-preparation-steps)
-- [Notes on Data Submissions and Maintenance of Data](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/Data%20Submission%20Toolkit.md#notes-on-data-submissions-and-maintenance-of-data)
-- [Data Provider Questionnaire](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/Data%20Submission%20Toolkit.md#data-provider-questionnaire)
-- [Technical Assistance Resources for Data Providers](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/Data%20Submission%20Toolkit.md#technical-assistance-resources-for-data-providers)
+- [Data Submission Steps](#data-submission-steps)
+- [Data Preparation Steps](#data-preparation-steps)
+- [Notes on Data Submissions and Maintenance of Data](#notes-on-data-submissions-and-maintenance-of-data)
+- [Data Provider Questionnaire](#data-provider-questionnaire)
+- [Technical Assistance Resources for Data Providers](#technical-assistance-resources-for-data-providers)
 
 ## Data Submission Steps
 1.	Become familiar with the [Federal LCA Commons platform](https://www.lcacommons.gov/)
 2.	Contact the FLCAC data curators to set up an initial meeting to discuss your datasets intended for submission to the FLCAC
-    - Prior to this meeting fill out the [data submission questionnaire](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/Data%20Submission%20Toolkit.md#data-provider-questionnaire) and submit it to the data curators at FederalLCACommons@erg.com 
+    - Prior to this meeting fill out the [data submission questionnaire](#data-provider-questionnaire) and submit it to the data curators at FederalLCACommons@erg.com 
     - During this meeting we will discuss the specific steps needed to prepare your data for submission and assign roles 
 3.	Download the openLCA software and install it on your computer
-4.	Prepare your unit processes/product system as discussed in the initial curation meeting ([overview of the data preparation steps](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/Data%20Submission%20Overview%20and%20Resources.md#data-preparation-steps))
+4.	Prepare your unit processes/product system as discussed in the initial curation meeting ([overview of the data preparation steps](#data-preparation-steps))
 5.	Export ONLY your prepared datasets as a zipped JSON-LD file & submit to the data curators or add the datasets to a repository directly through the collaboration server
 6.	Reconcile issues identified by the data curators during the review process & check results
 7.	Approve the final version
@@ -23,12 +25,12 @@ Table of Contents:
 ## Data Preparation Steps
 -	Import your data into openLCA (import steps depend on original data source)
 -	Download and import the latest version of the repository that you will be submitting data to into your database
--	[Flow map elementary flows to FEDEFL flows](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/FAQ.md#data-submission)
--	[Flow map technosphere flows to existing FLCAC flows](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/FAQ.md#data-submission)
+-	[Flow map elementary flows to FEDEFL flows](FAQ.md#data-submission)
+-	[Flow map technosphere flows to existing FLCAC flows](FAQ.md#data-submission)
 -	Download and import the [Federal LCA Commons Core database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) into your local database
 -	Move your processes and flows into the correct NAICS folders, you can search for the relevant folders on the [Census Bureau website here](https://www.census.gov/naics/)
 -	Delete the old, unused folders that were brought in with your original database
--	[Run results](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/FAQ.md#openlca) and compare values to the original model 
+-	[Run results](FAQ.md#openlca) and compare values to the original model 
 -	Complete the metadata fields according to the [metadata guidelines](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md#metadata-guidance-tables)
 -	Send your draft database to the FLCAC curators for review
 
@@ -39,7 +41,7 @@ Table of Contents:
 -	The FLCAC data curators will make corrections to your data if errors arise. The curators will reach out to original dataset owners to notify them of changes.
 
 ## Data Provider Questionnaire
-Can be accessed [here](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/docs/Data%20Provider%20Questionnaire.docx) in Microsoft Word format 
+Can be accessed [here](Data%20Provider%20Questionnaire.docx) in Microsoft Word format 
 | **Question**                                                                                                                                                                             | **Response** |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
 | **Describe the number and scope of the intended unit processes for submission.**                                                                                                     |              |
@@ -64,7 +66,7 @@ Can be accessed [here](https://github.com/FLCAC-admin/FLCAC-Curation/blob/main/d
 ### Federal LCA Commons
 -	[Landing Page](https://www.lcacommons.gov/): Select “Browse Repositories” to access the repositories
 -	[LCIA Methods without Flows](https://www.lcacommons.gov/lcia-methods-without-flows): Recommended to download and use these flows in a database that already has flows in it. 
--	[Federal LCA Commons GitHub](https://github.com/FLCAC-admin/FLCAC-Curation/tree/main): Current GitHub page that include documentation, FAQs, and other resources for the Federal LCA Commons. Platform to document issues related to the Federal LCA Commons repositories.
+-	[Federal LCA Commons GitHub](https://github.com/FLCAC-admin/FLCAC-Curation): Current GitHub page that include documentation, FAQs, and other resources for the Federal LCA Commons. Platform to document issues related to the Federal LCA Commons repositories.
 ### Submission Guidance:
 - [USLCI Submission Handbook](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md): Submission handbook for USLCI and other FLCAC repositories. Section 2: How do I publish my data in USLCI? Provides technical details of the publishing process.
 -	[Metadata Guidance Tables](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md#metadata-guidance-tables): These tables provide information on metadata that should be included in each openLCA field with examples.
