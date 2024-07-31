@@ -2,9 +2,9 @@
 
  | Repository Type | Repository Name                          | Repository Owner                                     | Contact Information                                           | Upcoming Updates |
 | --------------- | ---------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------- | ---------------- |
-| LCI             | [US Life Cycle Inventory (USLCI)](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/OtherResources.md#uslci)         | National Renewable Energy Laboratory                 | uslci@erg.com or lci@nrel.com                                 |                  |
+| LCI             | [US Life Cycle Inventory (USLCI)](OtherResources.md#uslci)         | National Renewable Energy Laboratory                 | uslci@erg.com or lci@nrel.com                                 |                  |
 | LCI             | US Electricity Baseline                  | National Energy Technology Laboratory (NETL)         | https://github.com/USEPA/ElectricityLCI                       |
-| LCI             | [MTU Asphalt Pavement Framework](https://github.com/FLCAC-admin/FLCAC-Curation/edit/main/docs/OtherResources.md#pavement-lca)           | Federal Highway Administration                       |                                                               |                  |
+| LCI             | [MTU Asphalt Pavement Framework](OtherResources.md#pavement-lca)           | Federal Highway Administration                       |                                                               |                  |
 | LCI             | Heavy Equipment Operation                | US Environmental Protection Agency (EPA)             |                                                               |                  |
 | LCI             | Construction and Demolition Debris (CDD) | US Environmental Protection Agency (EPA)             | lca@epa.gov with subject line containing [CDD LCI]            |
 | LCI             | Coal Extraction                          | National Energy Technology Laboratory (NETL)         |                                                               |                  |
@@ -23,7 +23,7 @@ Visit the FLCAC Collaboration Server to [Access these Repositories](https://www.
 <details>
  <summary><a href="https://www.fhwa.dot.gov/pavement/lcatool/">LCA Pave Tool</a></b></summary>
 
-> LCA Pave is a Microsoft® Excel® based tool developed by FHWA that can be used to assess environmental impacts of pavement material and design decisions. <br></br> The tool is intended to be used as a training and informational product only and for voluntary use by agencies and individuals with an understanding of fundamental LCA principles. Its use is not required by Federal statute or regulation. <br></br> -FHWA.dot.gov
+LCA Pave is a Microsoft® Excel® based tool developed by FHWA that can be used to assess environmental impacts of pavement material and design decisions. <br></br> The tool is intended to be used as a training and informational product only and for voluntary use by agencies and individuals with an understanding of fundamental LCA principles. Its use is not required by Federal statute or regulation. <br></br> -FHWA.dot.gov
 
 </details>
 
