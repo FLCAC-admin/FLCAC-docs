@@ -18,12 +18,12 @@ project:
     - file: FAQ.md
     - title: Reference
       children:
-        - file: Reference\LCIAmethods.md
-        - file: Reference\OtherResources.md
+        - file: Reference/LCIAmethods.md
+        - file: Reference/OtherResources.md
     - title: SOPs
       children:
-        - file: SOPs\1-updating_fedefl.md
-        - file: SOPs\2-updating_lcia.md
+        - file: SOPs/1-updating_fedefl.md
+        - file: SOPs/2-updating_lcia.md
     
 site:
   title: FLCAC Docs
@@ -31,3 +31,4 @@ site:
   options:
     favicon: img/favicon.ico
     logo: img/lca_logo.svg
+    logo_dark: img/lca_logo.svg
