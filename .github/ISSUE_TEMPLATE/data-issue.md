@@ -1,19 +1,23 @@
 ---
-name: Data issue
-about: Report issues in data
+name: Data Issue
+about: Report issue(s) in an FLCAC dataset
 title: "[DATA]"
-labels: ''
+labels: ['bug', 'data']
 assignees: ''
 
 ---
 
-## Describe the issue ##
+## Describe the issue
+<!-- Please provide a clear and concise description. Thanks for your contribution! -->
 
-## Details ##
-Repository:
+## Details
+- Repository:  
+    - Name:  
+    - Release Date:
+    - Version:  
 
-Object name:
+- Object name:
 
-Object type (process, flow, product system, other):
+- Object type (process, flow, product system, etc.):
 
-Object UUID:
+- Object UUID:
