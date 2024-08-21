@@ -205,8 +205,3 @@ Multiple LCA platforms outside of openLCA support repositories that are provided
 
 A cut-off flow is a flow that is a placeholder or a dummy flow. These flows are used when no relevant flows in a database exists. It is not recommended to use these flows in your life cycle inventory if possible. In openLCA results, cut-off flows will appear in your inventory results, but will not contribute to impact category results.
 </details>
-
-
-
-
-
