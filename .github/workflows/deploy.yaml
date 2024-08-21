@@ -1,7 +1,7 @@
 name: Deploy Site
 on:
   push:
-    branches: myst_site
+    branches: main
   workflow_dispatch:
     # allow manual execution via Actions tab
 env:
