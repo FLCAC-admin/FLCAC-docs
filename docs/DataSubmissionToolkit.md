@@ -3,13 +3,6 @@ This document provides an overview of the data submission process and relevant r
 Please refer to the [Data Submission Handbook](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) for detailed information regarding the submission process.
 The [Frequently Asked Questions page](FAQ.md) includes more information about many of these topics.
 
-Table of Contents:
-- [Data Submission Steps](#data-submission-steps)
-- [Data Preparation Steps](#data-preparation-steps)
-- [Notes on Data Submissions and Maintenance of Data](#notes-on-data-submissions-and-maintenance-of-data)
-- [Data Provider Questionnaire](#data-provider-questionnaire)
-- [Technical Assistance Resources for Data Providers](#technical-assistance-resources-for-data-providers)
-
 ## Data Submission Steps
 1.	Become familiar with the [Federal LCA Commons platform](https://www.lcacommons.gov/)
 2.	Contact the FLCAC data curators to set up an initial meeting to discuss your datasets intended for submission to the FLCAC
