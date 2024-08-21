@@ -1,0 +1,6 @@
+# https://github.com/updownpress/markdown-lint/tree/master/rules
+MD012: false  # extra blank lines can aid source readability
+MD013: false  # 80-character-per-line limit unnecessary for .md
+MD022: false  # blank lines after headers aren't mandatory
+MD025: false  # allow multiple top-level headers
+MD034: false  # bare urls are parsed by both MyST and GFM
