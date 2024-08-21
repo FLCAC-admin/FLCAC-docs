@@ -1,9 +1,0 @@
-name: flcac_docs
-channels:
-  - conda-forge
-dependencies:
-  - python=3.11
-  # - mkdocs=1.5
-  # - mkdocs-material=9.5
-  - mystmd=1.2
-  - nodejs=20.12
