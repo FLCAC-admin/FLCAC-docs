@@ -12,7 +12,7 @@ Welcome to the FLCAC (www.lcacommons.gov) documentation site.
 
 [Frequently Asked Questions](FAQ.md)
 
-[USLCI Data Submission Guidelines](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md)
+[Data Submission Guidelines (Currently using the USLCI guidelines)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md)
 
 [Standard Operating Procedures]()
 
@@ -24,7 +24,7 @@ Welcome to the FLCAC (www.lcacommons.gov) documentation site.
 
 
 # Contact Information
-* Please contact us at FederalLCACommons@erg.com
+Please contact us at FederalLCACommons@erg.com
 
 
 # Disclaimer
