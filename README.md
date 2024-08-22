@@ -25,9 +25,9 @@ This repo hosts the [MyST Markdown](https://mystmd.org/) files from which the do
 
 ## Have Questions?
 
-- First, please refer to the [Frequently Asked Questions](FAQ.md) page.
-- Have a terminology question? Check out the list of [common terms and acronyms](CommonTermAcronyms.md).
-- The [Other Resources](OtherResources.md) page can also help direct you to useful resources.
+- First, please refer to the [Frequently Asked Questions](https://flcac-admin.github.io/FLCAC-Curation/FAQ) page.
+- Have a terminology question? Check out the [Glossary](https://flcac-admin.github.io/FLCAC-Curation/glossary).
+- The [Other Resources](https://flcac-admin.github.io/FLCAC-Curation/otherresources) page can also help direct you to useful resources.
 - If the above resources fail to answer your question, consider opening a new issue or contributing to a discussion thread.
 
 ## Using Issues and Discussions
@@ -66,7 +66,7 @@ We appreciate your interest in adding to shared resources for the LCA community!
 
 To contribute content to a repository, please [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) it, commit your edits, then [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) with a clear description of your work.
 
-The easiest places to contribute to the `FLCAC-Curation` repository include adding to the [Frequently Asked Questions](FAQ.md), list of [common terms and acronyms](CommonTermAcronyms.md), or  [Other Resources](OtherResources.md).
+The easiest places to contribute to the `FLCAC-Curation` repository include adding to the [Frequently Asked Questions](docs/FAQ.md), list of [common terms and acronyms](docs/glossary.md), or  [Other Resources](docs/Reference/OtherResources.md).
 
 The FLCAC Data Curation team is actively reorganizing existing resources and updating guidance to make sure it is clear and accessible. Feedback on these efforts is always appreciated. Thank you!
 
