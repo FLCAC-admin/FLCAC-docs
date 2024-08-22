@@ -25,7 +25,7 @@ This repo hosts the [MyST Markdown](https://mystmd.org/) files from which the do
 
 ## Have Questions?
 
-- First, please refer to the [Frequently Asked Questions](https://flcac-admin.github.io/FLCAC-Curation/FAQ) page.
+- First, please refer to the [Frequently Asked Questions](https://flcac-admin.github.io/FLCAC-Curation/faq) page.
 - Have a terminology question? Check out the [Glossary](https://flcac-admin.github.io/FLCAC-Curation/glossary).
 - The [Other Resources](https://flcac-admin.github.io/FLCAC-Curation/otherresources) page can also help direct you to useful resources.
 - If the above resources fail to answer your question, consider opening a new issue or contributing to a discussion thread.

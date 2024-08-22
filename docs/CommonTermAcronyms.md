@@ -5,10 +5,8 @@ The list of terms and acronyms is alphabetical according to 'Full Name'. Not all
 |----|----|----
 |Argonne/ANL|Argonne National Laboratory|Visit Argonne's [homepage](https://www.anl.gov/) or their [GREET Tool](https://greet.anl.gov/results)
 |APA|American Psychological Association||-|
-
 |database|project database|In the context of the FLCAC, the term project database is used to refer to a collection of background and foreground LCA processes, flows, product systems. LCIA methods and other data objects as developed by an LCA practitioner(s). A project database is often composed of one or more 'repositories' and novel foreground LCI models that are typically the basis of 'product systems' under study. The goal of the FLCAC is to provide background data and a community of practice to inform consistency in developing project databases. 
 |FHWA|Federal Highway Administration|[U.S. Federal Highway Administration homepage](https://highways.dot.gov/)
-
 |ILCD|International Reference Life Cycle Data|-|
 |ISO|International Organization for Standardization|An [independent, non-governmental body](https://www.iso.org/structure.html) with members from national standards boards that develops standard procedures for technical processes, such as life cycle assessment. 
 |JSON|JavaScript Object Notation|"A lightweight data-interchange format" from [json.org](https://www.json.org/json-en.html). JSONs are used to house LCA-related data objects within openLCA.
