@@ -17,23 +17,24 @@ project:
     - file: glossary.md
     - file: FLCAC_Repositories.md
     - file: FAQ.md
+    - file: DataSubmissionToolkit.md
     - title: Reference
       children:
         - file: Reference/LCIAmethods.md
         - file: Reference/OtherResources.md
+        - file: Reference/FLCAC_openLCA_Library_User_Guidance.md
     - title: SOPs
       children:
         - file: SOPs/1-updating_fedefl.md
         - file: SOPs/2-updating_lcia.md
-    - file: DataSubmissionToolkit.md
-    - file: FLCAC_openLCA_Library_User_Guidance.md
+
     
 site:
   title: FLCAC Docs
   template: book-theme
   source: https://github.com/FLCAC-admin/FLCAC-Curation
   actions:
-    - title: FLCAC
+    - title: lcacommons.gov
       url: https://www.lcacommons.gov/
   options:
     favicon: img/favicon.ico
