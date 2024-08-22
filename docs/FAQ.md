@@ -40,6 +40,8 @@ The FLCAC is a collaborative project across several agencies of the U.S. federal
 :::{dropdown}How do I see what data exists on the FLCAC?
 :close:
 
+[View the available repositories](FLCAC_Repositories.md).
+
 Data on the FLCAC can be accessed via the [FLCAC website](https://lcacommons.gov), select "Browse repositories" on the landing page, select the repository of interest, and browse the elements included in that repository by opening folders.
 
 You can also search for processes across all repositories via the search function in the top right, filters are available to refine your search to specific repositories and elements of repositories. Data on the FLCAC can also be explored within openLCA by downloading the data from the FLCAC and importing them into an openLCA database. You can look through the elements in the navigation pane or the search function.
@@ -62,7 +64,7 @@ These repositories are useful for reviewing all characterization factors for flo
 They can be downloaded and imported into a user's local database.
 However doing so will also import _all_ FEDEFL flows characterized by the method, often resulting in over 100,000 flow objects.
 
-See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional details.
+See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additional details.
 
 :::
 
@@ -206,12 +208,4 @@ Moving forward the FLCAC Data Curator will also work to ensure that metadata is 
 :close:
 
 Multiple LCA platforms outside of openLCA support repositories that are provided on the FLCAC, although not all of this data is up to date. For this reason, when using FLCAC data on other platforms please check the version or release date and compare to what is currently hosted on the [FLCAC](https://www.lcacommons.gov/lca-collaboration/). Please contact the individual software companies for more information on the repositories supported.
-:::
-
-### LCA Terminology
-
-:::{dropdown}What is a cut-off flow?
-:close:
-
-A {term}`cut-off flow` is a flow that is a placeholder or a dummy flow. These flows are used when no relevant flows in a database exists. It is not recommended to use these flows in your life cycle inventory if possible. In openLCA results, cut-off flows will appear in your inventory results, but will not contribute to impact category results.
 :::
