@@ -72,6 +72,9 @@ library
 midpoint indicator
 : "A characterization method that provides indicators for comparison of environmental interventions at a level of cause-effect chain between emissions/resource consumption and the endpoint level." from the European Commission report [Indicators and targets for the reduction of the environmental impact of EU consumption: Overall environmental impact (resource) indicators](https://eplca.jrc.ec.europa.eu/uploads/JRC92824_qms_h08_lcind_deliverable3_final_20141113.pdf).  A common example of a midpoint indicator is global climate change potential where impacts are expressed as kg CO<sub>2 </sub>equivalents.
 
+parquet
+: ...
+
 [process](https://greendelta.github.io/olca-schema/classes/Process.html)
 : A set of related activities that convert inputs into output(s). A network of processes, the {term}`product system`, is used to define the life cycle of a product. Processes are characterized as {term}`unit process`es or {term}`system process`es. For more discussion of processes see [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
 
