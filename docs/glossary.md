@@ -18,6 +18,9 @@ collaboration server
 context
 : In the case of the FEDEFL (and often in LCA more broadly), context describes the origin or destination of an elementary flow. Context informs the directionality of an elementary flow. Resource flows are extracted from nature, while emissions are released to nature. [List of FEDEFL contexts](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/wiki/resources/FEDEFLcontexts.xlsx). For more discussion of context see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL&simpleSearch=0&showCriteria=2&searchAll=elementary+flows&TIMSType=Published+Report&dateBeginPublishedPresented=07%2F31%2F2019)
 
+cut-off flow
+: a flow that is a placeholder or a dummy flow
+
 <!-- [database](https://greendelta.github.io/openLCA2-manual/databases/) -->
 <!-- : ... -->
 
@@ -36,6 +39,9 @@ endpoint indicator
 Environmental Product Declaration
 : A third-party verified report of the environmental impacts of a product. EPDs are developed according to ISO 14025 and the relevant 'product category rule' for that product type. For more information see the [FHWA EPD Tech Brief](https://www.fhwa.dot.gov/pavement/sustainability/hif21025.pdf)
 
+FEDEFL
+: see {term}`Federal Elementary Flow List`
+
 [Federal Elementary Flow List](https://github.com/USEPA/fedelemflowlist)
 : The Federal Elementary Flow List (FEDEFL) is a standardized list of {term}`elementary flow` names, developed by the U.S. Environmental Protection Agency, used in federal LCA work.
 
@@ -53,6 +59,9 @@ functional unit
 
 [International Organization for Standardization](https://iso.org)
 : An [independent, non-governmental body](www.iso.org/structure.html) with members from national standards boards that develops standard procedures for technical processes, such as life cycle assessment.
+
+JSON-LD
+: ...
 
 Life Cycle Assessment
 : [United Nations description of environmental LCA](https://lifecycleinitiative.org/starting-life-cycle-thinking/life-cycle-approaches/environmental-lca/)
@@ -74,6 +83,9 @@ product flow
 
 product system
 : ...
+
+provider
+: A provider in openLCA is the upstream process that produces a flow. Providers can be chosen in the 'Inputs/Outputs' tab in openLCA under the 'Provider' column for product and waste flows.
 
 [repository](https://greendelta.github.io/lca-collaboration-server-manual/chapter_3_4.html)
 : A remote or local container in which data are stored under version control, from which a release of contained data can be published. The term repository is often applied to individual data releases (e.g. [USLCI](https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/datasets)) on the {term}`collaboration server` or individual GitHub sites (e.g. [FLCAC-Curation](https://github.com/FLCAC-admin/FLCAC-Curation).
