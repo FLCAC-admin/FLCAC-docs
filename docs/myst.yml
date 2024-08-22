@@ -27,6 +27,7 @@ project:
       children:
         - file: SOPs/1-updating_fedefl.md
         - file: SOPs/2-updating_lcia.md
+        - file: SOPs/3-create_a_library.md
     - file: glossary.md
     
 site:
