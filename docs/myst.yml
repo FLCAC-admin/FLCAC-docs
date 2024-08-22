@@ -19,9 +19,10 @@ project:
     - file: DataSubmissionToolkit.md
     - title: Reference
       children:
+        - file: Reference/FlowMapping.md
         - file: Reference/LCIAmethods.md
-        - file: Reference/OtherResources.md
         - file: Reference/FLCAC_openLCA_Library_User_Guidance.md
+        - file: Reference/OtherResources.md
     - title: SOPs
       children:
         - file: SOPs/1-updating_fedefl.md

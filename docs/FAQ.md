@@ -87,7 +87,7 @@ TRACI version 2.2 with updated Eutrophication Factors is currently being harmoni
 
 Additional LCIA methods such as CML, Ecopoint, eco-indicator, EDIP2003, EPS, IMAGE 3, LIME, LUCAS, MEEup, ILCD and NAMEA are not currently available in a harmonized format. Flow mapping would be required to use these impact assessment methods with FLCAC data.
 
-See [Life Cycle Impact Assessment Methods](./Reference/LCIAmethods.md) for additional details.
+See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additional details.
 
 :::
 
@@ -161,7 +161,7 @@ Here is a brief overview of the data preparation process:
 :close:
 
 All data on the Federal LCA Commons must use elementary flows that conform to the [Federal Elementary Flow List](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251).
-For instructions on mapping your flows, see [here](https://github.com/USEPA/fedelemflowlist/wiki/Getting-Started-with-FEDEFL#mapping-a-dataset)
+For additional informatoin on flow mapping, see [Flow Mapping](Reference/FlowMapping.md)
 :::
 
 :::{dropdown}How do I align my technosphere flows the FLCAC?
