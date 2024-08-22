@@ -65,4 +65,8 @@ Can be accessed [here](Data%20Provider%20Questionnaire.docx) in Microsoft Word f
 -	[Metadata Guidance Tables](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md#metadata-guidance-tables): These tables provide information on metadata that should be included in each openLCA field with examples.
     - It is preferred that data providers fill in their metadata directly in openLCA, but if needed an excel template can be provided to fill out metadata.
 -	[YouTube Quick Help Series](https://www.youtube.com/playlist?list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q): Includes videos on how to work with repositories on the Federal LCA Commons, using USLCI as an example.
--	[YouTube Video on the Data Submission Process](https://www.youtube.com/watch?v=IlPlYet8llY&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=9): Overviews the submission process with an example dataset. Includes guidance on importing/exporting, aligning the folder structure with NAICS, flow mapping, completing metadata, and more.
+
+:::{iframe} https://www.youtube.com/embed/IlPlYet8llY
+:width: 100%
+Overview of the data submission process with an example dataset. Includes guidance on importing/exporting, aligning the folder structure with NAICS, flow mapping, completing metadata, and more.
+:::
