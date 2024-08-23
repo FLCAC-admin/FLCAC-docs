@@ -74,7 +74,6 @@ See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additio
 The LCIA methods listed in the following table are currently available on the FLCAC and have been harmonized to align with the federal elementary flow list using the [LCIAFormatter](https://github.com/USEPA/LCIAformatter).
 
 ~~~{embed} available_lcia_methods
-
 ~~~
 
 TRACI version 2.2 with updated Eutrophication Factors is currently being harmonized for compatibility with FLCAC data.
@@ -92,7 +91,11 @@ See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additio
 
 Download whole repositories or repository elements (e.g., processes and flows) on the FLCAC as a {term}`JSON-LD` file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later). Do not unzip this file.
 
-Then, open openLCA, create a new empty database, right click on the database, select 'import', select 'file', and navigate to the downloaded JSON-LD file in your file explorer. [YouTube video on this topic](https://www.youtube.com/watch?v=YLao5jC5b_0&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=3)
+Then, open openLCA, create a new empty database, right click on the database, select 'import', select 'file', and navigate to the downloaded JSON-LD file in your file explorer.
+
+~~~{iframe} https://www.youtube.com/embed/YLao5jC5b_0
+~~~
+
 :::
 
 :::{dropdown}How do I calculate LCIA results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?
