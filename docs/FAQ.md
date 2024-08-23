@@ -73,15 +73,9 @@ See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additio
 
 The LCIA methods listed in the following table are currently available on the FLCAC and have been harmonized to align with the federal elementary flow list using the [LCIAFormatter](https://github.com/USEPA/LCIAformatter).
 
-|LCIA Data|Provider|Link|
-|---|---|---|
-|TRACI 2.1|US Environmental Protection Agency|[Tool for Reduction and Assessment of Chemicals and Other Environmental Impacts](https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci)|
-|ReCiPe 2016 Midpoint|National Institute for Public Health and the Environment (The Netherlands)|[LCIA: the ReCiPe Model](https://www.rivm.nl/en/life-cycle-assessment-lca/recipe)|
-|ReCiPe 2016 Endpoint|National Institute for Public Health and the Environment (The Netherlands)|[LCIA: the ReCiPe Model](https://www.rivm.nl/en/life-cycle-assessment-lca/recipe)|
-|ImpactWorld+ Midpoint*|International Reference Center for Life Cycle of Products, Services and Systems (CIRAIG)|[ImpactWorld+](http://www.impactworldplus.org/en/team.php)|
-|ImpactWorld+ Endpoint*|International Reference Center for Life Cycle of Products, Services and Systems (CIRAIG)|[ImpactWorld+](http://www.impactworldplus.org/en/team.php)|
-|IPCC GWP|Intergovernmental Panel on Climate Change (IPCC)| |
-|FEDEFL Inventory Methods|US Environmental Protection Agency|[FEDEFL Inventory Methods](https://github.com/USEPA/LCIAformatter/wiki/Inventory-Methods)|
+~~~{embed} available_lcia_methods
+
+~~~
 
 TRACI version 2.2 with updated Eutrophication Factors is currently being harmonized for compatibility with FLCAC data.
 

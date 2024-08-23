@@ -10,6 +10,8 @@ An article describing the [LCIA Formatter was published in the Journal of Open S
 
 ## Available Methods
 
+:::{table}
+:name: available_lcia_methods
 |LCIA Data|Provider|Link|
 |---|---|---|
 |TRACI 2.1|US Environmental Protection Agency|[Tool for Reduction and Assessment of Chemicals and Other Environmental Impacts](https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci)|
@@ -19,6 +21,7 @@ An article describing the [LCIA Formatter was published in the Journal of Open S
 |ImpactWorld+ Endpoint|International Reference Center for Life Cycle of Products, Services and Systems (CIRAIG)|[ImpactWorld+](http://www.impactworldplus.org/en/team.php)|
 |IPCC GWP|Intergovernmental Panel on Climate Change (IPCC)| |
 |FEDEFL Inventory Methods|US Environmental Protection Agency|[FEDEFL Inventory Methods](https://github.com/USEPA/LCIAformatter/wiki/Inventory-Methods)|
+:::
 
 ## Accessing LCIA Methods
 LCIA methods aligned with the FEDEFL are available in two forms.
