@@ -16,7 +16,7 @@ collaboration server
 : An openLCA specific server application, maintained by GreenDelta, that allows users to work collaboratively on LCA models, share data, and host public LCA repositories such as those available on [lcacommons.gov](https://www.lcacommons.gov/lca-collaboration/). For more information, see GreenDelta's Collaboration Server. 
 
 context
-: In the case of the FEDEFL (and often in LCA more broadly), context describes the origin or destination of an elementary flow. Context informs the directionality of an elementary flow. Resource flows are extracted from nature, while emissions are released to nature. [List of FEDEFL contexts](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/wiki/resources/FEDEFLcontexts.xlsx). For more discussion of context see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL&simpleSearch=0&showCriteria=2&searchAll=elementary+flows&TIMSType=Published+Report&dateBeginPublishedPresented=07%2F31%2F2019)
+: In the case of the {term}`FEDEFL` (and often in LCA more broadly), context describes the origin or destination of an elementary flow. Context informs the directionality of an elementary flow. Resource flows are extracted from nature, while emissions are released to nature. [List of FEDEFL contexts](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/wiki/resources/FEDEFLcontexts.xlsx). For more discussion of context see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL&simpleSearch=0&showCriteria=2&searchAll=elementary+flows&TIMSType=Published+Report&dateBeginPublishedPresented=07%2F31%2F2019)
 
 cut-off flow
 : a flow that is a placeholder or a dummy flow. These flows are used when no relevant flows in a database exists. It is not recommended to use these flows in your life cycle inventory if possible. In openLCA results, cut-off flows will appear in your inventory results, but will not contribute to impact category results.
@@ -34,7 +34,7 @@ elementary flow
 : A material (resource), energy, or space that is exchanged with the biosphere. An elementary flow is characterized by a unique combination of {term}`flowable` and {term}`context` information and is assigned a {term}`UUID`.
 
 endpoint indicator
-: A category of LCIA indicator that expresses characterized impact in terms of damage caused to an area of concern such as the natural environment, human health or resource supply. An example of an endpoint indicator would be the human health impact of particulate matter formation potential expressed in {term}`Disability-Adjusted Life Years`.
+: A category of LCIA indicator that expresses characterized impact in terms of damage caused to an area of concern such as the natural environment, human health or resource supply. An example of an endpoint indicator would be the human health impact of particulate matter formation potential expressed in {term}`Disability-Adjusted Life Years (DALY)`.
 
 Environmental Product Declaration
 : A third-party verified report of the environmental impacts of a product. EPDs are developed according to ISO 14025 and the relevant 'product category rule' for that product type. For more information see the [FHWA EPD Tech Brief](https://www.fhwa.dot.gov/pavement/sustainability/hif21025.pdf)
@@ -91,7 +91,7 @@ provider
 : A provider in openLCA is the upstream process that produces a flow. Providers can be chosen in the 'Inputs/Outputs' tab in openLCA under the 'Provider' column for product and waste flows.
 
 [repository](https://greendelta.github.io/lca-collaboration-server-manual/chapter_3_4.html)
-: A remote or local container in which data are stored under version control, from which a release of contained data can be published. The term repository is often applied to individual data releases (e.g. [USLCI](https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/datasets)) on the {term}`collaboration server` or individual GitHub sites (e.g. [FLCAC-Curation](https://github.com/FLCAC-admin/FLCAC-Curation).
+: A remote or local container in which data are stored under version control, from which a release of contained data can be published. The term repository is often applied to individual data releases (e.g. [USLCI](https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/datasets)) on the {term}`collaboration server` or individual GitHub sites (e.g. [FLCAC-docs](https://github.com/FLCAC-admin/FLCAC-docs).
 
 resource flow
 : A material or energy flow exiting the biosphere, which serves as an LCA process input.

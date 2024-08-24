@@ -65,7 +65,7 @@ Can be accessed [here](Data%20Provider%20Questionnaire.docx) in Microsoft Word f
 
 - [Landing Page](https://www.lcacommons.gov/): Select “Browse Repositories” to access the repositories
 - [LCIA Methods without Flows](https://www.lcacommons.gov/lcia-methods-without-flows): Recommended to download and use these flows in a database that already has flows in it.
-- [Federal LCA Commons GitHub](https://github.com/FLCAC-admin/FLCAC-Curation): Current GitHub page that include documentation, FAQs, and other resources for the Federal LCA Commons. Platform to document issues related to the Federal LCA Commons repositories.
+- [Federal LCA Commons GitHub](https://github.com/FLCAC-admin/FLCAC-docs): Current GitHub page that include documentation, FAQs, and other resources for the Federal LCA Commons. Platform to document issues related to the Federal LCA Commons repositories.
 
 ### Submission Guidance
 
@@ -78,7 +78,7 @@ It is preferred that data providers fill in their metadata directly in openLCA, 
 
 - [YouTube Quick Help Series](https://www.youtube.com/playlist?list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q): Includes videos on how to work with repositories on the Federal LCA Commons, using USLCI as an example.
 
-#### Video: USLCI Data Submission
+#### Video: USLCI Data Submission 📺 🔉
 :::{iframe} https://www.youtube.com/embed/IlPlYet8llY
 :width: 100%
 Overview of the data submission process with an example dataset. Includes guidance on importing/exporting, aligning the folder structure with NAICS, flow mapping, completing metadata, and more.

@@ -43,4 +43,4 @@ If you require the LCIA data in a different format, please reach out to the Data
 
 ## Issues and Bugs
 If you identify an error or have questions about specific methods, please use the [Issues](https://github.com/USEPA/LCIAformatter/issues) or [Discussions](https://github.com/USEPA/LCIAformatter/discussions) feature of the LCIA Formatter to report them.
-If you have questions regarding accessing or using the methods in openLCA, please use the [Issues](https://github.com/FLCAC-admin/FLCAC-Curation/issues) or [Discussions](https://github.com/FLCAC-admin/FLCAC-Curation/discussions) feature of the FLCAC Curation repository.
+If you have questions regarding accessing or using the methods in openLCA, please use the [Issues](https://github.com/FLCAC-admin/FLCAC-docs/issues) or [Discussions](https://github.com/FLCAC-admin/FLCAC-docs/discussions) feature of the FLCAC Curation repository.

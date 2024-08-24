@@ -3,7 +3,7 @@ version: 1
 project:
   # id: 812cacf0-6895-405f-8783-03d17475be9c
   title: FLCAC Docs
-  github: https://github.com/FLCAC-admin/FLCAC-Curation
+  github: https://github.com/FLCAC-admin/FLCAC-docs
   # license:
   # references:
   #   olca_schema: http://greendelta.github.io/olca-schema/
@@ -23,6 +23,7 @@ project:
         - file: Reference/LCIAmethods.md
         - file: Reference/FLCAC_openLCA_Library_User_Guidance.md
         - file: Reference/OtherResources.md
+        - file: Reference/Guidance_unmappable.md
     - title: SOPs
       children:
         - file: SOPs/1-updating_fedefl.md
@@ -33,7 +34,7 @@ project:
 site:
   title: FLCAC Docs
   template: book-theme
-  source: https://github.com/FLCAC-admin/FLCAC-Curation
+  source: https://github.com/FLCAC-admin/FLCAC-docs
   actions:
     - title: lcacommons.gov
       url: https://www.lcacommons.gov/

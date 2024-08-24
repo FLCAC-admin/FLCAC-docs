@@ -140,7 +140,7 @@ A {term}`provider` in openLCA is the upstream process that produces a flow. Prov
 
 Submission processes vary for each repository, so it is recommended to reach out to the repository managers/owners to submit data or inquire about the specific data submission process.
 The USLCI submission process is currently recommended as the default FLCAC submission process. The submission handbook may be found [here](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) and a YouTube training video that covers this process is located [here](https://www.youtube.com/watch?v=jecyDLHu6OQ).
-The current FLCAC-Curation repository also includes various resources for preparing your data for the FLCAC.
+The current FLCAC-docs repository also includes various resources for preparing your data for the FLCAC.
 
 Here is a brief overview of the data preparation process:
 
@@ -180,7 +180,7 @@ To align new or existing processes and flows with NAICS, import the [Commons Cor
 :::{dropdown}I have specific questions about data submission to the FLCAC, who do I reach out to?
 :close:
 
-Please submit questions to the FLCAC data curators via the [Issues page](https://github.com/FLCAC-admin/FLCAC-Curation/issues) or email us at FederalLCACommons@erg.com.
+Please submit questions to the FLCAC data curators via the [Issues page](https://github.com/FLCAC-admin/FLCAC-docs/issues) or email us at FederalLCACommons@erg.com.
 :::
 
 ## Other Questions
