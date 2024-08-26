@@ -90,13 +90,9 @@ See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additio
 :::{dropdown}How do I use data from the FLCAC in openLCA?
 :close:
 
-Download whole repositories or repository elements (e.g., processes and flows) on the FLCAC as a {term}`JSON-LD` file type (if prompted, select which version of openLCA you are working in, newer versions of openLCA are 2.0 and later). Do not unzip this file.
-
-Then, open openLCA, create a new empty database, right click on the database, select 'import', select 'file', and navigate to the downloaded JSON-LD file in your file explorer.
-
-~~~{iframe} https://www.youtube.com/embed/YLao5jC5b_0
-~~~
-
+Entire repositories or repository elements (e.g., processes and flows) can be downloaded from the FLCAC as a {term}`JSON-LD` file type.
+You can also link directly to the FLCAC from within openLCA.
+See [Accessing FLCAC Data](Accessing_data.md) for more details.
 :::
 
 :::{dropdown}How do I calculate LCIA results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?

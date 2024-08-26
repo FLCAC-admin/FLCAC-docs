@@ -14,6 +14,7 @@ abbreviations:
 
 The repositories available on the FLCAC are shown below.
 Visit the FLCAC Collaboration Server to [Access these Repositories](https://www.lcacommons.gov/lca-collaboration).
+See [Accessing FLCAC Data](Accessing_data.md) for information on how to download and use data.
 Repositories are classified as the following types:
 
 - **LCI**: contains Life Cycle Inventory data as {term}`unit process`es or {term}`system process`es.
