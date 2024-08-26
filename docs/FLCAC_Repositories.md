@@ -44,7 +44,23 @@ Repositories are classified as the following types:
 
 [^Woody]: Integration of USLCI as a library; additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring.
 
+## USLCI
+
+The NREL U.S. Life Cycle Inventory Database (USLCI) is a home for U.S. industry LCI data. The USLCI database provides individual gate-to-gate, cradle-to-gate, and cradle-to-grave accounting of the energy and material flows into and out of the environment that are associated with producing a material, component, or assembly in the U.S.
+
+For more information, please visit the [USLCI Homepage](https://www.nrel.gov/analysis/lci.html) or the [USLCI GitHub Site](https://github.com/FLCAC-admin/uslci-content)
+
+### USLCI Training Videos 📺 🔉
+
+- [Access & Download the USLCI Database](https://www.youtube.com/watch?v=4att9Fj8jtk&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=2&t=0s)
+- [How to Navigate the USLCI Database](https://www.youtube.com/watch?v=7zzVVPXbN00&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=4)
+- [How to Import the USLCI Database into Open-Source LCA Software](https://www.youtube.com/watch?v=YLao5jC5b_0&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=5)
+- [How to Track USLCI Database Versioning](https://www.youtube.com/watch?v=6aaZVYVRkGc&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=6)
+- [Using USLCI Data Submission Handbook to Submit Data](https://www.youtube.com/watch?v=jecyDLHu6OQ&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=7)
+- [How to Align Your Data with the USLCI Database Structure](https://www.youtube.com/watch?v=8l302KlRvkY&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=8)
+
 ## Pavement LCA
+
 ### [LCA Pave Tool](https://www.fhwa.dot.gov/pavement/lcatool/)
 
 > LCA Pave is a Microsoft® Excel® based tool developed by FHWA that can be used to assess environmental impacts of pavement material and design decisions. <br> <br>
@@ -56,18 +72,5 @@ Repositories are classified as the following types:
 
 This website links to many useful resources regarding pavement LCA, pavement EPDs and sustainable pavement programs.
 
-## USLCI
-
-The NREL U.S. Life Cycle Inventory Database (USLCI) is a home for U.S. industry LCI data. The USLCI database provides individual gate-to-gate, cradle-to-gate, and cradle-to-grave accounting of the energy and material flows into and out of the environment that are associated with producing a material, component, or assembly in the U.S.
-
-For more information, please visit the [USLCI Homepage](https://www.nrel.gov/analysis/lci.html) or the [USLCI GitHub Site](https://github.com/FLCAC-admin/uslci-content)
-
-
-### USLCI Training Videos 📺 🔉
-
-- [Access & Download the USLCI Database](https://www.youtube.com/watch?v=4att9Fj8jtk&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=2&t=0s)
-- [How to Navigate the USLCI Database](https://www.youtube.com/watch?v=7zzVVPXbN00&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=4)
-- [How to Import the USLCI Database into Open-Source LCA Software](https://www.youtube.com/watch?v=YLao5jC5b_0&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=5)
-- [How to Track USLCI Database Versioning](https://www.youtube.com/watch?v=6aaZVYVRkGc&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=6)
-- [Using USLCI Data Submission Handbook to Submit Data](https://www.youtube.com/watch?v=jecyDLHu6OQ&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=7)
-- [How to Align Your Data with the USLCI Database Structure](https://www.youtube.com/watch?v=8l302KlRvkY&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=8)
+---
+% block for footnotes
