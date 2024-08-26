@@ -30,6 +30,7 @@ project:
         - file: SOPs/2-updating_lcia.md
         - file: SOPs/3-create_a_library.md
     - file: glossary.md
+    - file: video.md
     
 site:
   title: FLCAC Docs

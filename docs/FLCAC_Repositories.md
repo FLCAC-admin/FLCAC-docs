@@ -50,14 +50,7 @@ The NREL U.S. Life Cycle Inventory Database (USLCI) is a home for U.S. industry 
 
 For more information, please visit the [USLCI Homepage](https://www.nrel.gov/analysis/lci.html) or the [USLCI GitHub Site](https://github.com/FLCAC-admin/uslci-content)
 
-### USLCI Training Videos 📺 🔉
-
-- [Access & Download the USLCI Database](https://www.youtube.com/watch?v=4att9Fj8jtk&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=2&t=0s)
-- [How to Navigate the USLCI Database](https://www.youtube.com/watch?v=7zzVVPXbN00&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=4)
-- [How to Import the USLCI Database into Open-Source LCA Software](https://www.youtube.com/watch?v=YLao5jC5b_0&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=5)
-- [How to Track USLCI Database Versioning](https://www.youtube.com/watch?v=6aaZVYVRkGc&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=6)
-- [Using USLCI Data Submission Handbook to Submit Data](https://www.youtube.com/watch?v=jecyDLHu6OQ&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=7)
-- [How to Align Your Data with the USLCI Database Structure](https://www.youtube.com/watch?v=8l302KlRvkY&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=8)
+📺 🔉 [Training videos are also provided](video.md) for accessing, using, and submitting data to the USLCI.
 
 ## Pavement LCA
 

@@ -5,7 +5,6 @@
 Resources to be added.
 % Link to Pavement EPD document
 
-
 ## openLCA
   
 - [Download openLCA](https://www.openlca.org/download/)
@@ -23,20 +22,3 @@ A [series of YouTube videos](https://netl.doe.gov/LCA/co2u/Training), developed 
 - Uncertainty analysis,
 - Product management, and
 - Importing and exporting data.
-
-## Other
-
-#### Video: How to Link USLCI to the Electricity Baseline
-
-:::{iframe} https://www.youtube.com/embed/SFGk85HmtL4
-:width: 100%
-
-:::
-
----
-
-#### Video: How to Update a Modified USLCI Database
-:::{iframe} https://www.youtube.com/embed/N54K2QppKYw
-:width: 100%
-
-:::
