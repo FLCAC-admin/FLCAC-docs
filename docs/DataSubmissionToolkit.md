@@ -1,4 +1,10 @@
-# Data Submission Toolkit
+---
+title: Data Submission Toolkit
+description: An overview of the data submission process and relevant resources
+abbreviations:
+  FLCAC: Federal LCA Commons
+---
+
 This document provides an overview of the data submission process and relevant resources.
 Please refer to the [Data Submission Handbook](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) for detailed information regarding the submission process.
 The [Frequently Asked Questions page](FAQ.md) includes more information about many of these topics.

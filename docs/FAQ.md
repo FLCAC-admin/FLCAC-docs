@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions
-description: Glossary of terms and abbreviations used throughout the FLCAC
+description: Frequently asked questions for the Federal LCA Commons
 abbreviations:
     LCA: Life Cycle Assessment
     LCI: Life Cycle Inventory
@@ -33,7 +33,10 @@ The FLCAC {term}`collaboration server` is a server application that allows repos
 :::{dropdown}What is the difference between USLCI and the FLCAC?
 :close:
 
-The FLCAC is a collaborative project across several agencies of the U.S. federal government intended to make life cycle inventory (LCI) data available across agencies and to the general public. The FLCAC hosts multiple LCI repositories one of which is the USLCI. USLCI is an LCI portal for datasets submitted by consulting, academia, & industry associations, the database includes several hundred process LCIs ranging from fuels combustion, transport, metals, chemicals, plastics, and glass to paper. More information on USLCI can be found [here](https://github.com/FLCAC-admin/uslci-content) and USLCI specific FAQS are available [below](#uslci).
+The FLCAC is a collaborative project across several agencies of the U.S. federal government intended to make life cycle inventory (LCI) data available across agencies and to the general public.
+The FLCAC hosts multiple LCI repositories one of which is the USLCI.
+USLCI is an LCI portal for datasets submitted by consulting, academia, & industry associations, the database includes several hundred process LCIs ranging from fuels combustion, transport, metals, chemicals, plastics, and glass to paper.
+More information on USLCI can be found [here](#us-life-cycle-inventory) and USLCI specific FAQS are available [below](#uslci).
 
 :::
 

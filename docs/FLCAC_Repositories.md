@@ -45,7 +45,7 @@ Repositories are classified as the following types:
 
 [^Woody]: Integration of USLCI as a library; additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring.
 
-## USLCI
+## US Life Cycle Inventory
 
 The NREL U.S. Life Cycle Inventory Database (USLCI) is a home for U.S. industry LCI data. The USLCI database provides individual gate-to-gate, cradle-to-gate, and cradle-to-grave accounting of the energy and material flows into and out of the environment that are associated with producing a material, component, or assembly in the U.S.
 

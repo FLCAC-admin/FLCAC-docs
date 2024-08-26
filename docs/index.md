@@ -10,7 +10,9 @@ Here we provide guidance and resources for accessing data from the Federal LCA C
 
 This site is generated with [MyST Markdown](https://mystmd.org/) from content stored on the [FLCAC-docs GitHub repository](https://github.com/FLCAC-admin/FLCAC-docs).
 
-A table of contents is provided in the left sidebar or on narrow screens can be accessed with the menu icon (three horizontal bars) at the top-left corner.
+:::{hint}
+A table of contents is provided in the left sidebar, or on narrow screens can be accessed with the menu icon (three horizontal bars) at the top-left corner.
+:::
 
 # Contributing to the docs
 
