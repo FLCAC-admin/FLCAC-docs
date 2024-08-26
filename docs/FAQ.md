@@ -6,6 +6,7 @@ abbreviations:
     LCI: Life Cycle Inventory
     LCIA: Life Cycle Impact Assessment
     FLCAC: Federal LCA Commons
+    USLCI: U.s. Life Cycle Inventory
 ---
 
 ## Using and Accessing Data
@@ -32,7 +33,7 @@ The FLCAC {term}`collaboration server` is a server application that allows repos
 :::{dropdown}What is the difference between USLCI and the FLCAC?
 :close:
 
-The FLCAC is a collaborative project across several agencies of the U.S. federal government intended to make life cycle inventory (LCI) data available across agencies and to the general public. The FLCAC hosts multiple LCI repositories one of which is the U.S. Life Cycle Inventory database (USLCI). USLCI is an LCI portal for datasets submitted by consulting, academia, & industry associations, the database includes several hundred process LCIs ranging from fuels combustion, transport, metals, chemicals, plastics, and glass to paper. More information on USLCI can be found [here](https://github.com/FLCAC-admin/uslci-content) and USLCI specific FAQS are available [here](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/03-frequently-asked-questions.md).
+The FLCAC is a collaborative project across several agencies of the U.S. federal government intended to make life cycle inventory (LCI) data available across agencies and to the general public. The FLCAC hosts multiple LCI repositories one of which is the USLCI. USLCI is an LCI portal for datasets submitted by consulting, academia, & industry associations, the database includes several hundred process LCIs ranging from fuels combustion, transport, metals, chemicals, plastics, and glass to paper. More information on USLCI can be found [here](https://github.com/FLCAC-admin/uslci-content) and USLCI specific FAQS are available [below](#uslci).
 
 :::
 
@@ -181,6 +182,89 @@ To align new or existing processes and flows with NAICS, import the [Commons Cor
 :close:
 
 Please submit questions to the FLCAC data curators via the [Issues page](https://github.com/FLCAC-admin/FLCAC-docs/issues) or email us at FederalLCACommons@erg.com.
+:::
+
+## USLCI
+
+:::{dropdown}What is the USLCI database?
+:close:
+
+The USLCI Database project began in 2001 when the US Department of Energy (DOE) directed NREL and the Athena Institute to explore the development of a national public database.
+The US LCI Database was created and has been publicly available at www.nrel.gov/lci since 2003.
+The project strives to provide publicly available LCI data following a consistent protocol, thus allowing users to objectively review and compare data based on similar data collection and analysis methods.
+:::
+
+:::{dropdown}Why should I publishd my data on the USLCI Database?
+:close:
+The advantages of such a data source include:
+
+- It provides comprehensive information for policymakers to make consistent comparisons between policy options regarding environmental decisions.
+- It enables better evaluation of environmental opportunities and trade-offs of alternative product systems.
+- Indirect sources of environmental impacts can be addressed in the redesign of products for better overall environmental performance.
+- Legitimate, verifiable environmental market claims can be better substantiated based on quality LCI data.
+- Environmental hotspots can be identified and targeted for improvement.
+- It provides input to measure and monetize environmental externalities through, for example, a cap-and-trade system.
+:::
+
+:::{dropdown}How long does the publication process take?
+:close:
+
+Phases 1-4 (i.e., [Appraisal](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#appraisal) through [Publication](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#publication)) can vary but often take approximately 1-3 months to complete depending on the number and size of the datasets.
+See: [Publication Timelines](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#publication) in [Section 2: How do I publish my data in the US LCI?](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md).
+:::
+
+:::{dropdown}When will my data be published?
+:close:
+
+Once your data have been reviewed and completed, the dataset(s) are ready for publication.
+NREL will publish the data to its own internal repository.
+The USLCI Database is updated with new and revised data on a quarterly basis as new data and updates are received.
+Thus, the publication timeline of your data depends on its size and when your [Ingest & Onboarding](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#ingest-and-onboarding) phase begins.
+Additionally, the timeframe is heavily dependent on the response times between you and NREL during the iterative communications of the review phase.
+Assuming you respond to NREL within one week's time for each communication, the curation workflow can occur in as little as a month for small datasets (i.e., fewer than 10 processes) and take as long as three or four months for larger datasets (i.e., more than 10 processes).
+
+The quarterly publication dates are as follows:
+
+- March 31
+- June 30
+- September 30
+- December 31
+
+:::
+
+:::{dropdown}What is my role in the publication process?
+:close:
+Your role in the publication process is to transform your raw LCI data into a polished product that is ready for publication in the USLCI Database.
+Transform means putting your data into the USLCI Database's chosen data format and pairing your data with robust metadata so that users of your data understand how to use it properly.
+See: [Working with NREL](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#working-with-nrel) in [Section 2: How do I publish my data in the US LCI?](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md).
+:::
+
+:::{dropdown}Do I have to go through the publication process alone?
+:close:
+The data publication process is a collaborative effort between you (i.e., the Data Provider) and the NREL.
+Practically speaking, that means you will be working closely with one of NREL's LCI Data Curators throughout the [publication process](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#overview-digital-curation).
+
+The Data Curator's role is to guide you through the publication process.
+This person is trained in LCI data curation and can help you troubleshoot technical issues related to exporting and/or importing LCI data formats, completing dataset metadata fields, and the openLCA platform.
+
+ See: [Working with NREL](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#working-with-nrel) in [Section 2: How do I publish my data in the US LCI?](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md).
+:::
+
+:::{dropdown}Who owns my data after it is published?
+:close:
+
+NREL and NAL do not claim ownership of the materials (each "Submission" and collectively "Submissions") you provide to NREL or NAL (including feedback and suggestions, if any).
+However, the data is subject to specific terms under the [Creative Commons Legal Code](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//04-resources/04-App-C.md).
+
+:::
+
+:::{dropdown}How is my data used after it is published?
+:close:
+
+The data is available for use by anyone and increases data accessibility to the public.
+Providing the public with quality LCI data increases the level of transparency of LCA studies.
+Ensuring public LCI data are accompanied with complete documentation (i.e., metadata) enables and promotes the responsible use of the LCI data.
+A comprehensive and transparent public LCI database has the potential to facilitate more consistent LCA studies verifiable across sectors.
 :::
 
 ## Other Questions
