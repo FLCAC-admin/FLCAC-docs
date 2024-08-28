@@ -19,6 +19,7 @@ project:
       children:
         - file: Accessing_data.md
         # - file: data_user_handbook.md
+        - file: Tips.md
     - title: Data Submission
       children:
         - file: DataSubmissionToolkit.md
