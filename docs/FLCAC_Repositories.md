@@ -17,7 +17,7 @@ Visit the FLCAC Collaboration Server to [Access these Repositories](https://www.
 See [Accessing FLCAC Data](Accessing_data.md) for information on how to download and use data.
 Repositories are classified as the following types:
 
-- **LCI**: contains Life Cycle Inventory data as {term}`unit process`es or {term}`system process`es.
+- **LCI**: contains Life Cycle Inventory data as {term}`unit processes <unit process>` or {term}`system processes <system process>`.
 - **I/O**: Input-output data.
 - **LCIA**: Repositories of Life Cycle Inventory Assessment methods
 - **Background**: Repositories with background data such as flow lists.
@@ -25,7 +25,7 @@ Repositories are classified as the following types:
 
 | Type |  Name                          | Owner                                     | Contact Information                                           | Upcoming Updates |
 | --------------- | ---------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------- | ---------------- |
-| LCI             | [US Life Cycle Inventory (USLCI)](#uslci)         | NREL                 | uslci@erg.com or lci@nrel.com                                 | USLCI is updated quarterly. Hover[^USLCI] for expected data in the September 2024 (Q3) release.               |
+| LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)         | NREL                 | uslci@erg.com or lci@nrel.com                                 | USLCI is updated quarterly. Hover[^USLCI] for expected data in the September 2024 (Q3) release.               |
 | LCI             | US Electricity Baseline                  | NETL         | https://github.com/USEPA/ElectricityLCI                       |
 | LCI             | [MTU Asphalt Pavement Framework](#pavement-lca)           | FHWA                       |                                                               |                  |
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |

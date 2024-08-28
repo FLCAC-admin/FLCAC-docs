@@ -7,7 +7,7 @@ abbreviations:
 
 ## Downloading data
 
-Download whole repositories or repository elements (e.g., {term}`process`es and {term}`flow`s) on the FLCAC as a {term}`JSON-LD` file type.
+Download whole {term}`repositories <repository>` or repository elements (e.g., {term}`processes <process>` and {term}`flows <flow>`) on the FLCAC as a {term}`JSON-LD` file type.
 If prompted, select which version of openLCA you are working in; newer versions of openLCA are 2.0 and later.
 
 :::{important}
