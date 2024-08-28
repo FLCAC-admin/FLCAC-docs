@@ -63,6 +63,9 @@ JSON-LD
 Life Cycle Assessment
 : [United Nations description of environmental LCA](https://lifecycleinitiative.org/starting-life-cycle-thinking/life-cycle-approaches/environmental-lca/)
 
+Life Cycle Impact Assessment
+: ...
+
 library
 : A type of data package limited to read-only access, intended to serve as a dependency of another data package. The library feature in openLCA 2.0 and later versions enables the use of databases together without the need to import them on top of one another. Processes and other elements that are part of a library database are not editable but can be utilized as part of processes or product systems in the main database.
 
@@ -73,13 +76,13 @@ parquet
 : ...
 
 [process](https://greendelta.github.io/olca-schema/classes/Process.html)
-: A set of related activities that convert inputs into output(s). A network of processes, the {term}`product system`, is used to define the life cycle of a product. Processes are characterized as {term}`unit process`es or {term}`system process`es. For more discussion of processes see [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
+: A set of related activities that convert inputs into output(s). A network of processes, the {term}`product system`, is used to define the life cycle of a product. Processes are characterized as {term}`unit processes <unit process>` or {term}`system processes <system process>`. For more discussion of processes see [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
 
 Product Category Rule
 : A collection of data source, scoping, and allocation rules for an {term}`Environmental Product Declaration`. "A set of specific rules, requirements and guidelines for developing Type Ill environmental declarations for one or more product categories." from[ISO 14025](https://www.iso.org/standard/38131.html). See also [EPA's Guidance for Product Category Rule Development](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=259406&Lab=NRMRL)
 
 product flow
-: These are all the flows that are not elementary or {term}`waste flow`s, and represent the materials or energy exchanged between processes within the {term}`product system`. [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/flows/index.html)
+: These are all the flows that are not elementary or {term}`waste flows <waste flow>`, and represent the materials or energy exchanged between processes within the {term}`product system`. [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/flows/index.html)
 
 product system
 : ...
@@ -103,7 +106,7 @@ unit process
 : "The  smallest (least aggregated) unit in a production system, for which input and output data are quantified." -from [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
 
 UUID
-: Universally Unique Identifiers. Unrepeated alphanumeric code that points to specific database objects, typically within a JSON file. Within openLCA, UUIDs are assigned to processes, flows, {term}`product system`s, projects, parameters, impact categories and LCIA methods. Link to UUID search in the [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/introduction/index.html?search=UUID)
+: Universally Unique Identifiers. Unrepeated alphanumeric code that points to specific database objects, typically within a JSON file. Within openLCA, UUIDs are assigned to processes, flows, {term}`product systems <product system>`, projects, parameters, impact categories and LCIA methods. Link to UUID search in the [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/introduction/index.html?search=UUID)
 
 waste flow
 : Waste flows are any substances or objects that the holder needs to dispose of, like by-products with no market value or those requiring more resources to recycle than their economic return. [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/flows/index.html)
