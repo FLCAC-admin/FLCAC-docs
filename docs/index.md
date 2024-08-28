@@ -41,11 +41,12 @@ Before opening a new issue or discussion on an FLCAC repo, please first confirm 
  USLCI | [USLCI-content](https://github.com/FLCAC-admin/uslci-content)
  Anything else | [FLCAC-docs](https://github.com/FLCAC-admin/FLCAC-docs)
 
-## Issues and Discussions
+### Issues
 [**Issues**](https://github.com/FLCAC-admin/FLCAC-docs/issues) are generally intended to report errors and request improvements related to the documentation.
 It is helpful if issues have a clear path towards resolution.
 Please [apply labels](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels#applying-a-label) to issues to help keep them organized. The list of available labels can be viewed via the Labels button on the Issues tab (e.g., [FLCAC-docs labels](https://github.com/FLCAC-admin/FLCAC-docs/labels)).
 
+### Discussions
 For topics with a wider scope or where more discussion may be required to reach a resolution, please post it as a [**Discussion**](https://github.com/FLCAC-admin/FLCAC-docs/discussions).
 Please apply labels to help keep the discussion list organized.
 Discussions rely on the same set of repository-specific labels used by Issues.
