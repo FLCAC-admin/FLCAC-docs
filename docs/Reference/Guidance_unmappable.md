@@ -1,9 +1,9 @@
 # Guidance on Avoiding Ambiguous Elementary Flows
 
-As the USLCI Database converted to the [Federal Elementary Flow List (FEDEFL)](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL) in 2020, several "un-mappble" flows were identified as non-compliant and are being phased out.
-The FEDEFL approach discourages using groups of flowables that lead to uncharacterizable impact assessment results.
+As the USLCI Database converted to the {term}`Federal Elementary Flow List` (FEDEFL) in 2020, several "un-mappble" flows were identified as non-compliant and are being phased out.
+The {term}`FEDEFL <Federal Elementary Flow List>` approach discourages using groups of flowables that lead to uncharacterizable impact assessment results.
 Accordingly, NREL recommends avoiding the following as elementary flow names in datasets submitted to the USLCI Database, where possible.
-More information on choosing FEDEFL-preferred elementary flows is available in the USLCI Data Submission Handbook Appendix [FEDEFL Nomenclature Highlights](https://github.com/uslci-admin/uslci-content/blob/dev/docs/submission_handbook/05-FEDEFL%20Guidelines%20-%20Appendix%20Fork.md).
+More information on choosing {term}`FEDEFL <Federal Elementary Flow List>`-preferred elementary flows is available in the USLCI Data Submission Handbook Appendix [FEDEFL Nomenclature Highlights](https://github.com/uslci-admin/uslci-content/blob/dev/docs/submission_handbook/05-FEDEFL%20Guidelines%20-%20Appendix%20Fork.md).
 
 <br>
 <br>

@@ -16,7 +16,7 @@ collaboration server
 : An openLCA specific server application, maintained by GreenDelta, that allows users to work collaboratively on LCA models, share data, and host public LCA repositories such as those available on [lcacommons.gov](https://www.lcacommons.gov/lca-collaboration/). For more information, see GreenDelta's Collaboration Server. 
 
 context
-: In the case of the {term}`FEDEFL` (and often in LCA more broadly), context describes the origin or destination of an elementary flow. Context informs the directionality of an elementary flow. Resource flows are extracted from nature, while emissions are released to nature. [List of FEDEFL contexts](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/wiki/resources/FEDEFLcontexts.xlsx). For more discussion of context see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL&simpleSearch=0&showCriteria=2&searchAll=elementary+flows&TIMSType=Published+Report&dateBeginPublishedPresented=07%2F31%2F2019)
+: In the case of the {term}`FEDEFL <Federal Elementary Flow List>` (and often in LCA more broadly), context describes the origin or destination of an elementary flow. Context informs the directionality of an elementary flow. Resource flows are extracted from nature, while emissions are released to nature. [List of FEDEFL contexts](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/wiki/resources/FEDEFLcontexts.xlsx). For more discussion of context see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL&simpleSearch=0&showCriteria=2&searchAll=elementary+flows&TIMSType=Published+Report&dateBeginPublishedPresented=07%2F31%2F2019)
 
 cut-off flow
 : a flow that is a placeholder or a dummy flow. These flows are used when no relevant flows in a database exists. It is not recommended to use these flows in your life cycle inventory if possible. In openLCA results, cut-off flows will appear in your inventory results, but will not contribute to impact category results.
@@ -24,8 +24,8 @@ cut-off flow
 <!-- [database](https://greendelta.github.io/openLCA2-manual/databases/) -->
 <!-- : ... -->
 
-[data package](https://datapackage.org/standard/data-package/)
-: "A simple container format for describing a coherent collection of data in a single ‘package’. It provides the basis for convenient delivery, installation and management of datasets."
+data package
+: "A simple container format for describing a coherent collection of data in a single 'package'. It provides the basis for convenient delivery, installation and management of datasets." from [datapackage.org](https://datapackage.org/standard/data-package/)
 
 Disability-Adjusted Life Years (DALY)
 : "One DALY represents the loss of the equivalent of one year of full health. DALYs for a disease or health condition are the sum of the years of life lost to due to premature mortality (YLLs) and the years lived with a disability (YLDs) due to prevalent cases of the disease or health condition in a population." from [World Health Organization](https://www.who.int/data/gho/indicator-metadata-registry/imr-details/158#:~:text=Definition%3A-,One%20DALY%20represents%20the%20loss%20of%20the%20equivalent%20of%20one,health%20condition%20in%20a%20population.)
@@ -39,11 +39,8 @@ endpoint indicator
 Environmental Product Declaration
 : A third-party verified report of the environmental impacts of a product. EPDs are developed according to ISO 14025 and the relevant 'product category rule' for that product type. For more information see the [FHWA EPD Tech Brief](https://www.fhwa.dot.gov/pavement/sustainability/hif21025.pdf)
 
-FEDEFL
-: see {term}`Federal Elementary Flow List`
-
 [Federal Elementary Flow List](https://github.com/USEPA/fedelemflowlist)
-: The Federal Elementary Flow List (FEDEFL) is a standardized list of {term}`elementary flow` names, developed by the U.S. Environmental Protection Agency, used in federal LCA work.
+: The Federal Elementary Flow List (FEDEFL) is a standardized list of {term}`elementary flow` names, developed by the U.S. Environmental Protection Agency, used in federal LCA work. See the [EPA Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251) on its development and use.
 
 [Federal LCA Commons](https://lcacommons.gov/about-us)
 : ...

@@ -54,7 +54,7 @@ You can also search for processes across all repositories via the search functio
 :::{dropdown}How do I find impact assessment methods?
 :close:
 
-Impact assessment methods aligned with the Federal Elementary Flow List (FEDEFL) and Federal LCA Commons data are available in two forms:
+Impact assessment methods aligned with the {term}`Federal Elementary Flow List` (FEDEFL) and Federal LCA Commons data are available in two forms:
 
 - [LCIA Methods without flows](https://www.lcacommons.gov/lcia-methods-without-flows):
 These {term}`JSON-LD` files do not contain the flow objects, only the characterization factors.
@@ -64,9 +64,9 @@ Updating a local database with new data which contains new elementary flows (e.g
 In these cases, the "No flows" methods should be **re-imported** to enusre that all elementary flows are charcterized.
 
 - LCIA Methods repositories: [Repositories](https://www.lcacommons.gov/lca-collaboration/) are available for TRACI2.1 and ReCiPe which contain the methods and all relevant flow objects.
-These repositories are useful for reviewing all characterization factors for flows in the FEDEFL.
+These repositories are useful for reviewing all characterization factors for flows in the {term}`FEDEFL <Federal Elementary Flow List>`.
 They can be downloaded and imported into a user's local database.
-However doing so will also import _all_ FEDEFL flows characterized by the method, often resulting in over 100,000 flow objects.
+However doing so will also import _all_ {term}`FEDEFL <Federal Elementary Flow List>` flows characterized by the method, often resulting in over 100,000 flow objects.
 
 See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additional details.
 
@@ -75,7 +75,7 @@ See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additio
 :::{dropdown}What LCIA methods are currently harmonized for use with LCI data on the FLCAC?
 :close:
 
-The LCIA methods listed in the following table are currently available on the FLCAC and have been harmonized to align with the federal elementary flow list using the [LCIAFormatter](https://github.com/USEPA/LCIAformatter).
+The LCIA methods listed in the following table are currently available on the FLCAC and have been harmonized to align with the {term}`Federal Elementary Flow List` using the [LCIAFormatter](https://github.com/USEPA/LCIAformatter).
 
 ~~~{embed} available_lcia_methods
 ~~~
@@ -144,7 +144,7 @@ The current FLCAC-docs repository also includes various resources for preparing 
 
 Here is a brief overview of the data preparation process:
 
-- Map elementary flows to FEDEFL
+- Map elementary flows to {term}`FEDEFL <Federal Elementary Flow List>`
 - Map technosphere flows to those that exist in the FLCAC repositories, or create new processes that produce the desired flows. Cut-off flows can also be created if needed, but these are not recommended.
 - Import the data into openLCA, this can be done before or after the mapping process.
 - Align the processes and flows with the NAICS folder structure.
@@ -157,7 +157,7 @@ Here is a brief overview of the data preparation process:
 :::{dropdown}How do I align my elementary flows with the Federal Elementary Flow List?
 :close:
 
-All data on the Federal LCA Commons must use elementary flows that conform to the [Federal Elementary Flow List](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251).
+All data on the Federal LCA Commons must use elementary flows that conform to the {term}`Federal Elementary Flow List`.
 For additional informatoin on flow mapping, see [Flow Mapping](Reference/FlowMapping.md)
 :::
 
