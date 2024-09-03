@@ -13,7 +13,6 @@ abbreviations:
 
 ### Federal LCA Commons (FLCAC)
 :::{dropdown}What is the Federal LCA Commons?
-:close:
 
 Official definition of the Federal LCA Commons (FLCAC) can be found on the [About Us](https://www.lcacommons.gov/about-us) page.
 
@@ -25,13 +24,11 @@ The FLCAC also looks to establish community resources and best practices for usi
 :::
 
 :::{dropdown}What is the FLCAC collaboration server?
-:close:
 
 The FLCAC {term}`collaboration server` is a server application that allows repository owners to work together on openLCA databases and publish databases to the Federal LCA Commons. Local openLCA databases can be connected to the collaboration server and information can be transferred. More information on openLCA collaboration servers can be found [here](https://www.openlca.org/collaboration-server/).
 :::
 
 :::{dropdown}What is the difference between USLCI and the FLCAC?
-:close:
 
 The FLCAC is a collaborative project across several agencies of the U.S. federal government intended to make life cycle inventory (LCI) data available across agencies and to the general public.
 The FLCAC hosts multiple LCI repositories one of which is the USLCI.
@@ -42,7 +39,6 @@ More information on USLCI can be found [here](#us-life-cycle-inventory) and USLC
 
 ### Finding Data
 :::{dropdown}How do I see what data exists on the FLCAC?
-:close:
 
 [View the available repositories](FLCAC_Repositories.md).
 
@@ -52,7 +48,6 @@ You can also search for processes across all repositories via the search functio
 :::
 
 :::{dropdown}How do I find impact assessment methods?
-:close:
 
 Impact assessment methods aligned with the {term}`Federal Elementary Flow List` (FEDEFL) and Federal LCA Commons data are available in two forms:
 
@@ -73,7 +68,6 @@ See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additio
 :::
 
 :::{dropdown}What LCIA methods are currently harmonized for use with LCI data on the FLCAC?
-:close:
 
 The LCIA methods listed in the following table are currently available on the FLCAC and have been harmonized to align with the {term}`Federal Elementary Flow List` using the [LCIAFormatter](https://github.com/USEPA/LCIAformatter).
 
@@ -91,7 +85,6 @@ See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additio
 ### openLCA
 
 :::{dropdown}How do I use data from the FLCAC in openLCA?
-:close:
 
 Entire repositories or repository elements (e.g., processes and flows) can be downloaded from the FLCAC as a {term}`JSON-LD` file type.
 You can also link directly to the FLCAC from within openLCA.
@@ -99,7 +92,6 @@ See [Accessing FLCAC Data](Accessing_data.md) for more details.
 :::
 
 :::{dropdown}How do I calculate LCIA results (e.g., climate change, eutrophication potential, etc.) for data on the FLCAC?
-:close:
 
 To calculate LCIA results, your repository needs two elements: a database made up of process LCIs and an LCIA method. See the questions above for information on which impact assessment methods are available. Importing impact assessment methods is done the same way as importing repositories (right click on database, select 'import', select 'file', navigate to the relevant file). If using the no-flows methods then import the methods file after importing the process database. You can verify that LCIA methods were imported by opening the 'Indicators and parameters' and checking the 'Impact assessment methods' folder.
 
@@ -110,7 +102,6 @@ There are many variations of this process to run results so please reference the
 :::
 
 :::{dropdown}Why are the impact assessment methods that I imported into openLCA not showing up in my database?
-:close:
 
 Two problems could be occurring:
 
@@ -119,7 +110,6 @@ Two problems could be occurring:
 :::
 
 :::{dropdown}What is a library?
-:close:
 
 The {term}`library` feature in openLCA 2.0 and later versions enables the use of databases together without needing to import them on top of one another. A library serves as a read only database that can easily be combined with other databases. Processes and other elements that are part of a library database are not editable but can be utilized as part of processes or product systems in the main database.
 
@@ -128,7 +118,6 @@ Libraries are beneficial for the current set-up of the FLCAC as they allow for m
 :::
 
 :::{dropdown}What is a provider?
-:close:
 
 A {term}`provider` in openLCA is the upstream process that produces a flow. Providers can be chosen in the 'Inputs/Outputs' tab in openLCA under the 'Provider' column for product and waste flows. Product and waste flows can have one or more provider, but elementary and cut-off flows do not have a provider because these flows have no upstream process producing them. It is important that data providers select the provider fields in their inventories to ensure that a flow is connected to the correct upstream process.
 :::
@@ -136,7 +125,6 @@ A {term}`provider` in openLCA is the upstream process that produces a flow. Prov
 ## Data Submission
 
 :::{dropdown}How do I submit data to the Federal LCA Commons (FLCAC)?
-:close:
 
 Submission processes vary for each repository, so it is recommended to reach out to the repository managers/owners to submit data or inquire about the specific data submission process.
 The USLCI submission process is currently recommended as the default FLCAC submission process. The submission handbook may be found [here](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) and a YouTube training video that covers this process is located [here](https://www.youtube.com/watch?v=jecyDLHu6OQ).
@@ -155,14 +143,12 @@ Here is a brief overview of the data preparation process:
 :::
 
 :::{dropdown}How do I align my elementary flows with the Federal Elementary Flow List?
-:close:
 
 All data on the Federal LCA Commons must use elementary flows that conform to the {term}`Federal Elementary Flow List`.
 For additional informatoin on flow mapping, see [Flow Mapping](Reference/FlowMapping.md)
 :::
 
 :::{dropdown}How do I align my technosphere flows the FLCAC?
-:close:
 
 Technosphere flows (i.e., product or waste flows) that come from another database (e.g., ecoinvent, Agri-footprint, GaBi, etc.) must be mapped to technosphere flows that exist within the FLCAC repositories or new processes should be created that produce these flows. Cut-off flows may be created if neither of the previous options are possible.
 
@@ -171,14 +157,12 @@ To map technosphere flows, you may either create a new process within openLCA an
 :::
 
 :::{dropdown}How do I align my dataset with the NAICS folder structure?
-:close:
 
 All data on the Federal LCA Commons must use the North American Industry Classification System (NAICS) folder structure [NAICS - Census Bureau](https://www.census.gov/naics/).
 To align new or existing processes and flows with NAICS, import the [Commons Core database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) to add the NAICS folder structure to your openLCA database and then organize flows and processes into the relevant folders. Use the NAICS Census Bureau link above to determine the appropriate 4 digit NAICS code.
 :::
 
 :::{dropdown}I have specific questions about data submission to the FLCAC, who do I reach out to?
-:close:
 
 Please submit questions to the FLCAC data curators via the [Issues page](https://github.com/FLCAC-admin/FLCAC-docs/issues) or email us at FederalLCACommons@erg.com.
 :::
@@ -186,7 +170,6 @@ Please submit questions to the FLCAC data curators via the [Issues page](https:/
 ## USLCI
 
 :::{dropdown}What is the USLCI database?
-:close:
 
 The USLCI Database project began in 2001 when the US Department of Energy (DOE) directed NREL and the Athena Institute to explore the development of a national public database.
 The US LCI Database was created and has been publicly available at www.nrel.gov/lci since 2003.
@@ -194,7 +177,6 @@ The project strives to provide publicly available LCI data following a consisten
 :::
 
 :::{dropdown}Why should I publishd my data on the USLCI Database?
-:close:
 The advantages of such a data source include:
 
 - It provides comprehensive information for policymakers to make consistent comparisons between policy options regarding environmental decisions.
@@ -206,14 +188,12 @@ The advantages of such a data source include:
 :::
 
 :::{dropdown}How long does the publication process take?
-:close:
 
 Phases 1-4 (i.e., [Appraisal](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#appraisal) through [Publication](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#publication)) can vary but often take approximately 1-3 months to complete depending on the number and size of the datasets.
 See: [Publication Timelines](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#publication) in [Section 2: How do I publish my data in the US LCI?](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md).
 :::
 
 :::{dropdown}When will my data be published?
-:close:
 
 Once your data have been reviewed and completed, the dataset(s) are ready for publication.
 NREL will publish the data to its own internal repository.
@@ -232,14 +212,12 @@ The quarterly publication dates are as follows:
 :::
 
 :::{dropdown}What is my role in the publication process?
-:close:
 Your role in the publication process is to transform your raw LCI data into a polished product that is ready for publication in the USLCI Database.
 Transform means putting your data into the USLCI Database's chosen data format and pairing your data with robust metadata so that users of your data understand how to use it properly.
 See: [Working with NREL](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#working-with-nrel) in [Section 2: How do I publish my data in the US LCI?](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md).
 :::
 
 :::{dropdown}Do I have to go through the publication process alone?
-:close:
 The data publication process is a collaborative effort between you (i.e., the Data Provider) and the NREL.
 Practically speaking, that means you will be working closely with one of NREL's LCI Data Curators throughout the [publication process](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#overview-digital-curation).
 
@@ -250,7 +228,6 @@ This person is trained in LCI data curation and can help you troubleshoot techni
 :::
 
 :::{dropdown}Who owns my data after it is published?
-:close:
 
 NREL and NAL do not claim ownership of the materials (each "Submission" and collectively "Submissions") you provide to NREL or NAL (including feedback and suggestions, if any).
 However, the data is subject to specific terms under the [Creative Commons Legal Code](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//04-resources/04-App-C.md).
@@ -258,7 +235,6 @@ However, the data is subject to specific terms under the [Creative Commons Legal
 :::
 
 :::{dropdown}How is my data used after it is published?
-:close:
 
 The data is available for use by anyone and increases data accessibility to the public.
 Providing the public with quality LCI data increases the level of transparency of LCA studies.
@@ -270,7 +246,6 @@ A comprehensive and transparent public LCI database has the potential to facilit
 
 ### Data Review and Data Quality
 :::{dropdown}What review process does data on the FLCAC undergo?
-:close:
 
 Data posted to the FLCAC is subjected to the review process as described in process-level metadata. The FLCAC Data Curators do not perform an additional critical review of submitted data or check for ISO compliance.
 
@@ -285,7 +260,6 @@ Moving forward the FLCAC Data Curator will also work to ensure that metadata is 
 ### Other LCA Software
 
 :::{dropdown}How do I use data from the FLCAC in other software?
-:close:
 
 Multiple LCA platforms outside of openLCA support repositories that are provided on the FLCAC, although not all of this data is up to date. For this reason, when using FLCAC data on other platforms please check the version or release date and compare to what is currently hosted on the [FLCAC](https://www.lcacommons.gov/lca-collaboration/). Please contact the individual software companies for more information on the repositories supported.
 :::
