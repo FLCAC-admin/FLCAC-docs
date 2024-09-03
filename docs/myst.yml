@@ -47,7 +47,6 @@ project:
 site:
   title: FLCAC Docs
   template: book-theme
-  source: https://github.com/FLCAC-admin/FLCAC-docs
   actions:
     - title: lcacommons.gov
       url: https://www.lcacommons.gov/
