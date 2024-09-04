@@ -18,13 +18,13 @@ The [Frequently Asked Questions page](FAQ.md) includes more information about ma
     - Prior to this meeting fill out the [data submission questionnaire](#data-provider-questionnaire) and submit it to the data curators at FederalLCACommons@erg.com
     - During this meeting we will discuss the specific steps needed to prepare your data for submission and assign roles
 3. [Download the openLCA software](#openlca) and install it on your computer
-4. Prepare your unit processes/product system as discussed in the initial curation meeting ([overview of the data preparation steps](#data-preparation-steps))
+4. Prepare and format your unit processes/product system as discussed in the initial curation meeting ([overview of the data formatting steps](#data-formatting-steps))
 5. Export ONLY your prepared datasets as a zipped JSON-LD file & submit to the data curators or add the datasets to a repository directly through the collaboration server
 6. Reconcile issues identified by the data curators during the review process & check results
 7. Approve the final version
 8. FLCAC data curators will publish your datasets on the FLCAC
 
-## Data Preparation Steps
+## Data Formatting Steps
 
 - Import your data into openLCA (import steps depend on original data source)
 - Download and import the latest version of the repository that you will be submitting data to into your database
