@@ -18,15 +18,15 @@ project:
     - title: Data Use
       children:
         - file: Accessing_data.md
-        # - file: data_user_handbook.md
+        - file: DataUserHandbook.md
         - file: Tips.md
     - title: Data Submission
       children:
         - file: DataSubmissionToolkit.md
-        # - file: data_submission_handbook.md
-    # - title: Repository Management
-    #   children:
-    #     - file: file1.md
+        - file: DataSubmissionHandbook.md
+     - title: Repository Management
+       children:
+         - file: RepositoryManagementHandbook.md
     #     - file: file2.md
     - file: FAQ.md
     - title: Additional Resources
