@@ -247,7 +247,12 @@ Moving forward the FLCAC Data Curator will also work to ensure that metadata is 
 :::
 
 
-### Other LCA Software
+### Working with Other LCA Software/LCI Databases
 :::{dropdown} How do I use data from the FLCAC in other software?
 Multiple LCA platforms outside of openLCA support repos that are provided on the FLCAC, although not all of this data is up to date. For this reason, when using FLCAC data on other platforms please check the version or release date and compare to what is currently hosted on the [FLCAC](https://www.lcacommons.gov/lca-collaboration/). Please contact the individual software companies for more information on the repos supported.
 :::
+
+:::{dropdown} How do I combine other LCI databases with FLCAC repositories?
+Currently, repositories on the FLCAC have data gaps, for this reason some data users may want to combine LCI databases (e.g., combine USLCI + ecoinvent). There are multiple ways to do this based on the databases being combined, the main part of this process is to align elementary flows from other databases outside of the FLCAC with the Federal Elementary Flow List (FEDEFL). 
+
+To combine FLCAC repositories with those on [openLCA's Nexus site](https://nexus.openlca.org/databases) it is recommended to use [this flow mapping file](https://www.openlca.org/wp-content/uploads/2020/07/Flow-mapping-file_openLCA_to_FEDEFL.pdf) that maps openLCA flows to FEDEFL flows.
