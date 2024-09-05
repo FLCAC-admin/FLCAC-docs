@@ -9,6 +9,6 @@ abbreviations:
 
 This is the Federal LCA Commons (FLCAC) Repository Management Handbook. It describes the repository management processes that repositories should strive to adhere to. Resources are provided for repository managers within this handbook.
 
-- Resources for data users are provided here (LINK EVENTUALLY).
-- Resources for data providers are provided here (LINK EVENTUALLY).
+- [Resources for data users are provided here](https://flcac-admin.github.io/FLCAC-docs/datauserhandbook).
+- [Resources for data providers are provided here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook).
 
