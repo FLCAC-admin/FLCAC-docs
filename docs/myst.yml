@@ -23,7 +23,7 @@ project:
     - title: Data Submission
       children:
         - file: DataSubmissionToolkit.md
-        # - file: data_submission_handbook.md
+        - file: DataSubmissionHandbook.md
     # - title: Repository Management
     #   children:
     #     - file: file1.md
