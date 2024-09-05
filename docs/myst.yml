@@ -17,17 +17,16 @@ project:
     - file: FLCAC_Repositories.md
     - title: Data Use
       children:
-        - file: Accessing_data.md
         - file: DataUserHandbook.md
+        - file: Accessing_data.md
         - file: Tips.md
     - title: Data Submission
       children:
         - file: DataSubmissionToolkit.md
         - file: DataSubmissionHandbook.md
-     - title: Repository Management
-       children:
-         - file: RepositoryManagementHandbook.md
-    #     - file: file2.md
+    - title: Repository Management
+      children:
+        - file: RepositoryManagementHandbook.md
     - file: FAQ.md
     - title: Additional Resources
       children:
