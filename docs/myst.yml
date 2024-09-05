@@ -24,9 +24,9 @@ project:
       children:
         - file: DataSubmissionToolkit.md
         - file: DataSubmissionHandbook.md
-     - title: Repository Management
-       children:
-         - file: RepositoryManagementHandbook.md
+    - title: Repository Management
+      children:
+        - file: RepositoryManagementHandbook.md
     - file: FAQ.md
     - title: Additional Resources
       children:
