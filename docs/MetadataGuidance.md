@@ -1,17 +1,17 @@
 ---
 title: Process Metadata Guidance
-description: Detailed information on the contents of each openLCA metadata field for data on the FLCAC.
+description: Detailed information on metadata fields for data on the FLCAC
 abbreviations:
   FLCAC: Federal LCA Commons
   LCA: Life Cycle Assessment
   LCI: Life Cycle Inventory
 ---
 
-This document provides detailed information on the contents of each openLCA metadata field for data on the FLCAC. 
+This document provides detailed information on metadata fields for data on the FLCAC. Each field in this document corresponds to a field in openLCA.
 
-As FLCAC interagency coordination increases, the new standard for data formats and documentation is being advanced. To move toward interoperability and transparency, FLCAC harmonization of digital data access and preservation will increase collaboration potential and the reviewability of the LCA data exchange process. These efforts will significantly reduce not only data acquisition costs but also computer- and human-based misinterpretation errors, and thus, data misuse. As such, and to be more aligned with international protocols for all newly developed data, the current FLCAC repository standardization is to strive for 100% metadata completion.
+As FLCAC interagency coordination increases, the new standard for data formats and documentation is being advanced. To move toward interoperability and transparency, FLCAC harmonization of digital data access and preservation will increase collaboration potential and the reviewability of the LCA data exchange process. These efforts will significantly reduce not only data acquisition costs but also computer- and human-based misinterpretation errors, and thus, data misuse. As such, and to be more aligned with international protocols for all newly developed data, **the current FLCAC standard is to strive for 100% metadata completion**.
 
-The sections below correspond to tables with the conventions for each field of the elements in the openLCA software. The sections are arranged by the field sections as displayed in the tabs of the openLCA process window views. 
+The sections in this document correspond to the tabs and sections within the openLCA software.
 
 :::{important}
 Each field has a description and example(s) recommended by the Data Curator for completing the metadata for processes submitted to the FLCAC. Some of these fields are mandatory, a few are automatically populated, and some are optional - this is noted next to the field name.

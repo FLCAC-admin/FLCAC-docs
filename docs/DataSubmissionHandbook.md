@@ -249,7 +249,7 @@ To run LCIA results on your model please follow [these instructions]() in the Da
 ### Metadata Guidance
 As FLCAC interagency coordination increases, the new standard for data formats and documentation is being advanced. To move toward interoperability and transparency, FLCAC harmonization of digital data access and preservation will increase collaboration potential and the reviewability of the LCA data exchange process. These efforts will significantly reduce not only data acquisition costs but also computer- and human-based misinterpretation errors, and thus, data misuse. As such, and to be more aligned with international protocols for all newly developed data, the current FLCAC repository standardization is to strive for 100% metadata completion.
 
-**[Please access the metadata guidance documentation here.](https://flcac-admin.github.io/FLCAC-docs/metadataguidance**
+**[Please access the process metadata guidance documentation here.](https://flcac-admin.github.io/FLCAC-docs/metadataguidance**
 
 ## Review
 Once data has been formatted appropriately, the Data Provider should send the JSON-LD files to the Data Curator via the predetermined data transfer platform. 
