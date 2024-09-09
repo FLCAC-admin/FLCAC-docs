@@ -7,11 +7,11 @@ abbreviations:
   LCI: Life Cycle Inventory
 ---
 
-This is the Federal LCA Commons (FLCAC) Data Submission Handbook. It describes the data submission and documentation framework that all new data across the FLCAC repositories must adhere to. Resources are provided for data providers within this handbook.
+This is the Federal LCA Commons (FLCAC) Data Submission Handbook. It describes the data submission and documentation framework that all new data across the FLCAC repositories must adhere to. Resources for data providers are provided within this handbook.
 
 - [The Data Submission Toolkit](https://flcac-admin.github.io/FLCAC-docs/datasubmissiontoolkit) provides an overview of the data submission and formatting steps that are provided in this handbook.
-- [Resources for data users are provided here](https://flcac-admin.github.io/FLCAC-docs/datauserhandbook).
-- [Resources for repository owners are provided here](https://flcac-admin.github.io/FLCAC-docs/repositorymanagementhandbook).
+- [The Data User Handbook can be found here](https://flcac-admin.github.io/FLCAC-docs/datauserhandbook).
+- [The FLCAC Repository Management Handbook can be found here](https://flcac-admin.github.io/FLCAC-docs/repositorymanagementhandbook).
 
 # Introduction
 
@@ -19,9 +19,9 @@ The [FLCAC platform](https://www.lcacommons.gov/) provides users access to your 
 
 The National Renewable Energy Lab (NREL) FLCAC Data Curators developed this comprehensive handbook to communicate the FLCAC’s streamlined, transparent, data provider-oriented submission and publication workflow. It additionally provides guidance for using the openLCA software within the context of preparing data for FLCAC submission.
 
-The FLCAC data curation process is collaborative and iterative. Excluding technical review, the FLCAC Curators will review datasets to verify their compliance with the FLCAC Submission Handbook Guidelines, and coordinate with data providers to reconcile outstanding issues. Throughout this resource, additional opportunities for support from the FLCAC Data Curators during dataset preparation processes are clearly communicated.
+The FLCAC data curation process is collaborative and iterative. The FLCAC Curators will review datasets to verify their compliance with the FLCAC Submission Handbook Guidelines, and coordinate with data providers to reconcile outstanding issues. Throughout this resource, additional opportunities for support from the FLCAC Data Curators during dataset preparation processes are clearly communicated.
 
-The FLCAC consists of multiple, distinct LCI repositories covering a variety of topics, inventory collection methods, and dataset provider groups. One of the FLCAC repositories is the U.S. Life Cycle Inventory database (USLCI) which is managed by NREL and covers a wide breadth of LCI data from industry and . researchers. Federal agencies or their laboratories independently manage these repositories. A list of repositories and their management’s contact information can be found [here](https://flcac-admin.github.io/FLCAC-docs/flcac-repositories).
+The FLCAC consists of multiple, distinct LCI repositories covering a variety of topics, inventory collection methods, and dataset provider groups. One of the FLCAC repositories is the U.S. Life Cycle Inventory database (USLCI) which is managed by NREL and covers a wide breadth of LCI data from industry and researchers. Federal agencies or their laboratories independently manage these repositories. A list of repositories and their management’s contact information can be found [here](https://flcac-admin.github.io/FLCAC-docs/flcac-repositories).
 
 The FLCAC data handbook associated publication tools apply to all repositories on the FLCAC. This is a living document and will be updated as the FLCAC data submission process evolves. **This handbook applies to all new data submissions but is not enforced retroactively.**
 
@@ -56,7 +56,8 @@ This section provides an explanation of the [benefits](#benefits), [expectations
 
 :::{note}
 All datasets submitted to the FLCAC be placed in the public domain under the terms of the [Creative Commons Legal Code (CC0 1.0 Universal (CC0 1.0))](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-C.md).
-USLCI has a [Data Use Disclaimer Agreement (“Agreement”)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) and [Data Provider’s Content License Agreement (“Agreement”)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-B.md).
+
+USLCI has a [Data Use Disclaimer Agreement (“Agreement”)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) and a [Data Provider’s Content License Agreement (“Agreement”)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-B.md).
 :::
 - Data should undergo a review before submission to the FLCAC.
 - Data should principally represent the US/North American geographical region
@@ -147,7 +148,7 @@ Each of the five phases are discussed in detail below but a quick overview of th
     -	Download the openLCA software and install it on your computer
     -	Import data into openLCA or manually enter data
 -	Data Formatting: 
-    - Prepare and format your unit processes/product system as discussed in the initial curation meeting (overview of the data formatting steps)
+    - Prepare and format your unit processes/product system as discussed in the initial curation meeting and the [Data Formatting section](#data-formatting)
     - Export ONLY your prepared datasets as a zipped JSON-LD file & submit to the Data Curator or add the datasets to a repository directly through the collaboration server
 -	Review:
     - Reconcile issues identified by the Data Curator during the review process & check results
@@ -249,7 +250,7 @@ To flow map intermediate and cut-off flow technosphere flows it is recommended t
 If there is not an appropriate technosphere flow to map to then follow these steps:
 1.	Evaluate if there are any proxy or surrogate flows in the FLCAC database that could be used (e.g., map lubricant to crude oil). Do not consider cut-off flows yet.
 2.	Search across all FLCAC repositories via the Federal LCA Commons platform search feature. If an appropriate flow is found that is in a different repository, let the Data Curator know and we will combine repositories via the library feature. Do not consider cut-off flows yet.
-3.	If public, LCI data is available for the desired flow, consider adding another process to the FLCAC.
+3.	If public, LCI data is available for the desired flow, consider adding another process to the FLCAC that fills in the data gap.
 4.	If no appropriate flow is found, then evaluate if there is an existing cut-off flow that is representative of your flow. 
 5.	If none of the above options are viable then create a new cut-off flow in the database and map your original flow to the new cut-off flow. Reference the cut-off section below for more details.
 
@@ -265,8 +266,6 @@ Processes from other databases should not be submitted as datasets. Datasets fro
 To reference intermediate flows from another database (e.g., ecoinvent(R), GaBi, Quantis, Agri-footprint), the flow names, i.e., nomenclature should match the original database exactly in the 'Input, Flow' field and indicate source in the 'Input, Flow, Description' field. 
 
 These outside database flow references will be submitted as 'Cut-offs' with reference to the source such that they may be re-integrated by end-users. This data set integration must occur locally by the Data Provider prior to submitting the sets to the FLCAC for curation. 
-
-Additional guidance on the ILCD nomenclature for technosphere and process nomenclature can be located in the [ILCD Handbook](https://eplca.jrc.ec.europa.eu/uploads/MANPROJ-PR-ILCD-Handbook-Nomenclature-and-other-conventions-first-edition-ISBN-fin-v1.0-E.pdf).
 
 ### Elementary Flow Alignment
 Elementary flows are data components of LCA data that describe common physical items that move from the technosphere into nature or vice versa. They are used in exchanges in life cycle inventory (LCI) data to represent these movements into and out of processes, and they are used in Life Cycle Impact Assessment (LCIA) methods to match inventory data with impact characterization factors. Hence, they serve a critical role in LCA modeling and are essential in achieving LCA data interoperability. 
@@ -290,9 +289,13 @@ As FLCAC interagency coordination increases, the new standard for data formats a
 
 The links below correspond to tables with the conventions for each field of the elements in the openLCA software. The tables are arranged by the field sections as displayed in the tabs of the openLCA process window views. Each field has guidance and examples recommended by the Data Curator for completing the metadata for processes submitted to the FLCAC. Some of these fields are mandatory (marked 'M'), a few are automatically populated (marked 'A'), and some are optional (marked 'O').
 
+METADATA TABLES TO BE INSERTED HERE
 
 ## Review
-Once data has been formatted appropriately, the Data Provider should send the JSON-LD files to the Data Curator via the predetermined data transfer platform.
+Once data has been formatted appropriately, the Data Provider should send the JSON-LD files to the Data Curator via the predetermined data transfer platform. 
+:::{Important}
+Only the processes intended for submission should be exported and sent as a JSON-LD file to the Data Curator.
+:::
 
 Once the JSON-LD files are received, the Data Curator begins the Review phase of the data curation process. The Data Curator will leave review comments for the Data Provider in an excel workbook and send the file back to the Data Provider to reconcile issues identified. The Review phase can involve iterative communications and often, a one-hour meeting is scheduled to review comments.
 
