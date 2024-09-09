@@ -223,7 +223,7 @@ A technosphere flow that is not being submitted as a dataset and is not already 
 
 Processes from other databases should not be submitted as datasets. Datasets from different databases with disparate categorization schemes can prevent connectivity, cause duplications and/or confusion among users, and result in a bulky database when combining.
 
-To reference intermediate flows from another database (e.g., ecoinvent(R), GaBi, Quantis, Agri-footprint), the flow names, i.e., nomenclature should match the original database exactly in the 'Input, Flow' field and indicate source in the 'Input, Flow, Description' field. 
+To limit the number of cut-off flows, please use existing cut-off flows if possible and reference the flow details (e.g., original database source and exact flow name) in the flow 'Description' field of the exchange which is located in the 'Input/Output' tab in openLCA. 
 
 These outside database flow references will be submitted as 'Cut-offs' with reference to the source such that they may be re-integrated by end-users. This data set integration must occur locally by the Data Provider prior to submitting the sets to the FLCAC for curation. 
 
