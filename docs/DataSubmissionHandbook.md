@@ -55,10 +55,9 @@ This section provides an explanation of the [benefits](#benefits) and [expectati
 - Flow data within a unit process must be based on measurements using a specified and standardized measurement method OR estimated using methods and data described in specified in a publicly available source.
 
 [^Public]: Please review the [Placing Your Data in the Public Domain](#placing-your-data-in-the-public-domain) section.
-Please review the [Placing Your Data in the Public Domain](#placing-your-data-in-the-public-domain) section.
 [^Geography]: If data are outside of this geographic scope, inquire with the FLCAC Curators on their appropriateness of inclusion to the FLCAC
 [^System]: System processes will only be accepted when data aggregation (e.g., horizontal averaging, vertical aggregation; proprietary, ease-of-use) is required from the data provider. See metadata guidance for instructions on documenting aggregation method.
-[^Allocation]: The allocation approach should be justified and clearly described.
+[^Allocation]: The allocation approach should be justified and clearly described in the metadata.
 
 ---
 % block for footnotes
@@ -77,7 +76,7 @@ Your role in the publication process is to transform your raw LCI data into a pr
 
 The documentation, metadata guidance, and resources in this Data Submission Guide will be essential resources in the submission process.
 
-# Data Curation Overview
+# Data Curation 
 NREL uses a Digital Curation Process for receiving, formatting, reviewing, and publishing data and metadata submitted to the FLCAC. The process is divided into five phases:
 1.	[Appraisal](#appraisal)
 2.	[Data Import](#data-import-into-openlca)
@@ -104,18 +103,18 @@ Each of the five phases are discussed in detail below but a quick overview of th
 - [Publication and Preservation](#publication-and-preservation):
   -	FLCAC Data Curator will publish your dataset(s) on the FLCAC and preserve the final version(s)
 
-## Additional Resources
+### Additional Resources
 - [Useful resources for data submission can be found in this section](#resources)
 - [Frequently Asked Questions regarding the data submission process can be found here](https://flcac-admin.github.io/FLCAC-docs/faq#data-submission)
 - [A YouTube video detailing the data submission process can be found here](https://www.youtube.com/watch?v=IlPlYet8llY&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=9&)
 
-# Appraisal
-## Appraisal Objectives
+## Appraisal
+### Appraisal Objectives
 The objectives of the Appraisal phase are to:
 - Verify the fitness of your data for publication on the FLCAC
 -	If appropriate, develop a plan for the Data Formatting phases of the Curation Process.
 
-## Appraisal Steps
+### Appraisal Steps
 The Appraisal phase is composed of the following elements:
 - Complete the Data Submission Questionnaire
 - Submit the Data Submission Questionnaire and original LCI data to the Data Curator
@@ -128,10 +127,10 @@ Following this review, a 30-60 minute Appraisal Meeting may be scheduled. This m
 1.	Data approved and data curation plan is established
 2.	Revise and resubmit
 
-## Data Transfer Platform
+### Data Transfer Platform
 During the initial Appraisal Meeting the Data Curator and Data Provider will discuss platforms for data transfer. openLCA databases can be too large to send via email. For most Data Providers, a private GitHub repository is set-up to transfer files back and forth during the appraisal and review phases. Other potential options include the FLCAC collaboration server, email, or an FTP site.
 
-# Data Import into openLCA
+## Data Import into openLCA
 All data on the FLCAC is compatible and intended to be used with [openLCA](https://www.openlca.org/), an open-source, free LCA software that can import data from many commercial LCA software applications including GaBi and SimaPro. Most data formatting will take place inside of openLCA so the Data Provider will need to [download the latest version of openLCA](https://www.openlca.org/download/). 
 
 To import a dataset that exists in a format that is compatible with openLCA, please review [these instructions from the openLCA manual](https://greendelta.github.io/openLCA2-manual/databases/importing_and_combining_databases.html). Data formats that can be directly imported into openLCA include:
@@ -147,8 +146,8 @@ Create an empty database to import data into.
 
 If data does not exist in a format that can be imported into openLCA then data should be entered manually or for bulk and large datasets an automated data entry method will be discussed in the initial Appraisal meeting. Bulk data entry methods vary based on the source format of the original data.
 
-# Data Formatting
-## Data Formatting Overview
+## Data Formatting
+### Data Formatting Overview
 To facilitate compliance with ISO 14048:2002, the FLCAC uses the [openLCA database schema](https://greendelta.github.io/olca-schema/) and builds upon this schema with additional requirements to standardize data across FLCAC repositories. There are five steps of data formatting to align data with the openLCA and FLCAC schemas:
 
 The Data Formatting phase provides steps for preparing your data for submission to the FLCAC. There are five stages of data formatting, each of which are described in detail in this section:
@@ -182,14 +181,14 @@ Please also review these notes on flows and processes before beginning data form
 -	One technosphere flow can be produced by multiple processes. So, in an LCI the desired upstream process producing a flow should be selected via the ‘Provider’ field.
     -	For example, a flow named “Electricity, at grid” could be produced by the following processes “Northeastern electricity grid mix”, “Southeastern electricity gird mix”, Northwestern electricity grid mix”, and “Southwestern electricity grid mix”. So when creating an LCI with the “Electricity, at grid” flow, the desired upstream gird mix process should be linked to the flow.
 
-## NAICS Categorization
+### NAICS Categorization
 Technosphere flows and processes on the FLCAC are classified using the North American Industry Classification System (NAICS) 2 digit/4 digit classification scheme. The [FLCAC Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) contains the NAICS folder structure and can be imported into an openLCA database to align flows and processes.
 Steps to assign proper categorization to new flows and processes:
 1. Search your product or process on the [Census Bureau NAICS website](https://www.census.gov/naics/) and identify the proper four-digit NAICS code
 2. In openLCA, import the Commons Core Database into the database with your data
 3.	Drag and drop your processes and flows that you will be submitting into the correct NAICS folders in your openLCA database
 
-## Technosphere Flow Alignment
+### Technosphere Flow Alignment
 In openLCA, technosphere flows and processes are separate objects that can be linked via providers to form a product system. 
 Two types of technosphere flows exist within a process LCI in openLCA: waste flows and products flows. Waste and product flows can take on three forms: 
 1.	Intermediate flow: A flow that is produced by another process, not the foreground process. This flow needs to be linked to an upstream process via the ‘Provider’ field in openLCA.
@@ -198,7 +197,7 @@ Two types of technosphere flows exist within a process LCI in openLCA: waste flo
 
 To keep FLCAC LCI data self-contained (i.e., not dependent on other LCI databases) all technosphere flows must already exist or be created within the FLCAC. For this reason, if the original LCI dataset relies on LCI databases outside of the FLCAC then intermediate and cut-off technosphere flows must be mapped to existing FLCAC flows/processes or new flows will need to be created within the FLCAC (e.g., an electricity flow from ecoinvent will need to be mapped to an electricity flow within the FLCAC repositories). The quantitative reference flow of a new process will need to be created or an existing flow can be selected as the quantitative reference flow of a new process.
 
-### Flow Mapping Technosphere Flows
+#### Flow Mapping Technosphere Flows
 To flow map intermediate and cut-off flow technosphere flows it is recommended to use openLCA’s flow mapping feature. 
 1.	In the openLCA database with your original data that needs to be mapped, import the repository that you intend to submit your data to from the [Federal LCA Commons platform](https://www.lcacommons.gov/lca-collaboration/) (e.g., USLCI).
     -	Now your database should have your original technosphere flows and the FLCAC compatible technosphere flows of the repository that you’re submitting data to.
@@ -216,7 +215,7 @@ If there is not an appropriate technosphere flow to map to then follow these ste
 
 Once all technosphere flows have been mapped, delete any extraneous folders that may have housed upstream data that was just mapped. After technosphere flow mapping, your database should only have the Commons Core database NAICS folder structure and folders associated with elementary flows from your original data.
 
-## Cut-off Flows
+### Cut-off Flows
 Cut-off flows are used to temporarily fill in data gaps in the FLCAC repositories. As new data is submitted, the Data Curator will replace cut-off flows when possible. 
 
 A technosphere flow that is not being submitted as a dataset and is not already in any of the FLCAC repositories should be categorized in the Technosphere Flows>CUTOFF Flows folder with the description 'CUTOFF' in the product flow description metadata. Otherwise, a reasonable proxy from the FLCAC may be identified with a note in the ‘Input Flow, Description’ field regarding the flow database origin and original flow name. 
@@ -227,24 +226,24 @@ To limit the number of cut-off flows, please use existing cut-off flows if possi
 
 These outside database flow references will be submitted as 'Cut-offs' with reference to the source such that they may be re-integrated by end-users. This data set integration must occur locally by the Data Provider prior to submitting the sets to the FLCAC for curation. 
 
-## Elementary Flow Alignment
+### Elementary Flow Alignment
 Elementary flows are data components of LCA data that describe common physical items that move from the technosphere into nature or vice versa. They are used in exchanges in life cycle inventory (LCI) data to represent these movements into and out of processes, and they are used in Life Cycle Impact Assessment (LCIA) methods to match inventory data with impact characterization factors. Hence, they serve a critical role in LCA modeling and are essential in achieving LCA data interoperability. 
 
 The US EPA has developed the EPA Federal LCA Commons Elementary Flow List (FEDEFL) which is a master elementary flow list that is available in CSV and openLCA schema JSON-LD formats. The current release version of FEDEFL is available via the [FLCAC platform](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets).
 
 The FLCAC has adopted the EPA Federal LCA Commons Elementary Flow List (FEDEFL) for elementary flow classification. The classification of elementary flows employed by the FEDEFL allows for a systematic approach for managing elementary flows on the FLCAC. All elementary flows in LCI data on the FLCAC must be based off FEDEFL.
 
-### Flow Mapping Elementary Flows
+#### Flow Mapping Elementary Flows
 Guidance on using and converting to this nomenclature can be found on the [FEDEFL GitHub repository wiki page](https://github.com/USEPA/fedelemflowlist/wiki) or the [FEDEFL guidance document](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=341199). The FEDEFL wiki provides guidance on converting an established flow list in a standard openLCA format to FEDEFL flows. Please see the US EPA report, [The Federal LCA Commons Elementary Flow List: Background, Approach, Description and Recommendations](https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=347251&Lab=NRMRL) for more information regarding the FEDEFL requirements and nomenclature.
 
 When submitting data, the elementary flow names in the LCI must correspond directly to the elementary flow names used in the LCIA method. Usage of the FEDEFL protocol for both LCI and LCIA datasets on the FLCAC ensures interoperability between these different types of datasets and the original and FEDEFL names are documented during the curation process.
 
-## LCIA Results
+### LCIA Results
 Once all elementary and technosphere flows have been aligned with the guidelines above, it is important to run LCIA results on your new model in openLCA to ensure that results are similar to those in your original model. If results are not similar, differences must be understood and discussed in the metadata.
 
 To run LCIA results on your model please follow [these instructions]() in the Data User Handbook.
 
-## Metadata Guidance
+### Metadata Guidance
 As FLCAC interagency coordination increases, the new standard for data formats and documentation is being advanced. To move toward interoperability and transparency, FLCAC harmonization of digital data access and preservation will increase collaboration potential and the reviewability of the LCA data exchange process. These efforts will significantly reduce not only data acquisition costs but also computer- and human-based misinterpretation errors, and thus, data misuse. As such, and to be more aligned with international protocols for all newly developed data, the current FLCAC repository standardization is to strive for 100% metadata completion.
 
 The links below correspond to tables with the conventions for each field of the elements in the openLCA software. The tables are arranged by the field sections as displayed in the tabs of the openLCA process window views. 
@@ -259,7 +258,7 @@ It is preferred that data providers fill in their metadata directly in openLCA, 
 
 METADATA TABLES TO BE INSERTED HERE
 
-# Review
+## Review
 Once data has been formatted appropriately, the Data Provider should send the JSON-LD files to the Data Curator via the predetermined data transfer platform. 
 
 :::{important}
@@ -272,8 +271,8 @@ _It is important to note this process does not include a technical review of the
 
 Typically, the review comments revolve around fixing flows that are not compatible with FEDEFL or the FLCAC and fixing process metadata wording and content
 
-# Publication and Preservation
-## Publication
+## Publication and Preservation
+### Publication
 Once your data have been reviewed and completed, the dataset(s) are ready for publication. The Data Curator will publish the data to its repository on the [Federal LCA Commons Collaboration Server](https://www.lcacommons.gov/lca-collaboration/). 
 
 FLCAC repositories are published at different intervals, so please inquire with the Data Curator or Repository Manager of the database your data is being published in regarding release timing.
@@ -286,17 +285,17 @@ The USLCI is updated with new and revised data on a quarterly basis:
 -	September 30
 -	December 31
 
-## Preservation
+### Preservation
 The Data Curator will preserve the final dataset files according to [ISO 14721](https://www.iso.org/standard/57284.html) standards for long-term digital information preservation. That is, the final dataset file versions are stabilized, checked for fixity (i.e., verifying no digital file corruption), and stored such that the original and published datasets and their supporting metadata are archived. Only the initial dataset submission and the version final dataset as published are archived. These datasets will be saved until the next update is submitted and published. Older datasets may not be saved in the Federal LCA Data Commons but NREL retains the older datasets on their servers. Updates to previously published datasets shall contain a relevant note in the ‘Intended Application’ metadata field of the unit process Administrative Information. If a user needs an older dataset, they may access the archived [USLCI Database Downloads](https://github.com/uslci-admin/uslci-content/blob/dev/docs/release_info/release-downloads.md) or contact [the appropriate Repository Manager for a copy](https://flcac-admin.github.io/FLCAC-docs/flcac-repositories).
 
-# Resources
-## openLCA
+## Resources
+### openLCA
 :::{include} Reference/olca_resources.md
 :::
 
 - [YouTube Quick Help Series](https://www.youtube.com/playlist?list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q): Includes videos on how to work with repositories on the Federal LCA Commons, using USLCI as an example.
 
-## Video: USLCI Data Submission 📺 🔉
+### Video: USLCI Data Submission 📺 🔉
 :::{iframe} https://www.youtube.com/embed/IlPlYet8llY
 :width: 100%
 Overview of the data submission process with an example dataset. Includes guidance on importing/exporting, aligning the folder structure with NAICS, flow mapping, completing metadata, and more.
