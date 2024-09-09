@@ -8,7 +8,7 @@ abbreviations:
 ---
 
 This document provides an overview of the data submission process and relevant resources.
-Please refer to the [Data Submission Handbook](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) for detailed information regarding the submission process.
+Please refer to the [Data Submission Handbook](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook) for detailed information regarding the submission process.
 The [Frequently Asked Questions page](FAQ.md) includes more information about many of these topics.
 
 ## Data Submission Steps
@@ -28,13 +28,13 @@ The [Frequently Asked Questions page](FAQ.md) includes more information about ma
 
 - Import your data into openLCA (import steps depend on original data source)
 - Download and import the latest version of the repository that you will be submitting data to into your database
-- [Flow map elementary flows to FEDEFL flows](FAQ.md#data-submission)
-- [Flow map technosphere flows to existing FLCAC flows](FAQ.md#data-submission)
+- [Flow map technosphere flows to existing FLCAC flows](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment)
+- [Flow map elementary flows to FEDEFL flows](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#elementary-flow-alignment)
 - Download and import the [Federal LCA Commons Core database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) into your local database
 - Move your processes and flows into the correct NAICS folders, you can search for the relevant folders on the [Census Bureau website here](https://www.census.gov/naics/)
 - Delete the old, unused folders that were brought in with your original database
 - [Run results](FAQ.md#openlca) and compare values to the original model
-- Complete the metadata fields according to the [metadata guidelines](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md#metadata-guidance-tables)
+- Complete the metadata fields according to the [metadata guidelines](https://flcac-admin.github.io/FLCAC-docs/metadataguidance)
 - Send your draft database to the FLCAC curators for review
 
 :::{important} Notes on data submissions and maintenance of data
@@ -69,8 +69,8 @@ Can be accessed [here](Data%20Provider%20Questionnaire.docx) in Microsoft Word f
 
 ### Submission Guidance
 
-- [USLCI Submission Handbook](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md): Submission handbook for USLCI and other FLCAC repositories. Section 2: How do I publish my data in USLCI? Provides technical details of the publishing process.
-- [Metadata Guidance Tables](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md#metadata-guidance-tables): These tables provide information on metadata that should be included in each openLCA field with examples.
+- [FLCAC Submission Handbook](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook): Submission handbook for USLCI and other FLCAC repositories. Section 2: How do I publish my data in USLCI? Provides technical details of the publishing process.
+- [Metadata Guidance Tables](https://flcac-admin.github.io/FLCAC-docs/metadataguidance): These tables provide information on metadata that should be included in each openLCA field with examples.
 
 :::{note}
 It is preferred that data providers fill in their metadata directly in openLCA, but if needed an excel template can be provided to fill out metadata.

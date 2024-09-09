@@ -153,8 +153,8 @@ To facilitate compliance with ISO 14048:2002, the FLCAC uses the [openLCA databa
 
 The Data Formatting phase provides steps for preparing your data for submission to the FLCAC. There are five stages of data formatting, each of which are described in detail in this section:
 1.	Categorization of processes and flows using the North American Industry Classification System (NAICS)
-2.	Elementary flow alignment with the Federal Elementary Flow List (FEDEFL)[^flows]
-3.	Technosphere flow alignment with FLCAC product, waste, or cut-off flows[^flows]
+2.	Technosphere flow alignment with FLCAC product, waste, or cut-off flows[^flows]
+3.	Elementary flow alignment with the Federal Elementary Flow List (FEDEFL)[^flows]
 4. Run LCIA results with new FEDEFL/FLCAC aligned model and compare to the original LCIA results
 5.	Metadata conformance with the openLCA schema and metadata guidance provided in this handbook (includes data quality measurements)
 
@@ -249,17 +249,7 @@ To run LCIA results on your model please follow [these instructions]() in the Da
 ### Metadata Guidance
 As FLCAC interagency coordination increases, the new standard for data formats and documentation is being advanced. To move toward interoperability and transparency, FLCAC harmonization of digital data access and preservation will increase collaboration potential and the reviewability of the LCA data exchange process. These efforts will significantly reduce not only data acquisition costs but also computer- and human-based misinterpretation errors, and thus, data misuse. As such, and to be more aligned with international protocols for all newly developed data, the current FLCAC repository standardization is to strive for 100% metadata completion.
 
-The links below correspond to tables with the conventions for each field of the elements in the openLCA software. The sections are arranged by the field sections as displayed in the tabs of the openLCA process window views. 
-
-:::{important}
-Each field has guidance and examples recommended by the Data Curator for completing the metadata for processes submitted to the FLCAC. Some of these fields are mandatory (marked 'M'), a few are automatically populated (marked 'A'), and some are optional (marked 'O').
-:::
-
-:::{note}
-It is preferred that data providers fill in their metadata directly in openLCA, but if needed an excel template can be provided to fill out metadata.
-:::
-
-METADATA TABLES TO BE INSERTED HERE
+**[Please access the metadata guidance documentation here.](https://flcac-admin.github.io/FLCAC-docs/metadataguidance**
 
 ## Review
 Once data has been formatted appropriately, the Data Provider should send the JSON-LD files to the Data Curator via the predetermined data transfer platform. 

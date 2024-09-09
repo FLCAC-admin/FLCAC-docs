@@ -13,6 +13,14 @@ As FLCAC interagency coordination increases, the new standard for data formats a
 
 The sections below correspond to tables with the conventions for each field of the elements in the openLCA software. The sections are arranged by the field sections as displayed in the tabs of the openLCA process window views. 
 
+:::{important}
+Each field has a description and example(s) recommended by the Data Curator for completing the metadata for processes submitted to the FLCAC. Some of these fields are mandatory, a few are automatically populated, and some are optional - this is noted next to the field name.
+:::
+
+:::{note}
+It is preferred that data providers fill in their metadata directly in openLCA, but if needed an excel template can be provided to fill out metadata.
+:::
+
 # General Information
 ## **Name** (_Mandatory_)
 ### Description
@@ -25,7 +33,7 @@ The naming conventions are as follows:
 **Base name[^mandatory]; treatment received[^mandatory], production route(s)[^mandatory], standard(s) fulfilled[^mandatory]; production or consumption type[^optional], location type[^optional]; quantitative flow properties**
 
 [^mandatory]: Mandatory field
-[^optional]: Mandatory field is relevant to the process. If not, it can be ignored.
+[^optional]: Mandatory field if relevant to the process. If not, it can be ignored.
 
 For consistent nomenclature, use the following guidelines:
   - separate components with a semi-colon 
