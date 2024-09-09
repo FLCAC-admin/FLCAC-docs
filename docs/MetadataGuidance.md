@@ -22,7 +22,7 @@ It is preferred that data providers fill in their metadata directly in openLCA, 
 :::
 
 # General Information
-![alt text](image-4.png)
+![alt text](image-5.png)
 ## **Name** (_Mandatory_)
 ### Description
 - Process names are based on the [ILCD naming conventions, Section 3.2](https://eplca.jrc.ec.europa.eu/uploads/MANPROJ-PR-ILCD-Handbook-Nomenclature-and-other-conventions-first-edition-ISBN-fin-v1.0-E.pdf)
