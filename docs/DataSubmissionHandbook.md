@@ -27,9 +27,9 @@ The FLCAC data handbook associated publication tools apply to all repositories o
 
 The objectives of this handbook are to:
 
-- Help data providers decide if their data is a good fit for the FLCAC and provides an overview of the data submission process via the [Benefits](#benefits), [Expectations](#expectations), [Placing Your Data in the Public Domain](#placing-your-data-in-the-public-domain), and overview sections.
+- Help data providers decide if their data is a good fit for the FLCAC and provides an overview of the data submission process via the [Benefits](#benefits), [Expectations](#expectations), the [Placing Your Data in the Public Domain](#placing-your-data-in-the-public-domain), and [Working with the Data Curator](#working-with-the-data-curator) sections.
 
-- Guide data providers through the [Data Curation](#data-curation-overview) and [Data Formatting](#data-formatting-overview) steps to prepare their LCI data for submission.
+- Guide data providers through the [Data Curation](#data-curation) steps, including the [Data Formatting](#data-formatting) stage to prepare their LCI data for submission.
 
 If you have any questions, concerns, or recommendations, please contact us at: FederalLCACommons@erg.com.
 
