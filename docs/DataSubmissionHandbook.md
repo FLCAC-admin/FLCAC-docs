@@ -55,26 +55,23 @@ This section provides an explanation of the [benefits](#benefits), [expectations
 - Data providers accept that their data will be publicly available if submitted to the FLCAC
 
 :::{note}
-:class: dropdown 
-USLCI has a [Data Use Disclaimer Agreement (“Agreement”)](LINK EVENTUALLY) and [Data Provider’s Content License Agreement (“Agreement”)](LINK EVENTUALLY).
+All datasets submitted to the FLCAC be placed in the public domain under the terms of the [Creative Commons Legal Code (CC0 1.0 Universal (CC0 1.0))](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-C.md).
+USLCI has a [Data Use Disclaimer Agreement (“Agreement”)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) and [Data Provider’s Content License Agreement (“Agreement”)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-B.md).
 :::
 - Data should undergo a review before submission to the FLCAC.
 - Data should principally represent the US/North American geographical region
 
 :::{note}
-:class: dropdown 
 If data are outside of this geographic scope, inquire with the FLCAC Curators on their appropriateness of inclusion to the FLCAC
 :::
 - Data providers will strive to submit unit processes in place of system processes
 
 :::{note}
-:class: dropdown 
 System processes will only be accepted when data aggregation (e.g., horizontal averaging, vertical aggregation; proprietary, ease-of-use) is required from the data provider. See metadata guidance for instructions on documenting aggregation method.
 :::
 - Multifunctional unit processes should include all co-products and any associated allocation factors or displaced products.
 
 :::{note}
-:class: dropdown 
 The allocation approach should be justified and clearly described.
 :::
 - If multiple, gate-to-gate unit processes for a product system are submitted, the linking between them should be explicit.
