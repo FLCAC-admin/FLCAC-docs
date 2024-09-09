@@ -293,7 +293,8 @@ METADATA TABLES TO BE INSERTED HERE
 
 ## Review
 Once data has been formatted appropriately, the Data Provider should send the JSON-LD files to the Data Curator via the predetermined data transfer platform. 
-:::{Important}
+
+:::{important}
 Only the processes intended for submission should be exported and sent as a JSON-LD file to the Data Curator.
 :::
 
