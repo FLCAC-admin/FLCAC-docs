@@ -25,25 +25,19 @@ The FLCAC consists of multiple, distinct LCI repositories covering a variety of 
 
 The FLCAC data handbook associated publication tools apply to all repositories on the FLCAC. This is a living document and will be updated as the FLCAC data submission process evolves. **This handbook applies to all new data submissions but is not enforced retroactively.**
 
-The handbook is divided into two sections:
+The objectives of this handbook are to:
 
-Section 1: [**Should I publish data on the FLCAC?**](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#section-1-should-i-publish-data-on-the-flcac)
+- Help data providers decide if their data is a good fit for the FLCAC and provides an overview of the data submission process via the [Benefits](#benefits), [Expectations](#expectations), [Placing Your Data in the Public Domain](#placing-your-data-in-the-public-domain), and overview sections.
 
-- Helps data providers decide if their data is a good fit for the FLCAC and provides an overview of the data submission process.
-
-Section 2: [**How do I publish data on the FLCAC?**](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#section-2-how-do-i-publish-my-data-on-the-flcac)
-
-- Contains detailed guidance for publishing data on the FLCAC including data formatting, metadata approaches, and submission instructions.
+- Guide data providers through the data preparation and formatting steps to prepare their LCI data for submission.
 
 If you have any questions, concerns, or recommendations, please contact us at: FederalLCACommons@erg.com.
 
 
-
-# Section 1: Should I publish data on the FLCAC?
-This section provides an explanation of the [benefits](#benefits), [expectations](#expectations), [information about placing your data in the public domain](#placing-your-data-in-the-public-domain), and [an overview of formatting your data for submission to the Federal LCA Commons](#data-formatting-overview) (FLCAC). This Overview is intended to help interested parties understand the benefits of publishing their data on the FLCAC and set reasonable expectations for the publication documentation and standards.
+# Benefits and Expectations
+This section provides an explanation of the [benefits](#benefits) and [expectations](#expectations) of placing your data on the FLCAC.
 
 ## Benefits
-
 - The FLCAC repositories offer data providers with the opportunity to share complete, representative, and well-documented LCI data to a public repository.
 - The FLCAC provides public, interoperable repositories that can be used separately or together to form complete product systems.
 - The FLCAC gives users across the value chain access to transparent and representative LCI data alongside guidance for its intended use.
@@ -52,33 +46,24 @@ This section provides an explanation of the [benefits](#benefits), [expectations
 - The dataset should have a comprehensive LCI
 - LCI data should represent a novel or enhancing contribution to the FLCAC
 - LCI data should be non-proprietary (i.e., no ecoinvent processes)
-- Data providers accept that their data will be publicly available if submitted to the FLCAC
-
-:::{note}
-All datasets submitted to the FLCAC be placed in the public domain under the terms of the [Creative Commons Legal Code (CC0 1.0 Universal (CC0 1.0))](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-C.md).
-
-USLCI has a [Data Use Disclaimer Agreement (“Agreement”)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) and a [Data Provider’s Content License Agreement (“Agreement”)](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-B.md).
-:::
-- Data should undergo a review before submission to the FLCAC.
-- Data should principally represent the US/North American geographical region
-
-:::{note}
-If data are outside of this geographic scope, inquire with the FLCAC Curators on their appropriateness of inclusion to the FLCAC
-:::
-- Data providers will strive to submit unit processes in place of system processes
-
-:::{note}
-System processes will only be accepted when data aggregation (e.g., horizontal averaging, vertical aggregation; proprietary, ease-of-use) is required from the data provider. See metadata guidance for instructions on documenting aggregation method.
-:::
-- Multifunctional unit processes should include all co-products and any associated allocation factors or displaced products.
-
-:::{note}
-The allocation approach should be justified and clearly described.
-:::
+- Data providers accept that their data will be publicly available if submitted to the FLCAC[^Public]
+- Data should undergo a review before submission to the FLCAC
+- Data should principally represent the US/North American geographical region[^Geography]
+- Data providers will strive to submit unit processes in place of system processes[^System]
+- Multifunctional unit processes should include all co-products and any associated allocation factors or displaced products[^Allocation]
 - If multiple, gate-to-gate unit processes for a product system are submitted, the linking between them should be explicit.
 - Flow data within a unit process must be based on measurements using a specified and standardized measurement method OR estimated using methods and data described in specified in a publicly available source.
 
-## Placing Your Data in the Public Domain
+[^Public]: Please review the [Placing Your Data in the Public Domain](#placing-your-data-in-the-public-domain) section.
+Please review the [Placing Your Data in the Public Domain](#placing-your-data-in-the-public-domain) section.
+[^Geography]: If data are outside of this geographic scope, inquire with the FLCAC Curators on their appropriateness of inclusion to the FLCAC
+[^System]: System processes will only be accepted when data aggregation (e.g., horizontal averaging, vertical aggregation; proprietary, ease-of-use) is required from the data provider. See metadata guidance for instructions on documenting aggregation method.
+[^Allocation]: The allocation approach should be justified and clearly described.
+
+---
+% block for footnotes
+
+# Placing Your Data in the Public Domain
 To support increased access to and sharing of resources, as well as to promote novel and innovative uses of LCA data, NREL requires that all datasets submitted to the LCA Commons be placed in the public domain under the terms of the [Creative Commons Legal Code (CC0 1.0 Universal (CC0 1.0))]( https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-C.md). By placing your datasets in the public domain, according to the CC0 1.0 license, you are removing “all of [your] rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.” 
 
 For USLCI data submissions, please review the legal code of the CC0 1.0 Universal license before submitting your datasets, as well as the [Data Use Disclaimer Agreement]( https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) and [Data Provider’s Content License Agreement]( https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-B.md).
