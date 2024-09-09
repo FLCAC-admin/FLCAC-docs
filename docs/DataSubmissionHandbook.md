@@ -5,6 +5,7 @@ abbreviations:
   FLCAC: Federal LCA Commons
   LCA: Life Cycle Assessment
   LCI: Life Cycle Inventory
+  NREL: National Renewable Energy Laboratory
 ---
 
 This is the Federal LCA Commons (FLCAC) Data Submission Handbook. It describes the data submission and documentation framework that all new data across the FLCAC repositories must adhere to. Resources for data providers are provided within this handbook.
@@ -248,7 +249,7 @@ To run LCIA results on your model please follow [these instructions]() in the Da
 ### Metadata Guidance
 As FLCAC interagency coordination increases, the new standard for data formats and documentation is being advanced. To move toward interoperability and transparency, FLCAC harmonization of digital data access and preservation will increase collaboration potential and the reviewability of the LCA data exchange process. These efforts will significantly reduce not only data acquisition costs but also computer- and human-based misinterpretation errors, and thus, data misuse. As such, and to be more aligned with international protocols for all newly developed data, the current FLCAC repository standardization is to strive for 100% metadata completion.
 
-The links below correspond to tables with the conventions for each field of the elements in the openLCA software. The tables are arranged by the field sections as displayed in the tabs of the openLCA process window views. 
+The links below correspond to tables with the conventions for each field of the elements in the openLCA software. The sections are arranged by the field sections as displayed in the tabs of the openLCA process window views. 
 
 :::{important}
 Each field has guidance and examples recommended by the Data Curator for completing the metadata for processes submitted to the FLCAC. Some of these fields are mandatory (marked 'M'), a few are automatically populated (marked 'A'), and some are optional (marked 'O').
