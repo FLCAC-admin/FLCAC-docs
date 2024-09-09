@@ -27,7 +27,7 @@ The FLCAC data handbook associated publication tools apply to all repositories o
 
 The objectives of this handbook are to:
 
-- Help data providers decide if their data is a good fit for the FLCAC and provides an overview of the data submission process via the [Benefits](#benefits), [Expectations](#expectations), the [Placing Your Data in the Public Domain](#placing-your-data-in-the-public-domain), and [Working with the Data Curator](#working-with-the-data-curator) sections.
+- Help data providers decide if their data is a good fit for the FLCAC via the [Benefits](#benefits), [Expectations](#expectations), [Placing Your Data in the Public Domain](#placing-your-data-in-the-public-domain), and [Working with the Data Curator](#working-with-the-data-curator) sections.
 
 - Guide data providers through the [Data Curation](#data-curation) steps, including the [Data Formatting](#data-formatting) stage to prepare their LCI data for submission.
 
@@ -68,7 +68,7 @@ To support increased access to and sharing of resources, as well as to promote n
 For USLCI data submissions, please review the legal code of the CC0 1.0 Universal license before submitting your datasets, as well as the [Data Use Disclaimer Agreement]( https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) and [Data Provider’s Content License Agreement]( https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-B.md).
 
 # Working with the Data Curator
-The data publication process is a collaborative effort between you (i.e., the Data Provider) and NREL. Practically speaking, that means you will be working closely with one of NREL's LCI Data Curator throughout the publication process.
+The data publication process is a collaborative effort between you (i.e., the Data Provider) and NREL. Practically speaking, that means you will be working closely with one of NREL's LCI Data Curators throughout the publication process.
 
 The Data Curator's role is to guide you through the publication process. This person is trained in LCI data curation and can help you troubleshoot technical issues related to exporting and/or importing LCI data formats, completing dataset metadata fields, and using the openLCA platform.
 
