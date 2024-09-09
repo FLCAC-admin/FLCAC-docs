@@ -108,20 +108,12 @@ If you are looking for information to help you decide if publishing your data on
 
 This section is divided into the following subsections.
 1. [Overview of the Digital Curation Proces](#overview-of-the-digital-curation-process)
-    - [Working with the Data Curator](#working-with-the-data-curator)
-    - [Digital Curation Process Outline](#digital-curation-process-outline)
 2. [Appraisal](#appraisal)
-    - [Appraisal Objectives](#appraisal-objectives)
-    - [Appraisal Steps](#appraisal-steps)
-    - [Data Transfer Platform](#data-transfer-platform)
 3. [Data Import into openLCA](#data-import-into-openlca)
 4. [Data Formatting](#data-formatting)
     - [NAICS Categorization](#naics-categorization)
     - [Technosphere Flow Alignment](#technosphere-flow-alignment)
-       - [Flow Mapping Technosphere Flows](#flow-mapping-technosphere-flows)
-       - [Cut-off Flows](#cut-off-flows)
     - [Elementary Flow Alignment](#elementary-flow-alignment)
-       - [Flow Mapping Elementary Flows](#flow-mapping-elementary-flows)
     - [LCIA Results](#lcia-results)
     - [Metadata Guidance](#metadata-guidance)
 5. [Review](#review)
@@ -311,7 +303,8 @@ _It is important to note this process does not include a technical review of the
 
 Typically, the review comments revolve around fixing flows that are not compatible with FEDEFL or the FLCAC and fixing process metadata wording and content
 
-## Publication
+## Publication and Preservation
+### Publication
 Once your data have been reviewed and completed, the dataset(s) are ready for publication. The Data Curator will publish the data to its repository on the [Federal LCA Commons Collaboration Server](https://www.lcacommons.gov/lca-collaboration/). 
 
 FLCAC repositories are published at different intervals, so please inquire with the Data Curator or Repository Manager of the database your data is being published in regarding release timing.
@@ -324,7 +317,7 @@ The USLCI is updated with new and revised data on a quarterly basis:
 -	September 30
 -	December 31
 
-## Preservation
+### Preservation
 The Data Curator will preserve the final dataset files according to [ISO 14721](https://www.iso.org/standard/57284.html) standards for long-term digital information preservation. That is, the final dataset file versions are stabilized, checked for fixity (i.e., verifying no digital file corruption), and stored such that the original and published datasets and their supporting metadata are archived. Only the initial dataset submission and the version final dataset as published are archived. These datasets will be saved until the next update is submitted and published. Older datasets may not be saved in the Federal LCA Data Commons but NREL retains the older datasets on their servers. Updates to previously published datasets shall contain a relevant note in the ‘Intended Application’ metadata field of the unit process Administrative Information. If a user needs an older dataset, they may access the archived [USLCI Database Downloads](https://github.com/uslci-admin/uslci-content/blob/dev/docs/release_info/release-downloads.md) or contact [the appropriate Repository Manager for a copy](https://flcac-admin.github.io/FLCAC-docs/flcac-repositories).
 
 ## Resources
