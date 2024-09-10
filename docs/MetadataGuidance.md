@@ -11,7 +11,13 @@ This document provides detailed information on metadata fields for data on the F
 
 As FLCAC interagency coordination increases, the new standard for data formats and documentation is being advanced. To move toward interoperability and transparency, FLCAC harmonization of digital data access and preservation will increase collaboration potential and the reviewability of the LCA data exchange process. These efforts will significantly reduce not only data acquisition costs but also computer- and human-based misinterpretation errors, and thus, data misuse. As such, and to be more aligned with international protocols for all newly developed data, **the current FLCAC standard is to strive for 100% metadata completion**.
 
-The sections in this document correspond to the tabs and sections within the openLCA software.
+The sections in this document correspond to the tabs[^exclusions] and sections within the openLCA software.
+
+- General Information
+- Inputs/Outputs
+- Documentation
+- Parameters
+- Allocation
 
 :::{important}
 Each field has a description and example(s) recommended by the Data Curator for completing the metadata for processes submitted to the FLCAC. Some of these fields are mandatory, a few are automatically populated, and some are optional - this is noted next to the field name.
@@ -20,6 +26,8 @@ Each field has a description and example(s) recommended by the Data Curator for 
 :::{note}
 It is preferred that data providers fill in their metadata directly in openLCA, but if needed an excel template can be provided to fill out metadata.
 :::
+
+[^exclusions]: Two openLCA process tabs are not included in this guidance 'Social aspects' and 'Direct impacts', data providers do not need to provide any information on these tabs.
 
 # General Information
 ![alt text](image.png)
@@ -119,9 +127,9 @@ This is a box field in openLCA, checking the box indicates that the process incl
 
 ![alt text](image-3.png)
 
-## **Time** _Mandatory_
+## **Time** _(Mandatory)_
 
-### **Start Date** 
+### **Start Date**
 #### Description
 Start date for the time period that the process data represents. The date format is MM/DD/YYYY.
 
@@ -226,21 +234,136 @@ Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inven
 
 ![alt text](image-8.png)
 
-### Social Schema
+### Social Schema _(Optional)_
+Currently, the FLCAC does not require social schema so no social schema data quality matrix is required.
 
 # Input/Output Flows
 
 ## Input Flows
 
-
 ## Output Flows
 
 # Documentation
+## LCI Method
 
-# Allocation
+### Process type
+#### Description
+#### Example(s)
+
+### LCI method
+#### Description
+#### Example(s)
+
+### Modeling constants
+#### Description
+#### Example(s)
+
+## Data source information
+### Data completeness
+#### Description
+#### Example(s)
+
+### Data selection
+#### Description
+#### Example(s)
+
+### Data treatment
+#### Description
+#### Example(s)
+
+### Sampling procedure
+#### Description
+#### Example(s)
+
+### Data collection period
+#### Description
+#### Example(s)
+
+### Use advice
+#### Description
+#### Example(s)
+
+## Reviews
+### Review type
+#### Description
+#### Example(s)
+
+### Review report
+#### Description
+#### Example(s)
+
+### Review details
+#### Description
+#### Example(s)
+
+### Reviewers
+#### Description
+#### Example(s)
+
+### Review methods
+#### Description
+#### Example(s)
+
+### Quality assessment
+#### Description
+#### Example(s)
+
+## Compliance declarations
+#### Description
+#### Example(s)
+
+## Completeness
+#### Description
+#### Example(s)
+
+## Sources
+#### Description
+#### Example(s)
+
+## Administrative Information
+### Project
+#### Description
+#### Example(s)
+
+### Intended Application
+#### Description
+#### Example(s)
+
+### Data set owner
+#### Description
+#### Example(s)
+
+### Data generator
+#### Description
+#### Example(s)
+
+### Data documentor
+#### Description
+#### Example(s)
+
+### Publication
+#### Description
+#### Example(s)
+
+### Creation date _(Automatic)_
+#### Description
+#### Example(s)
+
+### Copyright
+#### Description
+#### Example(s)
+
+### Access and use restrictions
+#### Description
+#### Example(s)
 
 # Parameters
+Parameters are not recommended
 
 ## Global Parameters
-
 ## Process Parameters
+
+# Allocation
+## Physical
+## Economic
+## Causal
