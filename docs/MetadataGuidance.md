@@ -22,7 +22,7 @@ It is preferred that data providers fill in their metadata directly in openLCA, 
 :::
 
 # General Information
-![alt text](image-5.png)
+![alt text](image.png)
 ## **Name** (_Mandatory_)
 ### Description
 - Process names are based on the [ILCD naming conventions, Section 3.2](https://eplca.jrc.ec.europa.eu/uploads/MANPROJ-PR-ILCD-Handbook-Nomenclature-and-other-conventions-first-edition-ISBN-fin-v1.0-E.pdf)
@@ -103,7 +103,9 @@ _2018-04-01T17:38:55-0600_
 
 ## **UUID** _(Automatic)_
 ### Description
-32-digit Universally Unique Identifier (UUID) for the dataset. Every element in an openLCA database has a UUID. UUIDs cannot be set, they are assigned by openLCA.
+32-digit Universally Unique Identifier (UUID) for the dataset.[^UUID]
+
+[^UUID]: Every element in an openLCA database has a UUID. UUIDs cannot be set, they are assigned by openLCA. [More details on UUID from the openLCA manual.](https://greendelta.github.io/olca-schema/classes/RefEntity.html?highlight=uuid#id)
 
 ### Example(s)
 _961fad56-bde2-4fbe-8895-5be03461729b_
@@ -153,8 +155,78 @@ The valid time span is often identical to the time of the data collection, unles
 - _This unit process is representative of operations from 2014-2015. Water consumption varied seasonally but was averaged over an annual period._
 - _This unit process is representative of aniline production from 2015-2016. Secondary data supporting the modeling are from 1990 and were adapted to represent updated nitric acid production. Companies providing primary data were given the option to collect data from the year preceding or following 2015 if either year would reflect more typical production conditions. One company provided data for the year 2015, and one company provided data for the year 2016. After reviewing individual company data in comparison to the average, each manufacturer verified data from 2015-2016 was representative of an average year for aniline production at their company._ 
 
-## Data Quality Assessment
+## **Geography** _(Mandatory)_
+### **Location**
+#### Description
+The geographic area to which the unit process data were collected or refer. If multiple locations were used, indicate the highest geographic location (e.g., if data for several states across the US were collected then enter 'US'). Describe the locations in the geography ‘Description’ field
 
+#### Example(s)
+- _US-CO_
+- _RNA_ 
+
+### **Description**
+#### Description
+Description of the process' geographic representativeness and any geographic aggregation methods as well as name(s) and production volume(s) or capacity of specific included site(s), where applicable. 
+
+:::{note}
+Any geographical information on where the process, inputs and/or outputs occur is useful for end-users in considering region-specific aspects such as average temperature, wind speeds, and precipitation levels, etc. that affect e.g., landfill decomposition, fate and transport of emissions, etc.
+:::
+
+#### Example(s)
+- _This process is representative of production in the state of Colorado. Production data were aggregated across five sites ranging from eastern to western Colorado._
+- _This unit process is representative of average aniline production in North America. Production data were collected from 2 leading producers in the United States and aggregated using horizontal averaging. The energy and emissions data for nitric acid production is from a primary European source from 1990 and was adapted to North American conditions._
+
+## **Technology** _(Mandatory)_
+### Description
+A short (i.e., 1-3 paragraphs), general description of the process intended technical scope, representativeness, and applicability of the process. Include the following information (if applicable):
+
+- Process design including sub-processes, unit operations, and/or other activities (anthropogenic or natural) included in the process
+- Material selection and quality
+- Operational conditions and representativeness
+- A description of any waste and/or transport modeling
+
+
+### Example(s)
+- _This process represents the production of "Calcium carbonate, ground, 20 microns, at plant" using average technologies for the United States from 2015-2016._ 
+
+  _The process includes three sub-processes: Quarry Operations; Transport and Plant Processing. Quarry Operations includes the following unit operations: mechanical extraction; primary crushing; screening; and intermediate storage of calcium carbonate rock (marble, limestone, or chalk). Transport includes the transport of materials from Quarry Operations to Plant Processing via barge, train, or truck. Plant processing which includes jaw crushing, washing, impact crushing, ball milling to particle size, and then classifying. Material selection and quality represent industry averages from the contiguous United States. Operational conditions represent industry averages from the contiguous United States.Fate and transport modeling was not considered for this process._
+- _The overall production technology is similar among all aniline plants that submitted data for this analysis. Aniline is formed by the hydrogenation of nitrobenzene in the presence of a copper-chromium or copper-silica catalyst. For hydrogenation of nitrobenzene, preheated hydrogen and nitrobenzene are fed into an evaporator, and aniline is formed by vapor phase catalytic reduction. The aniline is dehydrated to remove the water produced during the reaction. Pure aniline (99.95 wt. %) is obtained after a purification step in which the dehydrated aniline goes through a distillation process._
+
+## **Data Quality**
+### Process Schema _(Mandatory)_
+#### Matrix
+Use the US EPA - Process Pedigree Matrix, this matrix comes preloaded in many FLCAC repositories. This matrix can also be found in the [Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) which can be imported as a skeleton structure into any openLCA database.
+
+#### Data Quality Entry
+Once you have selected the US EPA - Process Pedigree Matrix, select '(not specified)' next to the 'Data quality entry' field and select the appropriate data quality scores for the 'Process Review' and 'Process Completeness' fields.
+
+Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inventory Data](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=321834) for information about the development of this matrix and guidance on how to complete it.
+
+#### Example(s)
+![alt text](image-4.png)
+
+### Flow Schema _(Optional)_
+:::{important}
+While it is highly recommended to commplete flow level data quality for data submissions, it is currently not mandatory.
+:::
+#### Matrix
+Use the US EPA - Flow Pedigree Matrix, this matrix comes preloaded in many FLCAC repositories. This matrix can also be found in the [Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) which can be imported as a skeleton structure into any openLCA database.
+
+#### Data Quality Entry
+Select the US EPA - FLow Pedigree Matrix on the 'General Information' tab and enter data quality scores for each exchange in the inventory on the 'Inputs/Outputs' tab.
+
+Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inventory Data](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=321834) for information about the development of this matrix and guidance on how to complete it.
+
+#### Example(s)
+- Select the matrix on the 'General Information' tab: 
+
+![alt text](image-6.png)
+
+- Select data quality entries on the 'Inputs/Outputs' tab:
+
+![alt text](image-8.png)
+
+### Social Schema
 
 # Input/Output Flows
 
