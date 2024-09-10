@@ -13,11 +13,11 @@ As FLCAC interagency coordination increases, the new standard for data formats a
 
 The sections in this document correspond to the tabs[^exclusions] and sections within the openLCA software.
 
-- General Information
-- Inputs/Outputs
-- Documentation
-- Parameters
-- Allocation
+- [General Information](#general-information)
+- [Inputs/Outputs](#inputoutput-flows)
+- [Documentation](#documentation)
+- [Parameters](#parameters)
+- [Allocation](#allocation)
 
 :::{important}
 Each field has a description and example(s) recommended by the Data Curator for completing the metadata for processes submitted to the FLCAC. Some of these fields are mandatory, a few are automatically populated, and some are optional - this is noted next to the field name.
