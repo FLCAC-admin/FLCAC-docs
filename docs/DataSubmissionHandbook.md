@@ -279,7 +279,9 @@ Only the processes intended for submission should be exported and sent as a JSON
 
 Once the JSON-LD files are received, the Data Curator begins the Review phase of the data curation process. The Data Curator will leave review comments for the Data Provider in an excel workbook and send the file back to the Data Provider to reconcile issues identified. The Review phase can involve iterative communications and often, a one-hour meeting is scheduled to review comments.
 
-_It is important to note this process does not include a technical review of the inventory data._ 
+:::{important}
+_This process does not include a technical review of the inventory data._ 
+:::
 
 Typically, the review comments revolve around fixing flows that are not compatible with FEDEFL or the FLCAC and fixing process metadata wording and content
 

@@ -35,16 +35,7 @@ To share a database with a library, the library must be exported and shared sepa
 To import a library into a main database, open the database by double clicking, right click the database name and select _"Add a library"_, then choose the desired library. The library can exist in the local version of openLCA or it can be imported from outside of openLCA.
 
 :::{important}
-If database elements (e.g., {term}`flows <flow>`, {term}`processes <process>`, etc.) overlap between the library and the main database, a **Tag conflicts** popup may appear.
-
-1. _"Update data sets"_ will update all datasets with library elements
-2. _"Update library tags only"_ will only tag library elements if they’re unique to the library and will not overwrite duplicate elements in the main database. **For FLCAC uses it is recommended that _"Update library tags only"_ is selected.** This allows data users to edit elements that are duplicated across the library and the main database.
-
-![image](https://github.com/user-attachments/assets/37ed7e8b-729b-4ede-b11e-44b637fc2b96)
-:::
-
-:::{note}
-A "Data conflicts" popup may appear if "Update data sets" in the above step was selected, this indicates that datasets in the main database are being updated with library datasets.
+If database elements (e.g., {term}`flows <flow>`, {term}`processes <process>`, etc.) overlap between the library and the main database, a **Data conflicts** popup may appear. This indicates that there is overlap between the main database and the library so the overlapping datasets in the main database are being updated with library datasets.
 ![image](https://github.com/user-attachments/assets/bddcf416-d384-4335-a1a0-bab51034431f)
 :::
 

@@ -92,6 +92,8 @@ To calculate LCIA results, your repo needs two elements: a database made up of p
 Once your database has both processes and a method, open up the process that you would like to calculate results for, on the 'General information' tab select 'Create product system'. For most processes the default product system selections are okay. More information on these options can be found in the openLCA manual [here](https://greendelta.github.io/openLCA2-manual/prod_sys/Creating.html). Select 'Finish' and evaluate the 'Reference' section and the 'Model Graph' in your product system. Then, select 'Calculate', set the 'Allocation method' as 'As defined in process', choose your impact assessment method (if there are no options here then the LCIA methods were not imported), and use the default settings for the remaining fields. Select 'Finish' and navigate through the results tabs to view results.
 
 There are many variations of this process to run results so please reference the [openLCA manual](https://greendelta.github.io/openLCA2-manual/how-to-use.html) for more information, the steps above provide instructions for running a basic process.
+
+See the [Running LCIA Results page](https://flcac-admin.github.io/FLCAC-docs/running-lcia-results) for more information.
 :::
 
 
@@ -117,25 +119,13 @@ A {term}`provider` in openLCA is the upstream process that produces a flow. Prov
 
 ## Data Submission
 :::{dropdown} How do I submit data to the FLCAC?
-Submission processes vary for each repo, so it is recommended to reach out to the repo managers/owners to submit data or inquire about the specific data submission process.
-The USLCI submission process is currently recommended as the default FLCAC submission process. The submission handbook may be found [here](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/00-sub-handbook-landing.md) and a YouTube training video that covers this process is located [here](https://www.youtube.com/watch?v=jecyDLHu6OQ).
-The current FLCAC-docs repo also includes various resources for preparing your data for the FLCAC.
-
-Here is a brief overview of the data preparation process:
-
-- Map elementary flows to {term}`FEDEFL <Federal Elementary Flow List>`
-- Map technosphere flows to those that exist in the FLCAC repos, or create new processes that produce the desired flows. Cut-off flows can also be created if needed, but these are not recommended.
-- Import the data into openLCA, this can be done before or after the mapping process.
-- Align the processes and flows with the NAICS folder structure.
-- Complete the metadata for each process as described in the [USLCI metadata guidance tables](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/02-how-to-publish-in-the-uslci.md#metadata-guidance-tables).
-- Export the processes intended for submission and submit them to the repo owner/manager.
-  - If you are the repo owner/manager then you will integrate the new processes into the existing database and push it to the collaboration server.
+Follow the guidance provided in the [FLCAC Submission Handbook](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook). An overview of the FLCAC Submission Handbook is provided in the [Data Submission Toolkit](https://flcac-admin.github.io/FLCAC-docs/datasubmissiontoolkit) and a YouTube training video that covers this process is located [here](https://www.youtube.com/watch?v=jecyDLHu6OQ). 
 :::
 
 
 :::{dropdown} How do I align my elementary flows with the Federal Elementary Flow List?
 All data on the FLCAC must use elementary flows that conform to the {term}`Federal Elementary Flow List`.
-For additional informatoin on flow mapping, see [Flow Mapping](Reference/FlowMapping.md)
+For additional informatoin on flow mapping, see [Flow Mapping](Reference/FlowMapping.md).
 :::
 
 
@@ -143,12 +133,16 @@ For additional informatoin on flow mapping, see [Flow Mapping](Reference/FlowMap
 Technosphere flows (i.e., product or waste flows) that come from another database (e.g., ecoinvent, Agri-footprint, GaBi, etc.) must be mapped to technosphere flows that exist within the FLCAC repos or new processes should be created that produce these flows. Cut-off flows may be created if neither of the previous options are possible.
 
 To map technosphere flows, you may either create a new process within openLCA and manually add the desired technosphere flows to your life cycle inventory (LCI) or you may use [openLCA's flow mapping function](https://www.openlca.org/flow-mapping-feature/) which allows you to apply mappings to your whole database.
+
+Please review the [Technosphere Flow Section](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment) of the FLCAC Submission Handbook for detailed guidance.
 :::
 
 
 :::{dropdown} How do I align my dataset with the NAICS folder structure?
 All data on the FLCAC must use the North American Industry Classification System (NAICS) folder structure [NAICS - Census Bureau](https://www.census.gov/naics/).
-To align new or existing processes and flows with NAICS, import the [Commons Core database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) to add the NAICS folder structure to your openLCA database and then organize flows and processes into the relevant folders. Use the NAICS Census Bureau link above to determine the appropriate 4 digit NAICS code.
+To align new or existing processes and flows with NAICS, import the [Commons Core database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) in order to add the NAICS folder structure to your openLCA database. Then organize flows and processes into the relevant folders. Use the NAICS Census Bureau link above to determine the appropriate 4 digit NAICS code.
+
+Please review the [NAICS Categorization Section](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#naics-categorization) of the FLCAC Submission Handbook for detailed guidance.
 :::
 
 
@@ -174,12 +168,13 @@ The advantages of such a data source include:
 - Legitimate, verifiable environmental market claims can be better substantiated based on quality LCI data.
 - Environmental hotspots can be identified and targeted for improvement.
 - It provides input to measure and monetize environmental externalities through, for example, a cap-and-trade system.
+
+Please review the [Benefits and Expectations Section](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#benefits-and-expectations) of the FLCAC Submission Handbook for more information.
 :::
 
 
 :::{dropdown} How long does the publication process take?
-Phases 1-4 (i.e., [Appraisal](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#appraisal) through [Publication](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#publication)) can vary but often take approximately 1-3 months to complete depending on the number and size of the datasets.
-See: [Publication Timelines](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#publication) in [Section 2: How do I publish my data in the US LCI?](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md).
+1-3 months, depending on the size of your data submission and the quarterly release date of USLCI. Read more about the publication process in the [FLCAC Data Submission Handbook](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook).
 :::
 
 
@@ -187,8 +182,7 @@ See: [Publication Timelines](https://github.com/FLCAC-admin/uslci-content/blob/d
 Once your data have been reviewed and completed, the dataset(s) are ready for publication.
 NREL will publish the data to its own internal repo.
 The USLCI Database is updated with new and revised data on a quarterly basis as new data and updates are received.
-Thus, the publication timeline of your data depends on its size and when your [Ingest & Onboarding](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#ingest-and-onboarding) phase begins.
-Additionally, the timeframe is heavily dependent on the response times between you and NREL during the iterative communications of the review phase.
+The timeframe is heavily dependent on the response times between you and NREL during the iterative communications of the review phase.
 Assuming you respond to NREL within one week's time for each communication, the curation workflow can occur in as little as a month for small datasets (i.e., fewer than 10 processes) and take as long as three or four months for larger datasets (i.e., more than 10 processes).
 
 The quarterly publication dates are as follows:
@@ -203,18 +197,18 @@ The quarterly publication dates are as follows:
 :::{dropdown} What is my role in the publication process?
 Your role in the publication process is to transform your raw LCI data into a polished product that is ready for publication in the USLCI Database.
 Transform means putting your data into the USLCI Database's chosen data format and pairing your data with robust metadata so that users of your data understand how to use it properly.
-See: [Working with NREL](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#working-with-nrel) in [Section 2: How do I publish my data in the US LCI?](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md).
+See: [Working with the Data Curator](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#working-with-the-data-curator).
 :::
 
 
 :::{dropdown} Do I have to go through the publication process alone?
 The data publication process is a collaborative effort between you (i.e., the Data Provider) and the NREL.
-Practically speaking, that means you will be working closely with one of NREL's LCI Data Curators throughout the [publication process](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#overview-digital-curation).
+Practically speaking, that means you will be working closely with one of NREL's LCI Data Curators throughout the [publication process](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#data-curation).
 
 The Data Curator's role is to guide you through the publication process.
 This person is trained in LCI data curation and can help you troubleshoot technical issues related to exporting and/or importing LCI data formats, completing dataset metadata fields, and the openLCA platform.
 
- See: [Working with NREL](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md#working-with-nrel) in [Section 2: How do I publish my data in the US LCI?](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook//02-how-to-publish-in-the-uslci.md).
+ See: [Working with the Data Curator](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#working-with-the-data-curator).
 :::
 
 
@@ -229,6 +223,8 @@ The data is available for use by anyone and increases data accessibility to the 
 Providing the public with quality LCI data increases the level of transparency of LCA studies.
 Ensuring public LCI data are accompanied with complete documentation (i.e., metadata) enables and promotes the responsible use of the LCI data.
 A comprehensive and transparent public LCI database has the potential to facilitate more consistent LCA studies verifiable across sectors.
+
+See [Placing Your Data in the Public Domain](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#placing-your-data-in-the-public-domain).
 :::
 
 
@@ -237,7 +233,7 @@ A comprehensive and transparent public LCI database has the potential to facilit
 
 ### Data Review and Data Quality
 :::{dropdown} What review process does data on the FLCAC undergo?
-Data posted to the FLCAC is subjected to the review process as described in process-level metadata. The FLCAC Data Curators do not perform an additional critical review of submitted data or check for ISO compliance.
+Data posted to the FLCAC is subjected to the review process as described in [process-level metadata](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#data-curation). The FLCAC Data Curators do not perform an additional critical review of submitted data or check for ISO compliance.
 
 Currently, metadata fields are not consistently filled out within USLCI or all federal LCA or LCIA repos on the FLCAC. Data users will need to assess the available metadata to ensure that utilized LCI datasets meet the data quality standards associated with their project scope.
 
