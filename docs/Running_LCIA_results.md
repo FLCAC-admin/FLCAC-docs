@@ -15,7 +15,7 @@ Read more about available methods and where to access them [here](https://flcac-
 2. Select the process that you would like to calculate results for
 3. On the 'General Information' tab of a process, select 'Create Product System'
 4. The default product system settings work well for running a basic calculation
-![alt text](image.png){.bg-warning w=100px align=center}
+![alt text](img/product_system_settings.png)
 :::{note}
 Read more about these settings [here](https://greendelta.github.io/openLCA2-manual/prod_sys/Creating.html)
 :::
@@ -28,7 +28,7 @@ Read more about the model graph [here](https://greendelta.github.io/openLCA2-man
 8. Use 'As Defined in Process' as the Default Allocation Method[^allocation_note]
 9. Select an Impact Assessment Method, if none are available in the drop down then you do not have LCIA methods in your database and review Step 1 above
 10. Choose either 'Lazy/On-demand' or 'Eager/All' - the results will be the same, regardless of which option you choose
-![alt text](image-1.png){.bg-warning w=100px align=center}
+![alt text](img/calculation_properties.png)
 :::{note}
 Read more about these calculation methods [here](https://greendelta.github.io/openLCA2-manual/res_analysis/lazy_eager.html)
 :::

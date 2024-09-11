@@ -198,7 +198,7 @@ Please also review these notes on flows and processes before beginning data form
     -	Cut-off flow: A flow that does not have an upstream process producing it. A Cut-off flow can also be referred to as a ‘Dummy’, ‘Proxy’, ‘Surrogate’, or ‘Placeholder’ flow. These flows are used when no relevant flows in a database exists. It is not recommended to use these flows in your life cycle inventory if possible.
     -	Quantitative reference flow:  The quantitative reference is the main/desired output of the foreground process. 
 
-![alt text](image-1.png)
+![alt text](img/process_flows.png)
 -	A process in openLCA produces one quantitative reference technosphere flow and can produce multiple other technosphere flows if co-products or avoided products are also produced. 
 -	One technosphere flow can be produced by multiple processes. So, in an LCI the desired upstream process producing a flow should be selected via the ‘Provider’ field.
     -	For example, a flow named “Electricity, at grid” could be produced by the following processes “Northeastern electricity grid mix”, “Southeastern electricity gird mix”, Northwestern electricity grid mix”, and “Southwestern electricity grid mix”. So when creating an LCI with the “Electricity, at grid” flow, the desired upstream gird mix process should be linked to the flow.

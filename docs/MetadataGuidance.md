@@ -30,7 +30,7 @@ It is preferred that data providers fill in their metadata directly in openLCA, 
 [^exclusions]: Two openLCA process tabs are not included in this guidance 'Social aspects' and 'Direct impacts', data providers do not need to provide any information on these tabs.
 
 # General Information
-![alt text](image.png)
+![alt text](img/general_info.png)
 ## **Name** (_Mandatory_)
 ### Description
 - Process names are based on the [ILCD naming conventions, Section 3.2](https://eplca.jrc.ec.europa.eu/uploads/MANPROJ-PR-ILCD-Handbook-Nomenclature-and-other-conventions-first-edition-ISBN-fin-v1.0-E.pdf)
@@ -123,9 +123,9 @@ _961fad56-bde2-4fbe-8895-5be03461729b_
 This is a box field in openLCA, checking the box indicates that the process includes infrastructure requirements in its inventory. Leave this box unchecked if infrastructure requirements are not included in the process.
 
 ### Example(s)
-![alt text](image-2.png)
+![alt text](img/infra_unchecked.png)
 
-![alt text](image-3.png)
+![alt text](img/infra_checked.png)
 
 ## **Time** _(Mandatory)_
 
@@ -211,7 +211,7 @@ Once you have selected the US EPA - Process Pedigree Matrix, select '(not specif
 Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inventory Data](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=321834) for information about the development of this matrix and guidance on how to complete it.
 
 #### Example(s)
-![alt text](image-4.png)
+![alt text](img/process_DQ.png)
 
 ### Flow Schema _(Optional)_
 :::{important}
@@ -228,16 +228,17 @@ Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inven
 #### Example(s)
 - Select the matrix on the 'General Information' tab: 
 
-![alt text](image-6.png)
+![alt text](img/flow_DQ.png)
 
-- Select data quality entries on the 'Inputs/Outputs' tab:
+- Select data quality entries on the 'Inputs/Outputs' tab under the 'Data quality entry' column:
 
-![alt text](image-8.png)
+![alt text](img/flow_DQ_entry.png)
 
 ### Social Schema _(Optional)_
 Currently, the FLCAC does not require social schema so no social schema data quality matrix is required.
 
 # Input/Output
+![alt text](img/inputs_outputs.png)
 ## Input Flows
 ### Flow
 Elementary Flows:
