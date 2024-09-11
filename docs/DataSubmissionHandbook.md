@@ -6,6 +6,7 @@ abbreviations:
   LCA: Life Cycle Assessment
   LCI: Life Cycle Inventory
   NREL: National Renewable Energy Laboratory
+  NAICS: North American Industry Classification System
 ---
 
 This is the Federal LCA Commons (FLCAC) Data Submission Handbook. It describes the data submission and documentation framework that all new data across the FLCAC repositories must adhere to. Resources for data providers are provided within this handbook.

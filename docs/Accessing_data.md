@@ -16,6 +16,8 @@ Do not unzip the file that is downloaded from the FLCAC!
 
 In openLCA, right click on a pre-existing database or create a new, empty database. Select _import_, select _file_, and navigate to the downloaded JSON-LD file in your file explorer.
 
+See the ['Importing and Combining Database' section of the openLCA manual](https://app.sli.do/event/gYHq4CGtMRhbo1JJmemfvc) for more information.
+
 :::{iframe} https://www.youtube.com/embed/YLao5jC5b_0
 Video 3: Importing the USLCI into openLCA
 :::
