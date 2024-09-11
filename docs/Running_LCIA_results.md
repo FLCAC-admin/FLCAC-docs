@@ -6,7 +6,7 @@ abbreviations:
   LCIA: Life Cycle Impact Assessment Method
 ---
 
-## Running Calculations on a FLCAC Repository in openLCA
+## Running LCIA Results on a FLCAC Process in openLCA
 Recommended workflow for a basic calculation:
 1. Import methods that are aligned with FEDEFL into your database
 :::{note}
