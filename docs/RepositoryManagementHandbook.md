@@ -13,7 +13,7 @@ This is the Federal LCA Commons (FLCAC) Repository Management Handbook. It descr
 - [Resources for data providers are provided here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook).
 
 # Data Submission
-The data submission/curation process for each FLCAC repository can be decided upon by individual Repository Managers. The FLCAC Data Curator recommends following the guidance set forth in the [FLCAC Submission Handbook](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook.) The [Data Formatting Section](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#data-formatting) of this handbook must be followed for all new data submissions across the FLCAC. This includes the following:
+The data submission/curation process for each FLCAC repository can be decided upon by individual Repository Managers. The FLCAC Data Curator recommends following the guidance set forth in the [FLCAC Submission Handbook](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook.). The [Data Formatting Section](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#data-formatting) of this handbook must be followed for all new data submissions across the FLCAC. This includes the following:
 
 1.	Categorization of processes and flows using the North American Industry Classification System (NAICS)
 2.	Technosphere flow alignment with FLCAC product, waste, or cut-off flows
@@ -27,7 +27,7 @@ These data formatting standards are not enforced retroactively.
 
 The FLCAC Data Curator will review all new data submissions for compliance with the data formatting steps above. 
 
-The Repository Manager can dictate the level of involvement of the FLCAC Data Curator across the data submission process. If desired, the FLCAC Data curator can help facilitate the entire data submission process with data providers for FLCAC repositories. See the [Data Submission Steps](https://flcac-admin.github.io/FLCAC-docs/datasubmissiontoolkit#data-submission-steps) that the FLCAC Data Curator follows.
+Outside of the data formatting review, the Repository Manager can dictate the level of involvement of the FLCAC Data Curator throughout the data submission process. If desired, the FLCAC Data curator can help facilitate the entire data submission process with data providers for FLCAC Repository Managers. See the [Data Submission Steps](https://flcac-admin.github.io/FLCAC-docs/datasubmissiontoolkit#data-submission-steps) that the FLCAC Data Curator follows.
 
 For new data submissions, the data provider should complete the [Data Provider Questionnaire](https://flcac-admin.github.io/FLCAC-docs/datasubmissiontoolkit#data-provider-questionnaire) and send this form to the Repository Manager and the FLCAC Data Curator. 
 :::{note}
