@@ -8,9 +8,9 @@ abbreviations:
 
 ## Running LCIA Results on a FLCAC Process in openLCA
 Recommended workflow for a basic calculation:
-1. Import methods that are aligned with FEDEFL into your database
+1. Import LCIA methods that are aligned with FEDEFL into your openLCA database that already has FLCAC process data in it
 :::{note}
-Read more about available methods and where to access them [here](https://flcac-admin.github.io/FLCAC-docs/lciamethods)
+Read more about available LCIA methods and where to access them [here](https://flcac-admin.github.io/FLCAC-docs/lciamethods). Learn about accessing and importing FLCAC data [here](https://flcac-admin.github.io/FLCAC-docs/accessing-data)
 :::
 2. Select the process that you would like to calculate results for
 3. On the 'General Information' tab of a process, select 'Create Product System'
