@@ -60,7 +60,9 @@ To work collaboratively or share openLCA databases, you may connect a local data
 
 **Follow these steps to connect an openLCA database to a GitHub Repository:**
 - Create a new GitHub repository
-  - **This GitHub repository must be empty.** It cannot contain a readme file or any other files.
+:::{important}
+This GitHub repository must be empty. It cannot contain a readme file or any other files.
+:::
 - Generate a GitHub Classic Token (Settings --> Developer Settings)
 - Set the expiration (no expiration is recommended)
 - Check the box to allow full control of private repos
