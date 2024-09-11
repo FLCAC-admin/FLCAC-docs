@@ -32,13 +32,14 @@ The Repository Manager can dictate the level of involvement of the FLCAC Data Cu
 For new data submissions, the data provider should complete the [Data Provider Questionnaire](https://flcac-admin.github.io/FLCAC-docs/datasubmissiontoolkit#data-provider-questionnaire) and send this form to the Repository Manager and the FLCAC Data Curator. 
 :::{note}
 Upcoming repository updates that are able to be publicly shared are listed on the [FLCAC Repositories](https://flcac-admin.github.io/FLCAC-docs/flcac-repositories) page.
+:::
 
 # FLCAC Collaboration Server
 The platform for the FLCAC is an openLCA collaboration server which is a server application that connects the openLCA desktop app and the FLCAC. The collaboration server allows users to work simutaneously on a database while tracking changes. Repository managers can prepare and publish data on the FLCAC via the collaboration server.
 
 To connect to the FLCAC collaboration server, you must have login credentials. These credentials are provided to repository managers and designated data users and providers.
 
-## Follow these steps to connect an openLCA database to the FLCAC collaboration server:
+## Connecting an openLCA Database to the FLCAC collaboration server:
 - Navigate to the repository of interest on the collaboration server and copy the URL
 - Create a new, empty database in openLCA
 - Right click on the database, select ‘Repository’, select ‘Connect’
@@ -65,12 +66,11 @@ To connect to the FLCAC collaboration server, you must have login credentials. T
 - Repository level compare feature
 
 # Repository-Level Metadata Guidance
-WORK IN PROGRESS
 
 # Versioning
-WORK IN PROGRESS
+The FLCAC collaboration server now allows multiple versions on a repository to be published, thus a standardized repository-level version format is needed.
 
-Format: MAJOR.DATE(YYYY-MM).MINOR.PATCH
+FLCAC Repository Versioning Format: MAJOR.DATE(YYYY-MM).MINOR.PATCH
 
 - MAJOR version denotes updates to the schema (pending formalization) which are non-backward-compatible
 - DATE pulls the date-time stamp of the release commit on the FLCAC collaboration server
