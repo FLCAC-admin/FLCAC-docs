@@ -14,7 +14,7 @@ As FLCAC interagency coordination increases, the new standard for data formats a
 The sections in this document correspond to the tabs[^exclusions] and sections within the openLCA software.
 
 - [General Information](#general-information)
-- [Inputs/Outputs](#inputoutput-flows)
+- [Inputs/Outputs](#inputoutput)
 - [Documentation](#documentation)
 - [Parameters](#parameters)
 - [Allocation](#allocation)
@@ -237,11 +237,101 @@ Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inven
 ### Social Schema _(Optional)_
 Currently, the FLCAC does not require social schema so no social schema data quality matrix is required.
 
-# Input/Output Flows
-
+# Input/Output
 ## Input Flows
+### Flow
+Elementary Flows:
+
+
+Technosphere Flows:
+
+#### Description
+#### Example(s)
+
+### Category
+#### Description
+#### Example(s)
+
+### Amount
+#### Description
+#### Example(s)
+
+### Unit
+#### Description
+#### Example(s)
+
+### Costs/Revenues
+#### Description
+#### Example(s)
+
+### Uncertainty
+#### Description
+#### Example(s)
+
+### Avoided Waste
+#### Description
+#### Example(s)
+
+### Provider
+#### Description
+#### Example(s)
+
+### Data quality entry
+#### Description
+#### Example(s)
+
+### Location
+#### Description
+#### Example(s)
+
+### Description
+#### Description
+#### Example(s)
 
 ## Output Flows
+### Flow
+#### Description
+#### Example(s)
+
+### Category
+#### Description
+#### Example(s)
+
+### Amount
+#### Description
+#### Example(s)
+
+### Unit
+#### Description
+#### Example(s)
+
+### Costs/Revenues
+#### Description
+#### Example(s)
+
+### Uncertainty
+#### Description
+#### Example(s)
+
+### Avoided product
+#### Description
+#### Example(s)
+
+### Provider
+#### Description
+#### Example(s)
+
+### Data quality entry
+#### Description
+#### Example(s)
+
+### Location
+#### Description
+#### Example(s)
+
+### Description
+#### Description
+#### Example(s)
 
 # Documentation
 ## LCI Method
