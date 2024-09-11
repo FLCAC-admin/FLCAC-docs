@@ -13,7 +13,7 @@ abbreviations:
 - Drag and drop processes and flows into different folders in openLCA.
 - New folders and subfolders can be created by right clicking on an existing folder and selecting "Add new child category".
 
-## Export/Import Data from Excel
+## Import/Export LCI Data from Excel/openLCA
 - It is possible to copy/paste to and from excel and a process inventory (i.e., the 'Inputs/Outputs tab of a process)
 - Review [this section](https://greendelta.github.io/openLCA2-manual/cheat/import_export.html) of the openLCA manual
 

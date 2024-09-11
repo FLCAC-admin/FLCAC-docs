@@ -164,6 +164,8 @@ To import a dataset that exists in a format that is compatible with openLCA, ple
 
 Create an empty database to import data into.
 
+Reference the [Accessing FLCAC Data](https://flcac-admin.github.io/FLCAC-docs/accessing-data) page for more information on accessing data on the FLCAC and connecting databases to the FLCAC Collaboration Server and/or a GitHub repository.
+
 If data does not exist in a format that can be imported into openLCA then data should be entered manually or for bulk and large datasets an automated data entry method will be discussed in the initial Appraisal meeting. Bulk data entry methods vary based on the source format of the original data.
 
 ## Data Formatting
@@ -287,7 +289,7 @@ Typically, the review comments revolve around fixing flows that are not compatib
 
 ## Publication and Preservation
 ### Publication
-Once your data have been reviewed and completed, the dataset(s) are ready for publication. The Data Curator will publish the data to its repository on the [Federal LCA Commons Collaboration Server](https://www.lcacommons.gov/lca-collaboration/). 
+Once your data have been reviewed and completed, the dataset(s) are ready for publication. The Data Curator will publish the data to its repository on the [Federal LCA Commons Collaboration Server](https://www.lcacommons.gov/lca-collaboration/). See indructions on connecting to the collaboration server [here](https://flcac-admin.github.io/FLCAC-docs/accessing-data#connecting-a-database-directly-to-the-flcac-collaboration-server).
 
 FLCAC repositories are published at different intervals, so please inquire with the Data Curator or Repository Manager of the database your data is being published in regarding release timing.
 
