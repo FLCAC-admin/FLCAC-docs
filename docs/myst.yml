@@ -19,9 +19,9 @@ project:
       children:
        # - file: DataUserHandbook.md
         - file: Accessing_data.md
-        - file: Reference/LCIAmethods.md
+        - file: LCIAmethods.md
         - file: Running_LCIA_results.md
-        - file: Reference/FLCAC_openLCA_Library_User_Guidance.md
+        - file: FLCAC_openLCA_Library_User_Guidance.md
         - file: Tips.md
     - title: Data Submission
       children:
