@@ -19,6 +19,8 @@ project:
       children:
        # - file: DataUserHandbook.md
         - file: Accessing_data.md
+        - file: Reference/LCIAmethods.md
+        - file: Reference/FLCAC_openLCA_Library_User_Guidance.md
         - file: Tips.md
     - title: Data Submission
       children:
@@ -32,8 +34,6 @@ project:
     - title: Additional Resources
       children:
         - file: Reference/FlowMapping.md
-        - file: Reference/LCIAmethods.md
-        - file: Reference/FLCAC_openLCA_Library_User_Guidance.md
         - file: Reference/OtherResources.md
         # - file: Reference/Guidance_unmappable.md
         - title: Standard Operating Procedures
