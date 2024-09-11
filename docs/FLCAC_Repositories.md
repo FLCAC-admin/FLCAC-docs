@@ -17,8 +17,7 @@ Visit the FLCAC Collaboration Server to [Access these Repositories](https://www.
 See [Accessing FLCAC Data](Accessing_data.md) for information on how to download and use data.
 Repositories are classified as the following types:
 
-- **LCI**: contains Life Cycle Inventory data as {term}`unit processes <unit process>` or {term}`system processes <system process>`.
-- **I/O**: Input-output data.
+- **LCI**: contains Life Cycle Inventory data as {term}`unit processes <unit process>` or {term}`system processes <system process>` or input-output data.
 - **LCIA**: Repositories of Life Cycle Inventory Assessment methods
 - **Background**: Repositories with background data such as flow lists.
 - **Legacy**: Repositories with LCI data not actively maintained.
@@ -33,8 +32,8 @@ Repositories are classified as the following types:
 | LCI             | Coal Extraction                          | NETL         |                                                               |                  |
 | LCI             | Woody Biomass                            | USFS FPL        | https://research.fs.usda.gov/fpl/contactus                                                              | Hover[^Woody] for ongoing updates.                   |
 | LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                                              |                  |
-| IO              | USEEIO v2.0                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
-| IO              | USEEIO v1.1                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
+| LCI       | USEEIO v2.0                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
+| LCI        | USEEIO v1.1                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCIA            | ReCiPe 2016                              | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | TRACI 2.1                                | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | CED Method                               | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
