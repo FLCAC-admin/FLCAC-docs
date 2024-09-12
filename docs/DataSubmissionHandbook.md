@@ -271,6 +271,10 @@ Guidance on using and converting to this nomenclature can be found on the [FEDEF
 
 When submitting data, the elementary flow names in the LCI must correspond directly to the elementary flow names used in the LCIA method. Usage of the FEDEFL protocol for both LCI and LCIA datasets on the FLCAC ensures interoperability between these different types of datasets and the original and FEDEFL names are documented during the curation process.
 
+:::{important}
+USLCI and most other LCI repositories on the FLCAC do not contain all of the flows contained within the [FEDEFL repository](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets), they only contain FEDEFL flows that are used by processes in their respective repositories in order to reduce file sizes. FEDEFL flows that are not contained in a repository but need to be referenced in a new process can be imported into the repository.
+:::
+
 ### LCIA Results
 Once all elementary and technosphere flows have been aligned with the guidelines above, it is important to run LCIA results on your new model in openLCA to ensure that results are similar to those in your original model. If results are not similar, differences must be understood and discussed in the metadata.
 
