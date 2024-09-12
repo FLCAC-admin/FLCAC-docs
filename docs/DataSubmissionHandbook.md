@@ -100,7 +100,7 @@ NREL uses a Digital Curation Process for receiving, formatting, reviewing, and p
 2. [Data Import](#data-import-into-openlca)
 3. [Data Formatting](#data-formatting)
 4. [Review](#review)
-5. [Publication and Preservation](#publication-and-preservation)
+5. [Publication and Preservation](#publication)
 
 Each of the five phases are discussed in detail below but a quick overview of the entire procedure for submitting data to the FLCAC is as follows:
 
@@ -274,7 +274,12 @@ When submitting data, the elementary flow names in the LCI must correspond direc
 ### LCIA Results
 Once all elementary and technosphere flows have been aligned with the guidelines above, it is important to run LCIA results on your new model in openLCA to ensure that results are similar to those in your original model. If results are not similar, differences must be understood and discussed in the metadata.
 
-To run LCIA results on your model please follow [these instructions](Running_LCIA_results) in the Data User Handbook.
+To run LCIA results on your model please follow [these instructions](Running_LCIA_results) in the Data User Handbook. It is recommended to compare the total results for LCIA categories included in your LCI and investigate the contribution analysis to understand differences.
+
+Reasons why your new openLCA/FLCAC compatible results may be different from your original results:
+- Different background datasets (e.g., different sources, different scopes, slightly different output)
+- Use of cut-off or proxy flows when data gaps on the FLCAC exist
+- Error in data entry
 
 ### Metadata Guidance
 As FLCAC interagency coordination increases, the new standard for data formats and documentation is being advanced. To move toward interoperability and transparency, FLCAC harmonization of digital data access and preservation will increase collaboration potential and the reviewability of the LCA data exchange process. These efforts will significantly reduce not only data acquisition costs but also computer- and human-based misinterpretation errors, and thus, data misuse. As such, and to be more aligned with international protocols for all newly developed data, the current FLCAC repository standardization is to strive for 100% metadata completion.
