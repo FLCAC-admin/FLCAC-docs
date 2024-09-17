@@ -239,18 +239,34 @@ Currently, the FLCAC does not require social schema so no social schema data qua
 
 # Input/Output
 ![alt text](img/inputs_outputs.png)
-## Input Flows
-### Flow
-Elementary Flows:
-
-
-Technosphere Flows:
+## Input Flows 
+### Flow (_Automatic_)
+Elementary Flows: Should only be from the [FEDEFL](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets) Read more about elementary flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#elementary-flow-alignment).
 
 **Example(s)**
+![alt text](img/elementary_flow_names.png)
 
-### Category
+:::{tip}
+To ensure that elementary flows included in a process are FEDEFL flows, open up the flow information by doubleclicking a flow and check the description field. The description will include a statement such as this "From FedElemFlowList_1.0.1. Flow Class: Chemicals. Not a preferred flow." if it is a FEDEFL flow.
+:::
+
+Technosphere Flows: Should be newly created flows based on the [ILCD naming convention](#name-mandatory). Read about technosphere flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment).
 
 **Example(s)**
+![alt text](img/tech_flow_names.png)
+
+### Category (_Automatic_)
+Category is determined based on the folder that the flow is contained within. The FLCAC uses NAICS Categories to organize flows and processes, read about FLCAC Categorization [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#naics-categorization).
+
+**Example(s)**
+![alt text](img/elementary_flow_cats.png)
+![alt text](img/tech_flow_cats.png)
+
+:::{tip}
+- Drag and drop flows and processes into different folders to change the flow category. 
+- Create a new folder by right clicking an existing folder and selecting "Add a new child category". 
+- The [Federal LCA Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) contains the skeleton NAICS structure, this can be imported into an existing openLCA database.
+:::
 
 ### Amount
 
