@@ -1,5 +1,5 @@
 ---
-title: Process Metadata Guidance
+title: Metadata Guidance
 description: Detailed information on metadata fields for data on the FLCAC
 abbreviations:
   FLCAC: Federal LCA Commons
