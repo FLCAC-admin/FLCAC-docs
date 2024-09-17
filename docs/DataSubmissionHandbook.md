@@ -70,9 +70,9 @@ For USLCI data submissions, please review the legal code of the CC0 1.0 Universa
 # Data Formatting Overview
 To facilitate compliance with ISO 14048:2002, the FLCAC uses the [openLCA database schema](https://greendelta.github.io/olca-schema/) and builds upon this schema with additional requirements to standardize data across FLCAC repositories. There are five steps of data formatting to align data with the openLCA and FLCAC schemas:
 
-1. Categorization of processes and flows using the North American Industry Classification System (NAICS)
-2. Technosphere flow alignment with FLCAC product, waste, or cut-off flows
-3. Elementary flow alignment with the Federal Elementary Flow List (FEDEFL)
+1. Technosphere flow alignment with FLCAC product, waste, or cut-off flows
+2. Elementary flow alignment with the Federal Elementary Flow List (FEDEFL)
+3. Categorization of processes and flows using the North American Industry Classification System (NAICS)
 4. Run LCIA results with new FEDEFL/FLCAC aligned model and compare to the original LCIA results
 5. Metadata conformance with the openLCA schema and metadata guidance provided in this handbook (includes data quality measurements)
 
@@ -179,9 +179,9 @@ To facilitate compliance with ISO 14048:2002, the FLCAC uses the [openLCA databa
 
 The Data Formatting phase provides steps for preparing your data for submission to the FLCAC. There are five stages of data formatting, each of which are described in detail in this section:
 
-1.	Categorization of processes and flows using the North American Industry Classification System (NAICS)
-2.	Technosphere flow alignment with FLCAC product, waste, or cut-off flows[^flows]
-3.	Elementary flow alignment with the Federal Elementary Flow List (FEDEFL)[^flows]
+1.	Technosphere flow alignment with FLCAC product, waste, or cut-off flows[^flows]
+2.	Elementary flow alignment with the Federal Elementary Flow List (FEDEFL)[^flows]
+3. Categorization of processes and flows using the North American Industry Classification System (NAICS)
 4. Run LCIA results with new FEDEFL/FLCAC aligned model and compare to the original LCIA results
 5.	Metadata conformance with the openLCA schema and metadata guidance provided in this handbook (includes data quality measurements)
 
@@ -210,13 +210,6 @@ Please also review these notes on flows and processes before beginning data form
 -	A process in openLCA produces one quantitative reference technosphere flow and can produce multiple other technosphere flows if co-products or avoided products are also produced. 
 -	One technosphere flow can be produced by multiple processes. So, in an LCI the desired upstream process producing a flow should be selected via the ‘Provider’ field.
     -	For example, a flow named “Electricity, at grid” could be produced by the following processes “Northeastern electricity grid mix”, “Southeastern electricity gird mix”, Northwestern electricity grid mix”, and “Southwestern electricity grid mix”. So when creating an LCI with the “Electricity, at grid” flow, the desired upstream gird mix process should be linked to the flow.
-
-### NAICS Categorization
-Technosphere flows and processes on the FLCAC are classified using the North American Industry Classification System (NAICS) 2 digit/4 digit classification scheme. The [FLCAC Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) contains the NAICS folder structure and can be imported into an openLCA database to align flows and processes.
-Steps to assign proper categorization to new flows and processes:
-1. Search your product or process on the [Census Bureau NAICS website](https://www.census.gov/naics/) and identify the proper four-digit NAICS code
-2. In openLCA, import the Commons Core Database into the database with your data
-3.	Drag and drop your processes and flows that you will be submitting into the correct NAICS folders in your openLCA database
 
 ### Technosphere Flow Alignment
 In openLCA, technosphere flows and processes are separate objects that can be linked via providers to form a product system.
@@ -274,6 +267,13 @@ When submitting data, the elementary flow names in the LCI must correspond direc
 :::{important}
 USLCI and most other LCI repositories on the FLCAC do not contain all of the flows contained within the [FEDEFL repository](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets), they only contain FEDEFL flows that are used by processes in their respective repositories in order to reduce file sizes. FEDEFL flows that are not contained in a repository but need to be referenced in a new process can be imported into the repository.
 :::
+
+### NAICS Categorization
+Technosphere flows and processes on the FLCAC are classified using the North American Industry Classification System (NAICS) 2 digit/4 digit classification scheme. The [FLCAC Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) contains the NAICS folder structure and can be imported into an openLCA database to align flows and processes.
+Steps to assign proper categorization to new flows and processes:
+1. Search your product or process on the [Census Bureau NAICS website](https://www.census.gov/naics/) and identify the proper four-digit NAICS code
+2. In openLCA, import the Commons Core Database into the database with your data
+3.	Drag and drop your processes and flows that you will be submitting into the correct NAICS folders in your openLCA database
 
 ### LCIA Results
 Once all elementary and technosphere flows have been aligned with the guidelines above, it is important to run LCIA results on your new model in openLCA to ensure that results are similar to those in your original model. If results are not similar, differences must be understood and discussed in the metadata.
