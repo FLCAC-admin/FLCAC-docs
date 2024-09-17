@@ -14,20 +14,14 @@ This site is generated with [MyST Markdown](https://mystmd.org/) from content st
 A table of contents is provided in the left sidebar, or on narrow screens can be accessed with the menu icon (three horizontal bars) at the top-left corner.
 :::
 
-# Contributing to the docs
-
-We appreciate your interest in adding to shared resources for the LCA community!
-
-To contribute content to these docs, please [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) the [FLCAC-docs repository](https://github.com/FLCAC-admin/FLCAC-docs), commit your edits, then [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) with a clear description of your work.
-
-The FLCAC Data Curation team is actively reorganizing existing resources and updating guidance to make sure it is clear and accessible. Feedback on these efforts is always appreciated. Thank you!
-
 # Have Questions?
+First, please refer to the documentation on this site:
+ - For questions on Data Use, Data Submission, or Repo Management, use the site menu (left side) to navigate.
+ - Check out the [Frequently Asked Questions](https://flcac-admin.github.io/FLCAC-docs/faq) page.
+ - Have a terminology question? Check out the [Glossary](https://flcac-admin.github.io/FLCAC-docs/glossary).
+ - The [Other Resources](https://flcac-admin.github.io/FLCAC-docs/otherresources) page can also help direct you to useful resources.
 
-- First, please refer to the [Frequently Asked Questions](https://flcac-admin.github.io/FLCAC-docs/faq) page.
-- Have a terminology question? Check out the [Glossary](https://flcac-admin.github.io/FLCAC-docs/glossary).
-- The [Other Resources](https://flcac-admin.github.io/FLCAC-docs/otherresources) page can also help direct you to useful resources.
-- If the above resources fail to answer your question, consider opening a new issue or contributing to a discussion thread.
+If the above resources fail to answer your question, consider opening a new issue or contributing to a discussion thread.
 
 ## Using Issues and Discussions
 
@@ -54,3 +48,12 @@ Discussions rely on the same set of repository-specific labels used by Issues.
 
 # Contact Information
 Please contact us at FederalLCACommons@erg.com
+
+
+# Contributing to the docs
+
+We appreciate your interest in adding to shared resources for the LCA community!
+
+To contribute content to these docs, please [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) the [FLCAC-docs repository](https://github.com/FLCAC-admin/FLCAC-docs), commit your edits, then [open a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) with a clear description of your work.
+
+The FLCAC Data Curation team is actively reorganizing existing resources and updating guidance to make sure it is clear and accessible. Feedback on these efforts is always appreciated. Thank you!
