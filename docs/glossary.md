@@ -16,7 +16,7 @@ collaboration server
 : An openLCA specific server application, maintained by GreenDelta, that allows users to work collaboratively on LCA models, share data, and host public LCA repositories such as those available on [lcacommons.gov](https://www.lcacommons.gov/lca-collaboration/). For more information, see GreenDelta's Collaboration Server. 
 
 context
-: In the case of the {term}`FEDEFL <Federal Elementary Flow List>` (and often in LCA more broadly), context describes the origin or destination of an elementary flow. Context informs the directionality of an elementary flow. Resource flows are extracted from nature, while emissions are released to nature. [List of FEDEFL contexts](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/wiki/resources/FEDEFLcontexts.xlsx). For more discussion of context see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL&simpleSearch=0&showCriteria=2&searchAll=elementary+flows&TIMSType=Published+Report&dateBeginPublishedPresented=07%2F31%2F2019)
+: In the case of the {term}`FEDEFL <Federal Elementary Flow List>` (and often in LCA more broadly), context describes the origin or destination of an elementary flow. Context informs the directionality of an elementary flow. Resource flows are extracted from nature, while emissions are released to nature. [List of FEDEFL contexts](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/wiki/resources/FEDEFLcontexts.xlsx). For more discussion of context see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251)
 
 cut-off flow
 : a flow that is a placeholder or a dummy flow. These flows are used when no relevant flows in a database exists. It is not recommended to use these flows in your life cycle inventory if possible. In openLCA results, cut-off flows will appear in your inventory results, but will not contribute to impact category results.
@@ -31,7 +31,7 @@ Disability-Adjusted Life Years (DALY)
 : "One DALY represents the loss of the equivalent of one year of full health. DALYs for a disease or health condition are the sum of the years of life lost to due to premature mortality (YLLs) and the years lived with a disability (YLDs) due to prevalent cases of the disease or health condition in a population." from [World Health Organization](https://www.who.int/data/gho/indicator-metadata-registry/imr-details/158#:~:text=Definition%3A-,One%20DALY%20represents%20the%20loss%20of%20the%20equivalent%20of%20one,health%20condition%20in%20a%20population.)
 
 elementary flow
-: A material (resource), energy, or space that is exchanged with the biosphere. An elementary flow is characterized by a unique combination of {term}`flowable` and {term}`context` information and is assigned a {term}`UUID`.
+: A material (resource), energy, or space that is exchanged with the biosphere. An elementary flow is characterized by a unique combination of {term}`flowable` and {term}`context` information and is assigned a {term}`UUID`. 
 
 endpoint indicator
 : A category of LCIA indicator that expresses characterized impact in terms of damage caused to an area of concern such as the natural environment, human health or resource supply. An example of an endpoint indicator would be the human health impact of particulate matter formation potential expressed in {term}`Disability-Adjusted Life Years (DALY)`.
@@ -42,14 +42,11 @@ Environmental Product Declaration
 [Federal Elementary Flow List](https://github.com/USEPA/fedelemflowlist)
 : The Federal Elementary Flow List (FEDEFL) is a standardized list of {term}`elementary flow` names, developed by the U.S. Environmental Protection Agency, used in federal LCA work. See the [EPA Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251) on its development and use.
 
-[Federal LCA Commons](https://lcacommons.gov/about-us)
-: ...
-
 [flow](https://greendelta.github.io/olca-schema/classes/Flow.html)
-: ...
+: "Flows are the essential components of data used for LCA. Flows may be of two broad types: {term}`elementary flows <elementary flow>` or {term}`intermediate (known as "technosphere") flows <technosphere flow>`." from [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251)
 
 flowable
-: A general term for the name of a material, energy or space that is exchanged with the biosphere. For more discussion of flowables see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL&simpleSearch=0&showCriteria=2&searchAll=elementary+flows&TIMSType=Published+Report&dateBeginPublishedPresented=07%2F31%2F2019)
+: A general term for the name of a material, energy or space that is exchanged with the biosphere. For more discussion of flowables see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251)
 
 functional unit
 : The reference unit of a {term}`product system` within LCA. Results are run and compared on the {term}`functional unit`. [ISO 14040](https://www.iso.org/standard/37456.html)
@@ -57,14 +54,11 @@ functional unit
 [International Organization for Standardization](https://iso.org)
 : An [independent, non-governmental body](www.iso.org/structure.html) with members from national standards boards that develops standard procedures for technical processes, such as life cycle assessment.
 
-JSON-LD
-: ...
+[JSON-LD](https://json-ld.org/)
+: a file format used by openLCA and the {term}`collaboration server` for transferring data objects. JSON-LD objects should not be unzipped when importing into openLCA.
 
 Life Cycle Assessment
 : [United Nations description of environmental LCA](https://lifecycleinitiative.org/starting-life-cycle-thinking/life-cycle-approaches/environmental-lca/)
-
-Life Cycle Impact Assessment
-: ...
 
 library
 : A type of data package limited to read-only access, intended to serve as a dependency of another data package. The library feature in openLCA 2.0 and later versions enables the use of databases together without the need to import them on top of one another. Processes and other elements that are part of a library database are not editable but can be utilized as part of processes or product systems in the main database.
@@ -72,8 +66,8 @@ library
 midpoint indicator
 : "A characterization method that provides indicators for comparison of environmental interventions at a level of cause-effect chain between emissions/resource consumption and the endpoint level." from the European Commission report [Indicators and targets for the reduction of the environmental impact of EU consumption: Overall environmental impact (resource) indicators](https://eplca.jrc.ec.europa.eu/uploads/JRC92824_qms_h08_lcind_deliverable3_final_20141113.pdf).  A common example of a midpoint indicator is global climate change potential where impacts are expressed as kg CO<sub>2 </sub>equivalents.
 
-parquet
-: ...
+[parquet](https://parquet.apache.org/)
+:  an open source file format for tabular data that minimizes storage space.
 
 [process](https://greendelta.github.io/olca-schema/classes/Process.html)
 : A set of related activities that convert inputs into output(s). A network of processes, the {term}`product system`, is used to define the life cycle of a product. Processes are characterized as {term}`unit processes <unit process>` or {term}`system processes <system process>`. For more discussion of processes see [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
@@ -85,7 +79,7 @@ product flow
 : These are all the flows that are not elementary or {term}`waste flows <waste flow>`, and represent the materials or energy exchanged between processes within the {term}`product system`. [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/flows/index.html)
 
 product system
-: ...
+: "A collection of {term}`unit processes <unit process>` with {term}`elementary <elementary flow>` and {term}`product flows <product flow>`, performing one or more defined functions, and which models the life cycle of a product." -from [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/prod_sys/index.html#product-systems)
 
 provider
 : A provider in openLCA is the upstream process that produces a flow. Providers can be chosen in the 'Inputs/Outputs' tab in openLCA under the 'Provider' column for product and waste flows.
@@ -97,13 +91,13 @@ resource flow
 : A material or energy flow exiting the biosphere, which serves as an LCA process input.
 
 system process
-: "An aggregated life cycle result saved as a process." -from [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
+: "An aggregated life cycle result saved as a process." -from [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html)
 
 technosphere flow
 : Intermediate product or service flows that serve as inputs to subsequent processes or comprise the functional unit of a {term}`product system`.
 
 unit process
-: "The  smallest (least aggregated) unit in a production system, for which input and output data are quantified." -from [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=process#processes)
+: "The smallest (least aggregated) unit in a production system, for which input and output data are quantified." -from [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/processes/index.html)
 
 UUID
 : Universally Unique Identifiers. Unrepeated alphanumeric code that points to specific database objects, typically within a JSON file. Within openLCA, UUIDs are assigned to processes, flows, {term}`product systems <product system>`, projects, parameters, impact categories and LCIA methods. Link to UUID search in the [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/introduction/index.html?search=UUID)
