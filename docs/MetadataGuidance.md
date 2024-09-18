@@ -240,7 +240,7 @@ Currently, the FLCAC does not require social schema so no social schema data qua
 
 # Input/Output
 
-![alt text](img/inputs_outputs.png)
+![alt text](img/inputs_outputs_tab.png)
 
 ## Input Flows 
 ### Flow (_Mandatory_)
@@ -297,7 +297,7 @@ Most LCI data on the FLCAC does not include life cycle costing data.
 :::
 
 **Example(s)**
-![alt text](img/tech_flow_cost.png)
+![alt text](img/tech_flow_costs.png)
 
 ### Uncertainty (_Optional_)
 Describe flow's data uncertainty. The distribution type, mean, and standard deviation may be provided.
@@ -326,7 +326,7 @@ Only non-cutoff technosphere flows have an upstream provider. Cutoff flows and e
 :::
 
 **Example(s)**
-![alt text](img/tech_flows_providers.png)
+![alt text](img/tech_flows_provider.png)
 
 ### Data quality entry (_Optional_)
 [See the flow data quality section](#flow-schema-optional).
@@ -359,7 +359,7 @@ Types of information to include in the flow description field:
 
 **Example(s)**
 
-![alt text](img/flow_description.png)
+![alt text](img/flow_descrip.png)
 
 ## Output Flows
 
