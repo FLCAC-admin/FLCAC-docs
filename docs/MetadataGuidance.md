@@ -123,6 +123,7 @@ _961fad56-bde2-4fbe-8895-5be03461729b_
 This is a box field in openLCA, checking the box indicates that the process includes infrastructure requirements in its inventory. Leave this box unchecked if infrastructure requirements are not included in the process.
 
 **Example(s)**
+
 ![alt text](img/infra_unchecked.png)
 
 ![alt text](img/infra_checked.png)
@@ -238,9 +239,11 @@ Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inven
 Currently, the FLCAC does not require social schema so no social schema data quality matrix is required.
 
 # Input/Output
+
 ![alt text](img/inputs_outputs.png)
+
 ## Input Flows 
-### Flow (_Automatic_)
+### Flow (_Mandatory_)
 Elementary Flows: Should only be from the [FEDEFL](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets) Read more about elementary flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#elementary-flow-alignment).
 
 **Example(s)**
@@ -268,41 +271,95 @@ Category is determined based on the folder that the flow is contained within. Th
 - The [Federal LCA Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) contains the skeleton NAICS structure, this can be imported into an existing openLCA database.
 :::
 
-### Amount
+### Amount (_Mandatory_)
+Flow quantity
+
+**Example(s)**
+![alt text](img/elementary_flow_amt.png)
+
+### Unit (_Mandatory_)
+Flow unit; the openLCA software includes a set of unit groups and units. These units must be used to ensure proper data importation. 
+
+:::{note}
+If the pre-existing units in a database are not appropriate for one or more of your dataset flows, let the Data Curator know and they will assist in adding a unit to the list.
+:::
+
+**Example(s)**
+![alt text](img/elementary_flow_unit.png)
+
+### Costs/Revenues (_Optional_)
+This field is provided for documenting life cycle costing (LCC) data. The currency and costs may be provided for each flow; the costs per unit are automatically generated based on this information and flow amount.
+
+This field is not required and should be left blank if no life cycle costing data is available.
+
+:::{note}
+Most LCI data on the FLCAC does not include life cycle costing data.
+:::
+
+**Example(s)**
+![alt text](img/tech_flow_cost.png)
+
+### Uncertainty (_Optional_)
+Describe flow's data uncertainty. The distribution type, mean, and standard deviation may be provided.
+
+This information is not required, but if provided it increases the process' usefulness.
+
+**Example(s)**
+![alt text](img/tech_flow_unc.png)
+
+### Avoided Waste (_Optional_)
+If there is a scrap or waste flow that is utilized in your process, the flow may be listed as an input to your dataset and marked as an avoided waste.
+
+This field is not required.
 
 **Example(s)**
 
-### Unit
+N/A
+
+### Provider (_Mandatory_)
+For every non-cutoff technosphere flow, a provider must be selected. A provider connects the flow to an upstream process producing that flow. Every non-cutoff technosphere should have at least one provider option.
+
+Read more about openLCA provider linkages in the openLCA manual [here](https://greendelta.github.io/openLCA2-manual/processes/process_tab_content.html).
+
+:::{note}
+Only non-cutoff technosphere flows have an upstream provider. Cutoff flows and elementary flows do not have providers as they are not being produced by a process.
+:::
+
+**Example(s)**
+![alt text](img/tech_flows_providers.png)
+
+### Data quality entry (_Optional_)
+[See the flow data quality section](#flow-schema-optional).
+
+This information is not required, but if provided it increases the usefulness of a process.
+
+### Location (_Optional_)
+Flow level location is an optional field but is useful to include if flow level exchange locations are known (i.e., where a flow was produced/originated from) and if they differ from the process location. 
+
+:::{important}
+To better support regionalized impact assessment, USLCI and FLCAC repositories will no longer allow locations on flow objects, but instead will utilize locations on exchanges and/or processes
+:::
+
+**Example(s)**
+![alt text](img/tech_flow_locs.png)
+
+:::{note}
+In the example above, the location has not been entered for the first two technosphere flows. The reason for this is that the flow exchange location does not vary from the process location (US and RNA) in these instances, so a flow exchange location is not needed.
+
+### Description (_Optional_)
+This field is required where applicable. Briefly describe the flow's relationship to the process and assumptions used to obtain the quantitative reference or data quality.
+
+Types of information to include in the flow description field:
+- Conversion factors
+- Proxy/surrogate informatio (e.g., this flow is a proxy for the original flow "Natural gas combustion, RoW" from the ecoinvent database v2.1)
+- Aggregation methods (e.g., two natural gas flows existed in the original study, these have been combined into one value)
+- Stage of the LCI that a flow relates to (e.g., transportation from plant to warehouse)
+- Other details about how the flow was transformed from the original study
+- Pertinent information related to a specific flow that would impact the use of the data
 
 **Example(s)**
 
-### Costs/Revenues
-
-**Example(s)**
-
-### Uncertainty
-
-**Example(s)**
-
-### Avoided Waste
-
-**Example(s)**
-
-### Provider
-
-**Example(s)**
-
-### Data quality entry
-
-**Example(s)**
-
-### Location
-
-**Example(s)**
-
-### Description
-
-**Example(s)**
+![alt text](img/flow_description.png)
 
 ## Output Flows
 
