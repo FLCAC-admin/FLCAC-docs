@@ -16,7 +16,6 @@ The sections in this document correspond to the tabs[^exclusions] and sections w
 - [General Information](#general-information)
 - [Inputs/Outputs](#inputoutput)
 - [Documentation](#documentation)
-- [Parameters](#parameters)
 - [Allocation](#allocation)
 
 :::{important}
@@ -27,7 +26,7 @@ Each field has a description and example(s) recommended by the Data Curator for 
 It is preferred that data providers fill in their metadata directly in openLCA, but if needed an excel template can be provided to fill out metadata.
 :::
 
-[^exclusions]: Two openLCA process tabs are not included in this guidance 'Social aspects' and 'Direct impacts', data providers do not need to provide any information on these tabs.
+[^exclusions]: Three openLCA process tabs are not included in this guidance 'Parameters', 'Social aspects', and 'Direct impacts', data providers do not need to provide any information on these tabs. Please discuss the use of parameters with the Data Curator if your data submission includes parameters.
 
 # General Information
 ![alt text](img/general_info.png)
@@ -79,7 +78,7 @@ A legible overview of the process description, i.e., technical scope, functional
 
 **Technical Scope**: Cradle-to-gate, cradle-to-grave, gate-to-gate, gate-to-grave.
 
-**System boundaries**: Included and excluded processes, i.e., boundaries between the technosphere and nature; geographic and temporal scope; boundaries between this and other technosphere systems.
+**System boundaries**: Overview of included and excluded processes, i.e., boundaries between the technosphere and nature; geographic and temporal scope; boundaries between this and other technosphere systems. Detailed information on system boundaries can be provided in the [Sampling procedure](#sampling-procedure) field.
 
 :::{note}
 Examples of included processes are: raw material acquisition; manufacturing/processing/refining; distribution/transport; production and use of fuels, electricity, and heat; use and maintenance of products; disposal of process waste and products; recovery of used products via reuse, recycling, and energy recovery; ancillary materials manufacturing; manufacture, installation, maintenance, and decommissioning of capital equipment; additional operations, such as lighting, heating, service personnel.
@@ -107,6 +106,7 @@ Per ILCD, the data set version is formatted as follows: the first two digits ind
 The date and time when the dataset was last saved.
 
 **Example(s)**
+
 _2018-04-01T17:38:55-0600_
 
 ## **UUID** _(Automatic)_
@@ -116,6 +116,7 @@ _2018-04-01T17:38:55-0600_
 [^UUID]: Every element in an openLCA database has a UUID. UUIDs cannot be set, they are assigned by openLCA. [More details on UUID from the openLCA manual.](https://greendelta.github.io/olca-schema/classes/RefEntity.html?highlight=uuid#id)
 
 **Example(s)**
+
 _961fad56-bde2-4fbe-8895-5be03461729b_
 
 ## **Infrastructure** _(Mandatory)_
@@ -135,12 +136,15 @@ This is a box field in openLCA, checking the box indicates that the process incl
 Start date for the time period that the process data represents. The date format is MM/DD/YYYY.
 
 **Example(s)**
+
 _01/01/2017_
 
 ### **End Date**
 
 End date for the time period that the process data represents. The date format is MM/DD/YYYY.
+
 **Example(s)**
+
 _12/31/2017_
 
 :::{important}
@@ -212,6 +216,7 @@ Once you have selected the US EPA - Process Pedigree Matrix, select '(not specif
 Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inventory Data](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=321834) for information about the development of this matrix and guidance on how to complete it.
 
 **Example(s)**
+
 ![alt text](img/process_DQ.png)
 
 ### **Flow Schema** _(Optional)_
@@ -225,6 +230,8 @@ Use the US EPA - Flow Pedigree Matrix, this matrix comes preloaded in many FLCAC
 Select the US EPA - FLow Pedigree Matrix on the 'General Information' tab and enter data quality scores for each exchange in the inventory on the 'Inputs/Outputs' tab.
 
 Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inventory Data](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=321834) for information about the development of this matrix and guidance on how to complete it.
+
+Detail any assumptions used to assign these scores in the [Data treatment](#data-treatment) field.
 
 **Example(s)**
 - Select the matrix on the 'General Information' tab: 
@@ -376,43 +383,112 @@ Types of information to include in the flow description field:
 # Documentation
 ## LCI Method
 
-### Process type
+### Process type (_Mandatory_)
+Indication of whether the data represent a unit or system process.
+
+:::{note}
+[From the openLCA manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=quantitative#processes):
+
+Unit process: A unit process is the smallest (least aggregated) unit in a production system, for which input and output data are quantified. It can contain any flow type.
+
+System process: A system process is an aggregated life cycle result saved as a process.
+:::
 
 **Example(s)**
+- _Unit process_
+- _System process_
 
-### LCI method
+### LCI method (_Mandatory_)
+Indicate whether the LCI method was attributional, consequential, input/output, hybrid, etc. Can include caveats regarding inclusion of the process in a product system.
 
 **Example(s)**
+- _Attributional process. Represents gate-to-gate data, use and end-of-life is dependent on how the product is used._
+- _Consequential process_
 
-### Modeling constants
+### Modeling constants (_Mandatory_)
+State the primary assumptions used to create this process. Detail how the process differs from the original source.
 
 **Example(s)**
+- This process was adapted from a Smith, 2016 process for wood pellet manufacturing for pellets of a specific energy value in Europe. The process weight factors were adapted for the energy density of a typical US biomass fuel.
 
 ## Data source information
 
-### Data completeness
+### Data completeness (_Mandatory_)
+This field is comprised of three elements:
+
+1. Treatement of Missing Environmental Data:
+List and describe accounting methods for missing environmental data (e.g., cut-off rules) and/or intentional environmental data omissions.
+
+2. Treatment of Missing Technosphere Data:
+List and describe accounting methods for missing technosphere data and/or intentional technosphere data omissions.     
+
+3. Mass Balance:
+Either quantify and describe the mass imbalance ((mass of material outputs - mass of material inputs)/mass of material outputs) or state, "The mass balance for this process was not calculated."             
 
 **Example(s)**
 
-### Data selection
+_Elementary flows are cut-off at less than 1% based on environmental relevance. Technosphere flows are cut-off at less than 1% based on environmental relevance. The mass imbalance for this unit process is -17.87 kg (-0.72%)._
+
+### Data selection (_Mandatory_)
+Detail how data was selected for this process. If data was excluded, explain why.
+
+**Example(s)**
+- _Data was collected from 5 primary producers, one producer's data was not used because it was not representative of standard production practices._
+- _Source 1 disaggregated waste inputs and listed heating values and emission factors for the incineration. Whereas, Source 2 had only heating values for waste flow inputs. Therefore, Source 2 waste heating values were excluded from the averages._
+
+### Data treatment (_Mandatory_)
+This field consists of two sections:
+
+1. Detailed description of the methods and assumptions used to transform primary and secondary data into flow quantities through recalculating, reformatting, aggregation, or proxy data. 
+
+:::{important}
+The data documentor shall ensure that all data related to the relevant process in the unformatted document that are of environmental importance are adequately transferred and that no bias is generated. Justification and documentation shall be made regarding information that has been neglected or modified. 
+:::
+
+:::{note}
+Aggregation Types:
+
+Horizontal averaging combines data from processes serving the same function, e.g., via a production volume-weighted average.
+
+Vertical averaging sums several interconnected processes to protect identification of the contribution of individual steps or entities, a.k.a., “gate-to-gate aggregation”.
+:::
+
+2. Describe any assumptions that were used when assigning [data quality](#data-quality) scores.
 
 **Example(s)**
 
-### Data treatment
+_A horizontally weighted average was calculated from the primary data collected from 4 producers. To indicate known emissions while protecting the confidentiality of individual company responses, some emissions are reported only by the order of magnitude of the average. Flow level data quality scores assume that the reference year is 2024._
+
+### Sampling procedure (_Mandatory_)
+This field is comprised of three elements:
+
+1. System Boundary Conditions: A description of what is included and excluded from the system boundaries.                                                         
+
+2. Data collection: A description of how data were collected for this process.
+
+3. A description of if and how uncertainty was calculated for this process. If uncertainty was not calculated, this should be explicitly stated.                
+
+**Example(s)**
+- _The system boundary is gate-to-gate and includes incoming transportation, direct emissions, material and energy use, as well as process waste management. The following are excluded from the system boundary: miscellaneous materials and additives, capital equipment, facilities and infrastructure, and support personnel requirements. Data were collected directly from 4 aniline manufacturers. Uncertainty was not calculated._
+- _The system boundary includes: 1) the transport of raw materials to multiple manufacturing facilities where various subcomponents are produced; 2) the manufacture of subcomponents; 3) the transport of subcomponents to a different manufacturing plant for final assembly; 4) the assembly of subcomponents into a complete scanner; and 5) the transport of generated waste from the manufacturing facilities to a municipal solid waste landfill. The following processes and life cycle phases fall outside the system boundary: 1) packaging of the completed scanner; 2) all transport downstream of the assembly plant gate; 3) sale of product; 4) product use phase; and 5) end-of-life phase (including recycling)._
+
+  _For material inputs, data collection was based on scanner specifications provided by the manufacturer. Other inputs (e.g. energy; waste transport and disposal) were calculated on the basis of quantity of input per kg of scanner produced._
+
+  _Uncertainty was estimated based on engineering judgment. Material inputs had less uncertainty because they were based off of precise engineering specifications. Other inputs (e.g. energy; waste transport and disposal) had more uncertainty._
+
+### Data collection period (_Optional_)
+Include any additional information regarding data collection time period that was not covered in the [Time](#time-mandatory) field.
 
 **Example(s)**
 
-### Sampling procedure
-
-**Example(s)**
-
-### Data collection period
-
-**Example(s)**
+_All primary data were collected from 2015 to 2016. Secondary data were collected from 2005-2016 (NREL 2016; Wernet et al. 2016)._
 
 ### Use advice
+Detail information that a data user needs to be aware of when using this process.
 
 **Example(s)**
+- _This process does not contain use or end-of-life stage because these vary based on the intended use of a product._
+- _Cut-off flows were used for waste products which causes toxicity results to be underestimated by 20%._
 
 ## Reviews
 
@@ -449,8 +525,24 @@ Types of information to include in the flow description field:
 **Example(s)**
 
 ## Sources
+Reference to the publication or entity from which data or methodology were obtained. 
+
+Source title should use: “Author (YEAR) Abbreviated Title” format such that these information display in the openLCA navigation panel.
+
+::{tip}
+To add a new source:
+1. Open the 'Background data' folder in the openLCA navigation pane of database
+2. Right click the 'Sources' folder and select 'New source'
+3. Enter the metadata:
+    - Name: "Author (YEAR) Abbreviated Title"
+    - Description: Details about the source (if needed)
+    - URL (if available)
+    - Text reference: Full source title
+    - Year
+:::
 
 **Example(s)**
+![alt text](img/source.png)
 
 ## Administrative Information
 
@@ -489,12 +581,6 @@ Types of information to include in the flow description field:
 ### Access and use restrictions
 
 **Example(s)**
-
-# Parameters
-Parameters are not recommended
-
-## Global Parameters
-## Process Parameters
 
 # Allocation
 ## Physical
