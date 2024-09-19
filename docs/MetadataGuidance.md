@@ -14,7 +14,7 @@ As FLCAC interagency coordination increases, the new standard for data formats a
 The sections in this document correspond to the tabs[^exclusions] and sections within the openLCA software.
 
 - [General Information](#general-information)
-- [Inputs/Outputs](#inputoutput)
+- [Inputs/Outputs](#input-output)
 - [Documentation](#documentation)
 - [Allocation](#allocation)
 
@@ -78,7 +78,7 @@ A legible overview of the process description, i.e., technical scope, functional
 
 **Technical Scope**: Cradle-to-gate, cradle-to-grave, gate-to-gate, gate-to-grave.
 
-**System boundaries**: Overview of included and excluded processes, i.e., boundaries between the technosphere and nature; geographic and temporal scope; boundaries between this and other technosphere systems. Detailed information on system boundaries can be provided in the [Sampling procedure](#sampling-procedure) field.
+**System boundaries**: Overview of included and excluded processes, i.e., boundaries between the technosphere and nature; geographic and temporal scope; boundaries between this and other technosphere systems. Detailed information on system boundaries can be provided in the [Sampling procedure](#sampling-procedure-mandatory) field.
 
 :::{note}
 Examples of included processes are: raw material acquisition; manufacturing/processing/refining; distribution/transport; production and use of fuels, electricity, and heat; use and maintenance of products; disposal of process waste and products; recovery of used products via reuse, recycling, and energy recovery; ancillary materials manufacturing; manufacture, installation, maintenance, and decommissioning of capital equipment; additional operations, such as lighting, heating, service personnel.
@@ -99,6 +99,7 @@ Per ILCD, the data set version is formatted as follows: the first two digits ind
  Unless discussed in advance with the Data Curator, the value will be generated automatically by openLCA
  
  **Example(s)**
+ 
  _01.00.000_|
 
 ## **Last change** _(Automatic)_
@@ -491,7 +492,7 @@ Detail information that a data user needs to be aware of when using this process
 - _This process does not contain use or end-of-life stage because these vary based on the intended use of a product._
 - _Cut-off flows were used for waste products which causes toxicity results to be underestimated by 20%._
 
-## Reviews
+<!-- ## Reviews
 
 ### **Review type**
 
@@ -524,7 +525,7 @@ Detail information that a data user needs to be aware of when using this process
 ## **Completeness**
 
 **Example(s)**
-
+-->
 ## **Sources**
 Reference to the publication or entity from which data or methodology were obtained. 
 
@@ -545,9 +546,9 @@ To add a new source:
 **Example(s)**
 ![alt text](img/source.png)
 
-## Administrative Information
+<!-- ## Administrative Information
 
-### Project
+### **Project**
 
 **Example(s)**
 
@@ -582,7 +583,7 @@ To add a new source:
 ### **Access and use restrictions**
 
 **Example(s)**
-
+-->
 # Allocation
 ## Physical
 ## Economic
