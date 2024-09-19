@@ -326,7 +326,7 @@ The provider should always be chosen if a flow is an avoided product.
 :::
 
 **Example(s)**
-![alt text](img/avoided_product.png)
+![alt text](img/avoided_prod.png)
 
 ### **Provider** (_Mandatory_)
 For every non-cutoff technosphere flow, a provider must be selected. A provider connects the flow to an upstream process producing that flow. Every non-cutoff technosphere should have at least one provider option.
