@@ -202,6 +202,7 @@ A short (i.e., 1-3 paragraphs), general description of the process intended tech
 
 
 **Example(s)**
+
 - _This process represents the production of "Calcium carbonate, ground, 20 microns, at plant" using average technologies for the United States from 2015-2016._ 
 
   _The process includes three sub-processes: Quarry Operations; Transport and Plant Processing. Quarry Operations includes the following unit operations: mechanical extraction; primary crushing; screening; and intermediate storage of calcium carbonate rock (marble, limestone, or chalk). Transport includes the transport of materials from Quarry Operations to Plant Processing via barge, train, or truck. Plant processing which includes jaw crushing, washing, impact crushing, ball milling to particle size, and then classifying. Material selection and quality represent industry averages from the contiguous United States. Operational conditions represent industry averages from the contiguous United States.Fate and transport modeling was not considered for this process._
@@ -229,7 +230,7 @@ While it is highly recommended to commplete flow level data quality for data sub
 Use the US EPA - Flow Pedigree Matrix, this matrix comes preloaded in many FLCAC repositories. This matrix can also be found in the [Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) which can be imported as a skeleton structure into any openLCA database.
 
 #### Data Quality Entry
-Select the US EPA - FLow Pedigree Matrix on the 'General Information' tab and enter data quality scores for each exchange in the inventory on the 'Inputs/Outputs' tab.
+Select the US EPA - FLow Pedigree Matrix on the 'General Information' tab and enter data quality scores for each {term}`exchange` in the inventory on the 'Inputs/Outputs' tab.
 
 Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inventory Data](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=321834) for information about the development of this matrix and guidance on how to complete it.
 
@@ -252,21 +253,21 @@ Currently, the FLCAC does not require social schema so no social schema data qua
 ![alt text](img/inputs_outputs_tab.png)
 
 ## **Flow** (_Mandatory_)
-Elementary Flows: Should only be from the [FEDEFL](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets) Read more about elementary flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#elementary-flow-alignment).
+{term}`Elementary Flows <elementary flow>`: Should only be from the [FEDEFL](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets).
 
 **Example(s)**
 ![alt text](img/elementary_flow_names.png)
 
 :::{tip}
-To ensure that elementary flows included in a process are FEDEFL flows, open up the flow information by doubleclicking a flow and check the description field. The description will include a statement such as this "From FedElemFlowList_1.0.1. Flow Class: Chemicals. Not a preferred flow." if it is a FEDEFL flow.
+To ensure that elementary flows included in a process are FEDEFL flows, open up the flow information by double clicking a flow and check the description field. The description will include a statement such as this "From FedElemFlowList_1.0.1. Flow Class: Chemicals. Not a preferred flow." if it is a FEDEFL flow.
 :::
 
-Technosphere Flows: Should be newly created flows based on the [ILCD naming convention](#name-mandatory). Read about technosphere flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment).
+{term}`Technosphere Flows <technosphere flow>`: Should be newly created flows based on the [ILCD naming convention](#name-mandatory). Read about technosphere flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment).
 
 **Example(s)**
 ![alt text](img/tech_flow_names.png)
 
-Quantitative Reference Flow: The quantitative reference flow is the designated output of a process. The quantitative reference flow is bolded and can be in the inputs or outputs section depending on the process type. A process must have a quantitative reference flow to be created.
+Quantitative Reference Flow: The quantitative reference flow is the designated output of a process. The quantitative reference flow is bolded and can be in the inputs or outputs section depending on the process type. A {term}`process` must have a quantitative reference flow to be created.
 
 **Example(s)**
 ![alt text](img/quant_ref.png)
@@ -279,8 +280,9 @@ Category is determined based on the folder that the flow is contained within. Th
 ![alt text](img/tech_flow_cats.png)
 
 :::{tip}
-- Drag and drop flows and processes into different folders to change the flow category. 
-- Create a new folder by right clicking an existing folder and selecting "Add a new child category". 
+
+- Drag and drop flows and processes into different folders to change the flow category.
+- Create a new folder by right clicking an existing folder and selecting "Add a new child category".
 - The [Federal LCA Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) contains the skeleton NAICS structure, this can be imported into an existing openLCA database.
 :::
 
@@ -338,9 +340,7 @@ The provider should always be chosen if a flow is an avoided product.
 ![alt text](img/avoided_prod.png)
 
 ## **Provider** (_Mandatory_)
-For every non-cutoff technosphere flow, a provider must be selected. A provider connects the flow to an upstream process producing that flow. Every non-cutoff technosphere should have at least one provider option.
-
-Read more about openLCA provider linkages in the openLCA manual [here](https://greendelta.github.io/openLCA2-manual/processes/process_tab_content.html).
+For every non-{term}`cutoff <cut-off flow>` technosphere flow, a provider must be selected. A {term}`provider` connects the flow to an upstream process producing that flow. Every non-cutoff technosphere should have at least one provider option.
 
 :::{note}
 Only non-cutoff technosphere flows have an upstream provider. Cutoff flows and elementary flows do not have providers as they are not being produced by a process.
@@ -358,7 +358,7 @@ This information is not required, but if provided it increases the usefulness of
 Flow level location is an optional field but is useful to include if flow level exchange locations are known (i.e., where a flow was produced/originated from) and if they differ from the process location. 
 
 :::{important}
-To better support regionalized impact assessment, USLCI and FLCAC repositories will no longer allow locations on flow objects, but instead will utilize locations on exchanges and/or processes
+To better support regionalized impact assessment, USLCI and FLCAC repositories will no longer allow locations on flow objects, but instead will utilize locations on {term}`exchanges <exchange>` and/or {term}`processes <process>`
 :::
 
 **Example(s)**
@@ -400,8 +400,8 @@ System process: A system process is an aggregated life cycle result saved as a p
 
 **Example(s)**
 
-- {term}`_Unit process_`
-- {term}`_System process_`
+- {term}`_Unit process_ <unit process>`
+- {term}`_System process_ <system process>`
 
 ### **LCI method** (_Mandatory_)
 Indicate whether the LCI method was attributional, consequential, input/output, hybrid, etc. Can include caveats regarding inclusion of the process in a product system.

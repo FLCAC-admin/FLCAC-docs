@@ -36,6 +36,9 @@ elementary flow
 endpoint indicator
 : A category of LCIA indicator that expresses characterized impact in terms of damage caused to an area of concern such as the natural environment, human health or resource supply. An example of an endpoint indicator would be the human health impact of particulate matter formation potential expressed in {term}`Disability-Adjusted Life Years (DALY)`.
 
+exchange
+: a quantity of a {term}`flow` that is moved into or out of a {term}`process`. Exchanges are reflects as individual rows in the Inputs/Outputs tab of a process.
+
 Environmental Product Declaration
 : A third-party verified report of the environmental impacts of a product. EPDs are developed according to ISO 14025 and the relevant 'product category rule' for that product type. For more information see the [FHWA EPD Tech Brief](https://www.fhwa.dot.gov/pavement/sustainability/hif21025.pdf)
 
@@ -82,7 +85,7 @@ product system
 : "A collection of {term}`unit processes <unit process>` with {term}`elementary <elementary flow>` and {term}`product flows <product flow>`, performing one or more defined functions, and which models the life cycle of a product." -from [openLCA 2 manual](https://greendelta.github.io/openLCA2-manual/prod_sys/index.html#product-systems)
 
 provider
-: A provider in openLCA is the upstream process that produces a flow. Providers can be chosen in the 'Inputs/Outputs' tab in openLCA under the 'Provider' column for product and waste flows.
+: A provider in openLCA is the upstream process that produces a flow. Providers can be chosen in the 'Inputs/Outputs' tab in openLCA under the 'Provider' column for product and waste flows. Read more about openLCA provider linkages in the openLCA manual [here](https://greendelta.github.io/openLCA2-manual/processes/process_tab_content.html).
 
 [repository](https://greendelta.github.io/lca-collaboration-server-manual/chapter_3_4.html)
 : A remote or local container in which data are stored under version control, from which a release of contained data can be published. The term repository is often applied to individual data releases (e.g. [USLCI](https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/datasets)) on the {term}`collaboration server` or individual GitHub sites (e.g. [FLCAC-docs](https://github.com/FLCAC-admin/FLCAC-docs).
