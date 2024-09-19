@@ -245,7 +245,7 @@ Detail any assumptions used to assign these scores in the [Data treatment](#data
 ### **Social Schema** _(Optional)_
 Currently, the FLCAC does not require social schema so no social schema data quality matrix is required.
 
-# **Input/Output**
+# Input/Output
 
 ![alt text](img/inputs_outputs_tab.png)
 
@@ -364,6 +364,7 @@ To better support regionalized impact assessment, USLCI and FLCAC repositories w
 
 :::{note}
 In the example above, the location has not been entered for the first two technosphere flows. The reason for this is that the flow exchange location does not vary from the process location (US and RNA) in these instances, so a flow exchange location is not needed.
+:::
 
 ### **Description** (_Optional_)
 This field is required where applicable. Briefly describe the flow's relationship to the process and assumptions used to obtain the quantitative reference or data quality.
@@ -383,7 +384,7 @@ Types of information to include in the flow description field:
 # Documentation
 ## LCI Method
 
-### Process type (_Mandatory_)
+### **Process type** (_Mandatory_)
 Indication of whether the data represent a unit or system process.
 
 :::{note}
@@ -398,14 +399,14 @@ System process: A system process is an aggregated life cycle result saved as a p
 - _Unit process_
 - _System process_
 
-### LCI method (_Mandatory_)
+### **LCI method** (_Mandatory_)
 Indicate whether the LCI method was attributional, consequential, input/output, hybrid, etc. Can include caveats regarding inclusion of the process in a product system.
 
 **Example(s)**
 - _Attributional process. Represents gate-to-gate data, use and end-of-life is dependent on how the product is used._
 - _Consequential process_
 
-### Modeling constants (_Mandatory_)
+### **Modeling constants** (_Mandatory_)
 State the primary assumptions used to create this process. Detail how the process differs from the original source.
 
 **Example(s)**
@@ -413,7 +414,7 @@ State the primary assumptions used to create this process. Detail how the proces
 
 ## Data source information
 
-### Data completeness (_Mandatory_)
+### **Data completeness** (_Mandatory_)
 This field is comprised of three elements:
 
 1. Treatement of Missing Environmental Data:
@@ -429,14 +430,14 @@ Either quantify and describe the mass imbalance ((mass of material outputs - mas
 
 _Elementary flows are cut-off at less than 1% based on environmental relevance. Technosphere flows are cut-off at less than 1% based on environmental relevance. The mass imbalance for this unit process is -17.87 kg (-0.72%)._
 
-### Data selection (_Mandatory_)
+### **Data selection** (_Mandatory_)
 Detail how data was selected for this process. If data was excluded, explain why.
 
 **Example(s)**
 - _Data was collected from 5 primary producers, one producer's data was not used because it was not representative of standard production practices._
 - _Source 1 disaggregated waste inputs and listed heating values and emission factors for the incineration. Whereas, Source 2 had only heating values for waste flow inputs. Therefore, Source 2 waste heating values were excluded from the averages._
 
-### Data treatment (_Mandatory_)
+### **Data treatment** (_Mandatory_)
 This field consists of two sections:
 
 1. Detailed description of the methods and assumptions used to transform primary and secondary data into flow quantities through recalculating, reformatting, aggregation, or proxy data. 
@@ -459,7 +460,7 @@ Vertical averaging sums several interconnected processes to protect identificati
 
 _A horizontally weighted average was calculated from the primary data collected from 4 producers. To indicate known emissions while protecting the confidentiality of individual company responses, some emissions are reported only by the order of magnitude of the average. Flow level data quality scores assume that the reference year is 2024._
 
-### Sampling procedure (_Mandatory_)
+### **Sampling procedure** (_Mandatory_)
 This field is comprised of three elements:
 
 1. System Boundary Conditions: A description of what is included and excluded from the system boundaries.                                                         
@@ -476,14 +477,14 @@ This field is comprised of three elements:
 
   _Uncertainty was estimated based on engineering judgment. Material inputs had less uncertainty because they were based off of precise engineering specifications. Other inputs (e.g. energy; waste transport and disposal) had more uncertainty._
 
-### Data collection period (_Optional_)
+### **Data collection period** (_Optional_)
 Include any additional information regarding data collection time period that was not covered in the [Time](#time-mandatory) field.
 
 **Example(s)**
 
 _All primary data were collected from 2015 to 2016. Secondary data were collected from 2005-2016 (NREL 2016; Wernet et al. 2016)._
 
-### Use advice
+### **Use advice**
 Detail information that a data user needs to be aware of when using this process.
 
 **Example(s)**
@@ -492,44 +493,44 @@ Detail information that a data user needs to be aware of when using this process
 
 ## Reviews
 
-### Review type
+### **Review type**
 
 **Example(s)**
 
-### Review report
+### **Review report**
 
 **Example(s)**
 
-### Review details
+### **Review details**
 
 **Example(s)**
 
-### Reviewers
+### **Reviewers**
 
 **Example(s)**
 
-### Review methods
+### **Review methods**
 
 **Example(s)**
 
-### Quality assessment
+### **Quality assessment**
 
 **Example(s)**
 
-## Compliance declarations
+## **Compliance declarations**
 
 **Example(s)**
 
-## Completeness
+## **Completeness**
 
 **Example(s)**
 
-## Sources
+## **Sources**
 Reference to the publication or entity from which data or methodology were obtained. 
 
 Source title should use: “Author (YEAR) Abbreviated Title” format such that these information display in the openLCA navigation panel.
 
-::{tip}
+:::{tip}
 To add a new source:
 1. Open the 'Background data' folder in the openLCA navigation pane of database
 2. Right click the 'Sources' folder and select 'New source'
@@ -550,35 +551,35 @@ To add a new source:
 
 **Example(s)**
 
-### Intended Application
+### **Intended Application**
 
 **Example(s)**
 
-### Data set owner
+### **Data set owner**
 
 **Example(s)**
 
-### Data generator
+### **Data generator**
 
 **Example(s)**
 
-### Data documentor
+### **Data documentor**
 
 **Example(s)**
 
-### Publication
+### **Publication**
 
 **Example(s)**
 
-### Creation date _(Automatic)_
+### **Creation date** _(Automatic)_
 
 **Example(s)**
 
-### Copyright
+### **Copyright**
 
 **Example(s)**
 
-### Access and use restrictions
+### **Access and use restrictions**
 
 **Example(s)**
 
