@@ -37,7 +37,7 @@ endpoint indicator
 : A category of LCIA indicator that expresses characterized impact in terms of damage caused to an area of concern such as the natural environment, human health or resource supply. An example of an endpoint indicator would be the human health impact of particulate matter formation potential expressed in {term}`Disability-Adjusted Life Years (DALY)`.
 
 exchange
-: a quantity of a {term}`flow` that is moved into or out of a {term}`process`. Exchanges are reflects as individual rows in the Inputs/Outputs tab of a process.
+: a quantity of a {term}`flow` that is moved into or out of a {term}`process`. Exchanges are reflected as individual rows in the Inputs/Outputs tab of a process.
 
 Environmental Product Declaration
 : A third-party verified report of the environmental impacts of a product. EPDs are developed according to ISO 14025 and the relevant 'product category rule' for that product type. For more information see the [FHWA EPD Tech Brief](https://www.fhwa.dot.gov/pavement/sustainability/hif21025.pdf)

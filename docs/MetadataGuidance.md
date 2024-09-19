@@ -97,10 +97,10 @@ Examples of included processes are: raw material acquisition; manufacturing/proc
 Per ILCD, the data set version is formatted as follows: the first two digits indicate major updates, the second two digits refer to minor revisions and error corrections; the final three digits are used for automatic and internal version counting during dataset development.
 
  Unless discussed in advance with the Data Curator, the value will be generated automatically by openLCA
- 
- **Example(s)**
- 
- _01.00.000_|
+
+**Example(s)**
+
+_01.00.000_
 
 ## **Last change** _(Automatic)_
 
