@@ -30,11 +30,13 @@ It is preferred that data providers fill in their metadata directly in openLCA, 
 
 # General Information
 ![alt text](img/general_info.png)
+_** Image of ‘General Information’ process tab within openLCA**_
+
 ## **Name** (_Mandatory_)
 
 - Process names are based on the [ILCD naming conventions, Section 3.2](https://eplca.jrc.ec.europa.eu/uploads/MANPROJ-PR-ILCD-Handbook-Nomenclature-and-other-conventions-first-edition-ISBN-fin-v1.0-E.pdf)
 - Process name should reflect the product or service it represents
-- The product reference output (i.e., quantitative reference flow) is given the same name as the process name sans temporal or geographic references (i.e., those may be indicated by the provider process and/or in the quantitative reference flow metadata so that one quantitative reference flow may have several provider processes)
+- The product reference output (i.e., quantitative reference flow) is given the same name as the process name excluding temporal or geographic references (i.e., those may be indicated by the provider process and/or in the quantitative reference flow metadata so that one quantitative reference flow may have several provider processes)
 
 The naming conventions are as follows: 
 
@@ -74,11 +76,11 @@ This field is automatically populated based on the folder that your process is l
 
 A legible overview of the process description, i.e., technical scope, functional unit, system boundaries, and any other information needed for unambiguous data interpretation and application.
 
-**Functional Unit**: Measure of the function of the studied system quantified to provides a reference to which the inputs and outputs can be related.
+**Functional Unit**: The reference unit of your life cycle inventory that allows quantification of the defined function. It provides a reference to which the inputs and outputs can be related.
 
 **Technical Scope**: Cradle-to-gate, cradle-to-grave, gate-to-gate, gate-to-grave.
 
-**System boundaries**: Overview of included and excluded processes, i.e., boundaries between the technosphere and nature; geographic and temporal scope; boundaries between this and other technosphere systems. Detailed information on system boundaries can be provided in the [Sampling procedure](#sampling-procedure-mandatory) field.
+**System boundaries**: Overview of included and excluded processes, i.e., boundaries between the technosphere and nature; geographic and temporal scope; boundaries between this and other technosphere systems. Be brief, detailed information on system boundaries can be provided in the [Sampling procedure](#sampling-procedure-mandatory) field.
 
 :::{note}
 Examples of included processes are: raw material acquisition; manufacturing/processing/refining; distribution/transport; production and use of fuels, electricity, and heat; use and maintenance of products; disposal of process waste and products; recovery of used products via reuse, recycling, and energy recovery; ancillary materials manufacturing; manufacture, installation, maintenance, and decommissioning of capital equipment; additional operations, such as lighting, heating, service personnel.
@@ -88,15 +90,15 @@ Examples of included processes are: raw material acquisition; manufacturing/proc
 
 
 **Example(s)**
-- _This gate-to-gate unit process is for the net production of one kilowatt-hour of electricity supply from a coal-fired plant with co-generation of steam in Four Corners Area, United States. The studied system includes all processes, from washed coal delivery through to power generation, including treatment of cooling water, of a combined heat and power plant with conventional steam cycle within a circulating fluidized bed.The fuel is 100% washed bituminous coal extracted from Rocky Mountain regional mines located within 500 km of the plant. Data are from one coal-powered base load plant so no aggregation was performed but is representative of typical coal-based power facility in that region._
+- _This gate-to-gate unit process is for the net production of one kilowatt-hour of electricity supply from a coal-fired plant with co-generation of steam in Four Corners Area, United States. The studied system includes all processes, from washed coal delivery through to power generation, including treatment of cooling water, of a combined heat and power plant with conventional steam cycle within a circulating fluidized bed. The fuel is 100% washed bituminous coal extracted from Rocky Mountain regional mines located within 500 km of the plant. Data are from one coal-powered base load plant so no aggregation was performed but is representative of typical coal-based power facility in that region._
 
-- _The functional unit for this model is one kilogram of aniline. This aniline dataset includes nitrobenzene production and has been aggregated with incoming nitric acid LCI data. The technical scope includes the gate-to-gate production of nitric acid, nitrobenzene, and aniline. The system boundary includes incoming transport, manufacturing, and disposal of process wastes. The aniline dataset represented in this model includes data for nitric acid to conceal the confidential data of a provider company. Steam/heat is produced as a coproduct during this process, so system expansion is used for this recovered energy, which is shown as natural gas as an avoided product. Aniline is formed by the hydrogenation of nitrobenzene in the presence of a copper-chromium or copper-silica catalyst. The aniline producers who provided data for this module verified that the characteristics of their plants are representative of a majority of North American aniline production. The captured aniline production amount is approximately 71 percent of the aniline production in the U.S. in 2015._
+- _The functional unit for this model is one kilogram of aniline. This aniline dataset includes nitrobenzene production and has been aggregated with incoming nitric acid LCI data. The technical scope includes the gate-to-gate production of nitric acid, nitrobenzene, and aniline. The system boundary includes incoming transport, manufacturing, and disposal of process wastes. The aniline dataset represented in this model includes data for nitric acid to conceal the confidential data of a provider company. Steam/heat is produced as a coproduct during this process, so system expansion is used to avoid allocation to recovered energy, which is shown as natural gas as an avoided product. Aniline is formed by the hydrogenation of nitrobenzene in the presence of a copper-chromium or copper-silica catalyst. The aniline producers who provided data for this module verified that the characteristics of their plants are representative of a majority of North American aniline production. The captured aniline production amount is approximately 71 percent of the aniline production in the U.S. in 2015._
 
 ## **Version** _(Automatic)_
 
 Per ILCD, the data set version is formatted as follows: the first two digits indicate major updates, the second two digits refer to minor revisions and error corrections; the final three digits are used for automatic and internal version counting during dataset development.
 
- Unless discussed in advance with the Data Curator, the value will be generated automatically by openLCA
+ Unless discussed in advance with the Data Curator, the value will be generated automatically by openLCA.
 
 **Example(s)**
 
@@ -149,10 +151,10 @@ End date for the time period that the process data represents. The date format i
 _12/31/2017_
 
 :::{important}
-The Start and End Date fields should not represent publication dates, they should represent the time period for which the process data is representative of. 
+The Start and End Date fields should not represent publication dates, they should represent the period for which the process data is representative. 
 :::
 :::{note}
-The time span is often the same as the foreground data collection period. If data has been gathered from secondary sources, reference those sources to find primary data collection dates and report the earliest and latest dates and discuss these methods in the description field below.
+The time span is often the same as the foreground data collection period. If data has been gathered from secondary sources, reference those sources to find primary data collection dates and report the earliest and latest dates and include detail in the description field below.
 :::
 
 **Description**
@@ -173,7 +175,7 @@ The valid time span is often identical to the time of the data collection, unles
 ## **Geography** _(Mandatory)_
 **Location**
 
-The geographic area to which the unit process data were collected or refer. If multiple locations were used, indicate the highest geographic location (e.g., if data for several states across the US were collected then enter 'US'). Describe the locations in the geography ‘Description’ field
+The geographic area to which the unit process data were collected or refer. If multiple locations were used, indicate the highest geographic location (e.g., if data for several states across the US were collected then enter 'US'). Describe the locations in the geography ‘Description’ field.
 
 **Example(s)**
 - _US-CO_
@@ -205,7 +207,7 @@ A short (i.e., 1-3 paragraphs), general description of the process intended tech
 
 - _This process represents the production of "Calcium carbonate, ground, 20 microns, at plant" using average technologies for the United States from 2015-2016._ 
 
-  _The process includes three sub-processes: Quarry Operations; Transport and Plant Processing. Quarry Operations includes the following unit operations: mechanical extraction; primary crushing; screening; and intermediate storage of calcium carbonate rock (marble, limestone, or chalk). Transport includes the transport of materials from Quarry Operations to Plant Processing via barge, train, or truck. Plant processing which includes jaw crushing, washing, impact crushing, ball milling to particle size, and then classifying. Material selection and quality represent industry averages from the contiguous United States. Operational conditions represent industry averages from the contiguous United States.Fate and transport modeling was not considered for this process._
+  _The process includes three sub-processes: Quarry Operations; Transport and Plant Processing. Quarry Operations includes the following unit operations: mechanical extraction; primary crushing; screening; and intermediate storage of calcium carbonate rock (marble, limestone, or chalk). Transport includes the transport of materials from Quarry Operations to Plant Processing via barge, train, or truck. Plant processing which includes jaw crushing, washing, impact crushing, ball milling to particle size, and then classifying. Material selection and quality represent industry averages from the contiguous United States. Operational conditions represent industry averages from the contiguous United States. Fate and transport modeling was not considered for this process._
 - _The overall production technology is similar among all aniline plants that submitted data for this analysis. Aniline is formed by the hydrogenation of nitrobenzene in the presence of a copper-chromium or copper-silica catalyst. For hydrogenation of nitrobenzene, preheated hydrogen and nitrobenzene are fed into an evaporator, and aniline is formed by vapor phase catalytic reduction. The aniline is dehydrated to remove the water produced during the reaction. Pure aniline (99.95 wt. %) is obtained after a purification step in which the dehydrated aniline goes through a distillation process._
 
 ## **Data Quality**
@@ -224,7 +226,7 @@ Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inven
 
 ### **Flow Schema** _(Optional)_
 :::{important}
-While it is highly recommended to commplete flow level data quality for data submissions, it is currently not mandatory.
+While it is highly recommended to complete flow level data quality for data submissions, it is currently not mandatory.
 :::
 #### Matrix
 Use the US EPA - Flow Pedigree Matrix, this matrix comes preloaded in many FLCAC repositories. This matrix can also be found in the [Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) which can be imported as a skeleton structure into any openLCA database.
@@ -251,6 +253,7 @@ Currently, the FLCAC does not require social schema so no social schema data qua
 # Input/Output
 
 ![alt text](img/inputs_outputs_tab.png)
+_**Image of 'Inputs/Outputs' process tab within openLCA**_
 
 ## **Flow** (_Mandatory_)
 {term}`Elementary Flows <elementary flow>`: Should only be from the [FEDEFL](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets).
@@ -317,7 +320,7 @@ Most LCI data on the FLCAC does not include life cycle costing data.
 ## **Uncertainty** (_Optional_)
 Describe flow's data uncertainty. The distribution type, mean, and standard deviation may be provided.
 
-This information is not required, but if provided it increases the process' usefulness.
+This information is not required, but if provided it increases process usefulness.
 
 **Example(s)**
 ![alt text](img/tech_flow_unc.png)
@@ -340,7 +343,7 @@ The provider should always be chosen if a flow is an avoided product.
 ![alt text](img/avoided_prod.png)
 
 ## **Provider** (_Mandatory_)
-For every non-{term}`cutoff <cut-off flow>` technosphere flow, a provider must be selected. A {term}`provider` connects the flow to an upstream process producing that flow. Every non-cutoff technosphere should have at least one provider option.
+For every non-{term}`cutoff <cut-off flow>` technosphere flow, a provider must be selected. A {term}`provider` connects the flow to an upstream process producing that flow. Every non-cutoff technosphere flow should have at least one provider option.
 
 :::{note}
 Only non-cutoff technosphere flows have an upstream provider. Cutoff flows and elementary flows do not have providers as they are not being produced by a process.
@@ -416,14 +419,14 @@ State the primary assumptions used to create this process. Detail how the proces
 
 **Example(s)**
 
-_This process was adapted from a Smith, 2016 process for wood pellet manufacturing for pellets of a specific energy value in Europe. The process weight factors were adapted for the energy density of a typical US biomass fuel._
+_This process was adapted from a Smith, 2016 process for wood pellet manufacturing for pellets of a specific energy value in Europe. Process weight factors were adapted for the energy density of a typical US biomass fuel._
 
 ## Data source information
 
 ### **Data completeness** (_Mandatory_)
 This field is comprised of three elements:
 
-1. Treatement of Missing Environmental Data:
+1. Treatment of Missing Environmental Data:
 List and describe accounting methods for missing environmental data (e.g., cut-off rules) and/or intentional environmental data omissions.
 
 2. Treatment of Missing Technosphere Data:
