@@ -389,9 +389,9 @@ Types of information to include in the flow description field:
 
 # Documentation
 
-
 ![alt text](img/doc_tab.png)
 _**Image of 'Documentation' process tab within openLCA**_
+
 ## LCI Method
 
 ### **Process type** (_Mandatory_)
@@ -502,8 +502,10 @@ Include any additional information regarding data collection time period that wa
 
 _All primary data were collected from 2015 to 2016. Secondary data were collected from 2005-2016 (NREL 2016; Wernet et al. 2016)._
 
-### **Use advice**
+### **Use advice** (_Optional_)
 Detail information that a data user needs to be aware of when using this process.
+
+This field is highly recommended if use advice is applicable to a process.
 
 **Example(s)**
 
@@ -544,12 +546,14 @@ Detail information that a data user needs to be aware of when using this process
 
 **Example(s)**
 -->
-## **Sources**
+## **Sources** (_Mandatory_)
 Reference to the publication or entity from which data or methodology were obtained. Also include any other sources referenced throughout the metadata. Do not include full citations in the other metadata fields, use a shortened citation (Smith,2024) and include the full citation as an openLCA source.
+
+The field is populated from the list of Sources in the openLCA navigation tree.
 
 New source titles in the openLCA Sources folder should use: “Author (YEAR) Abbreviated Title” format such that these information display in the openLCA navigation panel.
 
-:::{tip}
+:::{admonition} Adding a New Source
 To add a new source:
 1. Open the 'Background data' folder in the openLCA navigation pane of database
 2. Right click the 'Sources' folder and select 'New source'
@@ -566,14 +570,16 @@ To add a new source:
 
 ## Administrative Information
 
-### **Project**
+### **Project** (_Optional_)
 Information about the project in which the data were generated. Where applicable, this field should indicate the project name, funding institution(s) or organization(s), and the grant or contract names and numbers.
+
+This field is not required if this information is not available.
 
 **Example(s)**
 _This project was supported by the Biomass Research and Development Initiative, grant no. 2011-10006-30357 from the USDA National Institute of Food and Agriculture._
 
-### **Intended Application**
-This field consists of 4 elements:
+### **Intended Application** (_Mandatory_)
+This field consists of 5 elements:
 1. Use one of the four Main Goal Situations below to describe how the process is intended to be used. The term, "Main Goal Situations," refers to an LCA study's primary intended purpose per the ILCD Handbook’s Detailed Guidance. 
 :::{admonition} Main Goal Situations
 :class: dropdown
@@ -590,40 +596,118 @@ SITUATION C2 -- ACCOUNTING
 Same as in SITUATION C1 except LCA studies categorized under Goal Situation C2 do NOT consider existing benefits outside the analyzed system such as recycling.
 :::
 2. Target audience and the context for which the model was built (e.g., carbon footprint, Environmental Product Declaration (EPD), policy development, policy information, generic unit process data, etc.).
-3. If the data were originally developed and analyzed with a LCIA method, indicate the method utilized here. 
+3. Indicate the completeness level of the elementary flows such that users can interpret the correct application of LCIA methods to the dataset. If the data were originally developed and analyzed with a LCIA method, indicate the method utilized here. 
 4. If these data are an update to a previously published dataset, a note should be included here.
+5. Any additional details regarding the intended application/use of this process.
 
 **Example(s)**
+
+_Situation C1 - Accounting, with system-external interactions - The intended application is a purely descriptive accounting / documentation of the analysed system including existing interactions with other systems in the LCI model._
+
+_The target audience of this model includes LCA practitioners, industry, and the general public. A full inventory of environmental flows are included; thus this unit process can be used for a full range of LCIA impact categories. The original study results were analyzed using the TRACI LCIA factors. These data are an update to the previously published dataset from 2010._ 
+
+_These data are intended to be used as an average dataset accepted by the North American plastics/chemical industry._
 
 ### **Data set owner**
+Name of the person or entity that owns the dataset directly from which the process was generated. The data set owner is often the data commissioner. 
+
+The field is populated from the list of Actors in the openLCA navigation tree.
+
+:::{admonition} Adding a New Actor
+To add a new actor:
+1. Open the 'Background data' folder in the openLCA navigation pane of database
+2. Open the 'Actors' folder 
+3. There are two subfolders: 'Organizations" and "Persons", right click on the appropriate one and select 'New actor'
+3. Enter the metadata:
+    - Name
+    - Description: Details about the actor (if needed)
+    - Additional information (not required, but recommended to add some contact information)
+
+![alt text](img/actor.png)
+:::
 
 **Example(s)**
 
-### **Data generator**
+![alt text](img/dataset_owner.png)
+
+### **Data generator** (_Mandatory_)
+Name of the person or entity responsible for generating the dataset from which the process was generated or for updating of the data. 
+
+The field is populated from the list of Actors in the openLCA navigation tree. Follow the instructions in the [Data set owner](#data-set-owner) section to create a new actor.
 
 **Example(s)**
 
-### **Data documentor**
+![alt text](img/data_generator.png)
+
+### **Data documentor** (_Mandatory_)
+Name of the individual or entity responsible for formatting and submitting the data.
+
+The field is populated from the list of Actors in the openLCA navigation tree. Follow the instructions in the [Data set owner](#data-set-owner) section to create a new actor.
 
 **Example(s)**
 
-### **Publication**
+![alt text](img/data_doc.png)
+
+### **Publication** (_Mandatory_)
+Reference to an openLCA Source that illustrates how the processes' LCI data were developed and/or used, i.e., a foundational publication that illustrates how the data are used. 
+
+The field is populated from the list of Sources in the openLCA navigation tree. Follow the instructions in the [Sources](#sources) section to create a new source.
 
 **Example(s)**
+
+![alt text](img/publication.png)
 
 ### **Creation date** _(Automatic)_
+The date and time when the dataset was created. This field will be automatically generated.
 
 **Example(s)**
+
+_6/1/18 12:45 PM_
 
 ### **Copyright**
+The openLCA software has a checkbox that will indicate whether the dataset is copyrighted. This box should remain unchecked.
 
 **Example(s)**
+
+![alt text](img/copyright.png)
 
 ### **Access and use restrictions**
+For USLCI datasets please copy and paste the Data Use Disclaimer Agreement found [here](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) into this field. 
 
-**Example(s)**
+For other FLCAC repositories, please contact the repository owner for repository specific guidance on this field.
+
 -->
 # Allocation
-## Physical
-## Economic
-## Causal
+![alt text](img/alloc_tab.png)
+_**Image of 'Allocation' process tab within openLCA**_
+
+## **Default Method** (_Mandatory_)
+For multi-functional processes, choose the process allocation method: causal, economic, or physical allocation methods.
+
+## **Product** (_Automatic_)
+Is the first reference flow by default. The primary product and co-products must have the same flow property.
+
+## **Physical** (_Automatic_)
+Allocation factors are based on the physical (e.g., mass or energy) ratio of the product flows.
+
+The ratio for the product will be 1.0 for a single-output process. For multi-output processes, the ‘Calculate default values’ button will automatically calculate the ratios based on the default (reference) flow property.
+
+## **Economic** (_Automatic_)
+Allocation factors are based on the economic value of the product flows. 
+
+The ratio of the product will be 1.0 for a single-output process. For multi-output processes, an economic flow property must first be added to each product flow; then, the ‘Calculate default values’ button will automatically calculate the ratios based on the economic value of the product flows.
+
+## **Causal**
+Allocation factors are set by the data provider based on a methodology described in the metadata. 
+
+### **Flow** (_Automatic_)
+Lists the process flow outputs and inputs.
+
+### **Direction** (_Automatic_)
+Indicates whether the flow is a process input or output.
+
+### **Category** (_Automatic_)
+Indicates the flow category.
+
+### **Amount** (_Automatic_)
+The amounts are automatically calculated given the causal allocation ratio entered in the columns to the right of the amounts (i.e., for each product/by-product).
