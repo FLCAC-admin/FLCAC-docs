@@ -306,7 +306,7 @@ This process does not include a technical review of the inventory data.
 Typically, the review comments revolve around fixing flows that are not compatible with FEDEFL or the FLCAC and fixing process metadata wording and content
 
 ## Publication
-Once your data have been reviewed and completed, the dataset(s) are ready for publication. The Data Curator will publish the data to its repository on the [Federal LCA Commons Collaboration Server](https://www.lcacommons.gov/lca-collaboration/). See indructions on connecting to the collaboration server [here](tips#connecting-a-database-directly-to-the-flcac-collaboration-server).
+Once your data have been reviewed and completed, the dataset(s) are ready for publication. The Data Curator will publish the data to its repository on the [Federal LCA Commons Collaboration Server](https://www.lcacommons.gov/lca-collaboration/). See instructions on connecting to the collaboration server [here](tips#connecting-a-database-directly-to-the-flcac-collaboration-server).
 
 FLCAC repositories are published at different intervals, so please inquire with the Data Curator or Repository Manager of the database your data is being published in regarding release timing.
 

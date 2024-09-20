@@ -65,7 +65,7 @@ To connect to the FLCAC collaboration server, you must have login credentials. T
 - FLCAC and repository level commit log
 - Repository level compare feature
 
-# Repository-Level Metadata Guidance
+<!-- - # Repository-Level Metadata Guidance-->
 
 # Versioning
 The FLCAC collaboration server now allows multiple versions on a repository to be published, thus a standardized repository-level version format is needed.
