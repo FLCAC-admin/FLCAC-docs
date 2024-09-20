@@ -30,7 +30,7 @@ It is preferred that data providers fill in their metadata directly in openLCA, 
 
 # General Information
 ![alt text](img/general_info.png)
-_** Image of ‘General Information’ process tab within openLCA**_
+_**Image of ‘General Information’ process tab within openLCA**_
 
 ## **Name** (_Mandatory_)
 
@@ -40,7 +40,7 @@ _** Image of ‘General Information’ process tab within openLCA**_
 
 The naming conventions are as follows: 
 
-**Base name[^mandatory]; treatment received[^mandatory], production route(s)[^mandatory], standard(s) fulfilled[^mandatory]; production or consumption type[^optional], location type[^optional]; quantitative flow properties**
+**Base name[^mandatory]; treatment received[^mandatory], production route(s)[^mandatory], standard(s) fulfilled[^optional]; production or consumption type[^optional], location type[^optional]; quantitative flow properties**
 
 [^mandatory]: Mandatory field
 [^optional]: Mandatory field if relevant to the process. If not, it can be ignored.
@@ -161,7 +161,7 @@ The time span is often the same as the foreground data collection period. If dat
 
 Provide information regarding the temporal characteristics and period that the process data represents. Information can also be provided pertaining to secondary data source time periods.
 
-Examples can include explanation of the valid time period, any temporal aggregation, data collection period, seasonal/annual variations, and carbon provenance. 
+Examples can include explanation of the valid time period, any temporal aggregation (e.g., averaging multiple years of primary data), data collection period, and seasonal/annual variations.
 
 :::{note}
 The valid time span is often identical to the time of the data collection, unless projections or other forecasts have been applied. Limitations on the validity in valid time span can include future technology shifts, planned measurement improvements, or specific seasons.
@@ -265,7 +265,7 @@ _**Image of 'Inputs/Outputs' process tab within openLCA**_
 To ensure that elementary flows included in a process are FEDEFL flows, open up the flow information by double clicking a flow and check the description field. The description will include a statement such as this "From FedElemFlowList_1.0.1. Flow Class: Chemicals. Not a preferred flow." if it is a FEDEFL flow.
 :::
 
-{term}`Technosphere Flows <technosphere flow>`: Should be newly created flows based on the [ILCD naming convention](#name-mandatory). Read about technosphere flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment).
+{term}`Technosphere Flows <technosphere flow>`: Flows should be based on the [ILCD naming convention](#name-mandatory). Read about technosphere flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment).
 
 **Example(s)**
 ![alt text](img/tech_flow_names.png)
@@ -388,6 +388,10 @@ Types of information to include in the flow description field:
 ![alt text](img/flow_descrip.png)
 
 # Documentation
+
+
+![alt text](img/doc_tab.png)
+_**Image of 'Documentation' process tab within openLCA**_
 ## LCI Method
 
 ### **Process type** (_Mandatory_)
@@ -416,6 +420,10 @@ Indicate whether the LCI method was attributional, consequential, input/output, 
 
 ### **Modeling constants** (_Mandatory_)
 State the primary assumptions used to create this process. Detail how the process differs from the original source.
+
+:::{important}
+Sources cited throughout metadata fields should also be added as sources in openLCA. See the [Sources](#sources) section for instructions on how to create a new source in openLCA.
+:::
 
 **Example(s)**
 
@@ -537,9 +545,9 @@ Detail information that a data user needs to be aware of when using this process
 **Example(s)**
 -->
 ## **Sources**
-Reference to the publication or entity from which data or methodology were obtained. 
+Reference to the publication or entity from which data or methodology were obtained. Also include any other sources referenced throughout the metadata. Do not include full citations in the other metadata fields, use a shortened citation (Smith,2024) and include the full citation as an openLCA source.
 
-Source title should use: “Author (YEAR) Abbreviated Title” format such that these information display in the openLCA navigation panel.
+New source titles in the openLCA Sources folder should use: “Author (YEAR) Abbreviated Title” format such that these information display in the openLCA navigation panel.
 
 :::{tip}
 To add a new source:
@@ -556,13 +564,34 @@ To add a new source:
 **Example(s)**
 ![alt text](img/source.png)
 
-<!-- ## Administrative Information
+## Administrative Information
 
 ### **Project**
+Information about the project in which the data were generated. Where applicable, this field should indicate the project name, funding institution(s) or organization(s), and the grant or contract names and numbers.
 
 **Example(s)**
+_This project was supported by the Biomass Research and Development Initiative, grant no. 2011-10006-30357 from the USDA National Institute of Food and Agriculture._
 
 ### **Intended Application**
+This field consists of 4 elements:
+1. Use one of the four Main Goal Situations below to describe how the process is intended to be used. The term, "Main Goal Situations," refers to an LCA study's primary intended purpose per the ILCD Handbook’s Detailed Guidance. 
+:::{admonition} Main Goal Situations
+:class: dropdown
+SITUATION A -- MICRO-LEVEL DECISION SUPPORT
+The intended application for this process is for micro-level decision support as described in Goal Situation A from the ILCD Handbook's Detailed Guidance. LCA studies with this intended application are often used to answer product-related questions. Decisions stemming from these LCA studies "are assumed to have only limited or no structural consequences outside the decision-context,...do not change available production capacity...[and do not cause] large-scale consequences in the background system or other parts of the technosphere[.]"
+
+SITUATION B -- MESO/MACRO-LEVEL DECISION SUPPORT
+The intended application for this process is for meso/macro-level decision support as described in Goal Situation B from the ILCD Handbook's Detailed Guidance. LCA studies with this intended application are often used to support strategic level decisions such as "raw materials strategies, technology scenarios, policy options, etc. [Such decisions] are assumed to [result in] large-scale consequences in the background system or other parts of the technosphere."
+
+SITUATION C1 -- ACCOUNTING
+The intended application for this process is for accounting purposes as described in Goal Situation C1 from the ILCD Handbook's Detailed Guidance. LCA studies with this intended application offer "purely descriptive documentation of the system under analysis (e.g., a product, sector or country), without being interested in any potential consequences on other parts of the economy.” The studies categorized under Goal Situation C1 do consider existing benefits outside the analyzed system such as recycling.
+
+SITUATION C2 -- ACCOUNTING
+Same as in SITUATION C1 except LCA studies categorized under Goal Situation C2 do NOT consider existing benefits outside the analyzed system such as recycling.
+:::
+2. Target audience and the context for which the model was built (e.g., carbon footprint, Environmental Product Declaration (EPD), policy development, policy information, generic unit process data, etc.).
+3. If the data were originally developed and analyzed with a LCIA method, indicate the method utilized here. 
+4. If these data are an update to a previously published dataset, a note should be included here.
 
 **Example(s)**
 
