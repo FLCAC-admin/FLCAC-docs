@@ -223,6 +223,10 @@ The stepwise approach to complete this mapping is as follows:
 
 1. Start with your openLCA database with complete openLCA reference data. It is recommended that users save a copy of their database before the mapping for reference.
 
+:::{attention}
+**If using a csv-based mapping file**, the FEDEFL flows that you will be mapping to need to be present in your openLCA database prior to mapping. Download a copy of the [FEDEFL](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets) as a JSON-LD and import on top of your existing project database before proceeding! **If using a JSON-LD mapping file**, this step is not necessary.
+:::
+
 2. Before starting the mapping process, you can select a sample process to view elementary flows specified before the mapping. Remember this process and come back to check it after the mapping process is is complete to ensure the mapping was completed correctly.  
 
 <table><tr><td>
