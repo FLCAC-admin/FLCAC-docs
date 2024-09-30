@@ -195,7 +195,7 @@ The mapping file you just generated can be converted into csv or JSON-LD format 
 
 ## Generating a CSV-based Mapping File
 
-For users who prefer to work in Excel, a csv-based mapping file can be generated using a semicolon delimited list. The linked Excel workbook provides detailed instructions on generating a mapping file that can be used in openLCA. To generate a csv-based mapping file you need to first map your source dataset to your target dataset using the instructions above, under the heading ‘Mapping a Dataset’.
+For users who prefer to work in Excel, a csv-based mapping file can be generated using a semicolon delimited list. The linked [Excel workbook](https://github.com/FLCAC-admin/FLCAC-docs/blob/main/docs/resources/Generate%20CSV%20Mapping%20File.xlsx) provides detailed instructions on generating a mapping file that can be used in openLCA. To generate a csv-based mapping file you need to first map your source dataset to your target dataset using the instructions above, under the heading ‘Mapping a Dataset’.
 
 This approach requires several additional lookups to populate data fields associated with:
 
