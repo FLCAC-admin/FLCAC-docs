@@ -30,15 +30,17 @@ It is preferred that data providers fill in their metadata directly in openLCA, 
 
 # General Information
 ![alt text](img/general_info.png)
+_**Image of ‘General Information’ process tab within openLCA**_
+
 ## **Name** (_Mandatory_)
 
 - Process names are based on the [ILCD naming conventions, Section 3.2](https://eplca.jrc.ec.europa.eu/uploads/MANPROJ-PR-ILCD-Handbook-Nomenclature-and-other-conventions-first-edition-ISBN-fin-v1.0-E.pdf)
 - Process name should reflect the product or service it represents
-- The product reference output (i.e., quantitative reference flow) is given the same name as the process name sans temporal or geographic references (i.e., those may be indicated by the provider process and/or in the quantitative reference flow metadata so that one quantitative reference flow may have several provider processes)
+- The product reference output (i.e., quantitative reference flow) is given the same name as the process name excluding temporal or geographic references (i.e., those may be indicated by the provider process and/or in the quantitative reference flow metadata so that one quantitative reference flow may have several provider processes)
 
 The naming conventions are as follows: 
 
-**Base name[^mandatory]; treatment received[^mandatory], production route(s)[^mandatory], standard(s) fulfilled[^mandatory]; production or consumption type[^optional], location type[^optional]; quantitative flow properties**
+**Base name[^mandatory]; treatment received[^mandatory], production route(s)[^mandatory], standard(s) fulfilled[^optional]; production or consumption type[^optional], location type[^optional]; quantitative flow properties**
 
 [^mandatory]: Mandatory field
 [^optional]: Mandatory field if relevant to the process. If not, it can be ignored.
@@ -74,11 +76,11 @@ This field is automatically populated based on the folder that your process is l
 
 A legible overview of the process description, i.e., technical scope, functional unit, system boundaries, and any other information needed for unambiguous data interpretation and application.
 
-**Functional Unit**: Measure of the function of the studied system quantified to provides a reference to which the inputs and outputs can be related.
+**Functional Unit**: The reference unit of your life cycle inventory that allows quantification of the defined function. It provides a reference to which the inputs and outputs can be related.
 
 **Technical Scope**: Cradle-to-gate, cradle-to-grave, gate-to-gate, gate-to-grave.
 
-**System boundaries**: Overview of included and excluded processes, i.e., boundaries between the technosphere and nature; geographic and temporal scope; boundaries between this and other technosphere systems. Detailed information on system boundaries can be provided in the [Sampling procedure](#sampling-procedure-mandatory) field.
+**System boundaries**: Overview of included and excluded processes, i.e., boundaries between the technosphere and nature; geographic and temporal scope; boundaries between this and other technosphere systems. Be brief, detailed information on system boundaries can be provided in the [Sampling procedure](#sampling-procedure-mandatory) field.
 
 :::{note}
 Examples of included processes are: raw material acquisition; manufacturing/processing/refining; distribution/transport; production and use of fuels, electricity, and heat; use and maintenance of products; disposal of process waste and products; recovery of used products via reuse, recycling, and energy recovery; ancillary materials manufacturing; manufacture, installation, maintenance, and decommissioning of capital equipment; additional operations, such as lighting, heating, service personnel.
@@ -88,15 +90,15 @@ Examples of included processes are: raw material acquisition; manufacturing/proc
 
 
 **Example(s)**
-- _This gate-to-gate unit process is for the net production of one kilowatt-hour of electricity supply from a coal-fired plant with co-generation of steam in Four Corners Area, United States. The studied system includes all processes, from washed coal delivery through to power generation, including treatment of cooling water, of a combined heat and power plant with conventional steam cycle within a circulating fluidized bed.The fuel is 100% washed bituminous coal extracted from Rocky Mountain regional mines located within 500 km of the plant. Data are from one coal-powered base load plant so no aggregation was performed but is representative of typical coal-based power facility in that region._
+- _This gate-to-gate unit process is for the net production of one kilowatt-hour of electricity supply from a coal-fired plant with co-generation of steam in Four Corners Area, United States. The studied system includes all processes, from washed coal delivery through to power generation, including treatment of cooling water, of a combined heat and power plant with conventional steam cycle within a circulating fluidized bed. The fuel is 100% washed bituminous coal extracted from Rocky Mountain regional mines located within 500 km of the plant. Data are from one coal-powered base load plant so no aggregation was performed but is representative of typical coal-based power facility in that region._
 
-- _The functional unit for this model is one kilogram of aniline. This aniline dataset includes nitrobenzene production and has been aggregated with incoming nitric acid LCI data. The technical scope includes the gate-to-gate production of nitric acid, nitrobenzene, and aniline. The system boundary includes incoming transport, manufacturing, and disposal of process wastes. The aniline dataset represented in this model includes data for nitric acid to conceal the confidential data of a provider company. Steam/heat is produced as a coproduct during this process, so system expansion is used for this recovered energy, which is shown as natural gas as an avoided product. Aniline is formed by the hydrogenation of nitrobenzene in the presence of a copper-chromium or copper-silica catalyst. The aniline producers who provided data for this module verified that the characteristics of their plants are representative of a majority of North American aniline production. The captured aniline production amount is approximately 71 percent of the aniline production in the U.S. in 2015._
+- _The functional unit for this model is one kilogram of aniline. This aniline dataset includes nitrobenzene production and has been aggregated with incoming nitric acid LCI data. The technical scope includes the gate-to-gate production of nitric acid, nitrobenzene, and aniline. The system boundary includes incoming transport, manufacturing, and disposal of process wastes. The aniline dataset represented in this model includes data for nitric acid to conceal the confidential data of a provider company. Steam/heat is produced as a coproduct during this process, so system expansion is used to avoid allocation to recovered energy, which is shown as natural gas as an avoided product. Aniline is formed by the hydrogenation of nitrobenzene in the presence of a copper-chromium or copper-silica catalyst. The aniline producers who provided data for this module verified that the characteristics of their plants are representative of a majority of North American aniline production. The captured aniline production amount is approximately 71 percent of the aniline production in the U.S. in 2015._
 
 ## **Version** _(Automatic)_
 
 Per ILCD, the data set version is formatted as follows: the first two digits indicate major updates, the second two digits refer to minor revisions and error corrections; the final three digits are used for automatic and internal version counting during dataset development.
 
- Unless discussed in advance with the Data Curator, the value will be generated automatically by openLCA
+ Unless discussed in advance with the Data Curator, the value will be generated automatically by openLCA.
 
 **Example(s)**
 
@@ -149,17 +151,17 @@ End date for the time period that the process data represents. The date format i
 _12/31/2017_
 
 :::{important}
-The Start and End Date fields should not represent publication dates, they should represent the time period for which the process data is representative of. 
+The Start and End Date fields should not represent publication dates, they should represent the period for which the process data is representative. 
 :::
 :::{note}
-The time span is often the same as the foreground data collection period. If data has been gathered from secondary sources, reference those sources to find primary data collection dates and report the earliest and latest dates and discuss these methods in the description field below.
+The time span is often the same as the foreground data collection period. If data has been gathered from secondary sources, reference those sources to find primary data collection dates and report the earliest and latest dates and include detail in the description field below.
 :::
 
 **Description**
 
 Provide information regarding the temporal characteristics and period that the process data represents. Information can also be provided pertaining to secondary data source time periods.
 
-Examples can include explanation of the valid time period, any temporal aggregation, data collection period, seasonal/annual variations, and carbon provenance. 
+Examples can include explanation of the valid time period, any temporal aggregation (e.g., averaging multiple years of primary data), data collection period, and seasonal/annual variations.
 
 :::{note}
 The valid time span is often identical to the time of the data collection, unless projections or other forecasts have been applied. Limitations on the validity in valid time span can include future technology shifts, planned measurement improvements, or specific seasons.
@@ -173,7 +175,7 @@ The valid time span is often identical to the time of the data collection, unles
 ## **Geography** _(Mandatory)_
 **Location**
 
-The geographic area to which the unit process data were collected or refer. If multiple locations were used, indicate the highest geographic location (e.g., if data for several states across the US were collected then enter 'US'). Describe the locations in the geography ‘Description’ field
+The geographic area to which the unit process data were collected or refer. If multiple locations were used, indicate the highest geographic location (e.g., if data for several states across the US were collected then enter 'US'). Describe the locations in the geography ‘Description’ field.
 
 **Example(s)**
 - _US-CO_
@@ -205,7 +207,7 @@ A short (i.e., 1-3 paragraphs), general description of the process intended tech
 
 - _This process represents the production of "Calcium carbonate, ground, 20 microns, at plant" using average technologies for the United States from 2015-2016._ 
 
-  _The process includes three sub-processes: Quarry Operations; Transport and Plant Processing. Quarry Operations includes the following unit operations: mechanical extraction; primary crushing; screening; and intermediate storage of calcium carbonate rock (marble, limestone, or chalk). Transport includes the transport of materials from Quarry Operations to Plant Processing via barge, train, or truck. Plant processing which includes jaw crushing, washing, impact crushing, ball milling to particle size, and then classifying. Material selection and quality represent industry averages from the contiguous United States. Operational conditions represent industry averages from the contiguous United States.Fate and transport modeling was not considered for this process._
+  _The process includes three sub-processes: Quarry Operations; Transport and Plant Processing. Quarry Operations includes the following unit operations: mechanical extraction; primary crushing; screening; and intermediate storage of calcium carbonate rock (marble, limestone, or chalk). Transport includes the transport of materials from Quarry Operations to Plant Processing via barge, train, or truck. Plant processing which includes jaw crushing, washing, impact crushing, ball milling to particle size, and then classifying. Material selection and quality represent industry averages from the contiguous United States. Operational conditions represent industry averages from the contiguous United States. Fate and transport modeling was not considered for this process._
 - _The overall production technology is similar among all aniline plants that submitted data for this analysis. Aniline is formed by the hydrogenation of nitrobenzene in the presence of a copper-chromium or copper-silica catalyst. For hydrogenation of nitrobenzene, preheated hydrogen and nitrobenzene are fed into an evaporator, and aniline is formed by vapor phase catalytic reduction. The aniline is dehydrated to remove the water produced during the reaction. Pure aniline (99.95 wt. %) is obtained after a purification step in which the dehydrated aniline goes through a distillation process._
 
 ## **Data Quality**
@@ -224,7 +226,7 @@ Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inven
 
 ### **Flow Schema** _(Optional)_
 :::{important}
-While it is highly recommended to commplete flow level data quality for data submissions, it is currently not mandatory.
+While it is highly recommended to complete flow level data quality for data submissions, it is currently not mandatory.
 :::
 #### Matrix
 Use the US EPA - Flow Pedigree Matrix, this matrix comes preloaded in many FLCAC repositories. This matrix can also be found in the [Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) which can be imported as a skeleton structure into any openLCA database.
@@ -251,6 +253,7 @@ Currently, the FLCAC does not require social schema so no social schema data qua
 # Input/Output
 
 ![alt text](img/inputs_outputs_tab.png)
+_**Image of 'Inputs/Outputs' process tab within openLCA**_
 
 ## **Flow** (_Mandatory_)
 {term}`Elementary Flows <elementary flow>`: Should only be from the [FEDEFL](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets).
@@ -262,7 +265,7 @@ Currently, the FLCAC does not require social schema so no social schema data qua
 To ensure that elementary flows included in a process are FEDEFL flows, open up the flow information by double clicking a flow and check the description field. The description will include a statement such as this "From FedElemFlowList_1.0.1. Flow Class: Chemicals. Not a preferred flow." if it is a FEDEFL flow.
 :::
 
-{term}`Technosphere Flows <technosphere flow>`: Should be newly created flows based on the [ILCD naming convention](#name-mandatory). Read about technosphere flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment).
+{term}`Technosphere Flows <technosphere flow>`: Flows should be based on the [ILCD naming convention](#name-mandatory). Read about technosphere flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment).
 
 **Example(s)**
 ![alt text](img/tech_flow_names.png)
@@ -317,7 +320,7 @@ Most LCI data on the FLCAC does not include life cycle costing data.
 ## **Uncertainty** (_Optional_)
 Describe flow's data uncertainty. The distribution type, mean, and standard deviation may be provided.
 
-This information is not required, but if provided it increases the process' usefulness.
+This information is not required, but if provided it increases process usefulness.
 
 **Example(s)**
 ![alt text](img/tech_flow_unc.png)
@@ -340,7 +343,7 @@ The provider should always be chosen if a flow is an avoided product.
 ![alt text](img/avoided_prod.png)
 
 ## **Provider** (_Mandatory_)
-For every non-{term}`cutoff <cut-off flow>` technosphere flow, a provider must be selected. A {term}`provider` connects the flow to an upstream process producing that flow. Every non-cutoff technosphere should have at least one provider option.
+For every non-{term}`cutoff <cut-off flow>` technosphere flow, a provider must be selected. A {term}`provider` connects the flow to an upstream process producing that flow. Every non-cutoff technosphere flow should have at least one provider option.
 
 :::{note}
 Only non-cutoff technosphere flows have an upstream provider. Cutoff flows and elementary flows do not have providers as they are not being produced by a process.
@@ -385,6 +388,10 @@ Types of information to include in the flow description field:
 ![alt text](img/flow_descrip.png)
 
 # Documentation
+
+![alt text](img/doc_tab.png)
+_**Image of 'Documentation' process tab within openLCA**_
+
 ## LCI Method
 
 ### **Process type** (_Mandatory_)
@@ -414,16 +421,20 @@ Indicate whether the LCI method was attributional, consequential, input/output, 
 ### **Modeling constants** (_Mandatory_)
 State the primary assumptions used to create this process. Detail how the process differs from the original source.
 
+:::{important}
+Sources cited throughout metadata fields should also be added as sources in openLCA. See the [Sources](#sources) section for instructions on how to create a new source in openLCA.
+:::
+
 **Example(s)**
 
-_This process was adapted from a Smith, 2016 process for wood pellet manufacturing for pellets of a specific energy value in Europe. The process weight factors were adapted for the energy density of a typical US biomass fuel._
+_This process was adapted from a Smith, 2016 process for wood pellet manufacturing for pellets of a specific energy value in Europe. Process weight factors were adapted for the energy density of a typical US biomass fuel._
 
 ## Data source information
 
 ### **Data completeness** (_Mandatory_)
 This field is comprised of three elements:
 
-1. Treatement of Missing Environmental Data:
+1. Treatment of Missing Environmental Data:
 List and describe accounting methods for missing environmental data (e.g., cut-off rules) and/or intentional environmental data omissions.
 
 2. Treatment of Missing Technosphere Data:
@@ -491,8 +502,10 @@ Include any additional information regarding data collection time period that wa
 
 _All primary data were collected from 2015 to 2016. Secondary data were collected from 2005-2016 (NREL 2016; Wernet et al. 2016)._
 
-### **Use advice**
+### **Use advice** (_Optional_)
 Detail information that a data user needs to be aware of when using this process.
+
+This field is highly recommended if use advice is applicable to a process.
 
 **Example(s)**
 
@@ -533,12 +546,14 @@ Detail information that a data user needs to be aware of when using this process
 
 **Example(s)**
 -->
-## **Sources**
-Reference to the publication or entity from which data or methodology were obtained. 
+## **Sources** (_Mandatory_)
+Reference to the publication or entity from which data or methodology were obtained. Also include any other sources referenced throughout the metadata. Do not include full citations in the other metadata fields, use a shortened citation (Smith,2024) and include the full citation as an openLCA source.
 
-Source title should use: “Author (YEAR) Abbreviated Title” format such that these information display in the openLCA navigation panel.
+The field is populated from the list of Sources in the openLCA navigation tree.
 
-:::{tip}
+New source titles in the openLCA Sources folder should use: “Author (YEAR) Abbreviated Title” format such that these information display in the openLCA navigation panel.
+
+:::{admonition} Adding a New Source
 To add a new source:
 1. Open the 'Background data' folder in the openLCA navigation pane of database
 2. Right click the 'Sources' folder and select 'New source'
@@ -553,45 +568,146 @@ To add a new source:
 **Example(s)**
 ![alt text](img/source.png)
 
-<!-- ## Administrative Information
+## Administrative Information
 
-### **Project**
+### **Project** (_Optional_)
+Information about the project in which the data were generated. Where applicable, this field should indicate the project name, funding institution(s) or organization(s), and the grant or contract names and numbers.
+
+This field is not required if this information is not available.
+
+**Example(s)**
+_This project was supported by the Biomass Research and Development Initiative, grant no. 2011-10006-30357 from the USDA National Institute of Food and Agriculture._
+
+### **Intended Application** (_Mandatory_)
+This field consists of 5 elements:
+1. Use one of the four Main Goal Situations below to describe how the process is intended to be used. The term, "Main Goal Situations," refers to an LCA study's primary intended purpose per the ILCD Handbook’s Detailed Guidance. 
+:::{admonition} Main Goal Situations
+:class: dropdown
+SITUATION A -- MICRO-LEVEL DECISION SUPPORT
+The intended application for this process is for micro-level decision support as described in Goal Situation A from the ILCD Handbook's Detailed Guidance. LCA studies with this intended application are often used to answer product-related questions. Decisions stemming from these LCA studies "are assumed to have only limited or no structural consequences outside the decision-context,...do not change available production capacity...[and do not cause] large-scale consequences in the background system or other parts of the technosphere[.]"
+
+SITUATION B -- MESO/MACRO-LEVEL DECISION SUPPORT
+The intended application for this process is for meso/macro-level decision support as described in Goal Situation B from the ILCD Handbook's Detailed Guidance. LCA studies with this intended application are often used to support strategic level decisions such as "raw materials strategies, technology scenarios, policy options, etc. [Such decisions] are assumed to [result in] large-scale consequences in the background system or other parts of the technosphere."
+
+SITUATION C1 -- ACCOUNTING
+The intended application for this process is for accounting purposes as described in Goal Situation C1 from the ILCD Handbook's Detailed Guidance. LCA studies with this intended application offer "purely descriptive documentation of the system under analysis (e.g., a product, sector or country), without being interested in any potential consequences on other parts of the economy.” The studies categorized under Goal Situation C1 do consider existing benefits outside the analyzed system such as recycling.
+
+SITUATION C2 -- ACCOUNTING
+Same as in SITUATION C1 except LCA studies categorized under Goal Situation C2 do NOT consider existing benefits outside the analyzed system such as recycling.
+:::
+2. Target audience and the context for which the model was built (e.g., carbon footprint, Environmental Product Declaration (EPD), policy development, policy information, generic unit process data, etc.).
+3. Indicate the completeness level of the elementary flows such that users can interpret the correct application of LCIA methods to the dataset. If the data were originally developed and analyzed with a LCIA method, indicate the method utilized here. 
+4. If these data are an update to a previously published dataset, a note should be included here.
+5. Any additional details regarding the intended application/use of this process.
 
 **Example(s)**
 
-### **Intended Application**
+_Situation C1 - Accounting, with system-external interactions - The intended application is a purely descriptive accounting / documentation of the analysed system including existing interactions with other systems in the LCI model._
 
-**Example(s)**
+_The target audience of this model includes LCA practitioners, industry, and the general public. A full inventory of environmental flows are included; thus this unit process can be used for a full range of LCIA impact categories. The original study results were analyzed using the TRACI LCIA factors. These data are an update to the previously published dataset from 2010._ 
+
+_These data are intended to be used as an average dataset accepted by the North American plastics/chemical industry._
 
 ### **Data set owner**
+Name of the person or entity that owns the dataset directly from which the process was generated. The data set owner is often the data commissioner. 
+
+The field is populated from the list of Actors in the openLCA navigation tree.
+
+:::{admonition} Adding a New Actor
+To add a new actor:
+1. Open the 'Background data' folder in the openLCA navigation pane of database
+2. Open the 'Actors' folder 
+3. There are two subfolders: 'Organizations" and "Persons", right click on the appropriate one and select 'New actor'
+3. Enter the metadata:
+    - Name
+    - Description: Details about the actor (if needed)
+    - Additional information (not required, but recommended to add some contact information)
+
+![alt text](img/actor.png)
+:::
 
 **Example(s)**
 
-### **Data generator**
+![alt text](img/dataset_owner.png)
+
+### **Data generator** (_Mandatory_)
+Name of the person or entity responsible for generating the dataset from which the process was generated or for updating of the data. 
+
+The field is populated from the list of Actors in the openLCA navigation tree. Follow the instructions in the [Data set owner](#data-set-owner) section to create a new actor.
 
 **Example(s)**
 
-### **Data documentor**
+![alt text](img/data_generator.png)
+
+### **Data documentor** (_Mandatory_)
+Name of the individual or entity responsible for formatting and submitting the data.
+
+The field is populated from the list of Actors in the openLCA navigation tree. Follow the instructions in the [Data set owner](#data-set-owner) section to create a new actor.
 
 **Example(s)**
 
-### **Publication**
+![alt text](img/data_doc.png)
+
+### **Publication** (_Mandatory_)
+Reference to an openLCA Source that illustrates how the processes' LCI data were developed and/or used, i.e., a foundational publication that illustrates how the data are used. 
+
+The field is populated from the list of Sources in the openLCA navigation tree. Follow the instructions in the [Sources](#sources) section to create a new source.
 
 **Example(s)**
+
+![alt text](img/publication.png)
 
 ### **Creation date** _(Automatic)_
+The date and time when the dataset was created. This field will be automatically generated.
 
 **Example(s)**
+
+_6/1/18 12:45 PM_
 
 ### **Copyright**
+The openLCA software has a checkbox that will indicate whether the dataset is copyrighted. This box should remain unchecked.
 
 **Example(s)**
+
+![alt text](img/copyright.png)
 
 ### **Access and use restrictions**
+For USLCI datasets please copy and paste the Data Use Disclaimer Agreement found [here](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) into this field. 
 
-**Example(s)**
+For other FLCAC repositories, please contact the repository owner for repository specific guidance on this field.
+
 -->
 # Allocation
-## Physical
-## Economic
-## Causal
+![alt text](img/alloc_tab.png)
+_**Image of 'Allocation' process tab within openLCA**_
+
+## **Default Method** (_Mandatory_)
+For multi-functional processes, choose the process allocation method: causal, economic, or physical allocation methods.
+
+## **Product** (_Automatic_)
+Is the first reference flow by default. The primary product and co-products must have the same flow property.
+
+## **Physical** (_Automatic_)
+Allocation factors are based on the physical (e.g., mass or energy) ratio of the product flows.
+
+The ratio for the product will be 1.0 for a single-output process. For multi-output processes, the ‘Calculate default values’ button will automatically calculate the ratios based on the default (reference) flow property.
+
+## **Economic** (_Automatic_)
+Allocation factors are based on the economic value of the product flows. 
+
+The ratio of the product will be 1.0 for a single-output process. For multi-output processes, an economic flow property must first be added to each product flow; then, the ‘Calculate default values’ button will automatically calculate the ratios based on the economic value of the product flows.
+
+## **Causal**
+Allocation factors are set by the data provider based on a methodology described in the metadata. 
+
+### **Flow** (_Automatic_)
+Lists the process flow outputs and inputs.
+
+### **Direction** (_Automatic_)
+Indicates whether the flow is a process input or output.
+
+### **Category** (_Automatic_)
+Indicates the flow category.
+
+### **Amount** (_Automatic_)
+The amounts are automatically calculated given the causal allocation ratio entered in the columns to the right of the amounts (i.e., for each product/by-product).
