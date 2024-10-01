@@ -125,7 +125,7 @@ Follow the guidance provided in the [FLCAC Submission Handbook](https://flcac-ad
 
 :::{dropdown} How do I align my elementary flows with the Federal Elementary Flow List?
 All data on the FLCAC must use elementary flows that conform to the {term}`Federal Elementary Flow List`.
-For additional informatoin on flow mapping, see [Flow Mapping](Reference/FlowMapping.md).
+For detailed guidance on flow mapping, see [Flow Mapping](https://flcac-admin.github.io/FLCAC-docs/flowmappinginstructions)).
 :::
 
 
