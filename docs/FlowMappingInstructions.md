@@ -6,13 +6,13 @@ abbreviations:
     FEDEFL: FEDeral Elemetary FLowlist
 ---
 
-Flow mapping is the process of relating {term}elementary flows <elementary flow> in one dataset to similar flows in another dataset. In the context of the Federal LCA Commons, typically users are mapping the elementary flows in a third-party dataset (such as Ecoinvent or a dataset from the openLCA Neuxs) to the {term}Federal Elementary Flow List (FEDEFL).
+Flow mapping is the process of relating {term}`elementary flows <elementary flow>` in one dataset to similar flows in another dataset. In the context of the Federal LCA Commons, typically users are mapping the elementary flows in a third-party dataset (such as Ecoinvent or a dataset from the openLCA Nexus) to the {term}`Federal Elementary Flow List (FEDEFL)<Federal Elementary Flow List>`.
 
 :::{note} 
-Technosphere flows Flow mapping can also be performed on {term}technosphere flows <technosphere flow>, for example when identifying an alternate source of background LCI data. 
+Technosphere flows Flow mapping can also be performed on {term}`technosphere flows <technosphere flow>`, for example when identifying an alternate source of background LCI data. 
 :::
 
-Flow mapping is a critical step for accurate and complete {term}LCIA <Life Cycle Impact Assessment> flow characterization when using multiple LCI repositories in a single project database. In order for LCIA methods available on the FLCAC to fully capture the elementary flows present in a project database or product system they must be mapped to the {term}FEDEFL <Federal Elementary Flow List> as this flow list is the basis of LCIA methods on the commons.
+Flow mapping is a critical step for accurate and complete {term}`LCIA <Life Cycle Impact Assessment>` flow characterization when using multiple LCI repositories in a single project database. In order for LCIA methods available on the FLCAC to fully capture the elementary flows present in a project database or product system they must be mapped to the {term}`FEDEFL <Federal Elementary Flow List>` as this flow list is the basis of LCIA methods on the commons.
 
 # Getting Started with Elementary Fow Mapping
 
@@ -192,8 +192,8 @@ The remaining fields are not required for your mapping file:
 
 * Be cognizant of the presence of isomers if using chemical formula as a basis for flow mapping (i.e. one chemical formula can be associated with >1 flow names).
 * Not all contexts exist for all flows within the FEDEFL
-    * Source water flows marked as resource, in ground (or similar) cannot be mapped to resource/ground/subterranean context as only the more general resource/ground context exists for Water in FEDEFL.
-    * Source Natural Gas flows marked as resource, in ground (or similar) will map to resource/air contexts in FEDEFL. No ‘resource/ground’ context exists within FEDEFL for Natural Gas.
+    * Source water flows marked as `resource, in ground` (or similar) cannot be mapped to `resource/ground/subterranean` context as only the more general `resource/ground` context exists for Water in FEDEFL.
+    * Source Natural Gas flows marked as `resource, in ground` (or similar) will map to `resource/air` contexts in FEDEFL. No `resource/ground` context exists within FEDEFL for Natural Gas.
 * Use of the suggested INDEX() match function will return the first identified instance of a viable mapping. The first match may not be the best match.
 * If using Excel’s index/match functions, be aware of matches that may be case sensitive (e.g. mg vs Mg) or matches that involve special characters (t*km), where * is a special character, as these can lead to undesired matches.
 
