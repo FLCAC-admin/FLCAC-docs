@@ -66,13 +66,3 @@ To connect to the FLCAC collaboration server, you must have login credentials. T
 - Repository level compare feature
 
 <!-- - # Repository-Level Metadata Guidance-->
-
-# Versioning
-The FLCAC collaboration server now allows multiple versions on a repository to be published, thus a standardized repository-level version format is needed.
-
-FLCAC Repository Versioning Format: MAJOR.DATE(YYYY-MM).MINOR.PATCH
-
-- MAJOR version denotes updates to the schema (pending formalization) which are non-backward-compatible
-- DATE pulls the date-time stamp of the release commit on the FLCAC collaboration server
-- MINOR uses the release year and month (YYYY-MM) and denote additions and/or revisions to the repo
-- PATCH is incremented for corrections (errors, omissions, etc.) and small additions/revisions (e.g., shuffling metadata between a Process and Source object)

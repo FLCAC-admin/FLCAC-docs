@@ -31,7 +31,8 @@ project:
         - file: FlowMappingInstructions.md
     - title: Repository Management
       children:
-        - file: RepositoryManagementHandbook.md
+        - file: RepoMgmt/RepositoryManagementHandbook.md
+        - file: RepoMgmt/Versioning.md
     - file: FAQ.md
     - title: Additional Resources
       children:
