@@ -42,6 +42,6 @@ If database elements (e.g., {term}`flows <flow>`, {term}`processes <process>`, e
 The library should now be added to the main database. A "Libraries" folder will appear in the main database and the added library can be viewed. Library elements appear in this folder as well as in the main database. Library elements are italicized and show as a lighter shade than the main database elements.
 
 :::{seealso}
-[How to create a library](../SOPs/3-create_a_library.md)
+[How to create a library](https://flcac-admin.github.io/FLCAC-docs/create-a-library#procedure)
 
 :::
