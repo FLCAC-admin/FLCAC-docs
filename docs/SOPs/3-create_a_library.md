@@ -9,7 +9,30 @@
 1. Prepare the library database:
     - Adjust the database that is intended to be transformed into a library as needed. Once this database becomes a library, edits are more difficult to implement.
     - Delete all exchanges with an amount of zero, the matrices in a library do not currently support zeroes.
-    - Run a validation check on the database (Right click on database  “Validate”) and resolve any major errors.
+    :::{note} Script to remove zero amounts from exchanges
+from java.util import ArrayList
+
+pDao = ProcessDao(db)
+for d in pDao.getDescriptors():
+  p = pDao.getForId(d.id)
+  toRemove = ArrayList()
+  for e in p.exchanges:
+    if e.amount == 0 and e.id == p.quantitativeReference.id:
+      log.info("Invalid: quantitative reference has zero amount in process " + p.name + " " + p.refId)
+      continue
+    if e.amount == 0 and e.isInput and e.flow.flowType == FlowType.WASTE_FLOW:
+      log.info("Removing zero amount waste input " + e.flow.name + " from process " + p.name + " " + p.refId)
+      toRemove.add(e)
+    if e.amount == 0 and not e.isInput and e.flow.flowType == FlowType.PRODUCT_FLOW:
+      log.info("Removing zero amount product output " + e.flow.name + " from process " + p.name + " " + p.refId)
+      toRemove.add(e)
+  log.info("toRemove.size(): " + str(toRemove.size()))
+  if not toRemove.isEmpty():
+    for e in toRemove:
+      p.exchanges.remove(e)
+    pDao.update(p)
+    :::
+    - Run a validation check on the database (Right click on database --> “Validate”) and resolve any major errors. Please contact the Data Curators if questions arise about validation errors.
 
 2. Transform the library database into a library element:
     - Tools --> “Library export (experimental)”
