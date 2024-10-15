@@ -2,16 +2,16 @@
 
 ## Purpose
 
-...
+This SOP documents procedures for creating libraries from Federal LCA Commons (FLCAC) repositories in openLCA. Please reference the [openLCA Libraries User Guide](https://flcac-admin.github.io/FLCAC-docs/flcac-openlca-library-user-guidance) for information on importing, exporting, and modeling with libraries. This SOP is inteded for use by the Data Curators.
 
 ## Procedure
 
 1. Prepare the library database:
     - Adjust the database that is intended to be transformed into a library as needed. Once this database becomes a library, edits are more difficult to implement.
     - Delete all exchanges with an amount of zero, the matrices in a library do not currently support zeroes.
-    :::{note} Script to remove zero amounts from exchanges
-from java.util import ArrayList
-
+    
+:::{note} Script to remove zero amounts from exchanges
+'''from java.util import ArrayList
 pDao = ProcessDao(db)
 for d in pDao.getDescriptors():
   p = pDao.getForId(d.id)
@@ -30,7 +30,7 @@ for d in pDao.getDescriptors():
   if not toRemove.isEmpty():
     for e in toRemove:
       p.exchanges.remove(e)
-    pDao.update(p)
+    pDao.update(p)'''
     :::
     - Run a validation check on the database (Right click on database --> “Validate”) and resolve any major errors. Please contact the Data Curators if questions arise about validation errors.
 
