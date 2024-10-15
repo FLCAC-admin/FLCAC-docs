@@ -9,7 +9,6 @@ This SOP documents procedures for creating libraries from Federal LCA Commons (F
 1. Prepare the library database:
     - Adjust the database that is intended to be transformed into a library as needed. Once this database becomes a library, edits are more difficult to implement.
     - Delete all exchanges with an amount of zero, the matrices in a library do not currently support zeroes.
-    
 :::{note} Python script to remove zero amounts from exchanges
 Enter this script into the python console in openLCA:
 '''from java.util import ArrayList
@@ -32,7 +31,7 @@ for d in pDao.getDescriptors():
     for e in toRemove:
       p.exchanges.remove(e)
     pDao.update(p)'''
-    :::
+:::
     - Run a validation check on the database (Right click on database --> “Validate”) and resolve any major errors. Please contact the Data Curators if questions arise about validation errors.
 
 2. Transform the library database into a library element:
