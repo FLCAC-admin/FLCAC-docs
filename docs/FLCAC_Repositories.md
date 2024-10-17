@@ -30,8 +30,8 @@ Repositories are classified as the following types:
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
 | LCI             | Construction and Demolition Debris (CDD) | EPA             | lca@epa.gov with subject line containing [CDD LCI]            |
 | LCI             | Coal Extraction                          | NETL         |                                                               |                  |
-| LCI             | Woody Biomass                            | USFS FPL        | https://research.fs.usda.gov/fpl/contactus                                                              | Hover[^Woody] for ongoing updates.                   |
-| LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                                              |                  |
+| LCI             | Forestry and Forest Products                         | USFS FPL        | https://research.fs.usda.gov/fpl/contactus                                                              | Hover[^Woody] for ongoing updates.                   |
+| LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                                              |                  | Hover[^Woody] for ongoing updates.                   |
 | LCI       | USEEIO v2.0                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCI        | USEEIO v1.1                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCIA            | ReCiPe 2016                              | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
@@ -42,7 +42,7 @@ Repositories are classified as the following types:
 
 [^USLCI]: New data includes non-transport combustion updates and cobalt sulfate production.
 
-[^Woody]: Integration of USLCI as a library; additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring.
+[^Woody]: Integration of USLCI as a library; additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
 
 ## US Life Cycle Inventory
 
