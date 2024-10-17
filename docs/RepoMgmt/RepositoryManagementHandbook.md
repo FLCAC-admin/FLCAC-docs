@@ -39,17 +39,18 @@ The platform for the FLCAC is an openLCA collaboration server which is a server 
 
 To connect to the FLCAC collaboration server, you must have login credentials. These credentials are provided to repository managers and designated data users and providers.
 
-## Connecting an openLCA Database to the FLCAC collaboration server:
-- Navigate to the repository of interest on the collaboration server and copy the URL
-- Create a new, empty database in openLCA
-- Right click on the database, select ‘Repository’, select ‘Connect’
+## Connecting an openLCA Database to the FLCAC collaboration server
+
+- Navigate to the repository of interest on the collaboration server and copy the URL, e.g., `https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public`
+- With all databases closed, select 'Import', select 'From Git...'. (Or right-click in the navigation pane and select 'Import from Git...')
 - Paste the URL in the URL field (the following four fields will automatically populate)
-- Enter your FLCAC collaboration server username
+- Enter your FLCAC collaboration server username and password
 - Select ‘Connect’
-- Enter your FLCAC collaboration server Password
+- A list of commits will be displayed, select 'OK'
 - Your database should now be connected to the FLCAC collaboration server. This connection is indicated by the url following the database name.
 
-## Pushing and Pulling Data To and From the FLCAC Collaboration Server:
+## Pushing and Pulling Data To and From the FLCAC Collaboration Server
+
 - Right click on the database connected to the FLCAC collaboration server, select ‘Repository’
 - Functions:
     - Commit: Record of local changes to the repository
@@ -57,8 +58,9 @@ To connect to the FLCAC collaboration server, you must have login credentials. T
     - Fetch: Record of changes that have been made
     - Merge: Combines changes if there are remote and local updates
     - Pull: Updates local repository with changes
-    
-## FLCAC Collaboration Server Features:
+
+## FLCAC Collaboration Server Features
+
 - Repositories are sorted under Groups (e.g., US Forest Service, NREL, FLCAC)
 - Repository level metadata fields and release version metadata fields
 - Release and versioning feature
