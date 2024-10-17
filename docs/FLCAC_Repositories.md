@@ -31,7 +31,7 @@ Repositories are classified as the following types:
 | LCI             | Construction and Demolition Debris (CDD) | EPA             | lca@epa.gov with subject line containing [CDD LCI]            |
 | LCI             | Coal Extraction                          | NETL         |                                                               |                  |
 | LCI             | Forestry and Forest Products                         | USFS FPL        | https://research.fs.usda.gov/fpl/contactus                                                              | Hover[^Woody] for ongoing updates.                   |
-| LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                                              |                  | Hover[^Woody] for ongoing updates.                   |
+| LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                                              | Hover[^Woody] for ongoing updates.                   |                   |
 | LCI       | USEEIO v2.0                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCI        | USEEIO v1.1                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCIA            | ReCiPe 2016                              | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
