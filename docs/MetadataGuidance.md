@@ -26,9 +26,11 @@ Each field has a description and example(s) recommended by the Data Curator for 
 It is preferred that data providers fill in their metadata directly in openLCA, but if needed an excel template can be provided to fill out metadata.
 :::
 
-[^exclusions]: Three openLCA process tabs are not included in this guidance 'Parameters', 'Social aspects', and 'Direct impacts', data providers do not need to provide any information on these tabs. Please discuss the use of parameters with the Data Curator if your data submission includes parameters.
-
+[^exclusions]: Three openLCA process tabs are not included in this guidance 'Parameters', 'Social aspects', and 'Direct impacts'. Data providers do not need to provide any information on these tabs. Please discuss the use of parameters with the Data Curator if your data submission includes parameters.
+___
 # General Information
+Key process level metadata are compiled on the General Information tab.
+
 ![alt text](img/general_info.png)
 _**Image of ‘General Information’ process tab within openLCA**_
 
@@ -46,6 +48,7 @@ The naming conventions are as follows:
 [^optional]: Mandatory field if relevant to the process. If not, it can be ignored.
 
 For consistent nomenclature, use the following guidelines:
+
   - separate components with a semi-colon 
     - separate elements within a component with a comma
   - abbreviations and brackets should be avoided
@@ -53,21 +56,24 @@ For consistent nomenclature, use the following guidelines:
   - limit names to 220 characters
 
 **Example(s)**
-With 3 components: 
+With 3 components:
+
 - _Clinker; average mineral mix; at kiln; 1415 kg/m3_
 - _Transport; long-haul truck, diesel powered; trip length > 200 mi_
 - _Corn stover production; average, US, 2022; 15.5% moisture_
 
-With 2 components: 
+With 2 components:
+
 - _Scanner manufacture; Kodak Alaris i940 desktop manufacturing process_
 
 ## **Category** _(Automatic)_
 
-The category/subcategories schema follows North American Industry Classification System (NAICS). See the [Categorization section](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#naics-categorization) of the Data Submission Handbook for instructions on how to categorize flows and processes.
+The category/subcategories schema follows North American Industry Classification System (NAICS). See [Categorization](DataSubmissionHandbook.md#naics-categorization) of the Data Submission Handbook for instructions on how to categorize flows and processes.
 
 This field is automatically populated based on the folder that your process is located in.
 
 **Example(s)**
+
 - _22: Utilities/2211: Electric Power Generation, Transmission and Distribution_ 
 
 - _31-33: Manufacturing/3253: Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing_
@@ -90,6 +96,7 @@ Examples of included processes are: raw material acquisition; manufacturing/proc
 
 
 **Example(s)**
+
 - _This gate-to-gate unit process is for the net production of one kilowatt-hour of electricity supply from a coal-fired plant with co-generation of steam in Four Corners Area, United States. The studied system includes all processes, from washed coal delivery through to power generation, including treatment of cooling water, of a combined heat and power plant with conventional steam cycle within a circulating fluidized bed. The fuel is 100% washed bituminous coal extracted from Rocky Mountain regional mines located within 500 km of the plant. Data are from one coal-powered base load plant so no aggregation was performed but is representative of typical coal-based power facility in that region._
 
 - _The functional unit for this model is one kilogram of aniline. This aniline dataset includes nitrobenzene production and has been aggregated with incoming nitric acid LCI data. The technical scope includes the gate-to-gate production of nitric acid, nitrobenzene, and aniline. The system boundary includes incoming transport, manufacturing, and disposal of process wastes. The aniline dataset represented in this model includes data for nitric acid to conceal the confidential data of a provider company. Steam/heat is produced as a coproduct during this process, so system expansion is used to avoid allocation to recovered energy, which is shown as natural gas as an avoided product. Aniline is formed by the hydrogenation of nitrobenzene in the presence of a copper-chromium or copper-silica catalyst. The aniline producers who provided data for this module verified that the characteristics of their plants are representative of a majority of North American aniline production. The captured aniline production amount is approximately 71 percent of the aniline production in the U.S. in 2015._
@@ -114,9 +121,9 @@ _2018-04-01T17:38:55-0600_
 
 ## **UUID** _(Automatic)_
 
-32-digit Universally Unique Identifier (UUID) for the dataset.[^UUID]
-
-[^UUID]: Every element in an openLCA database has a UUID. UUIDs cannot be set, they are assigned by openLCA. [More details on UUID from the openLCA manual.](https://greendelta.github.io/olca-schema/classes/RefEntity.html?highlight=uuid#id)
+32-digit Universally Unique Identifier ({term}`UUID`) for the dataset.
+Every element in an openLCA database has a UUID.
+UUIDs cannot be set, they are assigned by openLCA.
 
 **Example(s)**
 
@@ -124,7 +131,8 @@ _961fad56-bde2-4fbe-8895-5be03461729b_
 
 ## **Infrastructure** _(Mandatory)_
 
-This is a box field in openLCA, checking the box indicates that the process includes infrastructure requirements in its inventory. Leave this box unchecked if infrastructure requirements are not included in the process.
+Checking the box indicates that the process accounts for infrastructure requirements in its inventory. Leave this box unchecked if infrastructure requirements are not included in the process.
+More information on the inlcusion of infrastructure should be described in the [System Boundaries](#description-mandatory).
 
 **Example(s)**
 
@@ -175,27 +183,29 @@ The valid time span is often identical to the time of the data collection, unles
 ## **Geography** _(Mandatory)_
 **Location**
 
-The geographic area to which the unit process data were collected or refer. If multiple locations were used, indicate the highest geographic location (e.g., if data for several states across the US were collected then enter 'US'). Describe the locations in the geography ‘Description’ field.
+The geographic area to which the unit process data were collected or refer. If multiple locations were used, indicate the location using the lowest common geographic resolution (e.g., if data for several states across the US were collected then enter 'US').
+Describe the locations in the geography 'Description' field.
 
 **Example(s)**
 - _US-CO_
 - _RNA_ 
 
-**Description**
-
-Description of the process' geographic representativeness and any geographic aggregation methods as well as name(s) and production volume(s) or capacity of specific included site(s), where applicable. 
-
-:::{note}
-Any geographical information on where the process, inputs and/or outputs occur is useful for end-users in considering region-specific aspects such as average temperature, wind speeds, and precipitation levels, etc. that affect e.g., landfill decomposition, fate and transport of emissions, etc.
+:::{important}
+If the location for your process does not currently exist in the USLCI, the Data Curator can generate it for you.
 :::
 
+**Description**
+
+Description of the process' geographic representativeness and any geographic aggregation methods as well as name(s) and production volume(s) or capacity of specific included site(s), where applicable.
+
 **Example(s)**
+
 - _This process is representative of production in the state of Colorado. Production data were aggregated across five sites ranging from eastern to western Colorado._
 - _This unit process is representative of average aniline production in North America. Production data were collected from 2 leading producers in the United States and aggregated using horizontal averaging. The energy and emissions data for nitric acid production is from a primary European source from 1990 and was adapted to North American conditions._
 
 ## **Technology** _(Mandatory)_
 
-A short (i.e., 1-3 paragraphs), general description of the process intended technical scope, representativeness, and applicability of the process. Include the following information (if applicable):
+A short (i.e., 1-3 paragraphs), general description of the process intended technical scope, representativeness, and applicability of the process. Include the following information, as applicable:
 
 - Process design including sub-processes, unit operations, and/or other activities (anthropogenic or natural) included in the process
 - Material selection and quality
@@ -227,36 +237,37 @@ Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inven
 ### **Flow Schema** _(Optional)_
 :::{important}
 While it is highly recommended to complete flow level data quality for data submissions, it is currently not mandatory.
+Please consider completing for level data quality for the most important flows.
 :::
+
 #### Matrix
 Use the US EPA - Flow Pedigree Matrix, this matrix comes preloaded in many FLCAC repositories. This matrix can also be found in the [Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) which can be imported as a skeleton structure into any openLCA database.
 
 #### Data Quality Entry
-Select the US EPA - FLow Pedigree Matrix on the 'General Information' tab and enter data quality scores for each {term}`exchange` in the inventory on the 'Inputs/Outputs' tab.
+Select the US EPA - Flow Pedigree Matrix on the 'General Information' tab and enter data quality scores for each {term}`exchange` in the inventory on the 'Inputs/Outputs' tab.
 
 Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inventory Data](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=321834) for information about the development of this matrix and guidance on how to complete it.
 
-Detail any assumptions used to assign these scores in the [Data treatment](#data-treatment) field.
+Detail any assumptions used to assign these scores in the [Data treatment](#data-treatment-mandatory) field.
 
 **Example(s)**
-- Select the matrix on the 'General Information' tab: 
 
 ![alt text](img/flow_DQ.png)
-
-- Select data quality entries on the 'Inputs/Outputs' tab under the 'Data quality entry' column:
 
 ![alt text](img/flow_DQ_entry.png)
 
 ### **Social Schema** _(Optional)_
-Currently, the FLCAC does not require social schema so no social schema data quality matrix is required.
-
+The FLCAC does not require social schema.
+___
 # Input/Output
+
+The Inputs/Outputs tab is where the life cycle inventory of the process is defined. It can include data on Elementary Flows, Technosphere Flows, and/or Waste Flows.
 
 ![alt text](img/inputs_outputs_tab.png)
 _**Image of 'Inputs/Outputs' process tab within openLCA**_
 
 ## **Flow** (_Mandatory_)
-{term}`Elementary Flows <elementary flow>`: Should only be from the [FEDEFL](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets).
+{term}`Elementary Flows <elementary flow>`: Should only be from the {term}`FEDEFL <Federal Elementary Flow List>`.
 
 **Example(s)**
 ![alt text](img/elementary_flow_names.png)
@@ -265,7 +276,7 @@ _**Image of 'Inputs/Outputs' process tab within openLCA**_
 To ensure that elementary flows included in a process are FEDEFL flows, open up the flow information by double clicking a flow and check the description field. The description will include a statement such as this "From FedElemFlowList_1.0.1. Flow Class: Chemicals. Not a preferred flow." if it is a FEDEFL flow.
 :::
 
-{term}`Technosphere Flows <technosphere flow>`: Flows should be based on the [ILCD naming convention](#name-mandatory). Read about technosphere flow alignment on the FLCAC [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment).
+{term}`Technosphere Flows <technosphere flow>`: Flows should be based on the [ILCD naming convention](#name-mandatory). Read about technosphere flow alignment on the FLCAC [here](DataSubmissionHandbook#technosphere-flow-alignment).
 
 **Example(s)**
 ![alt text](img/tech_flow_names.png)
@@ -276,7 +287,7 @@ Quantitative Reference Flow: The quantitative reference flow is the designated o
 ![alt text](img/quant_ref.png)
 
 ## **Category** (_Automatic_)
-Category is determined based on the folder that the flow is contained within. The FLCAC uses NAICS Categories to organize flows and processes, read about FLCAC Categorization [here](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#naics-categorization).
+Category is determined based on the folder that the flow is contained within. The FLCAC uses NAICS Categories to organize flows and processes, read about FLCAC Categorization [here](DataSubmissionHandbook.md#naics-categorization).
 
 **Example(s)**
 ![alt text](img/elementary_flow_cats.png)
@@ -299,7 +310,7 @@ Flow quantity
 Flow unit; the openLCA software includes a set of unit groups and units. These units must be used to ensure proper data importation. 
 
 :::{note}
-If the pre-existing units in a database are not appropriate for one or more of your dataset flows, let the Data Curator know and they will assist in adding a unit to the list.
+If the pre-existing units in a database are not appropriate for one or more of your dataset flows, contact the Data Curator and they will assist in adding a unit to the list.
 :::
 
 **Example(s)**
@@ -309,28 +320,22 @@ If the pre-existing units in a database are not appropriate for one or more of y
 This field is provided for documenting life cycle costing (LCC) data. The currency and costs may be provided for each flow; the costs per unit are automatically generated based on this information and flow amount.
 
 This field is not required and should be left blank if no life cycle costing data is available.
-
-:::{note}
 Most LCI data on the FLCAC does not include life cycle costing data.
-:::
 
 **Example(s)**
 ![alt text](img/tech_flow_costs.png)
 
 ## **Uncertainty** (_Optional_)
 Describe flow's data uncertainty. The distribution type, mean, and standard deviation may be provided.
-
-This information is not required, but if provided it increases process usefulness.
+This information, while not required, if encouraged.
+Details on the available uncertainty options can be found in the [openLCA manual](https://greendelta.github.io/openLCA2-manual/advanced_top/monte_carlo.html#adding-uncertainty-information).
+Uncertainty data are only used when performing a [Monte Carlo analysis](https://greendelta.github.io/openLCA2-manual/advanced_top/monte_carlo.html).
 
 **Example(s)**
 ![alt text](img/tech_flow_unc.png)
 
 ## **Inputs: Avoided Waste** (_Optional_)
 If there is a scrap or waste flow that is utilized in your process, the flow may be listed as an input to your dataset and marked as an avoided waste.
-
-**Example(s)**
-
-N/A
 
 ## **Outputs: Avoided product** (_Optional_)
 Used to indicate allocation has been avoided in a multi-functional process. This box should only be checked for the by-product flow(s). For example, if a process produces steam and offsets natural gas, then natural gas would be entered as an output flow and the avoided product box would be checked. 
@@ -358,7 +363,7 @@ Only non-cutoff technosphere flows have an upstream provider. Cutoff flows and e
 This information is not required, but if provided it increases the usefulness of a process.
 
 ## **Location** (_Optional_)
-Flow level location is an optional field but is useful to include if flow level exchange locations are known (i.e., where a flow was produced/originated from) and if they differ from the process location. 
+Flow level locations can be provided if the location for a specific flow level exchange **differs** from the [process location](#geography-mandatory).
 
 :::{important}
 To better support regionalized impact assessment, USLCI and FLCAC repositories will no longer allow locations on flow objects, but instead will utilize locations on {term}`exchanges <exchange>` and/or {term}`processes <process>`
@@ -368,16 +373,16 @@ To better support regionalized impact assessment, USLCI and FLCAC repositories w
 ![alt text](img/tech_flow_locs.png)
 
 :::{note}
-In the example above, the location has not been entered for the first two technosphere flows. The reason for this is that the flow exchange location does not vary from the process location (US and RNA) in these instances, so a flow exchange location is not needed.
+In the example above, the location has not been entered for the first two technosphere flows. For these flows, the flow exchange location does not differ from the process location (US and RNA), and so a flow exchange location is not needed.
 :::
 
 ## **Description** (_Optional_)
-This field is required where applicable. Briefly describe the flow's relationship to the process and assumptions used to obtain the quantitative reference or data quality.
+Briefly describe the flow's relationship to the process and assumptions used to obtain the quantitative reference or data quality.
 
 Types of information to include in the flow description field:
 
 - Conversion factors
-- Proxy/surrogate informatio (e.g., this flow is a proxy for the original flow "Natural gas combustion, RoW" from the ecoinvent database v2.1)
+- Proxy/surrogate information (e.g., this flow is a proxy for the original flow "Natural gas combustion, RoW" from the ecoinvent database v2.1)
 - Aggregation methods (e.g., two natural gas flows existed in the original study, these have been combined into one value)
 - Stage of the LCI that a flow relates to (e.g., transportation from plant to warehouse)
 - Other details about how the flow was transformed from the original study
@@ -386,8 +391,9 @@ Types of information to include in the flow description field:
 **Example(s)**
 
 ![alt text](img/flow_descrip.png)
-
+___
 # Documentation
+The Documentation tab provides additional process level metadata.
 
 ![alt text](img/doc_tab.png)
 _**Image of 'Documentation' process tab within openLCA**_
@@ -395,20 +401,12 @@ _**Image of 'Documentation' process tab within openLCA**_
 ## LCI Method
 
 ### **Process type** (_Mandatory_)
-Indication of whether the data represent a unit or system process.
-
-<!-- :::{note}
-[From the openLCA manual](https://greendelta.github.io/openLCA2-manual/processes/index.html?highlight=quantitative#processes):
-
-Unit process: A unit process is the smallest (least aggregated) unit in a production system, for which input and output data are quantified. It can contain any flow type.
-
-System process: A system process is an aggregated life cycle result saved as a process.
-::: -->
+Indicate whether the data represent a unit or system process.
 
 **Example(s)**
 
-- {term}`_Unit process_ <unit process>`
-- {term}`_System process_ <system process>`
+- _{term}`Unit process <unit process>`_
+- _{term}`System process <system process>`_
 
 ### **LCI method** (_Mandatory_)
 Indicate whether the LCI method was attributional, consequential, input/output, hybrid, etc. Can include caveats regarding inclusion of the process in a product system.
@@ -422,7 +420,7 @@ Indicate whether the LCI method was attributional, consequential, input/output, 
 State the primary assumptions used to create this process. Detail how the process differs from the original source.
 
 :::{important}
-Sources cited throughout metadata fields should also be added as sources in openLCA. See the [Sources](#sources) section for instructions on how to create a new source in openLCA.
+Sources cited throughout metadata fields should also be added as sources in openLCA. See [Sources](#sources-mandatory) for instructions on how to create a new source in openLCA.
 :::
 
 **Example(s)**
@@ -547,14 +545,15 @@ This field is highly recommended if use advice is applicable to a process.
 **Example(s)**
 -->
 ## **Sources** (_Mandatory_)
-Reference to the publication or entity from which data or methodology were obtained. Also include any other sources referenced throughout the metadata. Do not include full citations in the other metadata fields, use a shortened citation (Smith,2024) and include the full citation as an openLCA source.
+Reference to the publication or entity from which data or methodology were obtained. Also include any other sources referenced throughout the metadata. Do not include full citations in other metadata fields, but rather use a shortened citation `(Smith, 2024)` and include the full citation as an openLCA source.
 
-The field is populated from the list of Sources in the openLCA navigation tree.
+The field is populated from the list of Source objects in the openLCA navigation tree.
 
-New source titles in the openLCA Sources folder should use: “Author (YEAR) Abbreviated Title” format such that these information display in the openLCA navigation panel.
+New sources should use "Author (YEAR) Abbreviated Title" format for the Name such that these information display in the openLCA navigation panel.
 
 :::{admonition} Adding a New Source
 To add a new source:
+
 1. Open the 'Background data' folder in the openLCA navigation pane of database
 2. Right click the 'Sources' folder and select 'New source'
 3. Enter the metadata:
@@ -580,7 +579,9 @@ _This project was supported by the Biomass Research and Development Initiative, 
 
 ### **Intended Application** (_Mandatory_)
 This field consists of 5 elements:
+
 1. Use one of the four Main Goal Situations below to describe how the process is intended to be used. The term, "Main Goal Situations," refers to an LCA study's primary intended purpose per the ILCD Handbook’s Detailed Guidance. 
+
 :::{admonition} Main Goal Situations
 :class: dropdown
 SITUATION A -- MICRO-LEVEL DECISION SUPPORT
@@ -595,6 +596,7 @@ The intended application for this process is for accounting purposes as describe
 SITUATION C2 -- ACCOUNTING
 Same as in SITUATION C1 except LCA studies categorized under Goal Situation C2 do NOT consider existing benefits outside the analyzed system such as recycling.
 :::
+
 2. Target audience and the context for which the model was built (e.g., carbon footprint, Environmental Product Declaration (EPD), policy development, policy information, generic unit process data, etc.).
 3. Indicate the completeness level of the elementary flows such that users can interpret the correct application of LCIA methods to the dataset. If the data were originally developed and analyzed with a LCIA method, indicate the method utilized here. 
 4. If these data are an update to a previously published dataset, a note should be included here.
@@ -608,13 +610,20 @@ _The target audience of this model includes LCA practitioners, industry, and the
 
 _These data are intended to be used as an average dataset accepted by the North American plastics/chemical industry._
 
-### **Data set owner**
+### **Data set owner** (_Mandatory_)
 Name of the person or entity that owns the dataset directly from which the process was generated. The data set owner is often the data commissioner. 
 
-The field is populated from the list of Actors in the openLCA navigation tree.
+### **Data generator** (_Mandatory_)
+Name of the person or entity responsible for generating the dataset from which the process was generated or for updating of the data. 
+
+### **Data documentor** (_Mandatory_)
+Name of the individual or entity responsible for formatting and submitting the data.
+
+These fields are populated from the list of Actors in the openLCA navigation tree.
 
 :::{admonition} Adding a New Actor
 To add a new actor:
+
 1. Open the 'Background data' folder in the openLCA navigation pane of database
 2. Open the 'Actors' folder 
 3. There are two subfolders: 'Organizations" and "Persons", right click on the appropriate one and select 'New actor'
@@ -630,28 +639,13 @@ To add a new actor:
 
 ![alt text](img/dataset_owner.png)
 
-### **Data generator** (_Mandatory_)
-Name of the person or entity responsible for generating the dataset from which the process was generated or for updating of the data. 
-
-The field is populated from the list of Actors in the openLCA navigation tree. Follow the instructions in the [Data set owner](#data-set-owner) section to create a new actor.
-
-**Example(s)**
-
 ![alt text](img/data_generator.png)
-
-### **Data documentor** (_Mandatory_)
-Name of the individual or entity responsible for formatting and submitting the data.
-
-The field is populated from the list of Actors in the openLCA navigation tree. Follow the instructions in the [Data set owner](#data-set-owner) section to create a new actor.
-
-**Example(s)**
 
 ![alt text](img/data_doc.png)
 
 ### **Publication** (_Mandatory_)
-Reference to an openLCA Source that illustrates how the processes' LCI data were developed and/or used, i.e., a foundational publication that illustrates how the data are used. 
-
-The field is populated from the list of Sources in the openLCA navigation tree. Follow the instructions in the [Sources](#sources) section to create a new source.
+Reference to an openLCA Source that illustrates how the processes' LCI data were developed and/or used, i.e., a foundational publication that illustrates how the data are used.
+The field is populated from the list of Sources in the openLCA navigation tree. Follow the instructions in the [Sources](#sources-mandatory) section to create a new source.
 
 **Example(s)**
 
@@ -676,38 +670,24 @@ For USLCI datasets please copy and paste the Data Use Disclaimer Agreement found
 
 For other FLCAC repositories, please contact the repository owner for repository specific guidance on this field.
 
--->
+___
 # Allocation
+This tab allows for customization of allocation for multi product processes. Details on allocation approaches are described in the [openLCA manual](https://greendelta.github.io/openLCA2-manual/allocation.html)
+
 ![alt text](img/alloc_tab.png)
 _**Image of 'Allocation' process tab within openLCA**_
 
 ## **Default Method** (_Mandatory_)
 For multi-functional processes, choose the process allocation method: causal, economic, or physical allocation methods.
 
-## **Product** (_Automatic_)
-Is the first reference flow by default. The primary product and co-products must have the same flow property.
+## **Physical and Economic allocation** (_Automatic_)
+The reference flow is listed first by default. The primary product and co-products must have the same flow property.
 
-## **Physical** (_Automatic_)
-Allocation factors are based on the physical (e.g., mass or energy) ratio of the product flows.
+Physical allocation factors are based on the physical (e.g., mass or energy) ratio of the product flows.
+Economic allocation factors are based on the economic value of the product flows. 
 
 The ratio for the product will be 1.0 for a single-output process. For multi-output processes, the ‘Calculate default values’ button will automatically calculate the ratios based on the default (reference) flow property.
+Economic flow properties or [cost](#costs-revenues-optional) must be included to automatically calculate economic allocation factors.
 
-## **Economic** (_Automatic_)
-Allocation factors are based on the economic value of the product flows. 
-
-The ratio of the product will be 1.0 for a single-output process. For multi-output processes, an economic flow property must first be added to each product flow; then, the ‘Calculate default values’ button will automatically calculate the ratios based on the economic value of the product flows.
-
-## **Causal**
-Allocation factors are set by the data provider based on a methodology described in the metadata. 
-
-### **Flow** (_Automatic_)
-Lists the process flow outputs and inputs.
-
-### **Direction** (_Automatic_)
-Indicates whether the flow is a process input or output.
-
-### **Category** (_Automatic_)
-Indicates the flow category.
-
-### **Amount** (_Automatic_)
-The amounts are automatically calculated given the causal allocation ratio entered in the columns to the right of the amounts (i.e., for each product/by-product).
+## **Causal allocation**
+Allocation factors can be set by the data provider for individual flows based on a methodology described in the metadata.

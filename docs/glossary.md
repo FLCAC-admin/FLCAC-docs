@@ -44,6 +44,7 @@ Environmental Product Declaration
 
 [Federal Elementary Flow List](https://github.com/USEPA/fedelemflowlist)
 : The Federal Elementary Flow List (FEDEFL) is a standardized list of {term}`elementary flow` names, developed by the U.S. Environmental Protection Agency, used in federal LCA work. See the [EPA Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251) on its development and use.
+The FEDEFL is maintained as its own [repository on the FLCAC](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/elementary_flow_list/datasets)
 
 [flow](https://greendelta.github.io/olca-schema/classes/Flow.html)
 : "Flows are the essential components of data used for LCA. Flows may be of two broad types: {term}`elementary flows <elementary flow>` or {term}`intermediate (known as "technosphere") flows <technosphere flow>`." from [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251)
