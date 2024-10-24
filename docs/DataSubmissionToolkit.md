@@ -8,7 +8,7 @@ abbreviations:
 ---
 
 This document provides an overview of the data submission process and relevant resources.
-Please refer to the [Data Submission Handbook](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook) for detailed information regarding the submission process.
+Please refer to the [Data Submission Handbook](DataSubmissionHandbook.md) for detailed information regarding the submission process.
 The [Frequently Asked Questions page](FAQ.md) includes more information about many of these topics.
 
 ## Data Submission Steps
@@ -28,13 +28,13 @@ The [Frequently Asked Questions page](FAQ.md) includes more information about ma
 
 - Import your data into openLCA (import steps depend on original data source)
 - Download and import the latest version of the repository that you will be submitting data to into your database
-- [Flow map technosphere flows to existing FLCAC flows](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#technosphere-flow-alignment)
-- [Flow map elementary flows to FEDEFL flows](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#elementary-flow-alignment)
+- [Flow map technosphere flows to existing FLCAC flows](DataSubmissionHandbook.md#technosphere-flow-alignment)
+- [Flow map elementary flows to FEDEFL flows](DataSubmissionHandbook.md#elementary-flow-alignment)
 - Download and import the [Federal LCA Commons Core database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) into your local database
 - Move your processes and flows into the correct NAICS folders, you can search for the relevant folders on the [Census Bureau website here](https://www.census.gov/naics/)
 - Delete the old, unused folders that were brought in with your original database
 - [Run results](FAQ.md#openlca) and compare values to the original model
-- Complete the metadata fields according to the [metadata guidelines](https://flcac-admin.github.io/FLCAC-docs/metadataguidance)
+- Complete the metadata fields according to the [metadata guidelines](MetadataGuidance.md)
 - Send your draft database to the FLCAC curators for review
 
 :::{important} Notes on data submissions and maintenance of data

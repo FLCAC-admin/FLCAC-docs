@@ -11,9 +11,9 @@ abbreviations:
 
 This is the Federal LCA Commons (FLCAC) Data Submission Handbook. It describes the data submission and documentation framework that all new data across the FLCAC repositories must adhere to. Resources for data providers are provided within this handbook.
 
-- [The Data Submission Toolkit](https://flcac-admin.github.io/FLCAC-docs/datasubmissiontoolkit) provides an overview of the data submission and formatting steps that are provided in this handbook.
+- [The Data Submission Toolkit](DataSubmissionToolkit.md) provides an overview of the data submission and formatting steps that are provided in this handbook.
 <!-- - [The Data User Handbook can be found here](https://flcac-admin.github.io/FLCAC-docs/datauserhandbook). -->
-- [The FLCAC Repository Management Handbook can be found here](https://flcac-admin.github.io/FLCAC-docs/repositorymanagementhandbook).
+- [The FLCAC Repository Management Handbook can be found here](RepoMgmt/RepositoryManagementHandbook.md).
 
 # Introduction
 
@@ -23,7 +23,7 @@ The National Renewable Energy Lab (NREL) FLCAC Data Curators developed this comp
 
 The FLCAC data curation process is collaborative and iterative. The FLCAC Curators will review datasets to verify their compliance with the FLCAC Submission Handbook Guidelines, and coordinate with data providers to reconcile outstanding issues. Throughout this resource, additional opportunities for support from the FLCAC Data Curators during dataset preparation processes are clearly communicated.
 
-The FLCAC consists of multiple, distinct LCI repositories covering a variety of topics, and compatible LCIA methods. One of the FLCAC repositories is the U.S. Life Cycle Inventory database (USLCI) which is managed by NREL and covers a wide breadth of LCI data from industry and researchers. Federal agencies or their laboratories independently manage these repositories. A list of repositories and their management’s contact information can be found [here](https://flcac-admin.github.io/FLCAC-docs/flcac-repositories).
+The FLCAC consists of multiple, distinct LCI repositories covering a variety of topics, and compatible LCIA methods. One of the FLCAC repositories is the U.S. Life Cycle Inventory database (USLCI) which is managed by NREL and covers a wide breadth of LCI data from industry and researchers. Federal agencies or their laboratories independently manage these repositories. A list of repositories and their management’s contact information can be found [here](FLCAC_Repositories.md).
 
 The FLCAC Data Submission Handbook applies to all repositories on the FLCAC. This is a living document and will be updated as the FLCAC data submission process evolves. **This handbook applies to all new data submissions but is not enforced retroactively.**
 
@@ -65,7 +65,7 @@ If you have any questions, concerns, or recommendations, please contact us at: F
 # Placing Your Data in the Public Domain
 To support increased access to and sharing of resources, as well as to promote novel and innovative uses of LCA data, NREL requires that all datasets submitted to the LCA Commons be placed in the public domain under the terms of the [Creative Commons Legal Code (CC0 1.0 Universal (CC0 1.0))]( https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-C.md). By placing your datasets in the public domain, according to the CC0 1.0 license, you are removing “all of [your] rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.” 
 
-For USLCI data submissions, please review the legal code of the CC0 1.0 Universal license before submitting your datasets, as well as the [Data Use Disclaimer Agreement]( https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) and [Data Provider’s Content License Agreement]( https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-B.md).
+For USLCI data submissions, please review the legal code of the CC0 1.0 Universal license before submitting your datasets, as well as the [Data Use Disclaimer Agreement]( https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-A.md) and [Data Provider’s Content License Agreement](https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/submission_handbook/04-resources/04-App-B.md).
 
 # Data Formatting Overview
 To facilitate compliance with ISO 14048:2002, the FLCAC uses the [openLCA database schema](https://greendelta.github.io/olca-schema/) and builds upon this schema with additional requirements to standardize data across FLCAC repositories. There are five steps of data formatting to align data with the openLCA and FLCAC schemas:
@@ -94,37 +94,30 @@ Your role in the publication process is to transform your raw LCI data into a pr
 The documentation, metadata guidance, and resources in this Data Submission Guide will be essential resources in the submission process.
 
 # Data Curation
-NREL uses a Digital Curation Process for receiving, formatting, reviewing, and publishing data and metadata submitted to the FLCAC. The process is divided into five phases:
+NREL uses a Digital Curation Process for receiving, formatting, reviewing, and publishing data and metadata submitted to the FLCAC. The process is divided into five phases.
+Each of the five phases are discussed in detail below but a quick overview of the entire procedure for submitting data to the FLCAC is as follows.
+Before beginning, become familiar with the [Federal LCA Commons platform](https://www.lcacommons.gov/).
 
 1. [Appraisal](#appraisal)
-2. [Data Import](#data-import-into-openlca)
-3. [Data Formatting](#data-formatting)
-4. [Review](#review)
-5. [Publication and Preservation](#publication)
-
-Each of the five phases are discussed in detail below but a quick overview of the entire procedure for submitting data to the FLCAC is as follows:
-
-- Become familiar with the [Federal LCA Commons platform](https://www.lcacommons.gov/)
--	[Appraisal](#appraisal): 
     - Contact the FLCAC Data Curator to set up an initial appraisal meeting to discuss your datasets intended for submission to the FLCAC
-    -	Prior to this meeting fill out the [Data Submission Questionnaire](https://flcac-admin.github.io/FLCAC-docs/datasubmissiontoolkit#data-provider-questionnaire) and submit it to the Data Curator at FederalLCACommons@erg.com
+    - Prior to this meeting fill out the [Data Submission Questionnaire](DataSubmissionToolkit.md#data-provider-questionnaire) and submit it to the Data Curator at FederalLCACommons@erg.com
     - During this meeting we will discuss the specific steps needed to prepare your data for submission and assign roles
--	[Data Import into openLCA](#data-import-into-openlca):
-    -	Download the [openLCA software](https://www.openlca.org/download/) and install it on your computer
-    -	[Import data into openLCA](https://greendelta.github.io/openLCA2-manual/databases/importing_and_combining_databases.html?highlight=import#importing-data) or [manually enter data](https://greendelta.github.io/openLCA2-manual/processes/creating_new_process.html)
--	[Data Formatting](#data-formatting): 
+2. [Data Import into openLCA](#data-import-into-openlca)
+    - Download the [openLCA software](https://www.openlca.org/download/) and install it on your computer
+    - [Import data into openLCA](https://greendelta.github.io/openLCA2-manual/databases/importing_and_combining_databases.html?highlight=import#importing-data) or [manually enter data](https://greendelta.github.io/openLCA2-manual/processes/creating_new_process.html)
+3. [Data Formatting](#data-formatting)
     - Prepare and format your unit processes/product system as discussed in the initial curation meeting and the [Data Formatting section](#data-formatting)
-    - Export ONLY your prepared datasets as a zipped JSON-LD file & submit to the Data Curator or [add the datasets to a repository directly through the collaboration server](https://flcac-admin.github.io/FLCAC-docs/accessing-data#connecting-a-database-directly-to-the-flcac-collaboration-server)
--	[Review](#review):
+    - Export ONLY your prepared datasets as a zipped JSON-LD file & submit to the Data Curator or [add the datasets to a repository directly through the collaboration server](RepoMgmt/RepositoryManagementHandbook.md#accessing-a-repository-on-the-flcac-collaboration-server)
+4. [Review](#review)
     - Reconcile issues identified by the Data Curator during the review process & check results
-    -	Approve the final version
-- [Publication and Preservation](#publication-and-preservation):
-  -	FLCAC Data Curator will publish your dataset(s) on the FLCAC and preserve the final version(s)
+    - Approve the final version
+5. [Publication and Preservation](#publication)
+    - FLCAC Data Curator will publish your dataset(s) on the FLCAC and preserve the final version(s)
 
 :::{tip} Additional Resources
 
 - [Useful resources for data submission can be found in this section](#resources)
-- Frequently Asked Questions regarding the data submission process can be found [here](https://flcac-admin.github.io/FLCAC-docs/faq#data-submission)
+- Frequently Asked Questions regarding the data submission process can be found [here](FAQ.md#data-submission)
 - A YouTube video detailing the data submission process can be found [here](https://www.youtube.com/watch?v=IlPlYet8llY&list=PLmIn8Hncs7bFUOyXZNGXwG4LtdoTfLz6Q&index=9&)
 :::
 
@@ -169,7 +162,7 @@ To import a dataset that exists in a format that is compatible with openLCA, ple
 
 Create an empty database to import data into.
 
-Reference the [Accessing FLCAC Data](https://flcac-admin.github.io/FLCAC-docs/accessing-data) page for more information on accessing data on the FLCAC and connecting databases to the FLCAC Collaboration Server and/or a GitHub repository.
+Reference the [Accessing FLCAC Data](Accessing_data.md) page for more information on accessing data on the FLCAC and connecting databases to the FLCAC Collaboration Server and/or a GitHub repository.
 
 If data does not exist in a format that can be imported into openLCA then data should be entered manually or for bulk and large datasets an automated data entry method will be discussed in the initial Appraisal meeting. Bulk data entry methods vary based on the source format of the original data.
 
@@ -288,7 +281,7 @@ Reasons why your new openLCA/FLCAC compatible results may be different from your
 ### Metadata Guidance
 As FLCAC interagency coordination increases, the new standard for data formats and documentation is being advanced. To move toward interoperability and transparency, FLCAC harmonization of digital data access and preservation will increase collaboration potential and the reviewability of the LCA data exchange process. These efforts will significantly reduce not only data acquisition costs but also computer- and human-based misinterpretation errors, and thus, data misuse. As such, and to be more aligned with international protocols for all newly developed data, the current FLCAC repository standardization is to strive for 100% metadata completion.
 
-**[Please access the process metadata guidance documentation here.](metadataguidance)**
+**[Please access the process metadata guidance documentation here.](#MetdataGuidance.md)**
 
 ## Review
 Once data has been formatted appropriately, the Data Provider should send the JSON-LD files to the Data Curator via the predetermined data transfer platform. 
@@ -306,7 +299,7 @@ This process does not include a technical review of the inventory data.
 Typically, the review comments revolve around fixing flows that are not compatible with FEDEFL or the FLCAC and fixing process metadata wording and content
 
 ## Publication
-Once your data have been reviewed and completed, the dataset(s) are ready for publication. The Data Curator will publish the data to its repository on the [Federal LCA Commons Collaboration Server](https://www.lcacommons.gov/lca-collaboration/). See instructions on connecting to the collaboration server [here](tips#connecting-a-database-directly-to-the-flcac-collaboration-server).
+Once your data have been reviewed and completed, the dataset(s) are ready for publication. The Data Curator will publish the data to its repository on the [Federal LCA Commons Collaboration Server](https://www.lcacommons.gov/lca-collaboration/). See instructions on connecting to the collaboration server [here](RepoMgmt/RepositoryManagementHandbook.md#accessing-a-repository-on-the-flcac-collaboration-server).
 
 FLCAC repositories are published at different intervals, so please inquire with the Data Curator or Repository Manager of the database your data is being published in regarding release timing.
 
@@ -320,7 +313,7 @@ The USLCI is updated with new and revised data on a quarterly basis:
 - December 31
 
 ## Preservation
-The Data Curator will preserve the final dataset files according to [ISO 14721](https://www.iso.org/standard/57284.html) standards for long-term digital information preservation. That is, the final dataset file versions are stabilized, checked for fixity (i.e., verifying no digital file corruption), and stored such that the original and published datasets and their supporting metadata are archived. Only the initial dataset submission and the version final dataset as published are archived. These datasets will be saved until the next update is submitted and published. Older datasets may not be saved in the Federal LCA Data Commons but NREL retains the older datasets on their servers. Updates to previously published datasets shall contain a relevant note in the ‘Intended Application’ metadata field of the unit process Administrative Information. If a user needs an older dataset, they may access the archived [USLCI Database Downloads](https://github.com/uslci-admin/uslci-content/blob/dev/docs/release_info/release-downloads.md) or contact [the appropriate Repository Manager for a copy](https://flcac-admin.github.io/FLCAC-docs/flcac-repositories).
+The Data Curator will preserve the final dataset files according to [ISO 14721](https://www.iso.org/standard/57284.html) standards for long-term digital information preservation. That is, the final dataset file versions are stabilized, checked for fixity (i.e., verifying no digital file corruption), and stored such that the original and published datasets and their supporting metadata are archived. Only the initial dataset submission and the version final dataset as published are archived. These datasets will be saved until the next update is submitted and published. Older datasets may not be saved in the Federal LCA Data Commons but NREL retains the older datasets on their servers. Updates to previously published datasets shall contain a relevant note in the ‘Intended Application’ metadata field of the unit process Administrative Information. If a user needs an older dataset, they may access the archived [USLCI Database Downloads](https://github.com/uslci-admin/uslci-content/blob/dev/docs/release_info/release-downloads.md) or contact [the appropriate Repository Manager for a copy](FLCAC_Repositories.md).
 
 ## Resources
 ### openLCA
