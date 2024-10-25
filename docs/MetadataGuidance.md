@@ -520,7 +520,7 @@ To add a new review entry, select the green plus in the upper right hand corner 
 :::
 
 ### **Review report** (_Optional_)
-If a review report is available, then reference that report in this field using a source object. If there are relevant details regarding the review in another source, cite that source and the section of the source where review details can be found in the [Review details field](#review-details).
+If a review report is available, then reference that report in this field using a source object. If there are relevant details regarding the review in another source, cite that source and specify the section where review details can be found in the [Review details field](#review-details).
 
 See the [Sources section](#sources-mandatory) for details on how to add a source into openLCA.
 
@@ -530,11 +530,11 @@ Note any relevant details regarding the review here, such as which section in th
 **Example(s)**
 ![alt text](img/reviews.png)
 
-:::{note} Additional Review Fields
-There are multiple additional fields under the Reviews section that are not currently required to be completed. (Reviewers, Review methods, Quality assessment, Compliance declarations, and Completeness)
+:::{note} Additional Fields
+There are multiple additional fields under the Reviews section that are not currently required to be completed, but you may complete these if desired. (Reviewers, Review methods, Quality assessment, Compliance declarations, and Completeness)
 :::
 
--->
+
 ## **Sources** (_Mandatory_)
 Reference to the publication or entity from which data or methodology were obtained. Also include any other sources referenced throughout the metadata. Do not include full citations in other metadata fields, but rather use a shortened citation `(Smith, 2024)` and include the full citation as an openLCA source.
 
@@ -589,7 +589,7 @@ Same as in SITUATION C1 except LCA studies categorized under Goal Situation C2 d
 :::
 
 2. Target audience and the context for which the model was built (e.g., carbon footprint, Environmental Product Declaration (EPD), policy development, policy information, generic unit process data, etc.).
-3. Indicate the completeness level of the elementary flows such that users can interpret the correct application of LCIA methods to the dataset. If the data were originally developed and analyzed with a LCIA method, indicate the method utilized here. 
+3. Indicate the completeness level of the elementary flows such that users can interpret the correct application of LCIA methods to the dataset. If the data were originally developed and analyzed with a LCIA method, indicate the method utilized here. If categories in that LCIA method should not be evaluated with this dataset also note these.
 4. If these data are an update to a previously published dataset, a note should be included here.
 5. Any additional details regarding the intended application/use of this process.
 
