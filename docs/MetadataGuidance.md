@@ -510,39 +510,30 @@ This field is highly recommended if use advice is applicable to a process.
 - _This process does not contain use or end-of-life stage because these vary based on the intended use of a product._
 - _Cut-off flows were used for waste products which causes toxicity results to be underestimated by 20%._
 
-<!-- ## Reviews
+## Reviews
 
-### **Review type**
+### **Review type** (_Mandatory_)
+Choose the appropriate review type from the dropdown menu in openLCA. Options: dependent internal review, independent internal review, independent external review, accredited third party review, independent review panel, not reviewed.
 
-**Example(s)**
+:::{note} Adding a New Review Entry
+To add a new review entry, select the green plus in the upper right hand corner of the 'Reviews' section. Every process should have at least one review entry.
+:::
 
-### **Review report**
+### **Review report** (_Optional_)
+If a review report is available, then reference that report in this field using a source object. If there are relevant details regarding the review in another source, cite that source and the section of the source where review details can be found in the [Review details field](#review-details).
 
-**Example(s)**
+See the [Sources section](#sources-mandatory) for details on how to add a source into openLCA.
 
-### **Review details**
-
-**Example(s)**
-
-### **Reviewers**
-
-**Example(s)**
-
-### **Review methods**
+### **Review details** (_Optional_)
+Note any relevant details regarding the review here, such as which section in the referenced source can the review details be found.
 
 **Example(s)**
+![alt text](img/reviews.png)
 
-### **Quality assessment**
+:::{note} Additional Review Fields
+There are multiple additional fields under the Reviews section that are not currently required to be completed. (Reviewers, Review methods, Quality assessment, Compliance declarations, and Completeness)
+:::
 
-**Example(s)**
-
-## **Compliance declarations**
-
-**Example(s)**
-
-## **Completeness**
-
-**Example(s)**
 -->
 ## **Sources** (_Mandatory_)
 Reference to the publication or entity from which data or methodology were obtained. Also include any other sources referenced throughout the metadata. Do not include full citations in other metadata fields, but rather use a shortened citation `(Smith, 2024)` and include the full citation as an openLCA source.
