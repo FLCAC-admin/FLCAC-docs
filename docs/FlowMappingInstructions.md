@@ -227,6 +227,10 @@ The Flow Mapping feature in openLCA allows users to map existing databases to st
 More detail on the FEDEFL background and structure can be found [here](https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=347251&Lab=NRMRL).
 :::
 
+:::{danger}
+You cannot flow map within a library. Libraries are intended to be static collections of processes and other objects. Attempting to flow map in a database that contains a library can inadvertently edit library processes in undesired ways. We are working to develop a plan for this situation, but until that time, flow mapping should not be carried out in databases with an active library connection.
+:::
+
 The stepwise approach to complete this mapping is as follows:
 
 1. Start with your openLCA database with complete openLCA reference data. It is recommended that users save a copy of their database before the mapping for reference.
