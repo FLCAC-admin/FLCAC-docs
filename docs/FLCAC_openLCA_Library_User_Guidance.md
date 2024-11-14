@@ -30,7 +30,7 @@ To create a process with library flows, use the same process as when adding flow
 
 Product systems also generate similarly with library processes. Ensure that library providers are connected in your model graph and check the results to ensure that they the library processes were included.
 
-:::{Warning}
+:::{attention}
 Monte Carlo assessment is not currently available within databases that contain a library. 
 :::
 
