@@ -30,6 +30,10 @@ To create a process with library flows, use the same process as when adding flow
 
 Product systems also generate similarly with library processes. Ensure that library providers are connected in your model graph and check the results to ensure that they the library processes were included.
 
+:::{Warning}
+Monte Carlo assessment is not currently available within databases that contain a library. 
+:::
+
 ## Exporting a Library
 To share a database the contains a library, the library must be exported and shared separately. To export a library, navigate to the "Libraries" folder in the foreground openLCA navigation pane, right click on the desired library, and select export.
 
