@@ -21,6 +21,8 @@ An article describing the [LCIA Formatter was published in the Journal of Open S
 |ImpactWorld+ Endpoint|International Reference Center for Life Cycle of Products, Services and Systems (CIRAIG)|[ImpactWorld+](http://www.impactworldplus.org/en/team.php)|
 |IPCC GWP|Intergovernmental Panel on Climate Change (IPCC)| |
 |FEDEFL Inventory Methods|US Environmental Protection Agency|[FEDEFL Inventory Methods](https://github.com/USEPA/LCIAformatter/wiki/Inventory-Methods)|
+|ISO21930-LCIA-US|[US Environmental Protection Agency](https://www.epa.gov/greenerproducts/data-quality-improvements)|[Characterization Factors for Construction Material EPD Indicators](https://github.com/USEPA/LCIAformatter/blob/master/lciafmt/data/ISO21930-LCIA-US.yaml)|
+
 :::
 
 ## Accessing LCIA Methods
