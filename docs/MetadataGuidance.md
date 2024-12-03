@@ -327,7 +327,8 @@ Most LCI data on the FLCAC does not include life cycle costing data.
 
 ## **Uncertainty** (_Optional_)
 Describe flow's data uncertainty. The distribution type, mean, and standard deviation may be provided.
-This information, while not required, if encouraged.
+This information, while not required, is encouraged.
+Documentation of how the uncertainty is calculated should be added to the process metadata, for example in the [Modeling constants](#modeling-constants-mandatory).
 Details on the available uncertainty options can be found in the [openLCA manual](https://greendelta.github.io/openLCA2-manual/advanced_top/monte_carlo.html#adding-uncertainty-information).
 Uncertainty data are only used when performing a [Monte Carlo analysis](https://greendelta.github.io/openLCA2-manual/advanced_top/monte_carlo.html).
 
