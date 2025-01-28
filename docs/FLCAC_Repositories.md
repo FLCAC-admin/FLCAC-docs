@@ -40,6 +40,7 @@ Repositories are classified as the following types:
 | LCIA            | ImpactWorld+                             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | IPCC Global Warming Potentials           | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | FEDEFL Inventory Methods                 | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
+| LCIA            | Characterization Factors for Construction Material EPD Indicators (ISO21930-LCIA-US) | EPA      | [embodiedcarbon@epa.gov](mailto:embodiedcarbon@epa.gov)       |                  |
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
