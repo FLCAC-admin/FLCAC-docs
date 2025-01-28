@@ -43,7 +43,7 @@ Repositories are classified as the following types:
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
-[^USLCI]: New data is expected to include non-transport combustion updates and cobalt sulfate production.
+[^USLCI]: New data is expected to include on-road mobile combustion updates, wastewater treatment processes, stationary combustion updates, and lithium production.
 
 [^Woody]: Integration of USLCI as a library; additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
 
