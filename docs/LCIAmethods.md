@@ -36,7 +36,7 @@ Updating a local database with new data which contains new elementary flows (e.g
 In these cases, the "No flows" methods should be **re-imported** to ensure that all elementary flows are characterized.
 Using the "No flows" version of an LCIA method allows the practitioner to limit the number of elementary flows in their project database, simplifying LCIA flow checks.
 
-- LCIA Methods repositories: [Repositories](https://www.lcacommons.gov/lca-collaboration/) are available for TRACI2.1 and ReCiPe which contain the methods and all relevant flow objects.
+- LCIA Methods repositories: [Repositories](https://www.lcacommons.gov/lca-collaboration/) are available which contain the methods and all relevant flow objects.
 These repositories are useful for reviewing all characterization factors for flows in the FEDEFL.
 They can be downloaded and imported into a user's local database.
 However doing so will also import _all_ FEDEFL flows characterized by the method, often resulting in over 100,000 flow objects.

@@ -37,6 +37,9 @@ Repositories are classified as the following types:
 | LCIA            | ReCiPe 2016                              | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | TRACI 2.1                                | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | CED Method                               | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
+| LCIA            | ImpactWorld+                             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
+| LCIA            | IPCC Global Warming Potentials           | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
+| LCIA            | FEDEFL Inventory Methods                 | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
@@ -44,7 +47,7 @@ Repositories are classified as the following types:
 
 [^Woody]: Integration of USLCI as a library; additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
 
-[^Asphalt]: Integration of USLCI as a library.
+[^Asphalt]: Removing the embedded version of USLCI and revised connections to other repositories.
 
 ## US Life Cycle Inventory
 
