@@ -94,6 +94,8 @@ Once your database has both processes and a method, open up the process that you
 There are many variations of this process to run results so please reference the [openLCA manual](https://greendelta.github.io/openLCA2-manual/how-to-use.html) for more information, the steps above provide instructions for running a basic process.
 
 See the [Running LCIA Results page](https://flcac-admin.github.io/FLCAC-docs/running-lcia-results) for more information.
+
+For regionalized results, see [Regionalized LCIA Methods](/LCIAmethods.md#regionalized-lcia-methods).
 :::
 
 
