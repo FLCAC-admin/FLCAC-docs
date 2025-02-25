@@ -221,14 +221,14 @@ A short (i.e., 1-3 paragraphs), general description of the process intended tech
 - _The overall production technology is similar among all aniline plants that submitted data for this analysis. Aniline is formed by the hydrogenation of nitrobenzene in the presence of a copper-chromium or copper-silica catalyst. For hydrogenation of nitrobenzene, preheated hydrogen and nitrobenzene are fed into an evaporator, and aniline is formed by vapor phase catalytic reduction. The aniline is dehydrated to remove the water produced during the reaction. Pure aniline (99.95 wt. %) is obtained after a purification step in which the dehydrated aniline goes through a distillation process._
 
 ## **Data Quality**
+See [Data Quality Guidance](DataQuality.md) for examples and details on assigning data quality.
+
 ### **Process Schema** _(Mandatory)_
 #### Matrix
 Use the US EPA - Process Pedigree Matrix, this matrix comes preloaded in many FLCAC repositories. This matrix can also be found in the [Commons Core Database](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/Fed_Commons_core_database/datasets) which can be imported as a skeleton structure into any openLCA database.
 
 #### Data Quality Entry
 Once you have selected the US EPA - Process Pedigree Matrix, select '(not specified)' next to the 'Data quality entry' field and select the appropriate data quality scores for the 'Process Review' and 'Process Completeness' fields.
-
-Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inventory Data](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=321834) for information about the development of this matrix and guidance on how to complete it.
 
 **Example(s)**
 
@@ -245,8 +245,6 @@ Use the US EPA - Flow Pedigree Matrix, this matrix comes preloaded in many FLCAC
 
 #### Data Quality Entry
 Select the US EPA - Flow Pedigree Matrix on the 'General Information' tab and enter data quality scores for each {term}`exchange` in the inventory on the 'Inputs/Outputs' tab.
-
-Please reference [EPA's Guidance on Data Quality Assessment for Life Cycle Inventory Data](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=321834) for information about the development of this matrix and guidance on how to complete it.
 
 Detail any assumptions used to assign these scores in the [Data treatment](#data-treatment-mandatory) field.
 
