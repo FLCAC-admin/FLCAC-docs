@@ -235,7 +235,7 @@ If there is not an appropriate technosphere flow to map to then follow these ste
 Once all technosphere flows have been mapped, delete any extraneous folders that may have housed upstream data that was just mapped. After technosphere flow mapping, your database should only have the Commons Core database NAICS folder structure and folders associated with elementary flows from your original data.
 
 ### Cut-off Flows
-Cut-off flows are used to temporarily fill in data gaps in the FLCAC repositories. As new data is submitted, the Data Curator will replace cut-off flows when possible. 
+{term}`Cut-off flows <cut-off flow>` are used to temporarily fill in data gaps in the FLCAC repositories. As new data is submitted, the Data Curator will replace cut-off flows when possible. 
 
 A technosphere flow that is not being submitted as a dataset and is not already in any of the FLCAC repositories should be categorized in the Technosphere Flows>CUTOFF Flows folder with the description 'CUTOFF' in the product flow description metadata. Otherwise, a reasonable proxy from the FLCAC may be identified with a note in the ‘Input Flow, Description’ field regarding the flow database origin and original flow name. 
 
