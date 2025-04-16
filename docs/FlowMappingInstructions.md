@@ -121,7 +121,7 @@ Once you have the data for which you want to create a mapping, follow these step
 
 ## Mapping Flowables
 
-1. Download the [FedElemFlowList_1.x.x_all.xlsx](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/FedElemFlowList_1.3.0_all.xlsx) and [All_Mappings.xlsx](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/All_Mappings.xlsx), which are described above in [Resources for Mapping](Getting-Started-with-FEDEFL#resources-for-mapping).
+1. Download the [FedElemFlowList_1.x.x_all.xlsx](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/FedElemFlowList_1.3.0_all.xlsx) and [All_Mappings.xlsx](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/All_Mappings.xlsx), which are described above in [Resources for Mapping](#resources-for-mapping).
 2. You must then go through the process of identifying the appropriate FEDEFL 'TargetFlowName' entries which match the 'SourceFlowName' entries you added to your template in the pre-formatting steps. The FEDEFL and All_Mappings CSVs will ensure you are using mappings that have been developed and verified by FEDEFL maintainers.
 
 If using Excel, we recommend using an Index/Match formula across the files to generate the appropriate mappings in your 'TargetFlowName' based on your 'SourceFlowName' column.
