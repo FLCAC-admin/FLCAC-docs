@@ -50,7 +50,7 @@ This section provides guidance to users interested in generating a mapping of th
 
 **Complete list of FEDEFL flows**: This file provides all of the flowables and associated contexts in the FEDEFL and corresponds to the [flow list format](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/format%20specs/FlowList.md). This list includes CAS numbers and some synonyms for the flowables which can be helpful when mapping. This file also indicates which flowables are 'preferred' as well as which alternate units and conversion factors are available for each flowable. For more details about the flow list, please see the [EPA report](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL&simpleSearch=0&showCriteria=2&searchAll=elementary+flows&TIMSType=Published+Report&dateBeginPublishedPresented=07%2F31%2F2019).  
 
-* [Click here for the list of FEDEFL flows](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/FedElemFlowList_1.1.0_all.xlsx)
+* [Click here for the list of FEDEFL flows](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/FedElemFlowList_1.3.0_all.xlsx)
 
 **All current mappings**: This file provides all of the existing mappings housed within this repository and corresponds to the [flow mapping format](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/format%20specs/FlowMapping.md). This list includes the 'SourceFlowName' and 'SourceFlowContext' entries for various datasets and the corresponding 'TargetFlowName' and 'TargetFlowContext' which can be helpful when mapping. This file also indicates the 'SourceUnit', 'TargetUnit', and any 'ConversionFactor' that may have been used.  
 
@@ -121,7 +121,7 @@ Once you have the data for which you want to create a mapping, follow these step
 
 ## Mapping Flowables
 
-1. Download the [FedElemFlowList_1.x.x.x_all.xlsx](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/FedElemFlowList_1.1.0_all.xlsx) and [All_Mappings.xlsx](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/All_Mappings.xlsx), which are described above in [Resources for Mapping](Getting-Started-with-FEDEFL#resources-for-mapping).
+1. Download the [FedElemFlowList_1.x.x_all.xlsx](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/FedElemFlowList_1.3.0_all.xlsx) and [All_Mappings.xlsx](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/All_Mappings.xlsx), which are described above in [Resources for Mapping](Getting-Started-with-FEDEFL#resources-for-mapping).
 2. You must then go through the process of identifying the appropriate FEDEFL 'TargetFlowName' entries which match the 'SourceFlowName' entries you added to your template in the pre-formatting steps. The FEDEFL and All_Mappings CSVs will ensure you are using mappings that have been developed and verified by FEDEFL maintainers.
 
 If using Excel, we recommend using an Index/Match formula across the files to generate the appropriate mappings in your 'TargetFlowName' based on your 'SourceFlowName' column.
@@ -174,7 +174,7 @@ Example formula in cell K2 for 'TargetUnit' in the template:
 
 `=INDEX('All_Mappings.xlsx'!$K:$K,MATCH(B2,'All_Mappings.xlsx'!$H:$H,0))`  
 
-This formula can be applied to the whole list to generate as many mappings as possible, simplifying the process. You can also reference the [full list of FEDEFL flows](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/FedElemFlowList_1.1.0_all.xlsx) to verify the 'TargetUnit' or to identify any alternate units. If your 'SourceUnit' does not match the 'TargetUnit' but is listed as an alternate unit in the FEDEFL, a conversion value will automatically be applied to your mapping during the generation of the JSON file. If using the CSV-based mapping file, all conversion factors should be specified in the csv file.
+This formula can be applied to the whole list to generate as many mappings as possible, simplifying the process. You can also reference the [full list of FEDEFL flows](https://dmap-data-commons-ord.s3.amazonaws.com/fedelemflowlist/FedElemFlowList_1.3.0_all.xlsx) to verify the 'TargetUnit' or to identify any alternate units. If your 'SourceUnit' does not match the 'TargetUnit' but is listed as an alternate unit in the FEDEFL, a conversion value will automatically be applied to your mapping during the generation of the JSON file. If using the CSV-based mapping file, all conversion factors should be specified in the csv file.
 
 If left blank, the 'ConversionFactor' field is assumed to be 1, meaning that the source flow and target flow are in the same units and quantity. Conversion factors must be formulated such that the flow value can be multiplied by the ‘SourceUnit’ to derive a flow value in the ‘TargetUnit’.
 
