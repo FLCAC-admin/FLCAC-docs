@@ -37,6 +37,7 @@ More information on USLCI can be found [here](#us-life-cycle-inventory) and USLC
 The [openLCA Nexus](https://nexus.openlca.org/) is a collection of free and for purchases datasets curated by GreenDelta.
 These data are aligned with the openLCA elementary flow list and so are not immediately compatible with the {term}`FEDEFL <Federal Elementary Flow List>` or datasets on the FLCAC; [flow mpping](https://flcac-admin.github.io/FLCAC-docs/flowmappinginstructions) would be required.
 For additional information on the Nexus, please visit that [site](https://nexus.openlca.org/about).
+:::
 
 ### Finding Data
 :::{dropdown} How do I see what data exists on the FLCAC?
