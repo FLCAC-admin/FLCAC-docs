@@ -61,7 +61,7 @@ These repos are useful for reviewing all characterization factors for flows in t
 They can be downloaded and imported into a user's local database.
 However doing so will also import _all_ {term}`FEDEFL <Federal Elementary Flow List>` flows characterized by the method, often resulting in over 100,000 flow objects.
 
-See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additional details.
+See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional details.
 :::
 
 
@@ -71,11 +71,11 @@ The LCIA methods listed in the following table are currently available on the FL
 ~~~{embed} available_lcia_methods
 ~~~
 
-TRACI version 2.2 with updated Eutrophication Factors is currently being harmonized for compatibility with FLCAC data.
+TRACI v2.2 includes spatially-explicit Eutrophication Factors. For details on running regionalized results see [Regionalized Results](LCIAmethods.md#regionalized-lcia-methods).
 
 Additional LCIA methods such as CML, Ecopoint, eco-indicator, EDIP2003, EPS, IMAGE 3, LIME, LUCAS, MEEup, ILCD and NAMEA are not currently available in a harmonized format. Flow mapping would be required to use these impact assessment methods with FLCAC data.
 
-See [Life Cycle Impact Assessment Methods](Reference/LCIAmethods.md) for additional details.
+See [Life Cycle Impact Assessment Methods](LCIAmethods.md) for additional details.
 :::
 
 ### openLCA
