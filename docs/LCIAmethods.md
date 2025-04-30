@@ -15,6 +15,7 @@ An article describing the [LCIA Formatter was published in the Journal of Open S
 |LCIA Data|Provider|Link|
 |---|---|---|
 |TRACI 2.1|US Environmental Protection Agency|[Tool for Reduction and Assessment of Chemicals and Other Environmental Impacts](https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci)|
+|TRACI 2.2|US Environmental Protection Agency|[Tool for Reduction and Assessment of Chemicals and Other Environmental Impacts](https://www.epa.gov/chemical-research/tool-reduction-and-assessment-chemicals-and-other-environmental-impacts-traci)|
 |ReCiPe 2016 Midpoint|National Institute for Public Health and the Environment (The Netherlands)|[LCIA: the ReCiPe Model](https://www.rivm.nl/en/life-cycle-assessment-lca/recipe)|
 |ReCiPe 2016 Endpoint|National Institute for Public Health and the Environment (The Netherlands)|[LCIA: the ReCiPe Model](https://www.rivm.nl/en/life-cycle-assessment-lca/recipe)|
 |ImpactWorld+ Midpoint|International Reference Center for Life Cycle of Products, Services and Systems (CIRAIG)|[ImpactWorld+](http://www.impactworldplus.org/en/team.php)|
@@ -42,6 +43,19 @@ They can be downloaded and imported into a user's local database.
 However doing so will also import _all_ FEDEFL flows characterized by the method, often resulting in over 100,000 flow objects.
 
 If you require the LCIA data in a different format, please reach out to the Data Curators at FederalLCACommons@erg.com
+
+## Regionalized LCIA Methods
+Some LCIA methods (see table below) contain characterization factors for specific locations.
+To apply the regional characterization factors when running results in openLCA, users must:
+
+1) Select "Regionalized calculation" option when running results of a product system.
+2) Use datasets that have locations assigned (either for the entire {term}`process`, or for individual {term}`exchanges <exchange>`). The location objects must match those used in the LCIA method.
+
+| Method        | Scope                     |
+|---------------|---------------------------|
+| TRACI 2.2     | Countries, U.S. States    |
+
+For additional details on calculating regionalized LCIA results, see the [openLCA manual](https://greendelta.github.io/openLCA2-manual/advanced_top/regionalized.html#assign-locations-to-processes-and-exchanges).
 
 ## Issues and Bugs
 If you identify an error or have questions about specific methods, please use the [Issues](https://github.com/USEPA/LCIAformatter/issues) or [Discussions](https://github.com/USEPA/LCIAformatter/discussions) feature of the LCIA Formatter to report them.
