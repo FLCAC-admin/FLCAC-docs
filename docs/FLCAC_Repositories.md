@@ -25,7 +25,7 @@ Repositories are classified as the following types:
 
 | Type            |  Name                                    | Owner           | Contact Information                                           | Upcoming Updates |
 | --------------- | ---------------------------------------- | ----------------| ------------------------------------------------------------- | ---------------- |
-| LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in the release.               |
+| LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in upcoming releases.               |
 | LCI             | US Electricity Baseline                  | NETL            | https://github.com/USEPA/ElectricityLCI                       |
 | LCI             | [MTU Asphalt Pavement Framework](#pavement-lca) | FHWA     |                                                               | Hover[^Asphalt] for ongoing updates.                  |
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
@@ -47,9 +47,9 @@ Repositories are classified as the following types:
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
-[^USLCI]: New data is expected to include on-road mobile combustion updates, wastewater treatment processes, stationary combustion updates, and lithium production.
+[^USLCI]: New data is expected to include non-road transport updates/additions, drinking water processes, stationary combustion updates, and new packaging conversion processes.
 
-[^Woody]: Integration of USLCI as a library; additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
+[^Woody]: Clear connections to USLCI. Additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
 
 [^Asphalt]: Removing the embedded version of USLCI and revised connections to other repositories.
 
