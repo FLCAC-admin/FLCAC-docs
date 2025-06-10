@@ -49,8 +49,8 @@ Discussions rely on the same set of repository-specific labels used by Issues.
 # Contact Information
 Please contact us at FederalLCACommons@erg.com
 
-:::{Join the USLCI and Federal LCA Commons Mailing List}
-Click [here](mailto:federallcacommons@erg.com?subject=Add%20to%20Mailing%20List&body=Please%20add%20me%20to%20the%20FLCAC%20mailing%20list.) to subscribe to our mailing list and receive the latest updates on Federal LCA Commons data releases.
+:::{tip} Join the USLCI and Federal LCA Commons Mailing List
+Click [here](mailto:federallcacommons@erg.com?subject=Add%20to%20Mailing%20List&body=Please%20add%20me%20to%20the%20FLCAC%20mailing%20list) to subscribe to our mailing list and receive the latest updates on Federal LCA Commons data releases.
 :::
 
 
