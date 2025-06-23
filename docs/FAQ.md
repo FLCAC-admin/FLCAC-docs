@@ -35,7 +35,7 @@ More information on USLCI can be found [here](#us-life-cycle-inventory) and USLC
 
 :::{dropdown} Can I use data from the FLCAC with data from the openLCA Nexus?
 The [openLCA Nexus](https://nexus.openlca.org/) is a collection of free and for purchases datasets curated by GreenDelta.
-These data are aligned with the openLCA elementary flow list and so are not immediately compatible with the {term}`FEDEFL <Federal Elementary Flow List>` or datasets on the FLCAC; [flow mpping](https://flcac-admin.github.io/FLCAC-docs/flowmappinginstructions) would be required.
+These data are aligned with the openLCA elementary flow list so they are not immediately compatible with the {term}`FEDEFL <Federal Elementary Flow List>` or datasets on the FLCAC; [flow mapping](https://flcac-admin.github.io/FLCAC-docs/flowmappinginstructions) would be required.
 For additional information on the Nexus, please visit that [site](https://nexus.openlca.org/about).
 :::
 
@@ -255,7 +255,7 @@ Moving forward the FLCAC Data Curator will also work to ensure that metadata is 
 Multiple LCA platforms outside of openLCA support repos that are provided on the FLCAC, although not all of this data is up to date. For this reason, when using FLCAC data on other platforms please check the version or release date and compare to what is currently hosted on the [FLCAC](https://www.lcacommons.gov/lca-collaboration/). Please contact the individual software companies for more information on the repos supported.
 :::
 
-:::{dropdown} How do I combine other LCI databases with FLCAC repositories?
+:::{dropdown} How do I combine other LCI databases with FLCAC data?
 Currently, repositories on the FLCAC have data gaps, for this reason some data users may want to combine LCI databases (e.g., combine USLCI + ecoinvent). There are multiple ways to do this based on the databases being combined, the main part of this process is to align elementary flows from other databases outside of the FLCAC with the Federal Elementary Flow List (FEDEFL). 
 
 To combine FLCAC repositories with those on [openLCA's Nexus site](https://nexus.openlca.org/databases) it is recommended to use [this flow mapping file](https://www.openlca.org/wp-content/uploads/2020/07/Flow-mapping-file_openLCA_to_FEDEFL.pdf) that maps openLCA flows to FEDEFL flows.
