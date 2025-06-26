@@ -26,12 +26,12 @@ Repositories are classified as the following types:
 | Type            |  Name                                    | Owner           | Contact Information                                           | Upcoming Updates |
 | --------------- | ---------------------------------------- | ----------------| ------------------------------------------------------------- | ---------------- |
 | LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in upcoming releases.               |
-| LCI             | US Electricity Baseline                  | NETL            | https://github.com/USEPA/ElectricityLCI                       |
+| LCI             | US Electricity Baseline                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       | Hover[^Elec] for ongoing updates. |
 | LCI             | [MTU Asphalt Pavement Framework](#pavement-lca) | FHWA     |                                                               | Hover[^Asphalt] for ongoing updates.                  |
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
 | LCI             | Construction and Demolition Debris (CDD) | EPA             | lca@epa.gov with subject line containing [CDD LCI]            |
 | LCI             | Cement and Concrete                      | ANL             |                                                               |                  |
-| LCI             | Coal Extraction                          | NETL            |                                                               |                  |
+| LCI             | Coal Extraction                          | NETL            |                                                               | Hover[^Coal] for ongoing updates.                 |
 | LCI             | Forestry and Forest Products             | USFS FPL        | https://research.fs.usda.gov/fpl/contactus                    | Hover[^Woody] for ongoing updates.                   |
 | LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                             | Hover[^Woody] for ongoing updates.                   |
 | LCI             | USEEIO v2.0                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
@@ -52,6 +52,10 @@ Repositories are classified as the following types:
 [^Woody]: Clear connections to USLCI. Additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
 
 [^Asphalt]: Removing the embedded version of USLCI and revised connections to other repositories.
+
+[^Elec]: Updates for 2022 vintage based on [ElectricityLCI v2.0](https://github.com/NETL-RIC/ElectricityLCI/releases/tag/v2.0)
+
+[^Coal]: Incorporation of the 2016 U.S. Baseline Coal LCA
 
 ## US Life Cycle Inventory
 
