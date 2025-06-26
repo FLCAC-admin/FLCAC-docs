@@ -123,6 +123,13 @@ Libraries are beneficial for the current set-up of the FLCAC as they allow for m
 A {term}`provider` in openLCA is the upstream process that produces a flow. Providers can be chosen in the 'Inputs/Outputs' tab in openLCA under the 'Provider' column for product and waste flows. Product and waste flows can have one or more provider, but elementary and cut-off flows do not have a provider because these flows have no upstream process producing them. It is important that data providers select the provider fields in their inventories to ensure that a flow is connected to the correct upstream process.
 :::
 
+:::{dropdown} How do I link data between multiple repositories?
+In many cases, repositories on the FLCAC are intended to be used together.
+For example, electricity consumption processes from the U.S. electricity baseline can be used by other repositories that consume electricity.
+Where data are intended for use across repositories, the {term}`technosphere flow` will be the same in both, such that when data from one respository is imported into the other that data can be used together.
+While indicating the default {term}`provider` for these technosphere flows is good practice, constructing product systems without linking default providers is ok as long as only a single provider exists for that technosphere flow.
+In some cases, data providers may use [bridge processes](RepoMgmt/Bridge_processes.md) to indicate where these connections should be made.
+:::
 
 ## Data Submission
 :::{dropdown} How do I submit data to the FLCAC?
