@@ -15,10 +15,10 @@ Questions:
 The Electricity baseline accounts for LCI data by region for electricity generation at various points along the supply chain.
 Users can select from electricity processes of four types:
 
-- Electricity - <FUEL> - <Region>: LCI per MWh of electricity produced in this region for the selected fuel type.
-- Electricity; at grid; generation mix - <Region>: LCI per MWh of electricity generated in this region across all fuel types.
-- Electricity; at grid; consumption mix - <Region>: LCI per MWh of electricity consumed in this region, accounting for net trade from other regions.
-- Electricity; at user; consumption mix - <Region>: LCI per MWh of electricity consumed in this region, accounting for losses from transmission and distribution.
+- Electricity - `FUEL` - `Region`: LCI per MWh of electricity produced in this region for the selected fuel type.
+- Electricity; at grid; generation mix - `Region`: LCI per MWh of electricity generated in this region across all fuel types.
+- Electricity; at grid; consumption mix - `Region`: LCI per MWh of electricity consumed in this region, accounting for net trade from other regions.
+- Electricity; at user; consumption mix - `Region`: LCI per MWh of electricity consumed in this region, accounting for losses from transmission and distribution.
 
 The generation of electricity by fuel type accounts for the upstream supply of those fuels (e.g. natural gas, coal, nuclear, petroleum fuels).
 :::
