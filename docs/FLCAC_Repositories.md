@@ -6,6 +6,7 @@ abbreviations:
     FHWA: Federal Highways Administration
     NETL: National Energy Technology Laboratory
     NREL: National Renewable Energy Laboratory
+    NIST: National Institute of Standards and Technology
     USFS: US Forest Service
     FPL: Forest Products Laboratory
     ANL: Argonne National Laboratory
@@ -34,6 +35,7 @@ Repositories are classified as the following types:
 | LCI             | Coal Extraction                          | NETL            |                                                               | Hover[^Coal] for ongoing updates.                 |
 | LCI             | Forestry and Forest Products             | USFS FPL        | https://research.fs.usda.gov/fpl/contactus                    | Hover[^Woody] for ongoing updates.                   |
 | LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                             | Hover[^Woody] for ongoing updates.                   |
+| LCI             | Construction Materials                   | NIST            |                                                               |                  |
 | LCI             | USEEIO v2.0                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCI             | USEEIO v1.1                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCIA            | ReCiPe 2016                              | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
