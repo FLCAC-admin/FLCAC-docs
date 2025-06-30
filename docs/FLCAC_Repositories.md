@@ -27,7 +27,7 @@ Repositories are classified as the following types:
 | Type            |  Name                                    | Owner           | Contact Information                                           | Upcoming Updates |
 | --------------- | ---------------------------------------- | ----------------| ------------------------------------------------------------- | ---------------- |
 | LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in upcoming releases.               |
-| LCI             | US Electricity Baseline                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       | Hover[^Elec] for ongoing updates. |
+| LCI             | [US Electricity Baseline](#us-electricity-baseline)                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       | Hover[^Elec] for ongoing updates. |
 | LCI             | [MTU Asphalt Pavement Framework](#pavement-lca) | FHWA     |                                                               | Hover[^Asphalt] for ongoing updates.                  |
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
 | LCI             | Construction and Demolition Debris (CDD) | EPA             | lca@epa.gov with subject line containing [CDD LCI]            |
@@ -66,6 +66,13 @@ The NREL U.S. Life Cycle Inventory Database (USLCI) is a home for U.S. industry 
 For more information, please visit the [USLCI Homepage](https://www.nrel.gov/analysis/lci.html) or the [USLCI GitHub Site](https://github.com/FLCAC-admin/uslci-content)
 
 📺 🔉 [Training videos are also provided](video.md) for accessing, using, and submitting data to the USLCI.
+
+## US Electricity Baseline
+
+The U.S. Electricity Baseline is a regionalized life cycle inventory for electricity generation and consumption in the U.S.
+It is a joint effort with participation from NETL, EPA, and NREL.
+The dataset is developed using the ElectricityLCI python package available on [GitHub](https://github.com/NETL-RIC/ElectricityLCI).
+See the underlying python package or the list of [Frequently Asked Questions](eLCI_FAQ.md) for more details on its development and use.
 
 ## Pavement LCA
 

@@ -241,6 +241,10 @@ A comprehensive and transparent public LCI database has the potential to facilit
 See [Placing Your Data in the Public Domain](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#placing-your-data-in-the-public-domain).
 :::
 
+:::{dropdown} What is the source of the electricity data embedded in the USLCI?
+The US Electricity Baseline repository is embedded as a library in the USLCI.
+For more information see [US Electricity Baseline](FLCAC_Repositories.md#us-electricity-baseline) or the [Electricity Baseline FAQ](eLCI_FAQ.md)
+:::
 
 ## Other Questions
 

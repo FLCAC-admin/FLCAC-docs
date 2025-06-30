@@ -17,7 +17,7 @@ Users can select from electricity processes of four types:
 
 - Electricity - `FUEL` - `Region`: LCI per MWh of electricity produced in this region for the selected fuel type.
 - Electricity; at grid; generation mix - `Region`: LCI per MWh of electricity generated in this region across all fuel types.
-- Electricity; at grid; consumption mix - `Region`: LCI per MWh of electricity consumed in this region, accounting for net trade from other regions.
+- Electricity; at grid; consumption mix - `Region`: LCI per MWh of electricity consumed in this region, accounting for net trade with other regions.
 - Electricity; at user; consumption mix - `Region`: LCI per MWh of electricity consumed in this region, accounting for losses from transmission and distribution.
 
 The generation of electricity by fuel type accounts for the upstream supply of those fuels (e.g. natural gas, coal, nuclear, petroleum fuels).
@@ -37,15 +37,16 @@ LCI data for fuel supply chains are included in the model as follows:
 - COAL: Emissions from the mining, processing, and transportation of coal are sourced from [Cradle-to-Gate Life Cycle Analysis Baseline for United States Coal Mining and Delivery](https://doi.org/10.2172/2370100).
 - NUCLEAR: Emissions from the mining and processing of uranium for nuclear power plants are sourced from [Role of Alternative Energy Sources: Nuclear Technology Assessment](https://netl.doe.gov/energy-analysis/details?id=620).
 
+Additional details for each are included in the process metadata and the associated reports.
+
 :::
 
 :::{dropdown} Is infrastructure included in the inventory?
 For GAS, OIL, and COAL sources, LCI for power plant construction **ARE** included.
 These data are calculated using USEPA's USEEIO model based on estimated power plant construction costs.
-
-<!-- For SOLAR, SOLARTHERM..... -->
-
-LCI from construction **ARE NOT** not currently included for HYDRO, NUCLEAR, .
+Similarly, emissions for plant construction for SOLAR PV, SOLAR THERMAL, and WIND are calculated from publicly available reports and datasets.
+Plant constructiion for GEOTHERMAL is included in the utility inventory, and not tracked in a separate unit process.
+LCI from infrastructure for all other sources **ARE NOT** included at this time.
 
 Electricity transmission and distribution infrastructure is outside of the scope.
 :::
