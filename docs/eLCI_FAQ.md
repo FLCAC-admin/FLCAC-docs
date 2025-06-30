@@ -37,6 +37,8 @@ LCI data for fuel supply chains are included in the model as follows:
 - COAL: Emissions from the mining, processing, and transportation of coal are sourced from [Cradle-to-Gate Life Cycle Analysis Baseline for United States Coal Mining and Delivery](https://doi.org/10.2172/2370100).
 - NUCLEAR: Emissions from the mining and processing of uranium for nuclear power plants are sourced from [Role of Alternative Energy Sources: Nuclear Technology Assessment](https://netl.doe.gov/energy-analysis/details?id=620).
 
+Additional details for each are included in the process metadata and the associated reports.
+
 :::
 
 :::{dropdown} Is infrastructure included in the inventory?
