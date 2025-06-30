@@ -27,7 +27,7 @@ Repositories are classified as the following types:
 | Type            |  Name                                    | Owner           | Contact Information                                           | Upcoming Updates |
 | --------------- | ---------------------------------------- | ----------------| ------------------------------------------------------------- | ---------------- |
 | LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in upcoming releases.               |
-| LCI             | [US Electricity Baseline] (#us-electricity-baseline)                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       | Hover[^Elec] for ongoing updates. |
+| LCI             | [US Electricity Baseline](#us-electricity-baseline)                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       | Hover[^Elec] for ongoing updates. |
 | LCI             | [MTU Asphalt Pavement Framework](#pavement-lca) | FHWA     |                                                               | Hover[^Asphalt] for ongoing updates.                  |
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
 | LCI             | Construction and Demolition Debris (CDD) | EPA             | lca@epa.gov with subject line containing [CDD LCI]            |
