@@ -10,7 +10,6 @@ abbreviations:
     repo: repository
 ---
 
-Questions:
 :::{dropdown} What is the scope of the U.S. Electricity Baseline?
 The Electricity baseline accounts for LCI data by region for electricity generation at various points along the supply chain.
 Users can select from electricity processes of four types:
