@@ -38,6 +38,7 @@ project:
         - file: RepoMgmt/RepositoryManagementHandbook.md
         - file: RepoMgmt/Versioning.md
         - file: RepoMgmt/Bridge_processes.md
+        - file: RepoMgmt/USEEIO.md
     - file: FAQ.md
     - title: Additional Resources
       children:
