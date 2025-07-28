@@ -33,6 +33,7 @@ Before opening a new issue or discussion on an FLCAC repo, please first confirm 
  Federal Elementary Flow List | [fedelemflowlist](https://github.com/USEPA/fedelemflowlist)
  LCIA methods on the FLCAC | [LCIA formatter](https://github.com/USEPA/LCIAformatter)
  USLCI | [USLCI-content](https://github.com/FLCAC-admin/uslci-content)
+ US Electricity Baseline | [ElectricityLCI](https://github.com/NETL-RIC/ElectricityLCI)
  Anything else | [FLCAC-docs](https://github.com/FLCAC-admin/FLCAC-docs)
 
 ### Issues
@@ -48,6 +49,11 @@ Discussions rely on the same set of repository-specific labels used by Issues.
 
 # Contact Information
 Please contact us at FederalLCACommons@erg.com
+
+:::{tip} Join the USLCI and Federal LCA Commons Mailing List
+Click [here](mailto:federallcacommons@erg.com?subject=Add%20to%20Mailing%20List&body=Please%20add%20me%20to%20the%20FLCAC%20mailing%20list) to subscribe to our mailing list and receive the latest updates on Federal LCA Commons data releases.
+:::
+
 
 
 # Contributing to the docs

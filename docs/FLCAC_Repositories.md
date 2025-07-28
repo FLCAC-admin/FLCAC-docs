@@ -6,6 +6,7 @@ abbreviations:
     FHWA: Federal Highways Administration
     NETL: National Energy Technology Laboratory
     NREL: National Renewable Energy Laboratory
+    NIST: National Institute of Standards and Technology
     USFS: US Forest Service
     FPL: Forest Products Laboratory
     ANL: Argonne National Laboratory
@@ -25,15 +26,16 @@ Repositories are classified as the following types:
 
 | Type            |  Name                                    | Owner           | Contact Information                                           | Upcoming Updates |
 | --------------- | ---------------------------------------- | ----------------| ------------------------------------------------------------- | ---------------- |
-| LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in the release.               |
-| LCI             | US Electricity Baseline                  | NETL            | https://github.com/USEPA/ElectricityLCI                       |
+| LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in upcoming releases.               |
+| LCI             | [US Electricity Baseline](#us-electricity-baseline)                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       |  |
 | LCI             | [MTU Asphalt Pavement Framework](#pavement-lca) | FHWA     |                                                               | Hover[^Asphalt] for ongoing updates.                  |
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
 | LCI             | Construction and Demolition Debris (CDD) | EPA             | lca@epa.gov with subject line containing [CDD LCI]            |
 | LCI             | Cement and Concrete                      | ANL             |                                                               |                  |
-| LCI             | Coal Extraction                          | NETL            |                                                               |                  |
+| LCI             | Coal Extraction                          | NETL            |                                                               | Hover[^Coal] for ongoing updates.                 |
 | LCI             | Forestry and Forest Products             | USFS FPL        | https://research.fs.usda.gov/fpl/contactus                    | Hover[^Woody] for ongoing updates.                   |
 | LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                             | Hover[^Woody] for ongoing updates.                   |
+| LCI             | Construction Materials                   | NIST            |                                                               |                  |
 | LCI             | USEEIO v2.0                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCI             | USEEIO v1.1                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCIA            | ReCiPe 2016                              | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
@@ -47,11 +49,13 @@ Repositories are classified as the following types:
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
-[^USLCI]: New data is expected to include on-road mobile combustion updates, wastewater treatment processes, stationary combustion updates, and lithium production.
+[^USLCI]: New data is expected to include non-road transport updates/additions, drinking water processes, stationary combustion updates, and new packaging conversion processes.
 
-[^Woody]: Integration of USLCI as a library; additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
+[^Woody]: Clear connections to USLCI. Additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
 
 [^Asphalt]: Removing the embedded version of USLCI and revised connections to other repositories.
+
+[^Coal]: Incorporation of the 2016 U.S. Baseline Coal LCA
 
 ## US Life Cycle Inventory
 
@@ -60,6 +64,13 @@ The NREL U.S. Life Cycle Inventory Database (USLCI) is a home for U.S. industry 
 For more information, please visit the [USLCI Homepage](https://www.nrel.gov/analysis/lci.html) or the [USLCI GitHub Site](https://github.com/FLCAC-admin/uslci-content)
 
 📺 🔉 [Training videos are also provided](video.md) for accessing, using, and submitting data to the USLCI.
+
+## US Electricity Baseline
+
+The U.S. Electricity Baseline is a regionalized life cycle inventory for electricity generation and consumption in the U.S.
+It is a joint effort with participation from NETL, EPA, and NREL.
+The dataset is developed using the ElectricityLCI python package available on [GitHub](https://github.com/NETL-RIC/ElectricityLCI).
+See the underlying python package or the list of [Frequently Asked Questions](eLCI_FAQ.md) for more details on its development and use.
 
 ## Pavement LCA
 

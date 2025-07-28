@@ -35,7 +35,7 @@ More information on USLCI can be found [here](#us-life-cycle-inventory) and USLC
 
 :::{dropdown} Can I use data from the FLCAC with data from the openLCA Nexus?
 The [openLCA Nexus](https://nexus.openlca.org/) is a collection of free and for purchases datasets curated by GreenDelta.
-These data are aligned with the openLCA elementary flow list and so are not immediately compatible with the {term}`FEDEFL <Federal Elementary Flow List>` or datasets on the FLCAC; [flow mpping](https://flcac-admin.github.io/FLCAC-docs/flowmappinginstructions) would be required.
+These data are aligned with the openLCA elementary flow list so they are not immediately compatible with the {term}`FEDEFL <Federal Elementary Flow List>` or datasets on the FLCAC; [flow mapping](https://flcac-admin.github.io/FLCAC-docs/flowmappinginstructions) would be required.
 For additional information on the Nexus, please visit that [site](https://nexus.openlca.org/about).
 :::
 
@@ -123,6 +123,13 @@ Libraries are beneficial for the current set-up of the FLCAC as they allow for m
 A {term}`provider` in openLCA is the upstream process that produces a flow. Providers can be chosen in the 'Inputs/Outputs' tab in openLCA under the 'Provider' column for product and waste flows. Product and waste flows can have one or more provider, but elementary and cut-off flows do not have a provider because these flows have no upstream process producing them. It is important that data providers select the provider fields in their inventories to ensure that a flow is connected to the correct upstream process.
 :::
 
+:::{dropdown} How do I link data between multiple repositories?
+In many cases, repositories on the FLCAC are intended to be used together.
+For example, electricity consumption processes from the U.S. electricity baseline can be used by other repositories that consume electricity.
+Where data are intended for use across repositories, the {term}`technosphere flow` will be the same in both, such that when data from one respository is imported into the other that data can be used together.
+While indicating the default {term}`provider` for these technosphere flows is good practice, constructing product systems without linking default providers is ok as long as only a single provider exists for that technosphere flow.
+In some cases, data providers may use [bridge processes](RepoMgmt/Bridge_processes.md) to indicate where these connections should be made.
+:::
 
 ## Data Submission
 :::{dropdown} How do I submit data to the FLCAC?
@@ -234,6 +241,10 @@ A comprehensive and transparent public LCI database has the potential to facilit
 See [Placing Your Data in the Public Domain](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#placing-your-data-in-the-public-domain).
 :::
 
+:::{dropdown} What is the source of the electricity data embedded in the USLCI?
+The US Electricity Baseline repository is embedded as a library in the USLCI.
+For more information see [US Electricity Baseline](FLCAC_Repositories.md#us-electricity-baseline) or the [Electricity Baseline FAQ](eLCI_FAQ.md)
+:::
 
 ## Other Questions
 
@@ -255,7 +266,7 @@ Moving forward the FLCAC Data Curator will also work to ensure that metadata is 
 Multiple LCA platforms outside of openLCA support repos that are provided on the FLCAC, although not all of this data is up to date. For this reason, when using FLCAC data on other platforms please check the version or release date and compare to what is currently hosted on the [FLCAC](https://www.lcacommons.gov/lca-collaboration/). Please contact the individual software companies for more information on the repos supported.
 :::
 
-:::{dropdown} How do I combine other LCI databases with FLCAC repositories?
+:::{dropdown} How do I combine other LCI databases with FLCAC data?
 Currently, repositories on the FLCAC have data gaps, for this reason some data users may want to combine LCI databases (e.g., combine USLCI + ecoinvent). There are multiple ways to do this based on the databases being combined, the main part of this process is to align elementary flows from other databases outside of the FLCAC with the Federal Elementary Flow List (FEDEFL). 
 
 To combine FLCAC repositories with those on [openLCA's Nexus site](https://nexus.openlca.org/databases) it is recommended to use [this flow mapping file](https://www.openlca.org/wp-content/uploads/2020/07/Flow-mapping-file_openLCA_to_FEDEFL.pdf) that maps openLCA flows to FEDEFL flows.

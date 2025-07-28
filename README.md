@@ -40,6 +40,7 @@ Before opening a new issue or discussion on an FLCAC repo, please first confirm 
  Federal Elementary Flow List | [fedelemflowlist](https://github.com/USEPA/fedelemflowlist)
  LCIA methods on the FLCAC | [LCIA formatter](https://github.com/USEPA/LCIAformatter)
  USLCI | [USLCI-content](https://github.com/FLCAC-admin/uslci-content)
+ US Electricity Baseline | [ElectricityLCI](https://github.com/NETL-RIC/ElectricityLCI)
  Anything else | [FLCAC-docs](https://github.com/FLCAC-admin/FLCAC-docs)
 
 
