@@ -41,6 +41,7 @@ Processes F and G represent background data (e.g., fuels, materials, or transpor
 
 To create the aggregated unit process, all links are removed to processes which will not be aggregated (and which are not impacted by the global parameter).
 Results are run for the resulting product system and they are "Saved as System Process".
+This can be repeated as many times as necessary for the relevant parameterized scenarios.
 
 ![text](../img/aggregated_up2.png)
 
