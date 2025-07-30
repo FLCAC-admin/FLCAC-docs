@@ -32,7 +32,7 @@ Repositories are classified as the following types:
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
 | LCI             | Construction and Demolition Debris (CDD) | EPA             | lca@epa.gov with subject line containing [CDD LCI]            |
 | LCI             | Cement and Concrete                      | ANL             |                                                               |                  |
-| LCI             | Coal Extraction                          | NETL            |                                                               | Hover[^Coal] for ongoing updates.                 |
+| LCI             | Coal Extraction                          | NETL            | lca@netl.doe.gov                                              |                  |
 | LCI             | Forestry and Forest Products             | USFS FPL        | https://research.fs.usda.gov/fpl/contactus                    | Hover[^Woody] for ongoing updates.                   |
 | LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                             | Hover[^Woody] for ongoing updates.                   |
 | LCI             | Construction Materials                   | NIST            |                                                               |                  |
@@ -54,8 +54,6 @@ Repositories are classified as the following types:
 [^Woody]: Clear connections to USLCI. Additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
 
 [^Asphalt]: Removing the embedded version of USLCI and revised connections to other repositories.
-
-[^Coal]: Incorporation of the 2016 U.S. Baseline Coal LCA
 
 ## US Life Cycle Inventory
 
