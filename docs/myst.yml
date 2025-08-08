@@ -26,6 +26,7 @@ project:
         - file: Running_LCIA_results.md
         - file: FLCAC_openLCA_Library_User_Guidance.md
         - file: Tips.md
+        - file: BridgeProcessesForUsers.md
     - title: Data Submission
       children:
         - file: DataSubmissionToolkit.md
