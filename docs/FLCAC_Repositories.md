@@ -35,7 +35,8 @@ Repositories are classified as the following types:
 | LCI             | Coal Extraction                          | NETL            |                                                               | Hover[^Coal] for ongoing updates.                 |
 | LCI             | Forestry and Forest Products             | USFS FPL        | https://research.fs.usda.gov/fpl/contactus                    | Hover[^Woody] for ongoing updates.                   |
 | LCI             | Forestry and Forest Products             | USFS FPL / CORRIM | info@corrim.org                                             | Hover[^Woody] for ongoing updates.                   |
-| LCI             | Construction Materials                   | NIST            |                                                               |                  |
+| LCI             | Construction Materials                   | NIST            |                                                               |  
+| LCI             | Building Systems                   | NIST            |                                                               |                  |
 | LCI             | USEEIO v2.0                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCI             | USEEIO v1.1                              | EPA             | [useeio@epa.gov](mailto:useeio@epa.gov)                       |                  |
 | LCIA            | ReCiPe 2016                              | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
@@ -49,7 +50,7 @@ Repositories are classified as the following types:
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
-[^USLCI]: New data is expected to include non-road transport updates/additions, drinking water processes, stationary combustion updates, and new packaging conversion processes.
+[^USLCI]: New data is expected to include non-road transport updates/additions, stationary combustion updates, end of life data, and new packaging conversion processes.
 
 [^Woody]: Clear connections to USLCI. Additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
 
