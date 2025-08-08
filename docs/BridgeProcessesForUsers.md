@@ -14,7 +14,7 @@ In this case the flow is directly imported and tagged with the name of the sourc
 ## How to know if a repository requires the import of another repository?
 The description under each repository on [lcacommons.gov](lcacommons.gov) states which repositories should be imported with the repository of interest.
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 ## How to import another repository into your openLCA database?
 Follow the same steps used to import the initial repository into your openLCA database. More details can be found on the [Accessing Data page](https://flcac-admin.github.io/FLCAC-docs/accessing-data).
@@ -22,12 +22,12 @@ Follow the same steps used to import the initial repository into your openLCA da
 ## How to connect the correct providers to bridge processes?
 Select the Bridge Processes folder.
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 Open each bridge process to determine if a provider selection is required.The description field on the general information tab will state if a provider needs to be selected. Many bridge processes just include conversions, especially those connected to USEEIO, so a provider does not need to be selected. 
 
 Example of a bridge process that does not need a provider selection -
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 Example of a bridge process that does need a provider selection -
-![alt text](image-6.png)
+![alt text](img/image-6.png)
