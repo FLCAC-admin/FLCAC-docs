@@ -12,7 +12,7 @@ However the use of parameters in LCA models can be cumbersome when they are inte
 This document describes an approach for generating **aggregated unit processes** in openLCA for use as background data from complex models.
 These unit processes are similar to {term}`system processes <system process>`, except they maintain transparent links to background data.
 
-:::box
+:::{tip} Example
 For example, NETL's LCA model for [Coal extraction and delivery](https://doi.org/10.2172/2370100) is parameterized to allow users to choose a combination of coal types (e.g., bituminous or sub-bituminous), mine types (surface or underground), and coal basins (e.g., Powder River Basin). However because the model is based on a single set of parameterized unit processes, using coal in the background from multiple sources simultaneously is not possible without further adjustments.
 :::
 
@@ -22,7 +22,7 @@ For example, NETL's LCA model for [Coal extraction and delivery](https://doi.org
 1. Generate a product system of your model that is appropriately parameterized for your scenario.
 2. Using the openLCA model graph, remove links to background data that are unparameterized. All processes that are impacted by the selection of a global parameter value must remain in the product system - these are the unit processes that will be aggregated.
 
-:::box
+:::{hint}
 As an alternative to steps 1 & 2, navigate to the unit processes and remove the appropriate default providers for those data you do not want to include. Then create a product system and select "only include default providers".
 :::
 
