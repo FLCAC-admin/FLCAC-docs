@@ -40,6 +40,7 @@ project:
         - file: RepoMgmt/Versioning.md
         - file: RepoMgmt/Bridge_processes.md
         - file: USEEIO.md
+        - file: RepoMgmt/Aggregated_unit_processes.md
     - file: FAQ.md
     - title: Additional Resources
       children:
