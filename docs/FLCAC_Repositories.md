@@ -28,7 +28,7 @@ Repositories are classified as the following types:
 | --------------- | ---------------------------------------- | ----------------| ------------------------------------------------------------- | ---------------- |
 | LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in upcoming releases.               |
 | LCI             | [US Electricity Baseline](#us-electricity-baseline)                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       |  |
-| LCI             | [MTU Asphalt Pavement Framework](#pavement-lca) | FHWA     |                                                               | Hover[^Asphalt] for ongoing updates.                  |
+| LCI             | [Asphalt and Concrete Mixtures](#pavement-lca)  | FHWA     |                                                               |                  |
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
 | LCI             | Construction and Demolition Debris (CDD) | EPA             | lca@epa.gov with subject line containing [CDD LCI]            |
 | LCI             | Cement and Concrete                      | ANL             |                                                               |                  |
@@ -53,8 +53,6 @@ Repositories are classified as the following types:
 [^USLCI]: New data is expected to include non-road transport updates/additions, stationary combustion updates, end of life data, and new packaging conversion processes.
 
 [^Woody]: Clear connections to USLCI. Additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
-
-[^Asphalt]: Removing the embedded version of USLCI and revised connections to other repositories.
 
 ## US Life Cycle Inventory
 
