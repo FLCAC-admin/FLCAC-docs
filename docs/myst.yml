@@ -17,6 +17,7 @@ project:
     - title: FLCAC Repositories
       children:
         - file: FLCAC_Repositories.md
+        - file: Data_Curation_Code_Resources.md
         - file: eLCI_FAQ.md
     - title: Data Use
       children:
