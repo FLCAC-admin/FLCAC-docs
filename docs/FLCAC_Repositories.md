@@ -27,7 +27,7 @@ Repositories are classified as the following types:
 | Type            |  Name                                    | Owner           | Contact Information                                           | Upcoming Updates |
 | --------------- | ---------------------------------------- | ----------------| ------------------------------------------------------------- | ---------------- |
 | LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in upcoming releases.               |
-| LCI             | [US Electricity Baseline](#us-electricity-baseline)                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       |  |
+| LCI             | [US Electricity Baseline](#us-electricity-baseline)                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       | Hover[^eLCI] for ongoing updates |
 | LCI             | [Asphalt and Concrete Mixtures](#pavement-lca)  | FHWA     |                                                               |                  |
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
 | LCI             | Construction and Demolition Debris (CDD) | EPA             | lca@epa.gov with subject line containing [CDD LCI]            |
@@ -43,14 +43,16 @@ Repositories are classified as the following types:
 | LCIA            | TRACI 2.1                                | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | TRACI 2.2                                | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | CED Method                               | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
-| LCIA            | ImpactWorld+                             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
+| LCIA            | ImpactWorld+                             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) | ImpactWorld+ v2 coming soon |
 | LCIA            | IPCC Global Warming Potentials           | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | FEDEFL Inventory Methods                 | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | Characterization Factors for Construction Material EPD Indicators (ISO21930-LCIA-US) | EPA      | [embodiedcarbon@epa.gov](mailto:embodiedcarbon@epa.gov)       |                  |
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
-[^USLCI]: New data is expected to include non-road transport updates/additions, stationary combustion updates, end of life data, and new packaging conversion processes.
+[^USLCI]: New data is expected to include non-road transport updates/additions, marine transport, stationary combustion updates, end of life data, and new packaging conversion processes.
+
+[^eLCI]: U.S. 2023 Baseline; new residual mix datasets; new international generation mixes.
 
 [^Woody]: Clear connections to USLCI. Additional processes for the full forest product’s supply chain from forest management and harvesting to primary forest products like lumber and secondary forest products like wood flooring. Combining the USFS FPL and the CORRIM Forestry and Forest Products repository into one.
 
