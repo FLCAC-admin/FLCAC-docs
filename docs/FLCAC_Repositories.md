@@ -50,7 +50,7 @@ Repositories are classified as the following types:
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
-[^USLCI]: New data is expected to include non-road transport updates/additions, marine transport, stationary combustion updates, end of life data, and new packaging conversion processes.
+[^USLCI]: New data is expected to include non-road transport updates/additions and stationary combustion updates.
 
 [^eLCI]: U.S. 2023 Baseline; new residual mix datasets; new international generation mixes.
 
