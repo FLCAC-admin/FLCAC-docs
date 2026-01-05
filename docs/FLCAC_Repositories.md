@@ -60,7 +60,7 @@ Repositories are classified as the following types:
 
 The NREL U.S. Life Cycle Inventory Database (USLCI) is a home for U.S. industry LCI data. The USLCI database provides individual gate-to-gate, cradle-to-gate, and cradle-to-grave accounting of the energy and material flows into and out of the environment that are associated with producing a material, component, or assembly in the U.S.
 
-For more information, please visit the [USLCI Homepage](https://www.nrel.gov/analysis/lci.html) or the [USLCI GitHub Site](https://github.com/FLCAC-admin/uslci-content)
+For more information, please visit the [USLCI Homepage](https://www.nrel.gov/analysis/lci.html) or the [USLCI GitHub Site](https://github.com/FLCAC-admin/uslci-content/releases) for the latest changes.
 
 📺 🔉 [Training videos are also provided](video.md) for accessing, using, and submitting data to the USLCI.
 
