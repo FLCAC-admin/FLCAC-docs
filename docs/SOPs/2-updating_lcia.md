@@ -20,7 +20,7 @@ If any remain, remove them from the repository.
 
 4. The LCIA methods are added as {term}`JSON-LD` to lcacommons.gov ["No-flows" LCIA Method page](https://www.lcacommons.gov/lcia-methods-without-flows):
 Generate with the LCIA Formatter a JSON-LD version of the method _without_ flows.
-Create a new entry in the USDA Ag Data Commons.
+Create a new entry in the [USDA Ag Data Commons](https://www.nal.usda.gov/services/agdatacommons).
 Once approved, the entry will be added to Data.gov.
 Add links to the No-flows page, and move the prior version to the archive section of the page.
 
