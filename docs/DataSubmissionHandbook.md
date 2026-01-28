@@ -290,9 +290,10 @@ Exchange Table Field Names:
 - Description: Optional field. Exchange description. More information on the description field can be found [here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#description-optional).
 - Exchange_dqi: Optional field. Exchange data quality indicators. More information on flow data quality can be found [here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#data-quality-entry-optional).
 
-**For additional guidance and examples of each of these fields, please review the example below and the [Input/Output section of the Metadata Guidance](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#input-output).**
+For additional guidance and examples of each of these fields, please review the example below and the [Input/Output section of the Metadata Guidance](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#input-output).
 
-**Example:**
+*Example:*
+
 ![alt text](img/exchange_table_ex.png)
 
 **2. Technosphere mapping table**: csv file that includes the technosphere flow mappings. This file must be filled out if the technosphere flows in the exchange table are not aligned with FLCAC technosphere flows. See [the technosphere flow alignment section for more information](#technosphere-flow-alignment). Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here](https://github.com/FLCAC-admin/FLCAC-docs/blob/main/docs/resources/csv_templates_for_data_entry/technosphere_mapping.csv).
@@ -325,10 +326,12 @@ Flow Mapping Table Field Names*:
 
 *Several of these descriptions are copied from the [FEDEFL flow mapping page](https://github.com/FLCAC-admin/fedelemflowlist/blob/master/format%20specs/FlowMapping.md?plain=1).
 
-**Technosphere Mapping Example:**
+*Technosphere Mapping Example:*
+
 ![alt text](img/tech_mapping_ex.png)
 
-**Elementary Mapping Example:**
+*Elementary Mapping Example:*
+
 ![alt text](img/elem_mapping_ex.png)
 
 **4. Metadata**: excel file that includes the process metadata fields. Includes brief descriptions of field names. This file can be downloaded [here](https://github.com/FLCAC-admin/FLCAC-docs/blob/main/docs/resources/csv_templates_for_data_entry/metadata.xlsx). View the [Metata Guidance page](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/) for more information and examples of each field.
