@@ -271,9 +271,9 @@ Steps to assign proper categorization to new flows and processes:
 ### Bulk/Automated Data Entry
 If the Data Provider would like to submit processes that are not already in a compatible openLCA format then they may use the csv files below and the Data Curator will use python scripts to convert the data into a JSON-LD file. Four csv files are included -
 
-1. Exchange table: csv file that includes the source flow names, exchange amounts, and units. Exchanges are assigned to a process name. This file is essentially the life cycle inventory using the original flow names, it includes both elementary and technosphere flows. Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here]().
+1. Exchange table: csv file that includes the source flow names, exchange amounts, and units. Exchanges are assigned to a process name. This file is essentially the life cycle inventory using the original flow names, it includes both elementary and technosphere flows. Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here](https://github.com/FLCAC-admin/FLCAC-docs/blob/main/docs/resources/csv_templates_for_data_entry/exchange_table.csv).
 
-exchange Table Field Names:
+Exchange Table Field Names:
 - ProcessID: Optional field. Only for metadata purposes.
 - **Process Category**: Mandatory field. 4 digit NAICS category process code. See the [NAICS section](#naics-categorization).
 - **Process Name**: Mandatory field. ILCD compliant process name(s). See the [naming guidance here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#name-mandatory). Multiple processes can be included in the same csv file.
@@ -292,15 +292,40 @@ exchange Table Field Names:
 
 **For additional guidance and examples of each of these fields, please review the example below and the [Input/Output section of the Metadata Guidance](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#input-output).**
 
-:::{Example}
+**Example:**
 ![alt text](image.png)
-:::
 
-2. Technosphere mapping table: csv file that includes the technosphere flow mappings. This file must be filled out if the technosphere flows in the exchange table are not aligned with FLCAC technosphere flows. See [the technosphere flow alignment section for more information](#technosphere-flow-alignment). Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here]().
+2. Technosphere mapping table: csv file that includes the technosphere flow mappings. This file must be filled out if the technosphere flows in the exchange table are not aligned with FLCAC technosphere flows. See [the technosphere flow alignment section for more information](#technosphere-flow-alignment). Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here](https://github.com/FLCAC-admin/FLCAC-docs/blob/main/docs/resources/csv_templates_for_data_entry/technosphere_mapping.csv).
 
-3. Elementary mapping table: csv file that includes the elementary flow mappings. This file must be filled out if the elementary flows in the exchange table are not aligned with FEDEFL elementary flows. See [the elementary flow alignment section for more information](#elementary-flow-alignment). Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here]().
+3. Elementary mapping table: csv file that includes the elementary flow mappings. This file must be filled out if the elementary flows in the exchange table are not aligned with FEDEFL elementary flows. See [the elementary flow alignment section for more information](#elementary-flow-alignment). Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here](https://github.com/FLCAC-admin/FLCAC-docs/blob/main/docs/resources/csv_templates_for_data_entry/elementary_mapping.csv).
 
-4. Metadata: csv file that includes the process metadata fields. Includes brief descriptions of field names. This file can be downloaded [here]().
+Flow Mapping Table Field Names*:
+- SourceRepoName: Technosphere mapping file only. Optional field.
+- SourceListName: Elementary mapping file only. Optional field.
+- SourceFlowName: Mandatory field. Name of the source flow.
+- SourceFlowUUID: Optional field.
+- SourceFlowContext: Optional field for technosphere flows. Mandatory field for elementary flows. Compartments should be separated with a '/'.
+- SourceUnit: Mandatory field. A unit abbreviation, like `kg`.
+- MatchCondition: Optional field. Single character. `=`, `>`,`<`,`~`. Meaning 'equal to','a superset of', 'a subset of', 'a proxy for'. Assumes `=` if not present.
+- ConversionFactor: Optional field, only required if conversions are necessary. Value for multiplying with source flow to equal target flow. Assumes `1` if not present.
+- TargetRepoName: Technosphere mapping file only. Mandatory field. FLCAC repository name of target flow.
+- TargetFlowName: Mandatory field. Name of the elementary or technosphere target flow.
+- TargetFlowUUID: Elementary mapping file only. Optional field. If the target elementary flow name and context are populated, then this field can be generated with a python script.
+- TargetFlowContext: Elementary mapping file only. Mandatory field. FEDEFL context, in form like `emission/air`.
+- TargetUnit: Mandatory field. A unit abbreviation, like `kg`
+- Provider: Technosphere mapping file only. Mandatory field. Upstream process producing the target flow.
+- Bridge: Technosphere mapping file only. TRUE/FALSE. Bridge processes are required when the target flow is in another repository from the intended repository for submission (e.g., the process is being submitted to USLCI but needs to reference a forestry flow from the Forestry and Forest Products repository).
+- BridgeFlowName: Technosphere mapping file only. Optional field, only required if bridge field = TRUE. Name of the bridge flow.
+- Mapper: Optional field. Person creating the mapping.
+- Verifier: Optional field. Person verifying the mapping.
+- LastUpdated: Optional field. Date mapping was last updated.
+- ConversionSource: Technosphere mapping file only. Optional field. Provide additional details about conversion source if needed.
+- Notes: Technosphere mapping file only. Optional field. Provide additional notes about the mapping if needed. These notes will only be shared between the Data Provider and Curator, they will not be added to the JSON-LD file.
+- Exchange description: Technosphere mapping file only. Optional field. Provide additional notes that will be included in the JSON-LD file under the exchange description field in the inventory.
+
+*Several of these descriptions are copied from the [FEDEFL flow mapping page](https://github.com/FLCAC-admin/fedelemflowlist/blob/master/format%20specs/FlowMapping.md?plain=1).
+
+4. Metadata: excel file that includes the process metadata fields. Includes brief descriptions of field names. This file can be downloaded [here](https://github.com/FLCAC-admin/FLCAC-docs/blob/main/docs/resources/csv_templates_for_data_entry/metadata.xlsx). View the [Metata Guidance page](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/) for more information and examples of each field.
 
 :::{note}
 Each of these files can support multiple processes so the Data Provider does not need to submit a separate file for each process.
