@@ -164,7 +164,7 @@ Create an empty database to import data into.
 
 Reference the [Accessing FLCAC Data](Accessing_data.md) page for more information on accessing data on the FLCAC and connecting databases to the FLCAC Collaboration Server and/or a GitHub repository.
 
-If data does not exist in a format that can be imported into openLCA then data should be entered manually or for bulk and large datasets an automated data entry method will be discussed in the initial Appraisal meeting. Bulk data entry methods vary based on the source format of the original data.
+If data does not exist in a format that can be imported into openLCA then data should be entered manually or for bulk and large datasets an automated data entry method will be discussed in the initial Appraisal meeting. Bulk data entry methods vary based on the source format of the original data. See more about the recommended bulk data entry method using csv files and python scripts below in the [Bulk Data Entry section](#bulkautomated-data-entry).
 
 ## Data Formatting
 ### Data Formatting Overview
@@ -253,7 +253,7 @@ The US EPA has developed the EPA Federal LCA Commons Elementary Flow List (FEDEF
 The FLCAC has adopted the EPA Federal LCA Commons Elementary Flow List (FEDEFL) for elementary flow classification. The classification of elementary flows employed by the FEDEFL allows for a systematic approach for managing elementary flows on the FLCAC. All elementary flows in LCI data on the FLCAC must be based off FEDEFL.
 
 #### Flow Mapping Elementary Flows
-Guidance on using and converting to this nomenclature can be found on the [FEDEFL GitHub repository wiki page](https://github.com/USEPA/fedelemflowlist/wiki) or the [FEDEFL guidance document](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=341199). The FEDEFL wiki provides guidance on converting an established flow list in a standard openLCA format to FEDEFL flows. Please see the US EPA report, [The Federal LCA Commons Elementary Flow List: Background, Approach, Description and Recommendations](https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=347251&Lab=NRMRL) for more information regarding the FEDEFL requirements and nomenclature.
+Guidance on using and converting to this nomenclature can be found on the [Elementary Flow Mapping Instructions page](https://flcac-admin.github.io/FLCAC-docs/flowmappinginstructions/). Additional guidance can be found on the [FEDEFL GitHub repository wiki page](https://github.com/USEPA/fedelemflowlist/wiki) or the [FEDEFL guidance document](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=341199). The FEDEFL wiki provides guidance on converting an established flow list in a standard openLCA format to FEDEFL flows. Please see the US EPA report, [The Federal LCA Commons Elementary Flow List: Background, Approach, Description and Recommendations](https://cfpub.epa.gov/si/si_public_record_Report.cfm?dirEntryId=347251&Lab=NRMRL) for more information regarding the FEDEFL requirements and nomenclature.
 
 When submitting data, the elementary flow names in the LCI must correspond directly to the elementary flow names used in the LCIA method. Usage of the FEDEFL protocol for both LCI and LCIA datasets on the FLCAC ensures interoperability between these different types of datasets and the original and FEDEFL names are documented during the curation process.
 
@@ -267,6 +267,44 @@ Steps to assign proper categorization to new flows and processes:
 1. Search your product or process on the [Census Bureau NAICS website](https://www.census.gov/naics/) and identify the proper four-digit NAICS code
 2. In openLCA, import the Commons Core Database into the database with your data
 3.	Drag and drop your processes and flows that you will be submitting into the correct NAICS folders in your openLCA database
+
+### Bulk/Automated Data Entry
+If the Data Provider would like to submit processes that are not already in a compatible openLCA format then they may use the csv files below and the Data Curator will use python scripts to convert the data into a JSON-LD file. Four csv files are included -
+
+1. Exchange table: csv file that includes the source flow names, exchange amounts, and units. Exchanges are assigned to a process name. This file is essentially the life cycle inventory using the original flow names, it includes both elementary and technosphere flows. Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here]().
+
+exchange Table Field Names:
+- ProcessID: Optional field. Only for metadata purposes.
+- **Process Category**: Mandatory field. 4 digit NAICS category process code. See the [NAICS section](#naics-categorization).
+- **Process Name**: Mandatory field. ILCD compliant process name(s). See the [naming guidance here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#name-mandatory). Multiple processes can be included in the same csv file.
+- FlowUUID: Optional field. Only for metadata purposes.
+- **FlowName**: Mandatory field. Source flow names, both elementary and technosphere flows. These flow names can be aligned with FEDEFL flows and FLCAC technosphere flows or they can be aligned with other flow lists (e.g., ecoinvent). If flows are not aligned, then they will be mapped in the technosphere and elementary flow csv files below.
+- **Context**: Mandatory for elementary flows. Emission or resource context of elementary flows (e.g., resource/water or emission/water). These contexts do not to be aligned with FEDEFL contexts.
+- **IsInput**: Mandatory field. TRUE/FALSE. Input = TRUE, Output = FALSE.
+- **FlowType**: Mandatory field. Options: PRODUCT_FLOW, WASTE_FLOW, or ELEMENTARY_FLOW.
+- **Reference**: Mandatory field. Quantitative reference flow of the process (i.e., primary output flow). TRUE/FALSE.
+- Default_Provider: If a separate mapping file will be used for technosphere flows then this is an optional field. If a mapping file will not be used (i.e., technosphere flows are already aligned with the FLCAC) then default providers must be entered. More information on the default provider field can be found [here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#provider-mandatory).
+- **Amount**: Mandatory field. Exchange amount. More information on the amount field can be found [here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#amount-mandatory).
+- **Unit**: Mandatory field. Unit of exchange amount. More information on units can be found [here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#unit-mandatory).
+- Avoided_product: Optional field. Only required when avoided products are included. TRUE/FALSE. More information on avoided products can be found [here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#outputs-avoided-product-optional).
+- Description: Optional field. Exchange description. More information on the description field can be found [here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#description-optional).
+- Exchange_dqi: Optional field. Exchange data quality indicators. More information on flow data quality can be found [here](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#data-quality-entry-optional).
+
+**For additional guidance and examples of each of these fields, please review the example below and the [Input/Output section of the Metadata Guidance](https://flcac-admin.github.io/FLCAC-docs/metadataguidance/#input-output).**
+
+:::{Example}
+![alt text](image.png)
+:::
+
+2. Technosphere mapping table: csv file that includes the technosphere flow mappings. This file must be filled out if the technosphere flows in the exchange table are not aligned with FLCAC technosphere flows. See [the technosphere flow alignment section for more information](#technosphere-flow-alignment). Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here]().
+
+3. Elementary mapping table: csv file that includes the elementary flow mappings. This file must be filled out if the elementary flows in the exchange table are not aligned with FEDEFL elementary flows. See [the elementary flow alignment section for more information](#elementary-flow-alignment). Bolded field names must be filled out, unbolded field names are optional. This file can be downloaded [here]().
+
+4. Metadata: csv file that includes the process metadata fields. Includes brief descriptions of field names. This file can be downloaded [here]().
+
+:::{note}
+Each of these files can support multiple processes so the Data Provider does not need to submit a separate file for each process.
+:::
 
 ### LCIA Results
 Once all elementary and technosphere flows have been aligned with the guidelines above, it is important to run LCIA results on your new model in openLCA to ensure that results are similar to those in your original model. If results are not similar, differences must be understood and discussed in the metadata.
