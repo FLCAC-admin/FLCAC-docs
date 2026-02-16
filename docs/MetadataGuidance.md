@@ -235,7 +235,7 @@ Once you have selected the US EPA - Process Pedigree Matrix, select '(not specif
 ### **Flow Schema** _(Optional)_
 :::{important}
 While it is highly recommended to complete flow level data quality for data submissions, it is currently not mandatory.
-Please consider completing for level data quality for the most important flows.
+Please consider completing flow level data quality for the most important flows.
 :::
 
 #### Matrix
