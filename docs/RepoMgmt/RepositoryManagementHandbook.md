@@ -45,7 +45,7 @@ To connect to the FLCAC collaboration server, you must have login credentials. T
 ## Accessing a Repository on the FLCAC Collaboration Server
 
 - Navigate to the repository of interest on the collaboration server and copy the URL, e.g., `https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public`
-- With all databases closed, select 'Import', select 'From Git...'. (Or right-click in the navigation pane and select 'Import from Git...')
+- With all databases closed, select 'Database', select 'New Database', selectd 'From repository...'. (Or right-click in the navigation pane and select 'New Database', 'From repository...')
 - Paste the URL in the URL field (the following four fields will automatically populate)
 - Enter your FLCAC collaboration server username and password
 - Select ‘Connect’
