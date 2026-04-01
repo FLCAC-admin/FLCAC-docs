@@ -26,7 +26,7 @@ Repositories are classified as the following types:
 
 | Type            |  Name                                    | Owner           | Contact Information                                           | Upcoming Updates |
 | --------------- | ---------------------------------------- | ----------------| ------------------------------------------------------------- | ---------------- |
-| LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly. Hover[^USLCI] for expected data in upcoming releases.               |
+| LCI             | [US Life Cycle Inventory (USLCI)](#us-life-cycle-inventory)| NREL | uslci@erg.com or lci@nrel.com                          | USLCI is updated quarterly.               |
 | LCI             | [US Electricity Baseline](#us-electricity-baseline)                  | Federal LCA Commons            | https://github.com/NETL-RIC/ElectricityLCI                       | Hover[^eLCI] for ongoing updates |
 | LCI             | [Asphalt and Concrete Mixtures](#pavement-lca)  | FHWA     |                                                               |                  |
 | LCI             | Heavy Equipment Operation                | EPA             |                                                               |                  |
@@ -49,8 +49,6 @@ Repositories are classified as the following types:
 | LCIA            | Characterization Factors for Construction Material EPD Indicators (ISO21930-LCIA-US) | EPA      | [embodiedcarbon@epa.gov](mailto:embodiedcarbon@epa.gov)       |                  |
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
-
-[^USLCI]: New data is expected to include non-road transport updates/additions and stationary combustion updates.
 
 [^eLCI]: U.S. 2023 Baseline; new residual mix datasets; new international generation mixes.
 
