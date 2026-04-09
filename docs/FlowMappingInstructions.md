@@ -64,6 +64,10 @@ Multiple viable mappings can be present for a single source flow in the All Mapp
 
 * [Click here for All Contexts](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/wiki/resources/FEDEFLcontexts.xlsx)
 
+**openLCA to FEDEFL flow mapping file**: GreenDelta and ERG developed a flow mapping file between the openLCA and FEDEFL flow lists. This file can be directly applied in openLCA using the openLCA flow mapping feature. Instructions on using a mapping file in openLCA can be found [here](#mapping-a-dataset-within-openlca).
+
+* [Click here for the openLCA to FEDEFL flow mapping file and the associated report](https://github.com/FLCAC-admin/FLCAC-docs/tree/main/docs/resources/flowmapping/openlca_fedefl%20flow%20mapping)
+
 ## Preparing Source Data
 
 To start you will need a list of the elementary flows you wish to map. This may be newly collected data or an existing inventory you wish to convert to be FEDEFL compatible. Flows include the flowable names and their associated environmental context. The [EPA report](https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=347251&Lab=NRMRL&simpleSearch=0&showCriteria=2&searchAll=elementary+flows&TIMSType=Published+Report&dateBeginPublishedPresented=07%2F31%2F2019) provides detailed definitions for elementary flows and the various flow components which are needed to model them appropriately.  
