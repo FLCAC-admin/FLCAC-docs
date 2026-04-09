@@ -173,7 +173,7 @@ The project strives to provide publicly available LCI data following a consisten
 :::
 
 
-:::{dropdown} Why should I publishd my data on the USLCI Database?
+:::{dropdown} Why should I publish my data on the USLCI Database?
 The advantages of such a data source include:
 
 - It provides comprehensive information for policymakers to make consistent comparisons between policy options regarding environmental decisions.

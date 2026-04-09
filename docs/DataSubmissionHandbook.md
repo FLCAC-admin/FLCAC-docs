@@ -340,6 +340,7 @@ Flow Mapping Table Field Names*:
 Each of these files can support multiple processes so the Data Provider does not need to submit a separate file for each process.
 :::
 
+
 ### LCIA Results
 Once all elementary and technosphere flows have been aligned with the guidelines above, it is important to run LCIA results on your new model in openLCA to ensure that results are similar to those in your original model. If results are not similar, differences must be understood and discussed in the metadata.
 
