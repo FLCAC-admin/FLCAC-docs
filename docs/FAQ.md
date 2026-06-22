@@ -131,6 +131,19 @@ While indicating the default {term}`provider` for these technosphere flows is go
 In some cases, data providers may use [bridge processes](RepoMgmt/Bridge_processes.md) to indicate where these connections should be made.
 :::
 
+## About the Data
+:::{dropdown} What is the source of the electricity data embedded in the USLCI?
+The US Electricity Baseline repository is embedded as a library in the USLCI.
+For more information see [US Electricity Baseline](FLCAC_Repositories.md#us-electricity-baseline) or the [Electricity Baseline FAQ](eLCI_FAQ.md)
+:::
+
+:::{dropdown} How are natural gas extraction and processing emissions calcualted in the USLCI?
+As of the June 2026 release of the USLCI (v1.2026-06.0), the data for the natural gas supply chain is sourced from Argonne National Laboratory's [GREET model](https://greet.anl.gov/index.php).
+In GREET, methane emissions in the natural gas supply chain use a hybrid of bottom-up and top-down approaches for estimating methane leakage, see [Burnham 2024](https://greet.anl.gov/publication-update_ng_2024).
+USLCI follows that default approach in GREET, but users can use the `XXX` parameters in these processes to implement the bottom-up approach instead.
+:::
+
+
 ## Data Submission
 :::{dropdown} How do I submit data to the FLCAC?
 Follow the guidance provided in the [FLCAC Submission Handbook](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook). An overview of the FLCAC Submission Handbook is provided in the [Data Submission Toolkit](https://flcac-admin.github.io/FLCAC-docs/datasubmissiontoolkit) and a YouTube training video that covers this process is located [here](https://www.youtube.com/watch?v=jecyDLHu6OQ). 
@@ -165,7 +178,7 @@ Please submit questions to the FLCAC data curators via the [Issues page](https:/
 :::
 
 
-## USLCI
+### USLCI Submission
 :::{dropdown} What is the USLCI database?
 The USLCI Database project began in 2001 when the US Department of Energy (DOE) directed NREL and the Athena Institute to explore the development of a national public database.
 The US LCI Database was created and has been publicly available at www.nrel.gov/lci since 2003.
@@ -241,15 +254,9 @@ A comprehensive and transparent public LCI database has the potential to facilit
 See [Placing Your Data in the Public Domain](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#placing-your-data-in-the-public-domain).
 :::
 
-:::{dropdown} What is the source of the electricity data embedded in the USLCI?
-The US Electricity Baseline repository is embedded as a library in the USLCI.
-For more information see [US Electricity Baseline](FLCAC_Repositories.md#us-electricity-baseline) or the [Electricity Baseline FAQ](eLCI_FAQ.md)
-:::
 
 ## Other Questions
 
-
-### Data Review and Data Quality
 :::{dropdown} What review process does data on the FLCAC undergo?
 Data posted to the FLCAC is subjected to the review process as described in [process-level metadata](https://flcac-admin.github.io/FLCAC-docs/datasubmissionhandbook#data-curation). The FLCAC Data Curators do not perform an additional critical review of submitted data or check for ISO compliance.
 
@@ -261,7 +268,6 @@ Moving forward the FLCAC Data Curator will also work to ensure that metadata is 
 :::
 
 
-### Working with Other LCA Software/LCI Databases
 :::{dropdown} How do I use data from the FLCAC in other software?
 Multiple LCA platforms outside of openLCA support repos that are provided on the FLCAC, although not all of this data is up to date. For this reason, when using FLCAC data on other platforms please check the version or release date and compare to what is currently hosted on the [FLCAC](https://www.lcacommons.gov/lca-collaboration/). Please contact the individual software companies for more information on the repos supported.
 :::
