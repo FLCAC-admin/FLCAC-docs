@@ -12,15 +12,32 @@ abbreviations:
 
 :::{dropdown} What is the scope of the U.S. Electricity Baseline?
 The Electricity baseline accounts for LCI data by region for electricity generation at various points along the supply chain.
-Users can select from electricity processes of four types:
+Users can select from electricity processes of multiple types:
 
 - Electricity - FUEL - REGION: LCI per MWh of electricity produced in this region for the selected fuel type.
 - Electricity; at grid; generation mix - REGION: LCI per MWh of electricity generated in this region across all fuel types.
 - Electricity; at grid; consumption mix - REGION: LCI per MWh of electricity consumed in this region, accounting for net trade with other regions.
 - Electricity; at user; consumption mix - REGION: LCI per MWh of electricity consumed in this region, accounting for losses from transmission and distribution.
 
+As of June 2026 (v1.2026-06.0), the electricity baseline also includes residual mixes.
+These processes remove generation from sources associated with Renewable Energy Credits (e.g., the quantity of solar in the generation or consumption mix will be lower):
+
+- Electricity; at grid; _residual_ generation mix - REGION
+- Electricity; at grid; _residual_ consumption mix - REGION
+- Electricity; at user; _residual_ consumption mix - REGION
+
+
 The generation of electricity by fuel type accounts for the upstream supply of those fuels (e.g. natural gas, coal, nuclear, petroleum fuels).
 :::
+
+
+:::{dropdown} What is a residual mix and how is it calculated?
+
+In a residual mix, the electricity from renewable sources which is claimed via other mechanisms (e.g., Renewable Energy Credits) is removed from the available mix.
+
+The data used to estimate the residual mix is from  E. O'Shaughnessy, S. Jena, and D. Salyer. 2024. Status and Trends in the Voluntary Market (2023 Data). Golden, CO: NLR. https://doi.org/10.2172/2584242 and [associated workbook](https://www.nlr.gov/docs/libraries/analysis/nrel-green-power-data-v2023.xlsx?sfvrsn=5775598f_2).
+:::
+
 
 <!--
 :::{dropdown} What is the source of the data for the generation emissions?

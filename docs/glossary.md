@@ -15,6 +15,9 @@ abbreviations:
 collaboration server
 : An openLCA specific server application, maintained by GreenDelta, that allows users to work collaboratively on LCA models, share data, and host public LCA repositories such as those available on [lcacommons.gov](https://www.lcacommons.gov/lca-collaboration/). For more information, see the [Collabortion Server manual](https://greendelta.github.io/lca-collaboration-server-manual/). 
 
+consumption mix
+: The mix of electricity sources consumed within a region after accounting for net flows of electricity in or out. The consumption mix typically does not match the {term}`generation mix`.
+
 context
 : In the case of the {term}`FEDEFL <Federal Elementary Flow List>` (and often in LCA more broadly), context describes the origin or destination of an elementary flow. Context informs the directionality of an elementary flow. Resource flows are extracted from nature, while emissions are released to nature. [List of FEDEFL contexts](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/blob/master/wiki/resources/FEDEFLcontexts.xlsx). For more discussion of context see [EPA's FEDEFL Report](https://cfpub.epa.gov/si/si_public_record_report.cfm?Lab=NRMRL&dirEntryId=347251)
 
@@ -55,6 +58,9 @@ flowable
 functional unit
 : The reference unit of a {term}`product system` within LCA. Results are run and compared on the {term}`functional unit`. [ISO 14040](https://www.iso.org/standard/37456.html)
 
+generation mix
+: The mix of electricity sources physically produced within a region. Due to trade of electricity across regions, the generation mix may not reflect the {term}`consumption mix`.
+
 [International Organization for Standardization](https://iso.org)
 : An [independent, non-governmental body](www.iso.org/structure.html) with members from national standards boards that develops standard procedures for technical processes, such as life cycle assessment.
 
@@ -90,6 +96,10 @@ provider
 
 [repository](https://greendelta.github.io/lca-collaboration-server-manual/chapter_3_4.html)
 : A remote or local container in which data are stored under version control, from which a release of contained data can be published. The term repository is often applied to individual data releases (e.g. [USLCI](https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/datasets)) on the {term}`collaboration server` or individual GitHub sites (e.g. [FLCAC-docs](https://github.com/FLCAC-admin/FLCAC-docs).
+
+
+residual mix
+: The mix of electricity sources after accounting for or assigning Renewable Energy Credits (RECs) or other book and claim style accounting to an electricity mix. Residual mixes can apply at both a {term}`generation mix` or a {term}`consumption mix`. Residual mixes typically result in lower shares of renewables which are otherwise already claimed through other mechanisms, and thus avoid double counting.
 
 resource flow
 : A material or energy flow exiting the biosphere, which serves as an LCA process input.
