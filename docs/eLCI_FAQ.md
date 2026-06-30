@@ -39,6 +39,18 @@ The data used to estimate the residual mix is from  E. O'Shaughnessy, S. Jena, a
 :::
 
 
+:::{dropdown} When to use the residual electricity mix?
+
+If your product system includes a unit process representing a faciility that does not purchase renewable energy credits (REC) or have a power purchase agreement (PPA), a residual mix should be chosen as the Exchange.defaultProvider for consumed electricity input(s) on that process.
+:::
+ 
+
+In a residual mix, the electricity from renewable sources which is claimed via other mechanisms (e.g., Renewable Energy Credits) is removed from the available mix.
+
+The data used to estimate the residual mix is from  E. O'Shaughnessy, S. Jena, and D. Salyer. 2024. Status and Trends in the Voluntary Market (2023 Data). Golden, CO: NLR. https://doi.org/10.2172/2584242 and [associated workbook](https://www.nlr.gov/docs/libraries/analysis/nrel-green-power-data-v2023.xlsx?sfvrsn=5775598f_2).
+:::
+
+
 <!--
 :::{dropdown} What is the source of the data for the generation emissions?
 To be added
