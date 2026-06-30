@@ -79,7 +79,7 @@ Yes. Processes that are labeled as "at user" account for the transmission loss i
 :::
 
 :::{dropdown} How do I determine which region to use?
-A lookup of the appropriate balancing authority can be found at https://www.energy.gov/femp/balancing-authority-lookup-tool. 
+A lookup of the appropriate balancing authority can be found at https://www.energy.gov/femp/balancing-authority-lookup-tool. Federal Energy Regulatory Commission (FERC) and US average regions are also available. Balancing authorities are aggregated into FERC regions which are aggregated into a US average.
 
 :::
 
