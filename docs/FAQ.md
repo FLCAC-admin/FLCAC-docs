@@ -138,9 +138,9 @@ For more information see [US Electricity Baseline](FLCAC_Repositories.md#us-elec
 :::
 
 :::{dropdown} How are natural gas extraction and processing emissions calcualted in the USLCI?
-As of the June 2026 release of the USLCI (v1.2026-06.0), the data for the natural gas supply chain is sourced from Argonne National Laboratory's [GREET model](https://greet.anl.gov/index.php).
+As of the June 2026 release of the USLCI (v1.2026-06.0), an option to use natural gas supply chain data from Argonne National Laboratory's [GREET model](https://greet.anl.gov/index.php) is available. Note the older natural gas supply chain data will be phased out over the next quarter and GREET will be the primary source.
 In GREET, methane emissions in the natural gas supply chain use a hybrid of bottom-up and top-down approaches for estimating methane leakage, see [Burnham 2024](https://greet.anl.gov/publication-update_ng_2024).
-USLCI follows that default approach in GREET, but users can use the `XXX` parameters in these processes to implement the bottom-up approach instead.
+USLCI follows that default approach in GREET, but users can use the `CH4_LEAKAGE_METHOD` global parameter in these processes to implement the bottom-up approach instead.
 :::
 
 
