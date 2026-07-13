@@ -1,4 +1,8 @@
-# Electricity Baseline Results and Differences
+---
+title: Electricity Baseline Results and Differences
+description: 2023 Electricity Baseline results for US avg and each FERC region for the normal and residual consumption mixes. Also includes a comparison of US avg results between 2022 and 2023.
+---
+
 
 **Functional unit:** 1 MJ  
 **Method:** TRACI 2.2  

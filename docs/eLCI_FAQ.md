@@ -46,7 +46,7 @@ If your product system includes a unit process representing a faciility that doe
 
 :::{dropdown} What is the difference in results between the residual and normal consumption mixes?
 
-Most impact categories have higher impact category results in the residual mix due to fewer renewable sources. View the difference in US avg and FERC region results [here](https://github.com/FLCAC-admin/FLCAC-docs/tree/main/docs/results/elci_diffs.md).
+Most impact categories have higher impact category results in the residual mix due to fewer renewable sources. View the difference in US avg and FERC region results [here](https://github.com/FLCAC-admin/FLCAC-docs/tree/main/docs/eLCI_Results.md).
 :::
 
 <!--
