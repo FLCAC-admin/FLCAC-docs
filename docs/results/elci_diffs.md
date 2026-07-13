@@ -1,4 +1,4 @@
-# Percent Difference Tables
+# Electricity Baseline Results and Differences
 
 **Functional unit:** 1 MJ  
 **Method:** TRACI 2.2  
