@@ -44,6 +44,10 @@ The data used to estimate the residual mix is from  E. O'Shaughnessy, S. Jena, a
 If your product system includes a unit process representing a faciility that does not purchase renewable energy credits (REC) or have a power purchase agreement (PPA), a residual mix should be chosen as the Exchange.defaultProvider for consumed electricity input(s) on that process.
 :::
 
+:::{dropdown} What is the difference in results between the residual and normal consumption mixes?
+
+Most impact categories have higher impact category results in the residual mix due to fewer renewable sources. View the difference in US avg and FERC region results [here](https://github.com/FLCAC-admin/FLCAC-docs/tree/main/docs/results/elci_diffs.md).
+:::
 
 <!--
 :::{dropdown} What is the source of the data for the generation emissions?
