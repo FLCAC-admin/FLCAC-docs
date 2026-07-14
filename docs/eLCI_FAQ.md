@@ -39,11 +39,16 @@ The data used to estimate the residual mix is from  E. O'Shaughnessy, S. Jena, a
 :::
 
 
-:::{dropdown} When to use the residual electricity mix?
+:::{dropdown} When should the residual electricity mix be used?
 
 If your product system includes a unit process representing a faciility that does not purchase renewable energy credits (REC) or have a power purchase agreement (PPA), a residual mix should be chosen as the Exchange.defaultProvider for consumed electricity input(s) on that process.
 :::
 
+:::{dropdown} What is the difference in LCIA results between the residual and standard consumption mixes?
+
+Most impact categories have higher impact category results in the residual mix due to a lower share of renewable sources in the energy mix.
+View the difference in US avg and FERC region results [here](eLCI_Results.md).
+:::
 
 <!--
 :::{dropdown} What is the source of the data for the generation emissions?
