@@ -19,6 +19,8 @@ project:
         - file: FLCAC_Repositories.md
         - file: Data_Curation_Code_Resources.md
         - file: eLCI_FAQ.md
+        - file: eLCI_Results.md
+          hidden: true
     - title: Data Use
       children:
        # - file: DataUserHandbook.md
