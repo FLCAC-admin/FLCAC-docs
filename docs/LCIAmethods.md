@@ -34,13 +34,19 @@ These JSON-LD files do not contain the flows, only the characterization factors.
 They can be downloaded and imported into any openLCA database.
 The "No flows" versions of methods must be imported _into_ a database that contains the relevant flows already, otherwise the methods will not calculate correctly.
 Updating a local database with new data which contains new elementary flows (e.g., importing a new process from a repository on the FLCAC) may result in new, uncharacterized flows in the database.
-In these cases, the "No flows" methods should be **re-imported** to ensure that all elementary flows are characterized.
+In these cases, the **"No flows" methods should be re-imported to ensure that all elementary flows are characterized**.
 Using the "No flows" version of an LCIA method allows the practitioner to limit the number of elementary flows in their project database, simplifying LCIA flow checks.
 
 - LCIA Methods repositories: [Repositories](https://www.lcacommons.gov/lca-collaboration/) are available which contain the methods and all relevant flow objects.
 These repositories are useful for reviewing all characterization factors for flows in the FEDEFL.
 They can be downloaded and imported into a user's local database.
 However doing so will also import _all_ FEDEFL flows characterized by the method, often resulting in over 100,000 flow objects.
+
+:::{error}
+LCIA methods sourced from other sites, e.g., the openLCA Nexus or the openLCA LCIA methods pack, will not work with Federal LCA Commons data
+(those data and methods are designed for a different flow list).
+All impacts will show as 0.
+:::
 
 If you require the LCIA data in a different format, please reach out to the Data Curators at FederalLCACommons@erg.com
 
