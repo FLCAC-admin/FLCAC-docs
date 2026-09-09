@@ -28,3 +28,28 @@ Documentation of the connections made across each data package is available with
 FLCAC Merged includes a mixture of industry-supplied data and data from federal agencies and has not undergone additional review, nor does it constitute or imply an endorsement by the agencies of the Federal LCA Commons.
 :::
 
+## Releases
+
+Versions of FLCAC merged which are available on the FLCAC are listed below with their compiled data packages.
+For the most up to date information, see the description of each data package on the Commons.
+
+1. **FLCAC Merged (beta)**
+
+- USLCI: v1.2026-06.1
+- US Electricity Baseline: v1.2026-06.0
+- Forest and Forestry Products: v1.2026-04.2
+- TRACI 2.2: v1.2025-04.0
+- IPCC: v1.2024-12.0
+- FEDEFL_INV: v1.2024-12.0
+
+
+2. **FLCAC Merged with USEEIO (beta)**
+
+- USLCI: v1.2026-06.1
+- US Electricity Baseline: v1.2026-06.0
+- Forest and Forestry Products: v1.2026-04.2
+- USEEIO v2.0: v1.2022-06.0
+- TRACI 2.2: v1.2025-04.0
+- IPCC: v1.2024-12.0
+- FEDEFL_INV: v1.2024-12.0
+
