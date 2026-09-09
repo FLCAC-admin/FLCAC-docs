@@ -21,3 +21,9 @@ See the ['Importing and Combining Database' section of the openLCA manual](https
 :::{iframe} https://www.youtube.com/embed/YLao5jC5b_0
 Video 3: Importing the USLCI into openLCA
 :::
+
+## FLCAC Merged Data Package
+
+The FLCAC provides an all-in-one downloadable data package.
+"FLCAC Merged" compiles versions of existing data packages (or repositories) on the FLCAC combines them as intended by the original authors.
+For more information see [FLCAC Merged](FLCAC_merged.md).
