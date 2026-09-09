@@ -27,7 +27,9 @@ Follow the same steps used to import the initial repository into your openLCA da
 2. Open each bridge process to determine if a provider selection is required. The description field on the general information tab will state if a provider needs to be selected. Many bridge processes just include conversions, especially those connected to USEEIO, so a provider does not need to be selected. 
 
 Example of a bridge process that *does not* need a provider selection -
+
     ![alt text](img/image-5.png)
 
 Example of a bridge process that *does* need a provider selection -
+
     ![alt text](img/image-6.png)
