@@ -21,7 +21,7 @@ Repositories are classified as the following types:
 
 - **LCI**: contains Life Cycle Inventory data as {term}`unit processes <unit process>` or {term}`system processes <system process>` or input-output data.
 - **LCIA**: Repositories of Life Cycle Inventory Assessment methods
-- **Merged**: Compilations of multiple LCI and LCIA respositories. See [FLCAC Merged](FLCAC_merged.md).
+- **Merged**: Compilations of multiple LCI and LCIA respositories. See [Commons Merged](Commons_merged.md).
 - **Background**: Repositories with background data such as flow lists.
 - **Legacy**: Repositories with LCI data not actively maintained.
 
@@ -48,8 +48,8 @@ Repositories are classified as the following types:
 | LCIA            | IPCC Global Warming Potentials           | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | FEDEFL Inventory Methods                 | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | LCIA            | Characterization Factors for Construction Material EPD Indicators (ISO21930-LCIA-US) | EPA      | [embodiedcarbon@epa.gov](mailto:embodiedcarbon@epa.gov)       |                  |
-| Merged          | FLCAC Merged (beta)                      | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
-| Merged          | FLCAC Merged with USEEEIO (beta)         | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
+| Merged          | Commons Merged (alpha)                   | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
+| Merged          | Commons Merged Hybrid (with USEEEIO) (alpha)  | Federal LCA Commons                             | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal Elementary Flow List             | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 | Background      | Federal LCA Commons Core Database        | Federal LCA Commons                                  | [FederalLCACommons@erg.com](mailto:FederalLCACommons@erg.com) |                  |
 
