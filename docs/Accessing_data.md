@@ -21,3 +21,10 @@ See the ['Importing and Combining Database' section of the openLCA manual](https
 :::{iframe} https://www.youtube.com/embed/YLao5jC5b_0
 Video 3: Importing the USLCI into openLCA
 :::
+
+## Commons Merged Data Package
+
+The FLCAC provides an all-in-one downloadable data package of LCI data from select repositories and LCIA methods.
+"Commons Merged" compiles versions of existing data packages (or repositories) on the FLCAC and combines them as intended by the original authors.
+This eliminates the need for users to download multiple repositories and connect providers across bridge processes.
+For more information see [Commons Merged](Commons_merged.md).
