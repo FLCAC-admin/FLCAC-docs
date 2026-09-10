@@ -24,6 +24,7 @@ Video 3: Importing the USLCI into openLCA
 
 ## FLCAC Merged Data Package
 
-The FLCAC provides an all-in-one downloadable data package.
-"FLCAC Merged" compiles versions of existing data packages (or repositories) on the FLCAC combines them as intended by the original authors.
+The FLCAC provides an all-in-one downloadable data package of LCI data from select repositories and LCIA methods.
+"FLCAC Merged" compiles versions of existing data packages (or repositories) on the FLCAC and combines them as intended by the original authors.
+This eliminates the need for users to download multiple repositories and connect providers across bridge processes.
 For more information see [FLCAC Merged](FLCAC_merged.md).

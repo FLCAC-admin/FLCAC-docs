@@ -12,8 +12,9 @@ Where appropriate, this data package fills in default providers and aligns techn
 
 ## Why FLCAC Merged?
 FLCAC Merged prevents users from needing to download multiple data packages individually and manually connecting data across them.
+It also includes LCIA methods.
 The openLCA Collaboration Server does not allow for making explicit connections across data packages (i.e., a process from Repository X intends to use as an input a process from Repository Y).
-While bridge processes have been used to highlight those connections, users still must explicitly add default providers in openLCA or risk an incorrect linkage during product system creation.
+While [bridge processes](BridgeProcessesForUsers.md) have been used to highlight those connections, users still must download individual repositories and explicitly add default providers in openLCA or risk an incorrect linkage during product system creation.
 
 :::{important}
 No changes are made to exchange values from the original sources.
