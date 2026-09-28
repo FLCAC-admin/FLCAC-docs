@@ -1,4 +1,7 @@
 # openLCA Libraries User Guide
+
+## *Please note that as of 9/30/2026 libraries are no longer used in FLCAC repositories. They have been replaced by [bridge processes](https://flcac-admin.github.io/FLCAC-docs/bridge-processes/) and the [Commons Merged](https://flcac-admin.github.io/FLCAC-docs/commons-merged/) repositories.*
+
 ## What is a library?
 The {term}`library` feature in openLCA 2.0 and later versions enables the use of databases together without needing to import them on top of one another. A library serves as a read only database that can easily be combined with other databases. Processes and other elements that are part of a library are not editable but can be utilized as part of processes or product systems in the foreground database.
 Libraries are beneficial for the current set-up of the Federal LCA Commons (FLCAC) as they allow for multiple distributed repositories to be self-contained, while still promoting interoperability between repositories. The connections provided by libraries benefit multiple repositories on the FLCAC.
