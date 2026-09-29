@@ -1,8 +1,25 @@
-# Two accounting approaches 
-- For simplified modeling, carbon that is sourced from the atmosphere which is re-emitted in the <span title="There is not full agreement between different standards and LCIA methods regarding what represents short-term, though < 100-years is a common benchmark.">short term</span> is assumed to have net zero emissions. That is, biogenic emissions have a characterization factor (CF) of 0, and input resource flows of biogenic carbon have a CF of 0. Long-term sequestration is modeled using `emission / ground` flowables with a CF of -1. This is referred to as the 0/0 approach in this document. 
+---
+title: Biogenic Carbon
+description: Approach to modeling biogenic carbon in the FEDEFL and FLCAC
+abbreviations:
+  FLCAC: Federal LCA Commons
+  LCIA: Life Cycle Impact Assessment
+  LCI: Life Cycle Inventory
+  FEDEFL: Federal Elementary Flow List
+---
+
+In 2026 Q3, new biogenic carbon flows were added to the Federal Elementary Flow List (FEDEFL).
+Recommended appraoches to modeling with these flows are provided below.
+
+# Two accounting approaches
+
+- For simplified modeling, carbon that is sourced from the atmosphere which is re-emitted in the short term[^short_term] is assumed to have net zero emissions. That is, biogenic emissions have a characterization factor (CF) of 0, and input resource flows of biogenic carbon have a CF of 0. Long-term sequestration is modeled using `emission / ground` flowables with a CF of -1. This is referred to as the 0/0 approach in this document. 
 - Carbon is removed from the atmosphere during photosynthesis (with a CF of -1) and re-emitted during combustion or decomposition (with a CF of +1). This is referred to as the -1/+1 approach in this document. 
 
-By default, all LCIA methods will be made available using the 0/0 approach for the FLCAC. Versions using the -1/+1 approach will be made available in the future. Data providers are encouraged to model their flows to facilitate the use of the -1/+1 approach, and to indicate when that is not feasible. In doing so, the 0/0 approach will also be applicable.  
+By default, all LCIA methods will be made available using the 0/0 approach for the FLCAC. Versions using the -1/+1 approach will be made available in the future. Data providers are encouraged to model their flows to facilitate the use of the -1/+1 approach, and to indicate when that is not feasible. In doing so, the 0/0 approach will also be applicable. 
+
+[^short_term]: There is not full agreement between different standards and LCIA methods regarding what represents short-term, though < 100-years is a common benchmark.
+
 # Flow characterization
 Carbon dioxide and carbon dioxide, biogenic resource flows must always be paired with their corresponding emission flow to arrive at a correct, net characterization. Carbon dioxide resource flows cannot be paired with carbon dioxide, biogenic emission flows (for example).
 
@@ -107,6 +124,7 @@ All emission / ground contexts ASSUME “permanence”. Carbon dioxide that is n
 :::
 
 # Examples of modeling approach
+
 - **Combustion of bio-energy or bio-materials.** Carbon dioxide is removed from the atmosphere via photosynthesis during crop growth, assigned to `carbon dioxide, biogenic / resource / air`. When it is combusted, it is assigned as `carbon dioxide, biogenic / emission / air`. These are either both assigned a CF of 0 or a -1 / +1, respectively, depending on the approach used. 
 - **Carbon capture and sequestration of a fossil-based fuel.** The portion of sequestered carbon dioxide should be assigned to `carbon dioxide / emission / ground / subterranean` (CF of 0). 
 - **Carbon capture and synthetic e-fuel production.** During the carbon capture stage, carbon dioxide emissions to air are reduced as they are instead captured as an intermediate flow. In subsequent processing stages that carbon dioxide remains as an intermediate flow until the e-fuel is combusted as `carbon dioxide / emission / air`. Specific modeling decisions regarding allocation of any carbon dioxide emissions to specific unit processes may require adjustments to this approach by the practitioner. 
@@ -118,4 +136,3 @@ All emission / ground contexts ASSUME “permanence”. Carbon dioxide that is n
 - **Long-term soil carbon amendments** can be modeled using the `carbon dioxide, biogenic / emission / ground / terrestrial` or `human-dominated` flows. In the 0/0 accounting method, A CF of 0 will be assigned to `carbon dioxide, biogenic / resource / air` flows used to model incorporation in plants via photosynthesis. The `carbon dioxide, biogenic / emission / ground` flows can be used to model the fraction of carbon retained in soil for greater than 100-years (in the case of GWP-100), and will be assigned a CF of -1. The portion of carbon in soil amendments that decomposes in less than 100 years should be modeled as `carbon dioxide, biogenic / resource / air` which is assigned a CF of 0, resulting in net zero impact for the re-emitted fraction of fixed carbon. Using the -1/+1 approach, sequestration is logged when using the `carbon dioxide, biogenic / resource / air` flow (CF of -1). The portion of re-emitted carbon (`emission / air`) is a assigned a CF of +1, resulting in net zero impact. Long term storage is modeled using the `carbon dioxide, biogenic / emission / ground` flows and is assigned a CF of 0.  
 - **Emissions from land use change.** Changes in land use practices can result in pulses of carbon emissions from above- or below-ground biomass. The `carbon dioxide, land use change / emission / air` flow is available for separate tracking of these emissions as prescribed in ISO 21930 and to avoid confusion with other emissions of biogenic carbon to air.  
 
- 

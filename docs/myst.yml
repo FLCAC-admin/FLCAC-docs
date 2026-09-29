@@ -38,6 +38,7 @@ project:
         - file: MetadataGuidance.md
         - file: DataQuality.md
         - file: FlowMappingInstructions.md
+        - file: biogenic.md
     - title: Repository Management
       children:
         - file: RepoMgmt/RepositoryManagementHandbook.md
