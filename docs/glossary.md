@@ -15,6 +15,8 @@ abbreviations:
 collaboration server
 : An openLCA specific server application, maintained by GreenDelta, that allows users to work collaboratively on LCA models, share data, and host public LCA repositories such as those available on [lcacommons.gov](https://www.lcacommons.gov/lca-collaboration/). For more information, see the [Collabortion Server manual](https://greendelta.github.io/lca-collaboration-server-manual/). 
 
+Commons Merged: A database built from multiple data packages (i.e., data objects in a repository, as released with a version identifier) on the Federal LCA Commons. The database is assembled by the LCA Data Package Manager (LDPM), which follows the original authors’ instructions for connecting processes via exchange default provider pointers across data packages. This workflow allows users to download a single, reproducible build rather than individually downloading packages and manually connecting data objects across them. No changes are made to exchange values or units from the original objects. Commons Merged Hybrid includes a mixture of industry-supplied data and data from federal agencies and has not undergone additional review, nor does it constitute or imply an endorsement by the agencies of the Federal LCA Commons. [Commons Merged Hybrid](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/commons_merged_hybrid/datasets) is identical to [Commons Merged](https://www.lcacommons.gov/lca-collaboration/Federal_LCA_Commons/commons_merged/datasets) but also includes USEEIO v2.
+
 consumption mix
 : The mix of electricity sources consumed within a region after accounting for net flows of electricity in or out. The consumption mix typically does not match the {term}`generation mix`.
 

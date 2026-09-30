@@ -115,7 +115,7 @@ Two problems could be occurring:
 :::{dropdown} What is a library?
 The {term}`library` feature in openLCA 2.0 and later versions enables the use of databases together without needing to import them on top of one another. A library serves as a read only database that can easily be combined with other databases. Processes and other elements that are part of a library database are not editable but can be utilized as part of processes or product systems in the main database.
 
-Libraries are beneficial for the current set-up of the FLCAC as they allow for multiple distributed repos to be self-contained, while still promoting interoperability between repos. The connections provided by libraries benefit multiple repos on the FLCAC. It’s important to note that libraries are currently an experimental feature in openLCA and will be updated based on user feedback and identified issues.
+*Please note that as of 9/30/2026 libraries are no longer used in FLCAC repositories. They have been replaced by [bridge processes](https://flcac-admin.github.io/FLCAC-docs/bridge-processes/) and the [Commons Merged](https://flcac-admin.github.io/FLCAC-docs/commons-merged/) repositories.*
 :::
 
 
@@ -132,9 +132,8 @@ In some cases, data providers may use [bridge processes](RepoMgmt/Bridge_process
 :::
 
 ## About the Data
-:::{dropdown} What is the source of the electricity data embedded in the USLCI?
-The US Electricity Baseline repository is embedded as a library in the USLCI.
-For more information see [US Electricity Baseline](FLCAC_Repositories.md#us-electricity-baseline) or the [Electricity Baseline FAQ](eLCI_FAQ.md)
+:::{dropdown} What is the source of the electricity data?
+For more information on the electricity data used across several FLCAC repositories see [US Electricity Baseline](FLCAC_Repositories.md#us-electricity-baseline) or the [Electricity Baseline FAQ](eLCI_FAQ.md)
 :::
 
 :::{dropdown} How are natural gas extraction and processing emissions calculated in the USLCI?

@@ -1,5 +1,7 @@
 # Creating a Library
 
+## *Please note that as of 9/30/2026 libraries are no longer used in FLCAC repositories. They have been replaced by [bridge processes](https://flcac-admin.github.io/FLCAC-docs/bridge-processes/) and the [Commons Merged](https://flcac-admin.github.io/FLCAC-docs/commons-merged/) repositories.*
+
 ## Purpose
 
 This SOP documents procedures for creating libraries from Federal LCA Commons (FLCAC) repositories in openLCA. Please reference the [openLCA Libraries User Guide](https://flcac-admin.github.io/FLCAC-docs/flcac-openlca-library-user-guidance) for information on importing, exporting, and modeling with libraries. This SOP is inteded for use by the Data Curators.
