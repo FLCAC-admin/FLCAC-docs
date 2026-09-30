@@ -17,7 +17,7 @@ Currently there is no way to manage inter-repository references (i.e., identifyi
 :::
 
 ## Current Implementation
-Most repositories on the FLCAC are inteneded to connect to pne another via bridge processes. View repository descriptions on lcacommons.gov to determine which repositories are cross-referenced.
+Most repositories on the FLCAC are intended to connect to one another via bridge processes. View repository descriptions on lcacommons.gov to determine which repositories are cross-referenced.
 
 ## Guidance
 
