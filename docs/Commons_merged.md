@@ -24,7 +24,16 @@ No changes are made to [`exchange.amount`](https://greendelta.github.io/olca-sch
 
 ## Details
 Within _Commons Merged_, individual processes are labeled with [`process.tags`](https://greendelta.github.io/olca-schema/classes/Process.html#tags) to denote their parent data package.
-Cross-package connections are based on two sets of instructions: (1) the "defaultProvider.@id" JSON component of an `exchange.description` (example [here](https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/dataset/PROCESS/331207ab-8a06-400e-bace-9657a3e10732)) value embedded on each bridge process input, and (2) supplemental links established via the `LDPM`'s [`provider_links.yaml`](https://github.com/FLCAC-admin/commons_merged/blob/main/ldpm/config/provider_links.yaml) configuration file.
+Cross-package connections are based on two sets of instructions:
+
+1. The "defaultProvider.\@id" JSON component of an `exchange.description` (example [here](https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/dataset/PROCESS/331207ab-8a06-400e-bace-9657a3e10732)) value embedded on each bridge process input
+
+```
+{"comment": "", "defaultProvider.@id": "22e58fa0-fd94-4b4a-9f65-bf9f5204defc"}
+```
+
+2. Supplemental links established via the `LDPM`'s [`provider_links.yaml`](https://github.com/FLCAC-admin/commons_merged/blob/main/ldpm/config/provider_links.yaml) configuration file.
+
 Despite their central role in supporting the pre-_Commons Merged_ workflow, [bridge processes](BridgeProcessesForUsers.md) have been preserved as containers for explicit declarations of cross-package connections (i.e., much like how `import` statements work in Python).
 
 Furthermore, aside from serving as a tool to repeatedly mint _Commons Merged_ and _Commons Merged Hybrid_, the `LDPM` can also be used to build custom LCA databases using any desired combination of data packages and release versions available on the FLCAC.
