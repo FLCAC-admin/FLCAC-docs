@@ -137,3 +137,6 @@ All emission / ground contexts ASSUME “permanence”. Carbon dioxide that is n
 - **Emissions from land use change** Changes in land use practices can result in pulses of carbon emissions from above- or below-ground biomass. The `carbon dioxide, land use change / emission / air` flow is available for separate tracking of these emissions as prescribed in ISO 21930 and to avoid confusion with other emissions of biogenic carbon to air.  
 - **Landfill Storage** Long-term storage of biogenic carbon in landfills may be modeled using `carbon dioxide, biogenic / emission / ground` for the fraction of carbon retained in the landfill for greater than 100 years (in the case of GWP-100). 
 
+# LCIA Methods
+
+For LCIA methods that are available for modeling biogenic flows, see [LCIA Methods](LCIAmethods.md#biogenic-modeling).

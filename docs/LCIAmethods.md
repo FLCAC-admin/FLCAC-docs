@@ -63,6 +63,18 @@ To apply the regional characterization factors when running results in openLCA, 
 
 For additional details on calculating regionalized LCIA results, see the [openLCA manual](https://greendelta.github.io/openLCA2-manual/advanced_top/regionalized.html#assign-locations-to-processes-and-exchanges).
 
+## Biogeic modeling
+
+New biogenic flows were added in v1.4 of the FEDEFL.
+To model with flows and characterization factors that include biogenic accounting, make sure the the LCIA method was built using v1.4.0 or later.
+Those are shown in the table below. For more information see [Biogenic Carbon](biogenic.md).
+
+| Method        |
+|---------------|
+| TRACI 2.1     |
+| TRACI 2.2     |
+| IPCC AR5, AR6 |
+
 ## Issues and Bugs
 If you identify an error or have questions about specific methods, please use the [Issues](https://github.com/USEPA/LCIAformatter/issues) or [Discussions](https://github.com/USEPA/LCIAformatter/discussions) feature of the LCIA Formatter to report them.
 If you have questions regarding accessing or using the methods in openLCA, please use the [Issues](https://github.com/FLCAC-admin/FLCAC-docs/issues) or [Discussions](https://github.com/FLCAC-admin/FLCAC-docs/discussions) feature of the FLCAC Curation repository.
