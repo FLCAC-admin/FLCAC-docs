@@ -3,8 +3,6 @@ title: Federal LCA Commons (FLCAC) Documentation
 description:
 ---
 
-🚧 **This site is under construction. New content will continue to be added** 🚧
-
 Welcome to the Federal LCA Commons documentation site.
 Here we provide guidance and resources for accessing data from the Federal LCA Commons (www.lcacommons.gov).
 

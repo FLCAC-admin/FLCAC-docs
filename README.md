@@ -14,8 +14,6 @@
 <!-- [Learn]: https:// -->
 <!-- [Reference]: https:// -->
 
-🚧 **This site is under construction. New content will continue to be added** 🚧
-
 Welcome to the [FLCAC](https://lcacommons.gov) documentation and support repository.
 
 This repo hosts the [MyST Markdown](https://mystmd.org/) files from which the documentation site is rendered.
