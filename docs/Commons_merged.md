@@ -48,7 +48,7 @@ The pair of _Commons Merged_ builds made available on the FLCAC are listed below
 For the most up-to-date information, please refer to each database's description as hosted on the Commons.
 
 <!-- ToDo: render latest manifest TOMLs directly from FLCAC-admin/commons_merged repo -->
-1. **Commons Merged, _alpha_**
+1. **Commons Merged**
 
 - USLCI: v1.2026-09.0
 - US Electricity Baseline: v1.2026-06.1
@@ -57,7 +57,7 @@ For the most up-to-date information, please refer to each database's description
 - IPCC_GWP: v1.2026-09.0
 - FEDEFL_Inv: v1.2024-12.0
 
-2. **Commons Merged Hybrid (with USEEIO), _alpha_**
+2. **Commons Merged Hybrid (with USEEIO)**
 
 - USEEIO v2.0: v1.2022-06.0
 - USLCI: v1.2026-09.0
