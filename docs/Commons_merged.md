@@ -24,7 +24,8 @@ No changes are made to [`exchange.amount`](https://greendelta.github.io/olca-sch
 
 ## Details
 Within _Commons Merged_, individual processes are labeled with [`process.tags`](https://greendelta.github.io/olca-schema/classes/Process.html#tags) to denote their parent data package.
-Cross-package connections are based on two sets of instructions:
+
+Cross-package `exchange.defaultProvider` connections are established automatically for single-provider flows, then based on two sets of instructions:
 
 1. The "defaultProvider.\@id" JSON component of an `exchange.description` (example [here](https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/dataset/PROCESS/331207ab-8a06-400e-bace-9657a3e10732)) value embedded on each bridge process input
 
